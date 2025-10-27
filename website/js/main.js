@@ -5,10 +5,10 @@
 function loader() {
 	$('#ctn-preloader').addClass('loaded');
 	$("#loading").fadeOut(500);
-	// Una vez haya terminado el preloader aparezca el scroll
+	// Preloader tamamlandıktan sonra scroll gösterilir
 
 	if ($('#ctn-preloader').hasClass('loaded')) {
-		// Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+		// Preloader kaldırıldıktan sonra tüm preloader bölümü DOM'dan silinir
 		$('#preloader').delay(900).queue(function () {
 			$(this).remove();
 		});

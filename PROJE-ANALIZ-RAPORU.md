@@ -45,13 +45,13 @@ Comlink projesi **profesyonel bir template** (Startesk - Cargo/Logistics) üzeri
 ---
 
 ## KRİTİK SORUNLAR (ACİL DÜZELTME GEREKLİ)
-### 🔴 1. 9 ADET KIRIK NAVİGASYON LİNKİ
+### 🟡 1. 9 ADET KIRIK NAVİGASYON LİNKİ - **KISMİ TAMAMLANDI**
 
 **Mevcut Olmayan Dosyalar (Her sayfanın navigation menüsünde):**
 
 | Link (HTML'de) | Beklenen Dosya | Durum | Etki |
 |----------------|----------------|-------|------|
-| `about-us.html` | `hakkimizda.html` | ❌ Yanlış dosya adı | 404 Hatası |
+| `about-us.html` | `hakkimizda.html` | ✅ Düzeltildi | - |
 | `tracking.html` | - | ❌ Eksik | 404 Hatası |
 | `service-air.html` | - | ❌ Eksik | 404 Hatası |
 | `service-Railway.html` | - | ❌ Eksik | 404 Hatası |
@@ -60,6 +60,9 @@ Comlink projesi **profesyonel bir template** (Startesk - Cargo/Logistics) üzeri
 | `pricing.html` | - | ❌ Eksik | 404 Hatası |
 | `blog-with-sidebar.html` | - | ❌ Eksik | 404 Hatası |
 | `support.html` | - | ❌ Eksik | 404 Hatası |
+
+**✅ TAMAMLANAN:** `about-us.html` → `hakkimizda.html` (10 dosyada düzeltildi, 27 Ekim 2025)
+**⏸️ KALAN:** 8 eksik sayfa (yorum satırına alınacak veya oluşturulacak)
 
 **Örnek Kırık Kod (Her sayfada):**
 ```html
@@ -234,7 +237,7 @@ Disallow: /.vs/
 
 ---
 
-### 🟠 8. HTML LANG HATASI
+### ✅ 8. HTML LANG HATASI - **TAMAMLANDI**
 
 **Sorun:**
 - `index.html` → `lang="en"` (İngilizce olarak işaretlenmiş!)
@@ -249,6 +252,8 @@ Disallow: /.vs/
 ```html
 <html class="no-js" lang="tr">
 ```
+
+**✅ ÇÖZÜLDÜ:** index.html düzeltildi (27 Ekim 2025)
 
 **Etki:** Google, sayfayı İngilizce sanıyor
 
@@ -430,20 +435,22 @@ veya dosyayı root'a taşıyın.
 
 ---
 
-### 🟠 16. PRELOADER İSPANYOLCA YORUM
+### ✅ 16. PRELOADER İSPANYOLCA YORUM - **TAMAMLANDI**
 
-**Dosya:** `js/main.js:8`
+**Dosya:** `js/main.js:8, 11`
 
 ```javascript
 // Una vez haya terminado el preloader aparezca el scroll
+// Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
 ```
 
 **Düzeltme:**
 ```javascript
 // Preloader tamamlandıktan sonra scroll gösterilir
+// Preloader kaldırıldıktan sonra tüm preloader bölümü DOM'dan silinir
 ```
 
-Küçük ama dikkat çekici detay.
+**✅ ÇÖZÜLDÜ:** İspanyolca yorumlar Türkçeleştirildi (27 Ekim 2025)
 
 ---
 
@@ -556,7 +563,7 @@ cleancss -o style.min.css style.css
 
 ---
 
-### 🟡 23. BREADCRUMB LİNKLERİ ÇALIŞMIYOR
+### ✅ 23. BREADCRUMB LİNKLERİ ÇALIŞMIYOR - **TAMAMLANDI**
 
 **Tüm sayfalarda:**
 ```html
@@ -567,6 +574,14 @@ cleancss -o style.min.css style.css
 ```html
 <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
 ```
+
+**✅ ÇÖZÜLDÜ:** 6 dosyada breadcrumb düzeltildi (27 Ekim 2025)
+- hakkimizda.html
+- urunler.html
+- galeri.html
+- iletisim.html
+- blog-classic.html
+- blog-details.html
 
 ---
 
