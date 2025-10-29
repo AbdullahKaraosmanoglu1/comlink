@@ -1577,7 +1577,7 @@ label {
 }
 
 .s-slider-bg {
-	background-image: url(../img/slider/slider_img03.jpg);
+	background-image: url(../img/slider/slider_img02.jpg);
 	min-height: 954px;
 	background-position: center;
 	background-size: cover;
@@ -2033,7 +2033,6 @@ label {
 	border: 3px solid #b1a8c0;
 	border-radius: 22px;
 	cursor: pointer;
-	bottom: 2rem;
 }
 
 .icon-scroll::before {

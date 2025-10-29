@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Comlink – Blog</title>
-    <meta name=\"description\" content=\"Comlink blog: akıllı akülü bahçe ve tarım makineleri hakkında haberler ve yazılar.\">
+    <meta name=\"description\" content=\"Comlink blog: akıllı akülü bahçe ve tarım makineleri hakkında haberler ve
+        yazılar.\">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -86,7 +87,7 @@
                         <div class="logo">
                             <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
                                     alt="Logo"></a>
-                            <a href="index.html"><img src="img/logo/logo.png" class="mobile-logo s-logo-none"
+                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
                                     alt="Logo"></a>
                         </div>
                     </div>
@@ -95,48 +96,22 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="active"><a href="index.html">Ana Sayfa</a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Ana Sayfa 1</a></li>
-                                                <li class="active"><a href="index-2.html">Ana Sayfa 2</a></li>
-                                                <li><a href="index-3.html">Ana Sayfa 3</a></li>
-                                            </ul>
-                                        </li>
+                                        <li class="active"><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="urunler.html">Ürünler</a></li>
+                                        <li><a href="galeri.html">Galeri</a></li>
                                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                                        <li><a href="tracking.html">Takip</a></li>
-                                        <li><a href="#">Sayfalar</a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Ürünler</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="service-air.html">Ot Biçme Makineleri</a></li>
-                                                        <li><a href="service-Railway.html">Yüksek Dal Budama</a></li>
-                                                        <li><a href="service-door-to-door.html">Zincirli Testere</a>
-                                                        </li>
-                                                        <li><a href="service-Depolama.html">Yaprak Üfleyici</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="pricing.html">Fiyatlandırma</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Haberler & Medya</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-classic.html">Klasik Blog</a></li>
-                                                <li><a href="blog-with-sidebar.html">Yan Menü ile Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Detayları</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="support.html">Destek</a></li>
+                                        <li><a href="iletisim.html">İletişim</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="header-Ara">
-                                <a href="#" data-toggle="modal" data-target="#Ara-modal"><i
+                            <div class="header-search">
+                                <a href="#" data-toggle="modal" data-target="#search-modal"><i
                                         class="flaticon-magnifying-glass"></i></a>
                             </div>
                             <div class="header-btn">
-                                <a href="#" class="btn" data-toggle="modal" data-target="#exampleModalLong"><img
-                                        src="img/icon/calculator-symbols.png" alt="icon">Get Fare Rate</a>
+                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
+                                        src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
                             </div>
                         </div>
                     </div>
@@ -144,207 +119,13 @@
                         <div class="mobile-menu"></div>
                     </div>
                 </div>
-                <!-- Modal Ara -->
-                <div class="modal fade" id="Ara-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <form>
-                                <input type="text" placeholder="Ara...">
-                                <button><i class="fa fa-Ara"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content fare-rate-modal">
-                            <ul class="nav nav-tabs setup-panel">
-                                <li class="nav-item single-steps">
-                                    <a class="nav-link btn-amber" href="#step-1">Select Your Destination</a>
-                                </li>
-                                <li class="nav-item single-steps">
-                                    <a class="nav-link btn-blue-grey" href="#step-2">ITEMS TO BE SHIPPED</a>
-                                </li>
-                                <li class="nav-item single-steps">
-                                    <a class="nav-link btn-blue-grey" href="#step-3">tracking information</a>
-                                </li>
-                            </ul>
-                            <form action="#" method="post">
-                                <div class="single-setup" id="step-1">
-                                    <div class="fare-rate-tab-content">
-                                        <div class="modal-shipping-info">
-                                            <ul>
-                                                <li>
-                                                    <div class="shipping-step-count">
-                                                        <h5>A</h5>
-                                                    </div>
-                                                    <div class="shipping-address-form">
-                                                        <div class="shipping-country-box form-group">
-                                                            <label for="from-country">from country</label>
-                                                            <input type="text" required="required" id="from-country"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                        <div class="shipping-address-box form-group">
-                                                            <label for="from-country-location">add your location</label>
-                                                            <input type="text" required="required"
-                                                                id="from-country-location"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shipping-step-count">
-                                                        <h5>B</h5>
-                                                    </div>
-                                                    <div class="shipping-address-form">
-                                                        <div class="shipping-country-box form-group">
-                                                            <label for="to-country">TO country</label>
-                                                            <input type="text" required="required" id="to-country"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                        <div class="shipping-address-box form-group">
-                                                            <label for="to-country-location">add your location</label>
-                                                            <input type="text" required="required"
-                                                                id="to-country-location"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="modal-shipping-more-list">
-                                            <ul>
-                                                <li><a href="#"><i class="flaticon-credit-card"></i> Don't have an
-                                                        account? No problem
-                                                        Pay by credit card or cash.</a></li>
-                                                <li><a href="#"><i class="flaticon-sings"></i> Get a quick quote and
-                                                        start shipping</a>
-                                                </li>
-                                                <li><a href="#"><i class="flaticon-track"></i> Consult your packaging
-                                                        and delivery
-                                                        options</a></li>
-                                            </ul>
-                                        </div>
-                                        <button class="btn f-right nextBtn-2 btn-success" type="button">one more
-                                            step</button>
-                                    </div>
-                                </div>
-                                <div class="single-setup" id="step-2">
-                                    <div class="fare-rate-tab-content">
-                                        <div class="modal-shipping-details">
-                                            <div class="modal-shipping-title">
-                                                <h2>items <span>details</span></h2>
-                                                <h2 class="f-right">total cost : <span>$ 19.00</span></h2>
-                                            </div>
-                                            <div class="shipping-details-info">
-                                                <div class="single-shipping-details-box">
-                                                    <label for="packaging-size">packaging size</label>
-                                                    <select class="custom-select" id="packaging-size">
-                                                        <option selected="">Standart Size ( 42” x 36” )</option>
-                                                        <option>Standart Size ( 82” x 86” )</option>
-                                                        <option>Standart Size ( 102” x 165” )</option>
-                                                        <option>Standart Size ( 110” x 205” )</option>
-                                                        <option>Standart Size ( 120” x 250” )</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-qty">
-                                                    <label for="QTY-number">QTY</label>
-                                                    <input type="number" value="1" id="QTY-number" required="required">
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-weight">
-                                                    <label for="packaging-weight">TOTAL WEIGHT</label>
-                                                    <select class="custom-select" id="packaging-weight">
-                                                        <option selected="">KG</option>
-                                                        <option>20KG</option>
-                                                        <option>30KG</option>
-                                                        <option>50KG</option>
-                                                        <option>80KG</option>
-                                                        <option>100KG</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-transport">
-                                                    <label for="cargo-transport">cargo transport</label>
-                                                    <select class="custom-select" id="cargo-transport">
-                                                        <option selected="">IN</option>
-                                                        <option>1500in</option>
-                                                        <option>2000in</option>
-                                                        <option>2500in</option>
-                                                        <option>3000in</option>
-                                                        <option>3500in</option>
-                                                        <option>4000in</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-product">
-                                                    <label for="product-category">product category</label>
-                                                    <select class="custom-select" id="product-category">
-                                                        <option selected="">Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" required="required" class="custom-control-input"
-                                                    id="customControlInline">
-                                                <label class="custom-control-label" for="customControlInline">Koşulları
-                                                    ve Gizlilik Politikasinı kabul ediyorum.</label>
-                                            </div>
-                                        </div>
-                                        <button class="btn f-left prevBtn-2 btn-success" type="button">Previous</button>
-                                        <button class="btn f-right nextBtn-2 btn-success"
-                                            type="button"><span>$19.00</span>
-                                            Booking</button>
-                                    </div>
-                                </div>
-                                <div class="single-setup" id="step-3">
-                                    <div class="fare-rate-tab-content">
-                                        <div class="modal-shipping-details">
-                                            <div class="modal-shipping-title">
-                                                <h2>tracking <span>information</span></h2>
-                                            </div>
-                                            <div class="f-left pr-20">
-                                                <div class="shipping-details-info shipping-tracking-info">
-                                                    <div class="modal-tracking-info">
-                                                        <label for="invoice-id">invoice Id</label>
-                                                        <input type="text" id="invoice-id" placeholder="Enter Your Id">
-                                                    </div>
-                                                    <div class="modal-tracking-info">
-                                                        <label>Arama</label>
-                                                        <button class="btn nextBtn-2 btn-success">find your
-                                                            product</button>
-                                                    </div>
-                                                </div>
-                                                <div class="tracking-quots-board">
-                                                    <label>your happiness quotes</label>
-                                                    <div class="tracking-quots-board-info">
-                                                        <img src="img/bg/board_bg.jpg" alt="img">
-                                                        <h5>On Board Your Products. Now Product is
-                                                            Malaysia Ocean</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tracking-modal-map">
-                                                <div id="contact-map"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
-
     <!-- header-start-end -->
 
     <!-- main-area -->
     <main>
-
         <!-- breadcrumb-area -->
         <div class="breadcrumb-area breadcrumb-bg t-breadcrumb-bg">
             <div class="container">
@@ -591,8 +372,8 @@
                                 <a href="index.html"><img src="img/logo/w_logo.png" alt="img"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Orem Ipsum iş simply dumm text the printing and types indstr sum has been the
-                                    industry
+                                <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
+                                    çözümler sunmaktadır. Yüksek performans, düşük bakım maliyeti.
                                 </p>
                             </div>
                             <div class="footer-social">
@@ -653,7 +434,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>Destek & Indirmeler</h5>
+                                <h5>BIZE ULASIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -685,11 +466,7 @@
             </div>
         </div>
     </footer>
-
     <!-- footer-end -->
-
-
-
 
     <!-- JS here -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -714,4 +491,3 @@
 </body>
 
 </html>
-

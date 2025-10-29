@@ -25,9 +25,112 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        :root {
+            --cursor-color: #ff4d4d;
+            /* renk */
+            --ring-size: 22px;
+            --ring-border: 2px;
+            --dot-size: 6px;
+            --hover-scale: 1.6;
+            --lag: 0.18;
+            /* takip yumuşatma (0-1) */
+        }
+
+        /* sadece mouse olan cihazlarda gizle */
+        @media (pointer:fine) {
+            body {
+                cursor: none;
+            }
+        }
+
+        /* sahte imleç kapsayıcı */
+        .fx-cursor {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: var(--ring-size);
+            height: var(--ring-size);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity .2s ease;
+        }
+
+        .fx-cursor.--ready {
+            opacity: 1;
+        }
+
+        /* halka */
+        .fx-ring {
+            position: absolute;
+            inset: 0;
+            border: var(--ring-border) solid var(--cursor-color);
+            border-radius: 999px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 0 10px rgba(255, 77, 77, .25);
+            transition: transform .12s ease, border-color .2s ease, box-shadow .2s ease;
+        }
+
+        /* iç nokta */
+        .fx-dot {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: var(--dot-size);
+            height: var(--dot-size);
+            margin-left: calc(var(--dot-size) / -2);
+            margin-top: calc(var(--dot-size) / -2);
+            border-radius: 999px;
+            background: var(--cursor-color);
+            box-shadow: 0 0 6px rgba(255, 77, 77, .6);
+            transition: transform .12s ease, opacity .2s ease;
+        }
+
+        /* tıklanabilirlerde büyüt */
+        .fx-cursor.--hover .fx-ring {
+            transform: scale(var(--hover-scale));
+        }
+
+        .fx-cursor.--hover .fx-dot {
+            transform: scale(1.2);
+        }
+
+        /* tıklama dalgası */
+        .fx-cursor.--click .fx-ring {
+            animation: clickPulse .35s ease;
+        }
+
+        @keyframes clickPulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        /* hareket hassasiyeti olan kullanıcılar için animasyonları kapat */
+        @media (prefers-reduced-motion: reduce) {
+
+            .fx-ring,
+            .fx-dot {
+                transition: none;
+                animation: none;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
+    <div class="fx-cursor" id="fxCursor" aria-hidden="true">
+        <div class="fx-ring"></div>
+        <div class="fx-dot"></div>
+    </div>
 
     <!-- preloader  -->
     <div id="preloader">
@@ -87,7 +190,7 @@
                         <div class="logo">
                             <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
                                     alt="Logo"></a>
-                            <a href="index.html"><img src="img/logo/logo.png" class="mobile-logo s-logo-none"
+                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
                                     alt="Logo"></a>
                         </div>
                     </div>
@@ -96,38 +199,12 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="active"><a href="index.html">Ana Sayfa</a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Ana Sayfa 1</a></li>
-                                                <li class="active"><a href="index-2.html">Ana Sayfa 2</a></li>
-                                                <li><a href="index-3.html">Ana Sayfa 3</a></li>
-                                            </ul>
-                                        </li>
+                                        <li class="active"><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="urunler.html">Ürünler</a></li>
+                                        <li><a href="galeri.html">Galeri</a></li>
                                         <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                                        <li><a href="tracking.html">Takip</a></li>
-                                        <li><a href="#">Sayfalar</a>
-                                            <ul class="submenu">
-                                                <li><a href="#">Ürünler</a>
-                                                    <ul class="submenu">
-                                                        <li><a href="service-air.html">Ot Biçme Makineleri</a></li>
-                                                        <li><a href="service-Railway.html">Yüksek Dal Budama</a></li>
-                                                        <li><a href="service-door-to-door.html">Zincirli Testere</a>
-                                                        </li>
-                                                        <li><a href="service-warehouse.html">Yaprak Üfleyici</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="pricing.html">Fiyatlandırma</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Haberler & Medya</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-classic.html">Klasik Blog</a></li>
-                                                <li><a href="blog-with-sidebar.html">Yan Menü ile Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Detayları</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="support.html">Destek</a></li>
+                                        <li><a href="iletisim.html">İletişim</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -136,205 +213,13 @@
                                         class="flaticon-magnifying-glass"></i></a>
                             </div>
                             <div class="header-btn">
-                                <a href="#" class="btn" data-toggle="modal" data-target="#exampleModalLong"><img
-                                        src="img/icon/calculator-symbols.png" alt="icon">Get Fare Rate</a>
+                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
+                                        src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="mobile-menu"></div>
-                    </div>
-                </div>
-                <!-- Modal Search -->
-                <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <form>
-                                <input type="text" placeholder="Search here...">
-                                <button><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content fare-rate-modal">
-                            <ul class="nav nav-tabs setup-panel">
-                                <li class="nav-item single-steps">
-                                    <a class="nav-link btn-amber" href="#step-1">Select Your Destination</a>
-                                </li>
-                                <li class="nav-item single-steps">
-                                    <a class="nav-link btn-blue-grey" href="#step-2">ITEMS TO BE SHIPPED</a>
-                                </li>
-                                <li class="nav-item single-steps">
-                                    <a class="nav-link btn-blue-grey" href="#step-3">tracking information</a>
-                                </li>
-                            </ul>
-                            <form action="#" method="post">
-                                <div class="single-setup" id="step-1">
-                                    <div class="fare-rate-tab-content">
-                                        <div class="modal-shipping-info">
-                                            <ul>
-                                                <li>
-                                                    <div class="shipping-step-count">
-                                                        <h5>A</h5>
-                                                    </div>
-                                                    <div class="shipping-address-form">
-                                                        <div class="shipping-country-box form-group">
-                                                            <label for="from-country">from country</label>
-                                                            <input type="text" required="required" id="from-country"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                        <div class="shipping-address-box form-group">
-                                                            <label for="from-country-location">add your location</label>
-                                                            <input type="text" required="required"
-                                                                id="from-country-location"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="shipping-step-count">
-                                                        <h5>B</h5>
-                                                    </div>
-                                                    <div class="shipping-address-form">
-                                                        <div class="shipping-country-box form-group">
-                                                            <label for="to-country">TO country</label>
-                                                            <input type="text" required="required" id="to-country"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                        <div class="shipping-address-box form-group">
-                                                            <label for="to-country-location">add your location</label>
-                                                            <input type="text" required="required"
-                                                                id="to-country-location"
-                                                                placeholder="Select Your Destination">
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="modal-shipping-more-list">
-                                            <ul>
-                                                <li><a href="#"><i class="flaticon-credit-card"></i> Don't have an
-                                                        account? No problem
-                                                        Pay by credit card or cash.</a></li>
-                                                <li><a href="#"><i class="flaticon-sings"></i> Get a quick quote and
-                                                        start shipping</a>
-                                                </li>
-                                                <li><a href="#"><i class="flaticon-track"></i> Consult your packaging
-                                                        and delivery
-                                                        options</a></li>
-                                            </ul>
-                                        </div>
-                                        <button class="btn f-right nextBtn-2 btn-success" type="button">one more
-                                            step</button>
-                                    </div>
-                                </div>
-                                <div class="single-setup" id="step-2">
-                                    <div class="fare-rate-tab-content">
-                                        <div class="modal-shipping-details">
-                                            <div class="modal-shipping-title">
-                                                <h2>items <span>details</span></h2>
-                                                <h2 class="f-right">total cost : <span>$ 19.00</span></h2>
-                                            </div>
-                                            <div class="shipping-details-info">
-                                                <div class="single-shipping-details-box">
-                                                    <label for="packaging-size">packaging size</label>
-                                                    <select class="custom-select" id="packaging-size">
-                                                        <option selected="">Standart Size ( 42” x 36” )</option>
-                                                        <option>Standart Size ( 82” x 86” )</option>
-                                                        <option>Standart Size ( 102” x 165” )</option>
-                                                        <option>Standart Size ( 110” x 205” )</option>
-                                                        <option>Standart Size ( 120” x 250” )</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-qty">
-                                                    <label for="QTY-number">QTY</label>
-                                                    <input type="number" value="1" id="QTY-number" required="required">
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-weight">
-                                                    <label for="packaging-weight">TOTAL WEIGHT</label>
-                                                    <select class="custom-select" id="packaging-weight">
-                                                        <option selected="">KG</option>
-                                                        <option>20KG</option>
-                                                        <option>30KG</option>
-                                                        <option>50KG</option>
-                                                        <option>80KG</option>
-                                                        <option>100KG</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-transport">
-                                                    <label for="cargo-transport">cargo transport</label>
-                                                    <select class="custom-select" id="cargo-transport">
-                                                        <option selected="">IN</option>
-                                                        <option>1500in</option>
-                                                        <option>2000in</option>
-                                                        <option>2500in</option>
-                                                        <option>3000in</option>
-                                                        <option>3500in</option>
-                                                        <option>4000in</option>
-                                                    </select>
-                                                </div>
-                                                <div class="single-shipping-details-box shipping-product">
-                                                    <label for="product-category">product category</label>
-                                                    <select class="custom-select" id="product-category">
-                                                        <option selected="">Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                        <option>Glass Product</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" required="required" class="custom-control-input"
-                                                    id="customControlInline">
-                                                <label class="custom-control-label" for="customControlInline">Koşulları
-                                                    ve Gizlilik Politikasinı kabul ediyorum.</label>
-                                            </div>
-                                        </div>
-                                        <button class="btn f-left prevBtn-2 btn-success" type="button">Previous</button>
-                                        <button class="btn f-right nextBtn-2 btn-success"
-                                            type="button"><span>$19.00</span>
-                                            Booking</button>
-                                    </div>
-                                </div>
-                                <div class="single-setup" id="step-3">
-                                    <div class="fare-rate-tab-content">
-                                        <div class="modal-shipping-details">
-                                            <div class="modal-shipping-title">
-                                                <h2>tracking <span>information</span></h2>
-                                            </div>
-                                            <div class="f-left pr-20">
-                                                <div class="shipping-details-info shipping-tracking-info">
-                                                    <div class="modal-tracking-info">
-                                                        <label for="invoice-id">invoice Id</label>
-                                                        <input type="text" id="invoice-id" placeholder="Enter Your Id">
-                                                    </div>
-                                                    <div class="modal-tracking-info">
-                                                        <label>Search invoice</label>
-                                                        <button class="btn nextBtn-2 btn-success">find your
-                                                            product</button>
-                                                    </div>
-                                                </div>
-                                                <div class="tracking-quots-board">
-                                                    <label>your happiness quotes</label>
-                                                    <div class="tracking-quots-board-info">
-                                                        <img src="img/bg/board_bg.jpg" alt="img">
-                                                        <h5>On Board Your Products. Now Product is
-                                                            Malaysia Ocean</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tracking-modal-map">
-                                                <div id="contact-map"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -344,7 +229,6 @@
 
     <!-- main-area -->
     <main>
-
         <!-- slider-area -->
         <section class="s-slider-area">
             <div class="s-slider-bg fix">
@@ -497,63 +381,61 @@
             </div>
             <div class="container-fluid control-fluid">
                 <div class="row control-active">
-                    <div class="col-xl-4">
+                    <!-- Ot biçme / kenar kesme -->
+                    <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/control_img01.jpg" alt="img">
+                                <img src="img/images/cim-bicme.png" alt="Ot biçme makinesi ile çim kenarı kesimi">
                             </div>
                             <div class="control-overlay-content">
                                 <h4><a href="#">Ot Biçme Makinesi</a></h4>
-                                <span>Profesyonel Akülü Güç</span>
+                                <span>Geniş alanlarda sessiz, güçlü ve keskin çim biçme performansı.</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+
+                    <!-- Çit budama -->
+                    <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/control_img02.jpg" alt="img">
+                                <img src="img/images/cit-budama.png" alt="Çit budama makinesi ile çit düzeltme">
                             </div>
                             <div class="control-overlay-content">
-                                <h4><a href="#">Zincirli Testere</a></h4>
-                                <span>Profesyonel Akülü Güç</span>
+                                <h4><a href="#">Çit Budama</a></h4>
+                                <span>Yüksek torklu motorla kusursuz çit şekillendirme deneyimi.</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+
+                    <!-- Yüksek dal budama (direkli testere) -->
+                    <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/control_img03.jpg" alt="img">
+                                <img src="img/images/elektirikli-budama.png"
+                                    alt="Yüksek dal budama için direkli testere kullanımı">
                             </div>
                             <div class="control-overlay-content">
                                 <h4><a href="#">Yüksek Dal Budama</a></h4>
-                                <span>Profesyonel Akülü Güç</span>
+                                <span>Yüksek dallara kolay erişim sağlayan hafif ve dengeli kullanım.</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+
+                    <!-- Toprak burgusu -->
+                    <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/control_img02.jpg" alt="img">
+                                <img src="img/images/toprak-burgu.png" alt="Toprak burgusu ile delik açma">
                             </div>
                             <div class="control-overlay-content">
-                                <h4><a href="#">Zincirli Testere</a></h4>
-                                <span>Profesyonel Akülü Güç</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="single-control-wrap fix">
-                            <div class="control-thumb">
-                                <img src="img/images/control_img03.jpg" alt="img">
-                            </div>
-                            <div class="control-overlay-content">
-                                <h4><a href="#">Ot Biçme Makinesi</a></h4>
-                                <span>Profesyonel Akülü Güç</span>
+                                <h4><a href="#">Toprak Burgusu</a></h4>
+                                <span>Zahmetsiz kazı için yüksek torklu, titreşimsiz toprak delme gücü.</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- control-area-end -->
 
@@ -644,8 +526,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title text-center mb-70">
-                            <h6>Latest News</h6>
-                            <h2>Latest Popular Articles</h2>
+                            <h6>Son Haberler</h6>
+                            <h2>Güncel Haberler ve Duyurular</h2>
                         </div>
                     </div>
                 </div>
@@ -662,12 +544,11 @@
                                         <li><a href="#"><i class="far fa-comments"></i> 03</a></li>
                                     </ul>
                                 </div>
-                                <h4><a href="blog-details.html">Track your airfreight shipment by airwaybill</a></h4>
-                                <p>Express delivery is an innovative service refers effective logi solution but the
-                                    majorty have an suffered alteration the
-                                    delivery.</p>
+                                <h4><a href="blog-details.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h4>
+                                <p>Comlink akülü makineler, benzinli motorlara kıyasla %100 dumansız çalışma sunarak
+                                    çevre dostu bir alternatif sağlar. Sessiz ve güçlü performans bir arada.</p>
                                 <div class="blog-read-more text-center">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="blog-details.html">Devamını Oku</a>
                                 </div>
                             </div>
                         </div>
@@ -684,13 +565,12 @@
                                         <li><a href="#"><i class="far fa-comments"></i> 03</a></li>
                                     </ul>
                                 </div>
-                                <h4><a href="blog-details.html">Consignments may be tracked feeding the airline code</a>
+                                <h4><a href="blog-details.html">Tek Akü ile Birden Fazla Cihaz Kullanın</a>
                                 </h4>
-                                <p>Express delivery is an innovative service refers effective logi solution but the
-                                    majorty have an suffered alteration the
-                                    delivery.</p>
+                                <p>Ortak batarya platformu sayesinde tek bir yüksek kapasiteli akü ile tüm
+                                    Comlink ürünlerini kullanabilirsiniz. Ekonomik ve pratik çözüm.</p>
                                 <div class="blog-read-more text-center">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="blog-details.html">Devamını Oku</a>
                                 </div>
                             </div>
                         </div>
@@ -707,13 +587,12 @@
                                         <li><a href="#"><i class="far fa-comments"></i> 03</a></li>
                                     </ul>
                                 </div>
-                                <h4><a href="blog-details.html">Words Cargo and Freight Refer Particular to Goods</a>
+                                <h4><a href="blog-details.html">Profesyonel Kullanım İçin Yüksek Performans</a>
                                 </h4>
-                                <p>Express delivery is an innovative service refers effective logi solution but the
-                                    majorty have an suffered alteration the
-                                    delivery.</p>
+                                <p>Zorlu arazi koşullarında bile kesintisiz çalışma. Comlink makineleri
+                                    profesyonel kullanıcılar için özel olarak tasarlandı.</p>
                                 <div class="blog-read-more text-center">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="blog-details.html">Devamını Oku</a>
                                 </div>
                             </div>
                         </div>
@@ -739,13 +618,13 @@
                                     <div class="col-lg-6">
                                         <div class="about-content">
                                             <div class="section-title about-title mb-25">
-                                                <h2>About Our Cargo Delivery</h2>
-                                                <h6>Express delivery is an innovative service</h6>
+                                                <h2>Akülü Profesyonel Makineler</h2>
+                                                <h6>Çevreci ve yüksek performanslı çözümler</h6>
                                             </div>
-                                            <p>Express delivery is an innovative service is effective logistics solution
-                                                for the delivery of small cargo. This service
-                                                is useful for companies of various effective logistics scale.</p>
-                                            <a href="#" class="btn">comparison</a>
+                                            <p>Comlink akülü bahçe ve tarım makineleri, dumansız ve benzinsiz çalışma
+                                                prensibiyle çevre dostu üretim sunar. Profesyonel kullanıcılar için
+                                                özel olarak tasarlanmış yüksek kapasiteli çözümler.</p>
+                                            <a href="hakkimizda.html" class="btn">Daha Fazla Bilgi</a>
                                         </div>
                                     </div>
                                 </div>
@@ -760,13 +639,13 @@
                                     <div class="col-lg-6">
                                         <div class="about-content">
                                             <div class="section-title about-title mb-25">
-                                                <h2>Logistics Cargo Service</h2>
-                                                <h6>Express delivery is an innovative service</h6>
+                                                <h2>Ortak Batarya Platformu</h2>
+                                                <h6>Tek akü, çok cihaz kullanımı</h6>
                                             </div>
-                                            <p>Express delivery is an innovative service is effective logistics solution
-                                                for the delivery of small cargo. This service
-                                                is useful for companies of various effective logistics scale.</p>
-                                            <a href="#" class="btn">comparison</a>
+                                            <p>V6, V7 ve V8 Li-ion batarya serilerimiz ile tüm Comlink ürünlerinde
+                                                ortak kullanım imkanı. Yüksek kapasite, uzun çalışma süresi ve
+                                                ekonomik çözüm bir arada.</p>
+                                            <a href="urunler.html" class="btn">Ürünleri İncele</a>
                                         </div>
                                     </div>
                                 </div>
@@ -781,13 +660,14 @@
                                     <div class="col-lg-6">
                                         <div class="about-content">
                                             <div class="section-title about-title mb-25">
-                                                <h2>International Cargo Service</h2>
-                                                <h6>Express delivery is an innovative service</h6>
+                                                <h2>Profesyonel Performans</h2>
+                                                <h6>Sessiz, güçlü ve bakım gerektirmeyen</h6>
                                             </div>
-                                            <p>Express delivery is an innovative service is effective logistics solution
-                                                for the delivery of small cargo. This service
-                                                is useful for companies of various effective logistics scale.</p>
-                                            <a href="#" class="btn">comparison</a>
+                                            <p>Fırçasız motor teknolojisi ile yüksek verimlilik. Uzun süre
+                                                kullanılmadığında
+                                                bile sorunsuz çalışma. Belediyeler ve profesyonel kullanıcılar için
+                                                ideal çözümler sunuyoruz.</p>
+                                            <a href="iletisim.html" class="btn">Bize Ulaşın</a>
                                         </div>
                                     </div>
                                 </div>
@@ -825,9 +705,9 @@
                                         </div>
                                     </div>
                                     <div class="testimonial-content mb-45">
-                                        <p>“ Express delivery iş an innovative service iş effective logistics solution
-                                            for the delivery of small cargo. This
-                                            service iş useful companied various effective logistics scala ”</p>
+                                        <p>" Comlink akülü makineleri kullanmaya başladığımızdan beri hem çalışma
+                                            verimliliğimiz arttı hem de bakım maliyetlerimiz düştü. Tek akü ile
+                                            birçok cihazı kullanabilmek harika bir özellik. "</p>
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-img">
@@ -851,16 +731,16 @@
                                         </div>
                                     </div>
                                     <div class="testimonial-content mb-45">
-                                        <p>“ Express delivery iş an innovative service iş effective logistics solution
-                                            for the delivery of small cargo. This
-                                            service iş useful companied various effective logistics scala ”</p>
+                                        <p>" Benzinli ekipmanlardan akülü sisteme geçiş yapmamız işimizi kolaylaştırdı.
+                                            Sessiz çalışması sayesinde yerleşim yerlerinde rahatlıkla kullanabiliyoruz.
+                                            Müşterilerimizden çok olumlu geri dönüşler alıyoruz. "</p>
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-img">
                                             <img src="img/images/testi_avatar02.png" alt="img">
                                         </div>
                                         <div class="testi-avatar-info">
-                                            <h6>Lanu Dexander</h6>
+                                            <h6>Mehmet Yılmaz</h6>
                                             <span>Comlink Kullanıcısı</span>
                                         </div>
                                     </div>
@@ -1050,8 +930,8 @@
                                 <a href="index.html"><img src="img/logo/w_logo.png" alt="img"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Orem Ipsum iş simply dumm text the printing and types indstr sum has been the
-                                    industry
+                                <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
+                                    çözümler sunmaktadır. Yüksek performans, düşük bakım maliyeti.
                                 </p>
                             </div>
                             <div class="footer-social">
@@ -1112,7 +992,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>Destek & Indirmeler</h5>
+                                <h5>BIZE ULASIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -1169,6 +1049,65 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        (function () {
+            const cursorEl = document.getElementById('fxCursor');
+            if (!cursorEl) return;
+
+            const hasFine = matchMedia('(pointer:fine)').matches;
+            if (!hasFine) { cursorEl.style.display = 'none'; return; }
+
+            let x = innerWidth / 2, y = innerHeight / 2;  // hedef
+            let cx = x, cy = y;                        // çizilen (lag)
+            let raf = null;
+            const LAG = parseFloat(getComputedStyle(document.documentElement)
+                .getPropertyValue('--lag')) || 0.18;
+
+            function onMove(e) {
+                x = e.clientX; y = e.clientY;
+                if (!cursorEl.classList.contains('--ready')) {
+                    cx = x; cy = y;
+                    cursorEl.style.transform = `translate(${x}px, ${y}px) translate(-50%,-50%)`;
+                    cursorEl.classList.add('--ready');
+                }
+                if (!raf) raf = requestAnimationFrame(loop);
+            }
+
+            function loop() {
+                cx += (x - cx) * LAG;
+                cy += (y - cy) * LAG;
+                cursorEl.style.transform = `translate(${cx}px, ${cy}px) translate(-50%,-50%)`;
+                raf = requestAnimationFrame(loop);
+            }
+
+            // hover edilebilirleri algıla
+            const hoverSel = [
+                'a', 'button', '[role="button"]', 'input', 'textarea', 'label', 'summary', '.cursor-hover'
+            ].join(',');
+
+            document.addEventListener('pointerover', e => {
+                if (e.target.closest(hoverSel)) cursorEl.classList.add('--hover');
+            });
+            document.addEventListener('pointerout', e => {
+                if (e.target.closest(hoverSel)) cursorEl.classList.remove('--hover');
+            });
+
+            // tıklama dalgası
+            document.addEventListener('pointerdown', () => {
+                cursorEl.classList.add('--click');
+                setTimeout(() => cursorEl.classList.remove('--click'), 350);
+            });
+
+            // hareket / odağa göre görünürlük
+            window.addEventListener('pointermove', onMove, { passive: true });
+            window.addEventListener('blur', () => cursorEl.style.opacity = '0');
+            window.addEventListener('focus', () => cursorEl.style.opacity = '1');
+
+            // sayfadan çıkarken temizlik
+            window.addEventListener('beforeunload', () => cancelAnimationFrame(raf));
+        })();
+    </script>
+
 </body>
 
 </html>
