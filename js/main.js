@@ -181,7 +181,7 @@
     infinite: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 0.01,//burayı düzenle
+    autoplaySpeed: 2000,//burayı düzenle
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -326,7 +326,7 @@
 
 
   /* magnificPopup img view */
-  $('.popup-image').magnificPopup({
+  $('.popup-image').not('#flipbook img, #flipbook .popup-image, #flipbookModal img').magnificPopup({
     type: 'image',
     gallery: {
       enabled: true,

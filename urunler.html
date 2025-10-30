@@ -286,7 +286,8 @@
                         <li><strong>V8-15Ah</strong> – IP66, BSMI (R45555)</li>
                     </ul>
                     <div class="mt-20">
-                        <a class="btn" href="kataloglar/comlink-catalog.pdf" download>Katalog Indir (PDF)</a>
+                        <button class="btn" id="openFlipbook">Kataloğu İncele (Flipbook)</button>
+                        <a class="btn" href="kataloglar/comlink-catalog.pdf" download style="margin-left: 10px;">Katalog İndir (PDF)</a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -303,6 +304,38 @@
             </div>
         </div>
     </section>
+
+    <!-- Flipbook Modal -->
+    <div id="flipbookModal" class="flipbook-modal">
+        <div class="flipbook-modal-content">
+            <span class="flipbook-close">&times;</span>
+            <div class="flipbook-container">
+                <div id="flipbook">
+                    <div class="hard"><img src="images/comlink-grand-catalogue_page-0001.jpg" alt="Sayfa 1"></div>
+                    <div class="hard"><img src="images/comlink-grand-catalogue_page-0002.jpg" alt="Sayfa 2"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0003.jpg" alt="Sayfa 3"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0004.jpg" alt="Sayfa 4"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0005.jpg" alt="Sayfa 5"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0006.jpg" alt="Sayfa 6"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0007.jpg" alt="Sayfa 7"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0008.jpg" alt="Sayfa 8"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0009.jpg" alt="Sayfa 9"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0010.jpg" alt="Sayfa 10"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0011.jpg" alt="Sayfa 11"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0012.jpg" alt="Sayfa 12"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0013.jpg" alt="Sayfa 13"></div>
+                    <div><img src="images/comlink-grand-catalogue_page-0014.jpg" alt="Sayfa 14"></div>
+                    <div class="hard"><img src="images/comlink-grand-catalogue_page-0015.jpg" alt="Sayfa 15"></div>
+                </div>
+            </div>
+            <div class="flipbook-controls">
+                <button id="prevPage" class="flipbook-btn">← Önceki</button>
+                <span id="pageNum">1 / 15</span>
+                <button id="nextPage" class="flipbook-btn">Sonraki →</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-wrap pt-190 pb-40" data-background="img/bg/footer_bg.jpg">
             <div class="container">
@@ -433,6 +466,280 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Turn.js Flipbook Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+
+    <!-- Flipbook CSS -->
+    <style>
+        .flipbook-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            overflow: hidden;
+        }
+
+        .flipbook-modal-content {
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px 20px 30px;
+            box-sizing: border-box;
+        }
+
+        .flipbook-close {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        .flipbook-close:hover {
+            color: #ff6b6b;
+        }
+
+        .flipbook-container {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: calc(100vh - 200px);
+            overflow: hidden;
+        }
+
+        #flipbook {
+            width: 700px;
+            height: 490px;
+            margin: 0 auto;
+        }
+
+        #flipbook .page {
+            width: 350px;
+            height: 490px;
+            background-color: white;
+            line-height: 490px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #flipbook img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        #flipbook .turn-page {
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Remove blue border */
+        #flipbook .page-wrapper {
+            border: none !important;
+        }
+
+        #flipbook div {
+            border: none !important;
+        }
+
+        .flipbook-controls {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            border-radius: 50px;
+            flex-shrink: 0;
+            margin-top: auto;
+        }
+
+        .flipbook-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .flipbook-btn:hover {
+            background: #ff8c42;
+            transform: scale(1.05);
+        }
+
+        .flipbook-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+
+        #pageNum {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            #flipbook {
+                width: 560px;
+                height: 392px;
+            }
+            #flipbook .page {
+                width: 280px;
+                height: 392px;
+            }
+            .flipbook-modal-content {
+                padding: 60px 15px 20px;
+            }
+            .flipbook-container {
+                max-height: calc(100vh - 180px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            #flipbook {
+                width: 85vw;
+                height: calc(85vw * 0.7);
+                max-height: 400px;
+            }
+            #flipbook .page {
+                width: 42.5vw;
+                height: calc(85vw * 0.7);
+            }
+            .flipbook-modal-content {
+                padding: 50px 10px 15px;
+            }
+            .flipbook-container {
+                max-height: calc(100vh - 150px);
+            }
+            .flipbook-controls {
+                flex-direction: row;
+                gap: 10px;
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+            .flipbook-btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <!-- Flipbook JavaScript -->
+    <script>
+        $(document).ready(function() {
+            var modal = $('#flipbookModal');
+            var openBtn = $('#openFlipbook');
+            var closeBtn = $('.flipbook-close');
+            var initialized = false;
+
+            // Open modal and initialize flipbook
+            openBtn.click(function() {
+                modal.fadeIn();
+                $('body').css('overflow', 'hidden'); // Disable body scroll
+
+                if (!initialized) {
+                    $('#flipbook').turn({
+                        width: 700,
+                        height: 490,
+                        autoCenter: true,
+                        duration: 800,
+                        gradients: true,
+                        acceleration: true,
+                        elevation: 50,
+                        pages: 15,
+                        display: 'double',
+                        when: {
+                            turning: function(event, page, view) {
+                                // Disable scrolling during turn
+                                event.preventDefault();
+                            }
+                        }
+                    });
+
+                    // Prevent image clicks from triggering any popup
+                    $('#flipbook img').on('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    });
+
+                    // Update page number on turn
+                    $('#flipbook').bind('turned', function(event, page, view) {
+                        $('#pageNum').text(page + ' / 15');
+
+                        // Disable/enable buttons
+                        $('#prevPage').prop('disabled', page === 1);
+                        $('#nextPage').prop('disabled', page === 15);
+                    });
+
+                    initialized = true;
+                }
+            });
+
+            // Close modal
+            function closeModal() {
+                modal.fadeOut();
+                $('body').css('overflow', 'auto'); // Re-enable body scroll
+            }
+
+            closeBtn.click(function() {
+                closeModal();
+            });
+
+            // Close modal on outside click
+            $(window).click(function(event) {
+                if (event.target == modal[0]) {
+                    closeModal();
+                }
+            });
+
+            // Navigation buttons
+            $('#prevPage').click(function() {
+                $('#flipbook').turn('previous');
+            });
+
+            $('#nextPage').click(function() {
+                $('#flipbook').turn('next');
+            });
+
+            // Keyboard navigation
+            $(document).keydown(function(e) {
+                if (modal.is(':visible')) {
+                    if (e.keyCode === 37) { // Left arrow
+                        $('#flipbook').turn('previous');
+                    } else if (e.keyCode === 39) { // Right arrow
+                        $('#flipbook').turn('next');
+                    } else if (e.keyCode === 27) { // Escape
+                        closeModal();
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
