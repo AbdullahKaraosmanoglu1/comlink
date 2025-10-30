@@ -1,8 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python -m http.server:*)",
-      "Bash(magick:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(dir:*)",
+      "Read(//c/Users/akogl/OneDrive/Masaüstü/Yeni klasör/**)"
     ],
     "deny": [],
     "ask": []
