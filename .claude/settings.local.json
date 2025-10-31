@@ -5,7 +5,9 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(dir:*)",
-      "Read(//c/Users/akogl/OneDrive/Masaüstü/Yeni klasör/**)"
+      "Read(//c/Users/akogl/OneDrive/Masaüstü/Yeni klasör/**)",
+      "Bash(nul)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": []
