@@ -3276,8 +3276,10 @@ label {
 .video-bg {
 	background-image: url(../img/bg/video_bg.jpg);
 	overflow: hidden;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	aspect-ratio: 1920 / 702;
 }
 
 .video-overlay {
