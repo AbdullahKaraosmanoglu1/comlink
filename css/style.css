@@ -472,15 +472,20 @@ label {
 
 /* ===== YENİ BELİRGİN MENU LİNK STİLİ (TEST) ===== */
 .main-menu ul li a {
-	font-size: 16px; /* 15px -> 16px (Daha büyük) */
-	font-weight: 700; /* 600 -> 700 (Daha kalın) */
+	font-size: 16px;
+	/* 15px -> 16px (Daha büyük) */
+	font-weight: 700;
+	/* 600 -> 700 (Daha kalın) */
 	color: #52465e;
 	display: block;
 	padding: 35px 0;
 	line-height: 1;
-	letter-spacing: 0.3px; /* Harfler arası boşluk (daha okunabilir) */
-	transition: all 0.3s ease; /* Smooth geçiş */
-	position: relative; /* Alt çizgi için */
+	letter-spacing: 0.3px;
+	/* Harfler arası boşluk (daha okunabilir) */
+	transition: all 0.3s ease;
+	/* Smooth geçiş */
+	position: relative;
+	/* Alt çizgi için */
 }
 
 /* Hover efekti - Alt çizgi animasyonu */
@@ -499,12 +504,14 @@ label {
 
 .main-menu ul li:hover a::after,
 .main-menu ul li.active a::after {
-	transform: translateX(-50%) scaleX(1); /* Alt çizgi göster */
+	transform: translateX(-50%) scaleX(1);
+	/* Alt çizgi göster */
 }
 
 .transparent-header .main-menu ul li a {
 	color: #fff;
-	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Beyaz yazıda okunabilirlik için gölge */
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+	/* Beyaz yazıda okunabilirlik için gölge */
 }
 
 /* ===== ESKİ HOVER STİLİ (TEST İÇİN YORUM SATIRINDA) ===== */
@@ -517,7 +524,8 @@ label {
 .main-menu ul li:hover>a,
 .main-header .main-menu ul li .submenu li:hover>a {
 	color: #ff4612;
-	transform: translateY(-2px); /* Yukarı kalkma efekti */
+	transform: translateY(-2px);
+	/* Yukarı kalkma efekti */
 }
 
 /* ===== ESKİ ACTİVE STİLİ (TEST İÇİN YORUM SATIRINDA) ===== */
@@ -530,7 +538,8 @@ label {
 .main-menu ul li.active>a,
 .main-header .main-menu ul li .submenu>li.active>a {
 	color: #ff4612;
-	font-weight: 800; /* Active link daha kalın */
+	font-weight: 800;
+	/* Active link daha kalın */
 }
 
 /* ===== ESKİ İKON STİLİ (TEST İÇİN YORUM SATIRINDA) ===== */
@@ -556,26 +565,32 @@ label {
 	font-family: Flaticon;
 	font-style: normal;
 	top: 50%;
-	transform: translateY(-50%) scale(0.8); /* Başlangıç küçük */
+	transform: translateY(-50%) scale(0.8);
+	/* Başlangıç küçük */
 	left: -35px;
-	font-size: 20px; /* 17px -> 20px (Daha büyük ikon) */
+	font-size: 20px;
+	/* 17px -> 20px (Daha büyük ikon) */
 	color: #ff4612;
-	transition: all 0.3s ease; /* Smooth geçiş */
+	transition: all 0.3s ease;
+	/* Smooth geçiş */
 	line-height: 1;
 	opacity: 0;
-	text-shadow: 0 2px 6px rgba(255, 70, 18, 0.4); /* İkona glow */
+	text-shadow: 0 2px 6px rgba(255, 70, 18, 0.4);
+	/* İkona glow */
 }
 
 .main-menu ul li.active::before {
 	left: -25px;
 	opacity: 1;
-	transform: translateY(-50%) scale(1); /* Normal boyut */
+	transform: translateY(-50%) scale(1);
+	/* Normal boyut */
 }
 
 .main-menu ul li:hover::before {
 	opacity: 1;
 	left: -25px;
-	transform: translateY(-50%) scale(1.1); /* Hover'da büyü */
+	transform: translateY(-50%) scale(1.1);
+	/* Hover'da büyü */
 }
 
 .header-search a {
@@ -612,25 +627,37 @@ label {
 
 /* ===== YENİ BELİRGİN BUTON STİLİ (TEST) ===== */
 .header-btn .btn {
-	font-size: 16px; /* 15px -> 16px (Daha büyük) */
-	font-weight: 700; /* 600 -> 700 (Daha kalın) */
-	letter-spacing: 0.5px; /* 0 -> 0.5px (Daha okunabilir) */
-	padding: 15px 25px; /* 13px 15px -> 15px 25px (Daha geniş) */
-	box-shadow: 0 4px 15px rgba(255, 70, 18, 0.4); /* Glow efekti */
-	border: 2px solid rgba(255, 255, 255, 0.1); /* Hafif beyaz border */
-	transition: all 0.3s ease; /* Smooth geçiş */
+	font-size: 16px;
+	/* 15px -> 16px (Daha büyük) */
+	font-weight: 700;
+	/* 600 -> 700 (Daha kalın) */
+	letter-spacing: 0.5px;
+	/* 0 -> 0.5px (Daha okunabilir) */
+	padding: 15px 25px;
+	/* 13px 15px -> 15px 25px (Daha geniş) */
+	box-shadow: 0 4px 15px rgba(255, 70, 18, 0.4);
+	/* Glow efekti */
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	/* Hafif beyaz border */
+	transition: all 0.3s ease;
+	/* Smooth geçiş */
 }
 
 /* Hover efekti güçlendirildi */
 .header-btn .btn:hover {
-	transform: translateY(-2px); /* Yukarı kalkma efekti */
-	box-shadow: 0 6px 20px rgba(255, 70, 18, 0.6); /* Hover'da daha güçlü glow */
-	border-color: rgba(255, 255, 255, 0.3); /* Hover'da daha belirgin border */
+	transform: translateY(-2px);
+	/* Yukarı kalkma efekti */
+	box-shadow: 0 6px 20px rgba(255, 70, 18, 0.6);
+	/* Hover'da daha güçlü glow */
+	border-color: rgba(255, 255, 255, 0.3);
+	/* Hover'da daha belirgin border */
 }
 
 .header-btn .btn img {
-	width: 18px; /* 16px -> 18px (İkon biraz büyük) */
-	margin-right: 8px; /* 6px -> 8px (Daha fazla boşluk) */
+	width: 18px;
+	/* 16px -> 18px (İkon biraz büyük) */
+	margin-right: 8px;
+	/* 6px -> 8px (Daha fazla boşluk) */
 }
 
 .transparent-header {
@@ -640,7 +667,8 @@ label {
 	width: 100%;
 	height: auto;
 	z-index: 9;
-	/* border-bottom: 1px dashed #432f68; */ /* Kaldırıldı - kesik çizgi */
+	/* border-bottom: 1px dashed #432f68; */
+	/* Kaldırıldı - kesik çizgi */
 	background: #1d102d;
 	background: -webkit-linear-gradient(to bottom, rgb(29, 16, 45), rgba(32, 19, 48, .1));
 	background: linear-gradient(to bottom, rgb(29, 16, 45), rgba(32, 19, 48, .1));
@@ -726,19 +754,23 @@ label {
 /* ===== YENİ BELİRGİN STİCKY MENU LİNK (TEST) ===== */
 .sticky-menu .main-menu ul li a {
 	color: #52465e;
-	font-size: 16px; /* Sticky'de de büyük */
-	font-weight: 700; /* Kalın */
+	font-size: 16px;
+	/* Sticky'de de büyük */
+	font-weight: 700;
+	/* Kalın */
 }
 
 .sticky-menu .main-menu ul li.active>a,
 .sticky-menu .main-menu ul li:hover>a {
 	color: #ff4612;
-	transform: translateY(-2px); /* Hover efekti */
+	transform: translateY(-2px);
+	/* Hover efekti */
 }
 
 /* Sticky menu'de de alt çizgi */
 .sticky-menu .main-menu ul li a::after {
-	bottom: 10px; /* Sticky'de padding daha az, alt çizgi konumu ayarlandı */
+	bottom: 10px;
+	/* Sticky'de padding daha az, alt çizgi konumu ayarlandı */
 }
 
 .sticky-menu .header-search a {
@@ -873,18 +905,26 @@ label {
 	background: #fff;
 	color: #ff4514;
 	border-radius: 6px;
-	font-size: 15px; /* Daha büyük */
-	font-weight: 700; /* Daha kalın */
-	padding: 12px 24px; /* Daha geniş */
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Gölge efekti */
-	border: 2px solid rgba(255, 69, 20, 0.2); /* Turuncu border */
+	font-size: 15px;
+	/* Daha büyük */
+	font-weight: 700;
+	/* Daha kalın */
+	padding: 12px 24px;
+	/* Daha geniş */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	/* Gölge efekti */
+	border: 2px solid rgba(255, 69, 20, 0.2);
+	/* Turuncu border */
 	transition: all 0.3s ease;
 }
 
 .s-header-btn .btn:hover {
-	transform: translateY(-2px); /* Yukarı kalkma */
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* Daha güçlü gölge */
-	border-color: #ff4514; /* Hover'da daha belirgin border */
+	transform: translateY(-2px);
+	/* Yukarı kalkma */
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+	/* Daha güçlü gölge */
+	border-color: #ff4514;
+	/* Hover'da daha belirgin border */
 	background: #fff;
 }
 
@@ -904,25 +944,37 @@ label {
 
 /* ===== YENİ BELİRGİN STİCKY MENU BUTON (TEST) ===== */
 .sticky-menu .s-header-btn .btn {
-	background: #ff4612; /* #152a47 -> #ff4612 (Daha belirgin turuncu) */
-	color: #fff; /* Beyaz yazı */
-	font-size: 15px; /* Biraz büyük */
-	font-weight: 700; /* Kalın yazı */
-	padding: 12px 24px; /* Daha geniş */
-	box-shadow: 0 4px 12px rgba(255, 70, 18, 0.3); /* Glow efekti */
-	border: 2px solid rgba(255, 255, 255, 0.2); /* Hafif border */
-	transition: all 0.3s ease; /* Smooth geçiş */
+	background: #ff4612;
+	/* #152a47 -> #ff4612 (Daha belirgin turuncu) */
+	color: #fff;
+	/* Beyaz yazı */
+	font-size: 15px;
+	/* Biraz büyük */
+	font-weight: 700;
+	/* Kalın yazı */
+	padding: 12px 24px;
+	/* Daha geniş */
+	box-shadow: 0 4px 12px rgba(255, 70, 18, 0.3);
+	/* Glow efekti */
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	/* Hafif border */
+	transition: all 0.3s ease;
+	/* Smooth geçiş */
 }
 
 .sticky-menu .s-header-btn .btn:hover {
-	transform: translateY(-2px); /* Yukarı kalkma */
-	box-shadow: 0 6px 18px rgba(255, 70, 18, 0.5); /* Daha güçlü glow */
-	background: #e32222; /* Hover'da kırmızıya dönüşüm */
+	transform: translateY(-2px);
+	/* Yukarı kalkma */
+	box-shadow: 0 6px 18px rgba(255, 70, 18, 0.5);
+	/* Daha güçlü glow */
+	background: #e32222;
+	/* Hover'da kırmızıya dönüşüm */
 }
 
 .sticky-menu .s-header-btn .btn,
 .sticky-menu .s-header-btn .btn::before {
-	border-radius: 5px; /* 0 -> 5px (Yumuşak köşeler) */
+	border-radius: 5px;
+	/* 0 -> 5px (Yumuşak köşeler) */
 }
 
 .sticky-menu.third-main-header::before {
@@ -5906,5 +5958,225 @@ blockquote.classic-blockquote-post::after {
 
 	.ctn-preloader .animation-preloader .txt-loading {
 		font: bold 2em "Poppins", sans-serif;
+	}
+}
+
+
+/* Product Slider Area */
+.product-slider-area {
+	background: #1f1234;
+	padding: 15px 0 10px;
+	position: relative;
+	z-index: 1;
+}
+
+
+.product-slider-area .section-title {
+	margin-bottom: 25px;
+}
+
+.product-slider-area .section-title h2 {
+	font-size: 36px;
+	color: #ff4612;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.product-slider-area .section-title h2 span {
+	color: #ff4612;
+}
+
+.product-slider-active {
+	position: relative;
+}
+
+.single-product-item {
+	background: #2a1a44;
+	border: none;
+	padding: 20px 15px;
+	margin: 0 15px;
+	text-align: center;
+	transition: all 0.3s ease;
+	min-height: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 8px;
+}
+
+.single-product-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(210, 60, 25, 0.3);
+}
+
+.product-img {
+	background: #f5f5f5;
+	border-radius: 10px;
+	overflow: hidden;
+	height: 140px;
+	width: 140px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 18px;
+}
+
+.product-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.single-product-item:hover .product-img img {
+	transform: scale(1.05);
+}
+
+.product-content h3 {
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 600;
+	line-height: 1.3;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Slick Slider Arrows */
+.product-slider-active .slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background: #ff4612;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	z-index: 10;
+	transition: all 0.3s ease;
+	border-radius: 50%;
+}
+
+.product-slider-active .slick-arrow:hover {
+	background: #d23c19;
+}
+
+.product-slider-active .slick-prev {
+	left: -25px;
+}
+
+.product-slider-active .slick-next {
+	right: -25px;
+}
+
+.product-slider-active .slick-arrow::before {
+	display: none;
+}
+
+/* Slick Dots */
+.product-slider-active .slick-dots {
+	display: flex !important;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 15px 0 0 0;
+}
+
+.product-slider-active .slick-dots li {
+	margin: 0 5px;
+}
+
+.product-slider-active .slick-dots li button {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #666;
+	border: none;
+	font-size: 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.product-slider-active .slick-dots li.slick-active button {
+	background: #ff4612;
+	width: 30px;
+	border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+	.single-product-item {
+		min-height: 220px;
+	}
+
+	.product-img {
+		height: 120px;
+		width: 120px;
+	}
+}
+
+@media (max-width: 991px) {
+	.product-slider-area {
+		padding: 35px 0 25px;
+	}
+
+	.product-slider-area .section-title {
+		margin-bottom: 20px;
+	}
+
+	.single-product-item {
+		min-height: 200px;
+	}
+
+	.product-img {
+		height: 110px;
+		width: 110px;
+	}
+
+	.product-content h3 {
+		font-size: 12px;
+		min-height: 38px;
+	}
+}
+
+@media (max-width: 767px) {
+	.product-slider-area {
+		padding: 30px 0 20px;
+	}
+
+	.product-slider-area .section-title {
+		margin-bottom: 18px;
+	}
+
+	.product-slider-area .section-title h2 {
+		font-size: 24px;
+	}
+
+	.single-product-item {
+		min-height: 180px;
+		margin: 0 10px;
+	}
+
+	.product-img {
+		height: 100px;
+		width: 100px;
+	}
+
+	.product-content h3 {
+		font-size: 11px;
+		min-height: 35px;
+	}
+
+	.product-slider-active .slick-prev {
+		left: -15px;
+	}
+
+	.product-slider-active .slick-next {
+		right: -15px;
 	}
 }

@@ -7,7 +7,12 @@
       "Bash(dir:*)",
       "Read(//c/Users/akogl/OneDrive/Masaüstü/Yeni klasör/**)",
       "Bash(nul)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-1.jpg\")",
+      "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-2.jpg\")",
+      "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-3.jpg\")",
+      "Bash(copy:*)",
+      "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-5.jpg\")"
     ],
     "deny": [],
     "ask": []
