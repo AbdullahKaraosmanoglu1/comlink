@@ -2520,6 +2520,11 @@ label {
 	padding: 27px 50px;
 	background: #1f1234;
 	position: relative;
+	min-height: 170px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .s-cat-icon {
@@ -2537,6 +2542,10 @@ label {
 	text-transform: uppercase;
 	color: #fff;
 	margin-bottom: 0;
+	min-height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .s-category-area {
@@ -3276,10 +3285,8 @@ label {
 .video-bg {
 	background-image: url(../img/bg/video_bg.jpg);
 	overflow: hidden;
-	background-position: center center;
+	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
-	aspect-ratio: 1920 / 702;
 }
 
 .video-overlay {
