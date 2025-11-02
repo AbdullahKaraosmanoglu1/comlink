@@ -12,7 +12,8 @@
       "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-2.jpg\")",
       "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-3.jpg\")",
       "Bash(copy:*)",
-      "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-5.jpg\")"
+      "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-5.jpg\")",
+      "Bash(node -c:*)"
     ],
     "deny": [],
     "ask": []

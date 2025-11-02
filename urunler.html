@@ -148,162 +148,756 @@
         </div>
         <!-- breadcrumb-area-end -->
 
-        <!-- services-details -->
-        <div class="services-details-area pt-120 pb-115">
+        <!-- blog-area (Products as Blog Cards) -->
+        <div class="blog-area blog-bg pt-120 pb-120">
             <div class="container">
-                <div class="services-details-wrap">
-                    <div class="row">
-                        <div class="col-lg-4 order-2 order-lg-0">
-                            <aside class="services-sidebar">
-                                <div class="services-widget mb-40">
-                                    <div class="service-widget-title">
-                                        <h3>ürün Kategorileri</h3>
+                <div class="row">
+                    <div class="col-lg-4 order-2 order-lg-0">
+                        <aside class="blog-sidebar">
+                            <div class="widget mb-40">
+                                <div class="single-sidebar search-sidebar-md">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Ürün Ara</h3>
                                     </div>
-                                    <div class="service-cat-list">
+                                    <div class="sidebar-form">
+                                        <form action="#" id="product-search-form">
+                                            <input type="text" id="product-search-input" placeholder="Ürün ara...">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget mb-40">
+                                <div class="single-sidebar white-bg">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Ürün Kategorileri</h3>
+                                    </div>
+                                    <div class="cat-list">
                                         <ul>
-                                            <li><a href="urunler.html">Tüm Ürünler</a></li>
-                                            <li><a href="#ot-bicme">Ot Biçme Makineleri</a></li>
-                                            <li class="active"><a href="#yaprak-ufleyici">Yaprak Üfleyici</a></li>
-                                            <li><a href="#dal-budama">Yüksek Dal Budama</a></li>
-                                            <li><a href="#testere">Zincirli Testere</a></li>
+                                            <li class="active"><a href="#" data-filter="all">Tüm Ürünler
+                                                    <span>(6)</span></a></li>
+                                            <li><a href="#" data-filter="yaprak-ufleyici">Yaprak Üfleyici
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="ot-bicme">Ot Biçme Makineleri
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="cit-budama">Çit/Çay Budama <span>(1)</span></a>
+                                            </li>
+                                            <li><a href="#" data-filter="testere">Zincirli Testere <span>(1)</span></a>
+                                            </li>
+                                            <li><a href="#" data-filter="dal-budama">Yüksek Dal Budama
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="toprak-burgu">Toprak Burgusu
+                                                    <span>(1)</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="services-widget mb-40">
-                                    <div class="service-doc-list">
+                            </div>
+                            <div class="widget mb-40">
+                                <div class="single-sidebar white-bg">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Katalog İndir</h3>
+                                    </div>
+                                    <div class="rc-post">
                                         <ul>
-                                            <li><a href="kataloglar/comlink-catalog.pdf" download>Comlink Katalog (PDF)
-                                                    <i class="fas fa-file-pdf"></i></a>
+                                            <li style="border-bottom: none;">
+                                                <div class="rc-post-thumb">
+                                                    <a href="kataloglar/comlink-catalog.pdf" download><i
+                                                            class="fas fa-file-pdf"
+                                                            style="font-size: 40px; color: #ff6b35;"></i></a>
+                                                </div>
+                                                <div class="rc-post-content">
+                                                    <h5><a href="kataloglar/comlink-catalog.pdf" download>Comlink Ürün
+                                                            Kataloğu</a></h5>
+                                                    <span>PDF Format</span>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="services-widget mb-40">
-                                    <div class="service-sidebar-support">
-                                        <h3>Destek mi lazim?</h3>
-                                        <p>Comlink Ürünleri hakkinda bilgi ve destek için bize ulasin.</p>
-                                        <a href="iletisim.html" class="btn">Bize Ulasin</a>
+                            </div>
+                            <div class="widget">
+                                <div class="single-sidebar white-bg">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Ürün Etiketleri</h3>
                                     </div>
-                                </div>
-                                <div class="services-widget">
-                                    <div class="service-widget-title dark-bg">
-                                        <h3>Etiketler</h3>
-                                    </div>
-                                    <div class="service-tag-list">
+                                    <div class="tag-list">
                                         <ul>
-                                            <li><a href="#">Comlink</a></li>
-                                            <li><a href="#">akülü</a></li>
-                                            <li><a href="#">bahçe</a></li>
-                                            <li><a href="#">tarım</a></li>
+                                            <li><a href="#">Akülü</a></li>
                                             <li><a href="#">Profesyonel</a></li>
-                                            <li><a href="#">Performans</a></li>
+                                            <li><a href="#">Bahçe</a></li>
+                                            <li><a href="#">Tarım</a></li>
                                             <li><a href="#">Sessiz</a></li>
-                                            <li><a href="#">çevreci</a></li>
-                                            <li><a href="#">Dayanikli</a></li>
+                                            <li><a href="#">Çevreci</a></li>
+                                            <li><a href="#">Performans</a></li>
+                                            <li><a href="#">Dayanıklı</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                            </aside>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="services-details-content">
-                                <h4>Comlink ürün Ailesi</h4>
-                                <p>Tek bir Yüksek kapasiteli akü ile ot Biçme makineleri, Yaprak Üfleyici, zincirli
-                                    testere ve Yüksek dal budama gibi
-                                    birçok profesyonel aleti kullanin. dumansız, benzinsiz, bakımsız ve sessiz çalışma
-                                    ile Yüksek performans elde edin.</p>
-                                <p>Comlink çözümleri; verimli, çevreci ve ekonomik kullanım sunar; profesyonellerin
-                                    ihtiyaçlarına göre tasarlanmıştır.</p>
-                                <div class="services-details-img">
-                                    <img src="img/images/services_details_img02.jpg" alt="">
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <!-- Product 1: CK-120 Yaprak Üfleyici -->
+                            <div class="col-md-6 product-item" data-category="yaprak-ufleyici"
+                                data-name="CK-120 Profesyonel Yaprak Üfleyici"
+                                data-keywords="yaprak üfleyici ck-120 profesyonel bahçe park">
+                                <div class="single-blog-post s-single-blog-post mb-45">
+                                    <div class="blog-thumb">
+                                        <a href="urun-detay.html?id=ck-120"><img src="img/products/product-1.jpg"
+                                                alt="CK-120 Yaprak Üfleyici"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#yaprak-ufleyici">Yaprak Üfleyici</a></li>
+                                                <li>Model: CK-120</li>
+                                            </ul>
+                                        </div>
+                                        <h4><a href="urun-detay.html?id=ck-120">CK-120 Profesyonel Yaprak Üfleyici</a>
+                                        </h4>
+                                        <p>Güçlü fırçasız motor teknolojisi ile sessiz ve etkili çalışma. Bahçe ve park
+                                            alanlarında yaprakları hızla temizler. Ayarlanabilir hız kontrolü.</p>
+                                        <a href="urun-detay.html?id=ck-120">Detaylı İncele <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
                                 </div>
-                                <h4>Avantajlar</h4>
-                                <p>Comlink akülü makineler, benzinli ekipmanlara göre birçok avantaj sunar. Dumansız
-                                    ve benzinsiz çalışma ile çevre dostu kullanım, sessiz motor teknolojisi ile
-                                    gürültüsüz
-                                    performans, uzun ömürlü Li-ion bataryalar ile kesintisiz çalışma ve ortak batarya
-                                    platformu sayesinde ekonomik kullanım imkanı sağlar. Profesyonel kullanıcılar için
-                                    özel olarak tasarlanmış yüksek performanslı çözümler sunuyoruz.</p>
-                                <div class="services-details-list">
-                                    <ul>
-                                        <li><i class="fas fa-arrow-alt-circle-right"></i>Dumansız ve benzinsiz
-                                            çevre dostu çalışma</li>
-                                        <li><i class="fas fa-arrow-alt-circle-right"></i>Tek akü, çok cihaz kullanımı
-                                        </li>
-                                        <li><i class="fas fa-arrow-alt-circle-right"></i>Sessiz ve güçlü fırçasız
-                                            motor teknolojisi</li>
-                                    </ul>
+                            </div>
+
+                            <!-- Product 2: CK-200/210 Ot Biçme -->
+                            <div class="col-md-6 product-item" data-category="ot-bicme"
+                                data-name="CK-200/210 Tek Kesimli Ot Biçme"
+                                data-keywords="ot biçme makinesi ck-200 ck-210 çim bahçe">
+                                <div class="single-blog-post s-single-blog-post mb-45">
+                                    <div class="blog-thumb">
+                                        <a href="urun-detay.html?id=ck-200"><img src="img/products/product-2.jpg"
+                                                alt="CK-200/210 Ot Biçme"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#ot-bicme">Ot Biçme</a></li>
+                                                <li>Model: CK-200/210</li>
+                                            </ul>
+                                        </div>
+                                        <h4><a href="urun-detay.html?id=ck-200">CK-200/210 Tek Kesimli Ot Biçme</a></h4>
+                                        <p>Profesyonel kullanım için tasarlanmış tek kesimli ot biçme makinesi. Uzun
+                                            çalışma süresi ve kolay kullanım. Ergonomik tasarım ile yorulmadan çalışın.
+                                        </p>
+                                        <a href="urun-detay.html?id=ck-200">Detaylı İncele <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
                                 </div>
-                                <p>Comlink çözümleri; verimli, çevreci ve ekonomik kullanım sunar; profesyonellerin
-                                    ihtiyaçlarına göre tasarlanmıştır. Yüksek kapasiteli bataryalar, uzun çalışma süresi
-                                    ve hızlı şarj özellikleriyle iş verimliliğinizi artırır.</p>
-                                <blockquote class="services-blockquote">
-                                    Tek bir yüksek kapasiteli akü ile ot biçme, yaprak üfleme, dal budama ve daha birçok
-                                    işlemi gerçekleştirin. Ekonomik ve pratik çözüm.
-                                </blockquote>
-                                <h4>Neden Comlink?</h4>
-                                <p>Comlink akülü makineler, zorlu arazi koşullarında bile yüksek performans sergiler.
-                                    Fırçasız motor teknolojisi sayesinde uzun ömürlü kullanım, bakım gerektirmeyen
-                                    yapı ve sessiz çalışma özellikleriyle belediyeler ve profesyonel kullanıcılar için
-                                    ideal bir tercihtir. IP66 sertifikalı bataryalarımız her türlü hava koşulunda
-                                    güvenle kullanılabilir.</p>
+                            </div>
+
+                            <!-- Product 3: CK-300/320 Çit Budama -->
+                            <div class="col-md-6 product-item" data-category="cit-budama"
+                                data-name="CK-300/320 Çit/Çay Budama"
+                                data-keywords="çit budama çay ck-300 ck-320 tek kenarlı çift kenarlı">
+                                <div class="single-blog-post s-single-blog-post mb-45">
+                                    <div class="blog-thumb">
+                                        <a href="urun-detay.html?id=ck-300"><img src="img/products/product-3.jpg"
+                                                alt="CK-300/320 Çit Budama"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#cit-budama">Çit Budama</a></li>
+                                                <li>Model: CK-300/320</li>
+                                            </ul>
+                                        </div>
+                                        <h4><a href="urun-detay.html?id=ck-300">CK-300/320 Çit/Çay Budama</a></h4>
+                                        <p>Tek ve çift kenarlı budama seçenekleri. Keskin bıçaklar ile mükemmel kesim
+                                            performansı. Çitler ve çay bahçeleri için ideal çözüm.</p>
+                                        <a href="urun-detay.html?id=ck-300">Detaylı İncele <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4: CK-400 Zincirli Testere -->
+                            <div class="col-md-6 product-item" data-category="testere"
+                                data-name="CK-400 El Tipi Zincirli Testere"
+                                data-keywords="zincirli testere ck-400 ağaç kesimi budama motorlu">
+                                <div class="single-blog-post s-single-blog-post mb-45">
+                                    <div class="blog-thumb">
+                                        <a href="urun-detay.html?id=ck-400"><img src="img/products/product-4.jpg"
+                                                alt="CK-400 Zincirli Testere"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#testere">Zincirli Testere</a></li>
+                                                <li>Model: CK-400</li>
+                                            </ul>
+                                        </div>
+                                        <h4><a href="urun-detay.html?id=ck-400">CK-400 El Tipi Zincirli Testere</a></h4>
+                                        <p>Güçlü kesim kapasitesi ile ağaç kesimi ve budama işlerinde profesyonel
+                                            performans. Güvenli kullanım özellikleri ve otomatik zincir yağlama sistemi.
+                                        </p>
+                                        <a href="urun-detay.html?id=ck-400">Detaylı İncele <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 5: CK-412 Yüksek Dal Budama -->
+                            <div class="col-md-6 product-item" data-category="dal-budama"
+                                data-name="CK-412 Yüksek Dal Budama"
+                                data-keywords="dal budama ck-412 yüksek teleskopik meyve bahçe">
+                                <div class="single-blog-post s-single-blog-post mb-45">
+                                    <div class="blog-thumb">
+                                        <a href="urun-detay.html?id=ck-412"><img src="img/products/product-5.jpg"
+                                                alt="CK-412 Yüksek Dal Budama"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#dal-budama">Dal Budama</a></li>
+                                                <li>Model: CK-412</li>
+                                            </ul>
+                                        </div>
+                                        <h4><a href="urun-detay.html?id=ck-412">CK-412 Yüksek Dal Budama</a></h4>
+                                        <p>Teleskopik sap ile yüksek dallara kolayca ulaşın. Güvenli ve etkili budama
+                                            için özel tasarım. Meyve bahçeleri ve park alanları için mükemmel.</p>
+                                        <a href="urun-detay.html?id=ck-412">Detaylı İncele <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 6: CK-500 Toprak Burgusu -->
+                            <div class="col-md-6 product-item" data-category="toprak-burgu"
+                                data-name="CK-500 Toprak Burgu/Matkap"
+                                data-keywords="toprak burgu matkap ck-500 direk dikimi tarım çit">
+                                <div class="single-blog-post s-single-blog-post mb-45">
+                                    <div class="blog-thumb">
+                                        <a href="urun-detay.html?id=ck-500"><img src="img/products/product-6.jpg"
+                                                alt="CK-500 Toprak Burgusu"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#toprak-burgu">Toprak Burgusu</a></li>
+                                                <li>Model: CK-500</li>
+                                            </ul>
+                                        </div>
+                                        <h4><a href="urun-detay.html?id=ck-500">CK-500 Toprak Burgu/Matkap</a></h4>
+                                        <p>Direk dikimi, ağaç dikimi ve tarım işleri için güçlü toprak burgusu. Farklı
+                                            çap seçenekleri ile her türlü işe uygun. Yüksek tork gücü.</p>
+                                        <a href="urun-detay.html?id=ck-500">Detaylı İncele <i
+                                                class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- services-details-end -->
+        <!-- blog-area-end -->
 
 
     </main>
     <!-- main-area-end -->
 
-    <!-- footer -->
-    <!-- Comlink Ürünler (Katalog) -->
-    <section class="pt-120 pb-90">
+    <!-- Comlink Ürünler ve Katalog - Modern Tasarım -->
+    <section class="pt-120 pb-90" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
+            <!-- Başlık -->
+            <div class="row mb-60">
+                <div class="col-12 text-center">
                     <div class="section-title">
-                        <h2>Ürünler ve Katalog</h2>
-                        <p>Comlink, akıllı ve fırçasız motorlu bahçe/tarım ekipmanları sunar. Ortak batarya platformu
-                            (V6/V7/V8) ile profesyonel performans ve uzun çalışma süresi sağlar.</p>
-                    </div>
-                    <h3>ürün Ailesi</h3>
-                    <ul class="list-unstyled">
-                        <li><strong>CK-120</strong> – Profesyonel Yaprak Üfleyici</li>
-                        <li><strong>CK-200/210</strong> – Tek Kesimli Ot Biçme</li>
-                        <li><strong>CK-300/320</strong> – çit/çay Budama (tek/çift kenarlı)</li>
-                        <li><strong>CK-400</strong> – El Tipi Zincirli Testere</li>
-                        <li><strong>CK-412</strong> – Yüksek Dal Budama</li>
-                        <li><strong>CK-500</strong> – Toprak Burgu/Matkap</li>
-                    </ul>
-                    <h3>Batarya Platformu</h3>
-                    <ul class="list-unstyled">
-                        <li><strong>V6-5Ah</strong> – IP66, BSMI (R45555)</li>
-                        <li><strong>V7-20/30Ah</strong> – IP66, BSMI (R45555)</li>
-                        <li><strong>V8-15Ah</strong> – IP66, BSMI (R45555)</li>
-                    </ul>
-                    <div class="mt-20">
-                        <button class="btn" id="openFlipbook">Kataloğu İncele (Flipbook)</button>
-                        <a class="btn" href="kataloglar/comlink-catalog.pdf" download style="margin-left: 10px;">Katalog İndir (PDF)</a>
+                        <span
+                            style="color: #ff6b35; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Comlink
+                            Ürün Ailesi</span>
+                        <h2 class="mt-10 mb-20" style="font-size: 42px; font-weight: 700;">Profesyonel Akülü Bahçe
+                            Ekipmanları</h2>
+                        <p style="max-width: 700px; margin: 0 auto; font-size: 16px; color: #666;">
+                            Tek batarya platformu ile tüm ürünleri kullanın. Fırçasız motor teknolojisi, uzun çalışma
+                            süresi ve çevre dostu performans.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-gallery">
-                        <a class="popup-image" href="images/comlink-page-0001.avif">
-                            <picture>
-                                <source srcset="images/comlink-page-0001.avif" type="image/avif">
-                                <img src="images/comlink-page-0001.avif" alt="Comlink Katalog Kapak" loading="lazy"
-                                    class="img-fluid">
-                            </picture>
-                        </a>
+            </div>
+
+            <!-- Ürün Kartları -->
+            <div class="row mb-50">
+                <!-- CK-120 -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>CK-120</h4>
+                        <p class="product-title">Profesyonel Yaprak Üfleyici</p>
+                        <p class="product-desc">Güçlü hava akışı ile bahçe temizliği</p>
+                        <a href="urun-detay.html?id=ck-120" class="product-link">Detaylı İncele →</a>
+                    </div>
+                </div>
+
+                <!-- CK-200/210 -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>CK-200/210</h4>
+                        <p class="product-title">Tek Kesimli Ot Biçme</p>
+                        <p class="product-desc">Geniş alanlarda profesyonel performans</p>
+                        <a href="urun-detay.html?id=ck-200" class="product-link">Detaylı İncele →</a>
+                    </div>
+                </div>
+
+                <!-- CK-300/320 -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h4>CK-300/320</h4>
+                        <p class="product-title">Çit/Çay Budama</p>
+                        <p class="product-desc">Tek ve çift kenarlı kesim seçenekleri</p>
+                        <a href="urun-detay.html?id=ck-300" class="product-link">Detaylı İncele →</a>
+                    </div>
+                </div>
+
+                <!-- CK-400 -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h4>CK-400</h4>
+                        <p class="product-title">Zincirli Testere</p>
+                        <p class="product-desc">Güçlü kesim kapasitesi, güvenli kullanım</p>
+                        <a href="urun-detay.html?id=ck-400" class="product-link">Detaylı İncele →</a>
+                    </div>
+                </div>
+
+                <!-- CK-412 -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-arrows-alt-v"></i>
+                        </div>
+                        <h4>CK-412</h4>
+                        <p class="product-title">Yüksek Dal Budama</p>
+                        <p class="product-desc">Teleskopik sap ile 3 metreye kadar ulaşım</p>
+                        <a href="urun-detay.html?id=ck-412" class="product-link">Detaylı İncele →</a>
+                    </div>
+                </div>
+
+                <!-- CK-500 -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="product-card">
+                        <div class="product-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>CK-500</h4>
+                        <p class="product-title">Toprak Burgu/Matkap</p>
+                        <p class="product-desc">Yüksek tork gücü, sert toprak performansı</p>
+                        <a href="urun-detay.html?id=ck-500" class="product-link">Detaylı İncele →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batarya Platformu -->
+            <div class="row mb-50">
+                <div class="col-12">
+                    <div class="battery-section">
+                        <h3 class="text-center mb-40" style="font-size: 32px; font-weight: 700;">Ortak Batarya Platformu
+                        </h3>
+                        <div class="row">
+                            <!-- V6 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="battery-card">
+                                    <div class="battery-icon">
+                                        <i class="fas fa-battery-three-quarters"></i>
+                                    </div>
+                                    <h4>V6-5Ah</h4>
+                                    <ul class="battery-specs">
+                                        <li><i class="fas fa-check"></i> IP66 Koruma</li>
+                                        <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
+                                        <li><i class="fas fa-check"></i> 56V Li-ion</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- V7 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="battery-card featured">
+                                    <div class="badge">Popüler</div>
+                                    <div class="battery-icon">
+                                        <i class="fas fa-battery-full"></i>
+                                    </div>
+                                    <h4>V7-20/30Ah</h4>
+                                    <ul class="battery-specs">
+                                        <li><i class="fas fa-check"></i> IP66 Koruma</li>
+                                        <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
+                                        <li><i class="fas fa-check"></i> 56V Li-ion</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- V8 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="battery-card">
+                                    <div class="battery-icon">
+                                        <i class="fas fa-battery-full"></i>
+                                    </div>
+                                    <h4>V8-15Ah</h4>
+                                    <ul class="battery-specs">
+                                        <li><i class="fas fa-check"></i> IP66 Koruma</li>
+                                        <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
+                                        <li><i class="fas fa-check"></i> 56V Li-ion</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Katalog Bölümü -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="catalog-section">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-30">
+                                <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 20px;">Ürün Kataloğumuz
+                                </h3>
+                                <p style="font-size: 16px; color: #666; margin-bottom: 30px;">
+                                    Tüm ürünlerimiz hakkında detaylı bilgi için kataloğumuzu inceleyebilirsiniz.
+                                    İnteraktif flipbook özelliği ile dijital katalogda gezinin veya PDF olarak indirin.
+                                </p>
+                                <div class="catalog-buttons">
+                                    <button class="btn catalog-btn-primary" id="openFlipbook">
+                                        <i class="fas fa-book-open"></i> Kataloğu İncele (Flipbook)
+                                    </button>
+                                    <a class="btn catalog-btn-secondary" href="kataloglar/comlink-catalog.pdf" download>
+                                        <i class="fas fa-download"></i> Katalog İndir (PDF)
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30">
+                                <div class="catalog-preview" id="catalogPreview" style="cursor: pointer;">
+                                    <picture>
+                                        <source srcset="images/comlink-page-0001.avif" type="image/avif">
+                                        <img src="images/comlink-page-0001.avif" alt="Comlink Katalog Kapak"
+                                            loading="lazy" class="img-fluid">
+                                    </picture>
+                                    <div class="catalog-overlay">
+                                        <i class="fas fa-book-open"></i>
+                                        <p>Kataloğu İncele</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modern CSS Stilleri -->
+    <style>
+        /* Ürün Kartları */
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #f7931e);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.2);
+        }
+
+        .product-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .product-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .product-icon i {
+            font-size: 36px;
+            color: white;
+        }
+
+        .product-card h4 {
+            color: #ff6b35;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product-link {
+            color: #ff6b35;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .product-link:hover {
+            color: #f7931e;
+            transform: translateX(5px);
+        }
+
+        /* Batarya Kartları */
+        .battery-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 30px;
+        }
+
+        .battery-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+        }
+
+        .battery-card.featured {
+            background: linear-gradient(135deg, #fff5f0 0%, #ffe8dc 100%);
+            border-color: #ff6b35;
+        }
+
+        .battery-card.featured .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff6b35;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .battery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .battery-icon {
+            font-size: 48px;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .battery-card h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .battery-specs {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .battery-specs li {
+            padding: 8px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .battery-specs i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        /* Katalog Bölümü */
+        .catalog-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .catalog-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .catalog-btn-primary,
+        .catalog-btn-secondary {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none !important;
+            outline: none !important;
+            box-shadow: none;
+        }
+
+        .catalog-btn-primary {
+            background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+            color: white !important;
+            border: none !important;
+        }
+
+        .catalog-btn-primary:hover,
+        .catalog-btn-primary:focus,
+        .catalog-btn-primary:active {
+            background: linear-gradient(135deg, #f7931e, #ff6b35) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3) !important;
+            color: white !important;
+            text-decoration: none !important;
+            border: none !important;
+            outline: none !important;
+        }
+
+        .catalog-btn-secondary {
+            background: white !important;
+            color: #ff6b35 !important;
+            border: 2px solid #ff6b35 !important;
+        }
+
+        .catalog-btn-secondary:hover,
+        .catalog-btn-secondary:focus,
+        .catalog-btn-secondary:active {
+            background: #ff6b35 !important;
+            color: white !important;
+            border: 2px solid #ff6b35 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3) !important;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        .catalog-preview {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .catalog-preview:hover {
+            transform: scale(1.05);
+        }
+
+        .catalog-preview img {
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        .catalog-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .catalog-preview:hover .catalog-overlay {
+            opacity: 1;
+        }
+
+        .catalog-overlay i {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .catalog-preview:hover .catalog-overlay i {
+            transform: scale(1.1);
+        }
+
+        .catalog-overlay p {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .catalog-section {
+                padding: 30px 20px;
+            }
+
+            .catalog-buttons {
+                flex-direction: column;
+            }
+
+            .catalog-btn-primary,
+            .catalog-btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 
     <!-- Flipbook Modal -->
     <div id="flipbookModal" class="flipbook-modal">
@@ -470,6 +1064,53 @@
     <!-- Turn.js Flipbook Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
 
+    <!-- Product Cards Uniform Size CSS -->
+    <style>
+        /* Ürün kartları için sabit boyutlar */
+        .single-blog-post.s-single-blog-post {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-thumb {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f8f8f8;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-content h4 {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-content p {
+            flex: 1;
+            min-height: 90px;
+        }
+
+        /* Grid row için eşit yükseklik */
+        .blog-area .row>[class*="col-"] {
+            display: flex;
+            margin-bottom: 30px;
+        }
+    </style>
+
     <!-- Flipbook CSS -->
     <style>
         .flipbook-modal {
@@ -607,13 +1248,16 @@
                 width: 560px;
                 height: 392px;
             }
+
             #flipbook .page {
                 width: 280px;
                 height: 392px;
             }
+
             .flipbook-modal-content {
                 padding: 60px 15px 20px;
             }
+
             .flipbook-container {
                 max-height: calc(100vh - 180px);
             }
@@ -625,22 +1269,27 @@
                 height: calc(85vw * 0.7);
                 max-height: 400px;
             }
+
             #flipbook .page {
                 width: 42.5vw;
                 height: calc(85vw * 0.7);
             }
+
             .flipbook-modal-content {
                 padding: 50px 10px 15px;
             }
+
             .flipbook-container {
                 max-height: calc(100vh - 150px);
             }
+
             .flipbook-controls {
                 flex-direction: row;
                 gap: 10px;
                 padding: 12px 20px;
                 font-size: 14px;
             }
+
             .flipbook-btn {
                 padding: 8px 15px;
                 font-size: 14px;
@@ -650,14 +1299,14 @@
 
     <!-- Flipbook JavaScript -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             var modal = $('#flipbookModal');
             var openBtn = $('#openFlipbook');
             var closeBtn = $('.flipbook-close');
             var initialized = false;
 
             // Open modal and initialize flipbook
-            openBtn.click(function() {
+            openBtn.click(function () {
                 modal.fadeIn();
                 $('body').css('overflow', 'hidden'); // Disable body scroll
 
@@ -673,7 +1322,7 @@
                         pages: 15,
                         display: 'double',
                         when: {
-                            turning: function(event, page, view) {
+                            turning: function (event, page, view) {
                                 // Disable scrolling during turn
                                 event.preventDefault();
                             }
@@ -681,14 +1330,14 @@
                     });
 
                     // Prevent image clicks from triggering any popup
-                    $('#flipbook img').on('click', function(e) {
+                    $('#flipbook img').on('click', function (e) {
                         e.preventDefault();
                         e.stopPropagation();
                         return false;
                     });
 
                     // Update page number on turn
-                    $('#flipbook').bind('turned', function(event, page, view) {
+                    $('#flipbook').bind('turned', function (event, page, view) {
                         $('#pageNum').text(page + ' / 15');
 
                         // Disable/enable buttons
@@ -700,34 +1349,39 @@
                 }
             });
 
+            // Catalog preview click - also opens flipbook
+            $('#catalogPreview').click(function () {
+                openBtn.trigger('click');
+            });
+
             // Close modal
             function closeModal() {
                 modal.fadeOut();
                 $('body').css('overflow', 'auto'); // Re-enable body scroll
             }
 
-            closeBtn.click(function() {
+            closeBtn.click(function () {
                 closeModal();
             });
 
             // Close modal on outside click
-            $(window).click(function(event) {
+            $(window).click(function (event) {
                 if (event.target == modal[0]) {
                     closeModal();
                 }
             });
 
             // Navigation buttons
-            $('#prevPage').click(function() {
+            $('#prevPage').click(function () {
                 $('#flipbook').turn('previous');
             });
 
-            $('#nextPage').click(function() {
+            $('#nextPage').click(function () {
                 $('#flipbook').turn('next');
             });
 
             // Keyboard navigation
-            $(document).keydown(function(e) {
+            $(document).keydown(function (e) {
                 if (modal.is(':visible')) {
                     if (e.keyCode === 37) { // Left arrow
                         $('#flipbook').turn('previous');
@@ -738,6 +1392,92 @@
                     }
                 }
             });
+
+            // ===== KATEGORI FILTRELEME SİSTEMİ =====
+            $('.cat-list a').on('click', function (e) {
+                e.preventDefault();
+
+                // Arama kutusunu temizle
+                $('#product-search-input').val('');
+
+                // Aktif kategoriyi güncelle
+                $('.cat-list li').removeClass('active');
+                $(this).parent('li').addClass('active');
+
+                // Filtreyi al
+                var filterValue = $(this).attr('data-filter');
+
+                if (filterValue === 'all') {
+                    // Tüm ürünleri göster
+                    $('.product-item').fadeIn(400);
+                } else {
+                    // Seçili kategoriyi göster, diğerlerini gizle
+                    $('.product-item').each(function () {
+                        if ($(this).attr('data-category') === filterValue) {
+                            $(this).fadeIn(400);
+                        } else {
+                            $(this).fadeOut(400);
+                        }
+                    });
+                }
+
+                // Sayfayı ürünler bölümüne scroll et
+                $('html, body').animate({
+                    scrollTop: $('.blog-area').offset().top - 100
+                }, 500);
+            });
+
+            // ===== ÜRÜN ARAMA SİSTEMİ =====
+            // Real-time arama (her tuş vuruşunda)
+            $('#product-search-input').on('keyup', function () {
+                performSearch();
+            });
+
+            // Form submit olduğunda
+            $('#product-search-form').on('submit', function (e) {
+                e.preventDefault();
+                performSearch();
+            });
+
+            function performSearch() {
+                var searchTerm = $('#product-search-input').val().toLowerCase().trim();
+
+                // Kategori filtresini temizle
+                $('.cat-list li').removeClass('active');
+                $('.cat-list a[data-filter="all"]').parent().addClass('active');
+
+                if (searchTerm === '') {
+                    // Arama boşsa tüm ürünleri göster
+                    $('.product-item').fadeIn(400);
+                } else {
+                    // Arama yap
+                    var foundCount = 0;
+                    $('.product-item').each(function () {
+                        var productName = $(this).attr('data-name').toLowerCase();
+                        var productKeywords = $(this).attr('data-keywords').toLowerCase();
+
+                        // Ürün adı veya anahtar kelimelerde ara
+                        if (productName.indexOf(searchTerm) !== -1 || productKeywords.indexOf(searchTerm) !== -1) {
+                            $(this).fadeIn(400);
+                            foundCount++;
+                        } else {
+                            $(this).fadeOut(400);
+                        }
+                    });
+
+                    // Sonuç bulunamadıysa bilgilendirme (opsiyonel)
+                    if (foundCount === 0) {
+                        console.log('Arama sonucu bulunamadı: ' + searchTerm);
+                    }
+                }
+
+                // Sayfayı ürünler bölümüne scroll et
+                if (searchTerm !== '') {
+                    $('html, body').animate({
+                        scrollTop: $('.blog-area').offset().top - 100
+                    }, 500);
+                }
+            }
         });
     </script>
 </body>
