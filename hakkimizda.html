@@ -25,6 +25,90 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Mouse Follower Library -->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <style>
+        /* Custom Cursor Stil Ayarları */
+        :root {
+            --comlink-orange: #ff3f19;
+        }
+
+        /* Dış halka - içi boş */
+        .mf-cursor {
+            width: 40px !important;
+            height: 40px !important;
+            background: transparent !important;
+            border: 2px solid var(--comlink-orange) !important;
+            border-radius: 50% !important;
+            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+        }
+
+        /* İç nokta */
+        .mf-cursor::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background: var(--comlink-orange);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover durumunda büyüme */
+        .mf-cursor.-pointer {
+            transform: scale(1.5) !important;
+        }
+
+        .mf-cursor.-pointer::before {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+
+        /* Click animasyonu */
+        .mf-cursor.-active {
+            animation: cursorPulse 0.3s ease;
+        }
+
+        @keyframes cursorPulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.8);
+                opacity: 0.5;
+            }
+        }
+
+        /* Text seçimi sırasında */
+        .mf-cursor-text {
+            display: none !important;
+        }
+
+        /* Media için (resim/video hover) */
+        .mf-cursor.-media {
+            border-color: var(--comlink-orange) !important;
+        }
+
+        /* Sadece mouse olan cihazlarda göster */
+        @media (pointer: coarse) {
+            .mf-cursor {
+                display: none !important;
+            }
+        }
+
+        /* Hareket hassasiyeti olanlar için */
+        @media (prefers-reduced-motion: reduce) {
+            .mf-cursor {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -148,63 +232,102 @@
         </div>
         <!-- breadcrumb-area-end -->
 
-        <!-- services-area -->
-        <section class="services-area delivery-bg pt-110 pb-90">
+        <!-- choose-area -->
+        <section class="choose-area pt-110 pb-80">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-7 col-lg-10">
                         <div class="s-section-title text-center mb-60">
                             <h2>Neden Comlink?</h2>
-                            <p>Comlink akıllı profesyonel bahçe ve tarım makineleri; dumansız, benzinsiz, bakımsız ve
-                                sessiz çalışma ile
-                                yüksek performans sunar.</p>
+                            <p>Akülü bahçe makinelerinde gücün ve yeniliğin adı Comlink Türkiye.
+                                Çevre dostu, sessiz ve bakım maliyetsiz çözümlerimizle bahçe bakımında yeni bir çağ
+                                açıyoruz.</p>
                         </div>
                     </div>
                 </div>
                 <div class="services-wrapper">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <div class="single-services mb-30">
-                                <div class="services-thumb">
-                                    <a href="#"><img src="img/images/services_img01.jpg" alt="img"></a>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-icon">
-                                        <i class="flaticon-shipping-and-delivery"></i>
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img01.png" alt="img">
                                     </div>
-                                    <h3><a href="#">Sessiz ve Güçlü</a></h3>
-                                    <span>Öne Çıkan Özellik</span>
-                                    <p>Profesyonel işler için yüksek kapasiteli akü gücü.</p>
+                                    <h3><a href="#">Akülü Teknoloji ile Fark Yaratan Ürünler</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Güçlü akü teknolojisi ile uzun süreli çalışma imkânı. Hafif ve ergonomik tasarım
+                                        sayesinde kolay taşıma.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="single-services mb-30">
-                                <div class="services-thumb">
-                                    <a href="#"><img src="img/images/services_img02.jpg" alt="img"></a>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-icon">
-                                        <i class="flaticon-shipping"></i>
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img02.png" alt="img">
                                     </div>
-                                    <h3><a href="#">Tek Akü, Çok Cihaz</a></h3>
-                                    <span>Öne Çıkan Özellik</span>
-                                    <p>Ot biçme, yaprak üfleyici, testere ve daha fazlasında ortak platform.</p>
+                                    <h3><a href="#">Sessiz, Dumansız ve Zahmetsiz Kullanım</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Sessiz çalışma özelliği ile hem kullanıcıya hem çevreye konfor. Sıfır emisyon ile
+                                        karbon ayak izini azaltır.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="single-services mb-30">
-                                <div class="services-thumb">
-                                    <a href="#"><img src="img/images/services_img03.jpg" alt="img"></a>
-                                </div>
-                                <div class="services-content">
-                                    <div class="services-icon">
-                                        <i class="flaticon-location"></i>
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img03.png" alt="img">
                                     </div>
-                                    <h3><a href="#">Dumansız ve Benzinsiz</a></h3>
-                                    <span>Öne Çıkan Özellik</span>
-                                    <p>Çevre dostu kullanım, düşük bakım maliyeti.</p>
+                                    <h3><a href="#">Bakım Maliyetini Ortadan Kaldıran Çözümler</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Motor yağı değişimi, karbüratör temizliği veya egzoz bakımı gerektirmez. Düşük
+                                        bakım ihtiyacı ile ekonomik kullanım.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img04.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Çevre Dostu ve Sürdürülebilir Ürünler</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Sıfır emisyon prensibiyle çalışan makineler. Enerji verimliliği ile hem çevre hem
+                                        de ekonomi korunur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img05.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Profesyonel Performans</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Yoğun iş temposunda kesintisiz çalışma. Zorlu koşullara dayanıklı ekipmanlar ve
+                                        verimliliği artıran güçlü motor teknolojisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img06.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Sezon Bahçe Güvencesi</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>30 yılı aşkın sektör deneyimiyle güvenilirliği kanıtlanmış "Sezon Bahçe"
+                                        güvencesiyle servis ve yedek parça desteği.</p>
                                 </div>
                             </div>
                         </div>
@@ -212,59 +335,96 @@
                 </div>
             </div>
         </section>
-        <section class="international-services position-relative pb-120 fix">
-            <div class="container">
-                <div class="services-wrapper">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 order-0 order-lg-2">
-                            <div class="int-services-img text-center text-lg-right">
-                                <img src="img/images/int_cargo_img.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="s-section-title mb-30">
-                                <h2>Akülü Profesyonel Çözümler</h2>
-                                <h6>Çevreci teknoloji ile yüksek performans</h6>
-                            </div>
-                            <div class="int-services-content">
-                                <p>Comlink akülü bahçe ve tarım makineleri, fırçasız motor teknolojisi ile yüksek
-                                    verimlilik sağlar. Dumansız ve benzinsiz çalışma prensibiyle çevre dostu
-                                    bir alternatif sunar. Profesyonel kullanıcılar için ideal çözüm.</p>
-                                <a href="urunler.html" class="btn red-btn">Ürünleri İncele</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="overlay-title paroller" data-paroller-factor="0.15" data-paroller-factor-lg="0.15"
-                data-paroller-factor-md="0.15" data-paroller-factor-sm="0.15" data-paroller-type="foreground"
-                data-paroller-direction="horizontal">Comlink</div>
-        </section>
-        <!-- services-area-end -->
+        <!-- choose-area-end -->
 
-        <!-- video-area -->
-        <section class="video-area video-bg">
+        <!-- about-area -->
+        <section class="about-area about-bg">
             <div class="container">
-                <div class="video-overlay s-video-overlay">
-                    <div class="row align-items-center">
-                        <div class="col-xl-5 col-lg-8 order-2 order-lg-0">
-                            <div class="video-title">
-                                <span>Vizyonumuz</span>
-                                <h2><span>never</span> break our promise</h2>
-                                <a href="#">more services<span></span></a>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-active">
+                            <div class="single-about-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="about-img">
+                                            <img src="img/images/about_img01.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="about-content">
+                                            <div class="section-title about-title mb-25">
+                                                <h2>Comlink Türkiye Hakkında</h2>
+                                                <h6>Bahçe makinelerinde yeni bir çağ</h6>
+                                            </div>
+                                            <p>Bahçe ve tarım makineleri sektöründe teknolojinin geldiği son nokta artık
+                                                akülü çözümler ile şekilleniyor.
+                                                Dünyanın önde gelen markalarından biri olan Comlink yenilikçi yaklaşımı,
+                                                kullanıcı dostu tasarımları ve
+                                                çevreye duyarlı ürünleriyle bahçe bakımında yeni bir çağ açıyor.
+                                                Türkiye'de Comlink ürünleri, 30 yılı aşkın
+                                                sektör deneyimiyle güvenilirliği kanıtlanmış "Sezon Bahçe" güvencesiyle
+                                                kullanıcılarla buluşuyor.</p>
+                                            <a href="urunler.html" class="btn">Ürünlerimiz</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="video-play">
-                                <a href="https://www.youtube.com/watch?v=iWKu6WNFf9M" class="popup-video"><img
-                                        src="img/icon/play_btn.png" alt="img"></a>
+                            <div class="single-about-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="about-img">
+                                            <img src="img/images/about_img02.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="about-content">
+                                            <div class="section-title about-title mb-25">
+                                                <h2>Çevre Dostu Teknoloji</h2>
+                                                <h6>Karbon ayak izini azaltan güç</h6>
+                                            </div>
+                                            <p>Comlink, çevre dostu akülü bahçe makineleri ile yalnızca kullanıcıların
+                                                hayatını kolaylaştırmakla kalmaz,
+                                                aynı zamanda gezegenimizin geleceğine de yatırım yapar. Sıfır emisyon
+                                                prensibiyle çalışan makineler,
+                                                karbon salınımını azaltır ve temiz bir hava ortamı sağlar. Sessiz motor
+                                                teknolojisiyle de hem kullanıcı
+                                                konforunu hem de çevresel huzuru garanti altına alır.</p>
+                                            <a href="galeri.html" class="btn">Galeri</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-about-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="about-img">
+                                            <img src="img/images/about_img03.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="about-content">
+                                            <div class="section-title about-title mb-25">
+                                                <h2>Vizyonumuz ve Misyonumuz</h2>
+                                                <h6>Geleceğin bahçe makineleri bugünden</h6>
+                                            </div>
+                                            <p>Comlink Türkiye vizyonu, bahçe makineleri sektöründe akülü teknolojilerin
+                                                öncüsü ve lideri olmaktır.
+                                                Çevre dostu ve sürdürülebilir ürünlerimizle gelecek nesillere daha
+                                                yaşanabilir bir dünya bırakmak,
+                                                profesyonel ve amatör kullanıcılara pratik, güvenli ve ekonomik çözümler
+                                                sunmak temel misyonumuzdur.
+                                                Comlink ile geleceğin gücü, bugünün bahçelerindedir.</p>
+                                            <a href="iletisim.html" class="btn">İletişim</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- video-area-end -->
+        <!-- about-area-end -->
 
         <!-- faq-area -->
         <section class="faq-area faq-bg pt-110 pb-120">
@@ -936,74 +1096,6 @@
         </section>
         <!-- faq-area-end -->
 
-        <!-- brand-area -->
-        <div class="brand-area pt-85 pb-85">
-            <div class="container">
-                <div class="row brand-active">
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="img/brand/brnad_logo01.png" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="img/brand/brnad_logo02.png" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="img/brand/brnad_logo03.png" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="img/brand/brnad_logo04.png" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="img/brand/brnad_logo05.png" alt="img">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="signle-brand">
-                            <img src="img/brand/brnad_logo03.png" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- brand-area-end -->
-
-        <!-- newsletter -->
-        <section class="newsletter-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="newsletter-wrap">
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <div class="newsletter-content">
-                                        <h4>Newsletter Sign Up</h4>
-                                        <span>Notifications our best deals...</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="newsletter-form">
-                                        <form action="#">
-                                            <input type="email" placeholder="Enter your email...">
-                                            <button class="btn">subscribe</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- newsletter-end -->
-
     </main>
     <!-- main-area-end -->
 
@@ -1015,7 +1107,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/w_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -1041,20 +1133,20 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -1070,9 +1162,9 @@
                                 <ul>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Teslimat Bilgisi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Sartlar & Kosullar</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikasi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Iade Politikasi</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Şartlar & Koşullar</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikası</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> İade Politikasi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1080,7 +1172,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>BIZE ULASIN</h5>
+                                <h5>BİZE ULAŞIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -1103,20 +1195,11 @@
                             <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="f-payment-method text-center text-md-right">
-                            <img src="img/images/card_img.png" alt="img">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- footer-end -->
-
-
-
 
     <!-- JS here -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -1138,6 +1221,22 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <!-- GSAP (Mouse Follower için gerekli) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Mouse Follower Script -->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+        // Custom Cursor Ayarları
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sadece mouse olan cihazlarda çalıştır
+            if (window.matchMedia('(pointer: fine)').matches) {
+                const cursor = new MouseFollower({
+                    speed: 0.3,
+                    ease: 'power2.out',
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

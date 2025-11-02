@@ -25,6 +25,90 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Mouse Follower Library -->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <style>
+        /* Custom Cursor Stil Ayarları */
+        :root {
+            --comlink-orange: #ff3f19;
+        }
+
+        /* Dış halka - içi boş */
+        .mf-cursor {
+            width: 40px !important;
+            height: 40px !important;
+            background: transparent !important;
+            border: 2px solid var(--comlink-orange) !important;
+            border-radius: 50% !important;
+            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+        }
+
+        /* İç nokta */
+        .mf-cursor::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background: var(--comlink-orange);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover durumunda büyüme */
+        .mf-cursor.-pointer {
+            transform: scale(1.5) !important;
+        }
+
+        .mf-cursor.-pointer::before {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+
+        /* Click animasyonu */
+        .mf-cursor.-active {
+            animation: cursorPulse 0.3s ease;
+        }
+
+        @keyframes cursorPulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.8);
+                opacity: 0.5;
+            }
+        }
+
+        /* Text seçimi sırasında */
+        .mf-cursor-text {
+            display: none !important;
+        }
+
+        /* Media için (resim/video hover) */
+        .mf-cursor.-media {
+            border-color: var(--comlink-orange) !important;
+        }
+
+        /* Sadece mouse olan cihazlarda göster */
+        @media (pointer: coarse) {
+            .mf-cursor {
+                display: none !important;
+            }
+        }
+
+        /* Hareket hassasiyeti olanlar için */
+        @media (prefers-reduced-motion: reduce) {
+            .mf-cursor {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -161,7 +245,7 @@
                                 <div class="blog-details-date mb-10">
                                     <ul>
                                         <li><a href="#"><i class="far fa-user"></i>Admin</a></li>
-                                        <li><i class="far fa-clock"></i> February 22, 2019</li>
+                                        <li><i class="far fa-clock"></i> 22 Şubat, 2024</li>
                                     </ul>
                                 </div>
                                 <h4>Comlink Blog Yazısı</h4>
@@ -230,7 +314,7 @@
                                                 <a href="#">Depolama</a>
                                                 <a href="#">Deniz</a>
                                                 <a href="#">Taşımacılığı</a>
-                                                <a href="#">Railway</a>
+                                                <a href="#">Bakım</a>
                                             </div>
                                         </li>
                                         <li class="blog-post-share">
@@ -265,15 +349,15 @@
                             <div class="blog-next-prev">
                                 <ul>
                                     <li class="blog-prev">
-                                        <a href="#"><img src="img/icon/left_arrow.png" alt="img">Previous Post</a>
+                                        <a href="#"><img src="img/icon/left_arrow.png" alt="img">Önceki Yazı</a>
                                     </li>
                                     <li class="blog-next">
-                                        <a href="#">Next Post<img src="img/icon/right_arrow.png" alt="img"></a>
+                                        <a href="#">Sonraki Yazı<img src="img/icon/right_arrow.png" alt="img"></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="blog-comment mt-85">
-                                <h4 class="b-details-inner-title">Comments</h4>
+                                <h4 class="b-details-inner-title">Yorumlar</h4>
                                 <ul>
                                     <li>
                                         <div class="single-comment">
@@ -282,9 +366,9 @@
                                             </div>
                                             <div class="comment-text">
                                                 <div class="comment-avatar-info">
-                                                    <h5>Thomas Herlihy <span class="comment-date">November 17,
-                                                            2019</span></h5>
-                                                    <a href="#" class="comment-reply-link">Leave Reply</a>
+                                                    <h5>Thomas Herlihy <span class="comment-date">17 Kasım,
+                                                            2024</span></h5>
+                                                    <a href="#" class="comment-reply-link">Yanıtla</a>
                                                 </div>
                                                 <p>Vehicula dolor amet consectetur adipiscing elit. Cras sollicitudin,
                                                     tellus vitae condimem
@@ -300,9 +384,9 @@
                                             </div>
                                             <div class="comment-text">
                                                 <div class="comment-avatar-info">
-                                                    <h5>Thomas Herlihy <span class="comment-date">November 17,
-                                                            2019</span></h5>
-                                                    <a href="#" class="comment-reply-link">Leave Reply</a>
+                                                    <h5>Thomas Herlihy <span class="comment-date">17 Kasım,
+                                                            2024</span></h5>
+                                                    <a href="#" class="comment-reply-link">Yanıtla</a>
                                                 </div>
                                                 <p>Vehicula dolor amet consectetur adipiscing elit. Cras sollicitudin,
                                                     tellus vitae condimem
@@ -314,18 +398,18 @@
                                 </ul>
                             </div>
                             <div class="comment-reply-box mt-85">
-                                <h4 class="b-details-inner-title">Post a Comment</h4>
+                                <h4 class="b-details-inner-title">Yorum Yapın</h4>
                                 <form action="#" class="comment-form">
-                                    <textarea name="message" id="comment-message" placeholder="Your Comment"></textarea>
+                                    <textarea name="message" id="comment-message" placeholder="Yorumunuz"></textarea>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input type="text" placeholder="Your Name*">
+                                            <input type="text" placeholder="Adınız*">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="email" placeholder="Your Email*">
+                                            <input type="email" placeholder="E-postanız*">
                                         </div>
                                     </div>
-                                    <button class="btn red-btn">Submit</button>
+                                    <button class="btn red-btn">Gönder</button>
                                 </form>
                             </div>
                         </div>
@@ -339,8 +423,8 @@
                                     </div>
                                     <div class="sidebar-form">
                                         <form action="#">
-                                            <input type="text" placeholder="Ara type...">
-                                            <button><i class="fas fa-Ara"></i></button>
+                                            <input type="text" placeholder="Arama...">
+                                            <button><i class="fas fa-search"></i></button>
                                         </form>
                                     </div>
                                 </div>
@@ -348,15 +432,15 @@
                             <div class="widget mb-40">
                                 <div class="single-sidebar white-bg">
                                     <div class="sidebar-title mb-25">
-                                        <h3>Post Category</h3>
+                                        <h3>Kategoriler</h3>
                                     </div>
                                     <div class="cat-list">
                                         <ul>
-                                            <li><a href="#">Retail &amp; Consumer <span>(14)</span></a></li>
-                                            <li><a href="#">Sciences &amp; Healthcare <span>(09)</span></a></li>
-                                            <li><a href="#">Deniz Taşımacılığı <span>(03)</span></a></li>
-                                            <li><a href="#">Electricity Taşımacılığı <span>(02)</span></a></li>
-                                            <li><a href="#">Ulaşım <span>(07)</span></a></li>
+                                            <li><a href="#">Bahçe Bakımı <span>(14)</span></a></li>
+                                            <li><a href="#">Akülü Makineler <span>(09)</span></a></li>
+                                            <li><a href="#">Ürün İncelemeleri <span>(03)</span></a></li>
+                                            <li><a href="#">Kullanım Kılavuzları <span>(02)</span></a></li>
+                                            <li><a href="#">Genel <span>(07)</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -373,8 +457,8 @@
                                                     <a href="#"><img src="img/blog/rc_post_thumb01.jpg" alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="#">Express Manegment Effective</a></h5>
-                                                    <span>November 22, 2019</span>
+                                                    <h5><a href="#">Comlink Ürünleri ile Verimli Çalışma</a></h5>
+                                                    <span>22 Kasım, 2024</span>
                                                 </div>
                                             </li>
                                             <li>
@@ -382,8 +466,8 @@
                                                     <a href="#"><img src="img/blog/rc_post_thumb02.jpg" alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="#">Customer Logisties Process Overall</a></h5>
-                                                    <span>November 22, 2019</span>
+                                                    <h5><a href="#">Akülü Bahçe Makinelerinin Avantajları</a></h5>
+                                                    <span>22 Kasım, 2024</span>
                                                 </div>
                                             </li>
                                             <li>
@@ -391,8 +475,8 @@
                                                     <a href="#"><img src="img/blog/rc_post_thumb03.jpg" alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="#">Supply iş Depolama Effective</a></h5>
-                                                    <span>November 22, 2019</span>
+                                                    <h5><a href="#">Profesyonel Bahçe Ekipmanları</a></h5>
+                                                    <span>22 Kasım, 2024</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -402,18 +486,18 @@
                             <div class="widget">
                                 <div class="single-sidebar white-bg">
                                     <div class="sidebar-title mb-25">
-                                        <h3>Tags Posts</h3>
+                                        <h3>Etiketler</h3>
                                     </div>
                                     <div class="tag-list">
                                         <ul>
-                                            <li><a href="#">Air Taşımacılığı</a></li>
-                                            <li><a href="#">Railway</a></li>
-                                            <li><a href="#">News</a></li>
-                                            <li><a href="#">Depolama</a></li>
-                                            <li><a href="#">Was</a></li>
-                                            <li><a href="#">Lojistik</a></li>
-                                            <li><a href="#">Requirement</a></li>
-                                            <li><a href="#">Process</a></li>
+                                            <li><a href="#">Bahçe</a></li>
+                                            <li><a href="#">Akülü</a></li>
+                                            <li><a href="#">Haberler</a></li>
+                                            <li><a href="#">Profesyonel</a></li>
+                                            <li><a href="#">Çevreci</a></li>
+                                            <li><a href="#">Verimlilik</a></li>
+                                            <li><a href="#">Kullanım</a></li>
+                                            <li><a href="#">İpuçları</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -436,7 +520,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/w_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -462,20 +546,20 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -491,9 +575,9 @@
                                 <ul>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Teslimat Bilgisi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Sartlar & Kosullar</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikasi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Iade Politikasi</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Şartlar & Koşullar</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikası</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> İade Politikasi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -501,7 +585,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>BIZE ULASIN</h5>
+                                <h5>BİZE ULAŞIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -524,16 +608,10 @@
                             <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="f-payment-method text-center text-md-right">
-                            <img src="img/images/card_img.png" alt="img">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- footer-end -->
 
 
@@ -559,6 +637,22 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <!-- GSAP (Mouse Follower için gerekli) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Mouse Follower Script -->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+        // Custom Cursor Ayarları
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sadece mouse olan cihazlarda çalıştır
+            if (window.matchMedia('(pointer: fine)').matches) {
+                const cursor = new MouseFollower({
+                    speed: 0.3,
+                    ease: 'power2.out',
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

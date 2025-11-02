@@ -25,6 +25,90 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Mouse Follower Library -->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <style>
+        /* Custom Cursor Stil Ayarları */
+        :root {
+            --comlink-orange: #ff3f19;
+        }
+
+        /* Dış halka - içi boş */
+        .mf-cursor {
+            width: 40px !important;
+            height: 40px !important;
+            background: transparent !important;
+            border: 2px solid var(--comlink-orange) !important;
+            border-radius: 50% !important;
+            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+        }
+
+        /* İç nokta */
+        .mf-cursor::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background: var(--comlink-orange);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover durumunda büyüme */
+        .mf-cursor.-pointer {
+            transform: scale(1.5) !important;
+        }
+
+        .mf-cursor.-pointer::before {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+
+        /* Click animasyonu */
+        .mf-cursor.-active {
+            animation: cursorPulse 0.3s ease;
+        }
+
+        @keyframes cursorPulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.8);
+                opacity: 0.5;
+            }
+        }
+
+        /* Text seçimi sırasında */
+        .mf-cursor-text {
+            display: none !important;
+        }
+
+        /* Media için (resim/video hover) */
+        .mf-cursor.-media {
+            border-color: var(--comlink-orange) !important;
+        }
+
+        /* Sadece mouse olan cihazlarda göster */
+        @media (pointer: coarse) {
+            .mf-cursor {
+                display: none !important;
+            }
+        }
+
+        /* Hareket hassasiyeti olanlar için */
+        @media (prefers-reduced-motion: reduce) {
+            .mf-cursor {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -443,7 +527,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/w_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -469,20 +553,20 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -498,9 +582,9 @@
                                 <ul>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Teslimat Bilgisi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Sartlar & Kosullar</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikasi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Iade Politikasi</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Şartlar & Koşullar</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikası</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> İade Politikasi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -508,7 +592,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>BIZE ULASIN</h5>
+                                <h5>BİZE ULAŞIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -531,16 +615,10 @@
                             <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="f-payment-method text-center text-md-right">
-                            <img src="img/images/card_img.png" alt="img">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- footer-end -->
 
     <!-- Product Detail Page Custom CSS -->
@@ -902,6 +980,22 @@
                     duration: 300
                 }
             });
+        });
+    </script>
+    <!-- GSAP (Mouse Follower için gerekli) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Mouse Follower Script -->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+        // Custom Cursor Ayarları
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sadece mouse olan cihazlarda çalıştır
+            if (window.matchMedia('(pointer: fine)').matches) {
+                const cursor = new MouseFollower({
+                    speed: 0.3,
+                    ease: 'power2.out',
+                });
+            }
         });
     </script>
 </body>

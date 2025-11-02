@@ -25,104 +25,91 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Mouse Follower Library -->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <style>
+        /* Custom Cursor Stil Ayarları */
         :root {
-            --cursor-color: #ff4d4d;
-            /* renk */
-            --ring-size: 22px;
-            --ring-border: 2px;
-            --dot-size: 6px;
-            --hover-scale: 1.6;
-            --lag: 0.18;
-            /* takip yumuşatma (0-1) */
+            --comlink-orange: #ff3f19;
         }
 
-        /* sadece mouse olan cihazlarda gizle */
-        @media (pointer:fine) {
-            body {
-                cursor: none;
-            }
+        /* Dış halka - içi boş */
+        .mf-cursor {
+            width: 40px !important;
+            height: 40px !important;
+            background: transparent !important;
+            border: 2px solid var(--comlink-orange) !important;
+            border-radius: 50% !important;
+            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
         }
 
-        /* sahte imleç kapsayıcı */
-        .fx-cursor {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: var(--ring-size);
-            height: var(--ring-size);
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0;
-            transition: opacity .2s ease;
-        }
-
-        .fx-cursor.--ready {
-            opacity: 1;
-        }
-
-        /* halka */
-        .fx-ring {
+        /* İç nokta */
+        .mf-cursor::before {
+            content: '';
             position: absolute;
-            inset: 0;
-            border: var(--ring-border) solid var(--cursor-color);
-            border-radius: 999px;
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 0 10px rgba(255, 77, 77, .25);
-            transition: transform .12s ease, border-color .2s ease, box-shadow .2s ease;
-        }
-
-        /* iç nokta */
-        .fx-dot {
-            position: absolute;
-            left: 50%;
             top: 50%;
-            width: var(--dot-size);
-            height: var(--dot-size);
-            margin-left: calc(var(--dot-size) / -2);
-            margin-top: calc(var(--dot-size) / -2);
-            border-radius: 999px;
-            background: var(--cursor-color);
-            box-shadow: 0 0 6px rgba(255, 77, 77, .6);
-            transition: transform .12s ease, opacity .2s ease;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background: var(--comlink-orange);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
+            transition: transform 0.2s ease;
         }
 
-        /* tıklanabilirlerde büyüt */
-        .fx-cursor.--hover .fx-ring {
-            transform: scale(var(--hover-scale));
+        /* Hover durumunda büyüme */
+        .mf-cursor.-pointer {
+            transform: scale(1.5) !important;
         }
 
-        .fx-cursor.--hover .fx-dot {
-            transform: scale(1.2);
+        .mf-cursor.-pointer::before {
+            transform: translate(-50%, -50%) scale(1.2);
         }
 
-        /* tıklama dalgası */
-        .fx-cursor.--click .fx-ring {
-            animation: clickPulse .35s ease;
+        /* Click animasyonu */
+        .mf-cursor.-active {
+            animation: cursorPulse 0.3s ease;
         }
 
-        @keyframes clickPulse {
+        @keyframes cursorPulse {
             0% {
                 transform: scale(0.9);
                 opacity: 1;
             }
-
             100% {
-                transform: scale(2);
-                opacity: 0;
+                transform: scale(1.8);
+                opacity: 0.5;
             }
         }
 
-        /* hareket hassasiyeti olan kullanıcılar için animasyonları kapat */
+        /* Text seçimi sırasında */
+        .mf-cursor-text {
+            display: none !important;
+        }
+
+        /* Media için (resim/video hover) */
+        .mf-cursor.-media {
+            border-color: var(--comlink-orange) !important;
+        }
+
+        /* Sadece mouse olan cihazlarda göster */
+        @media (pointer: coarse) {
+            .mf-cursor {
+                display: none !important;
+            }
+        }
+
+        /* Hareket hassasiyeti olanlar için */
         @media (prefers-reduced-motion: reduce) {
-
-            .fx-ring,
-            .fx-dot {
-                transition: none;
-                animation: none;
+            .mf-cursor {
+                transition: none !important;
+                animation: none !important;
             }
         }
-
+    </style>
+    <style>
         /* Video Slider Styles - Override existing styles */
         .s-slider-area {
             position: relative !important;
@@ -186,11 +173,6 @@
 </head>
 
 <body>
-    <div class="fx-cursor" id="fxCursor" aria-hidden="true">
-        <div class="fx-ring"></div>
-        <div class="fx-dot"></div>
-    </div>
-
     <!-- preloader  -->
     <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
@@ -751,8 +733,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title text-center mb-70">
-                            <h6>Delivery Anything</h6>
-                            <h2>Exclusive Cargo Gallery</h2>
+                            <h6>Ürün Galerisi</h6>
+                            <h2>Comlink Ürün Görselleri</h2>
                         </div>
                     </div>
                 </div>
@@ -761,8 +743,8 @@
                         <div class="single-gallery-img mb-30">
                             <a href="#"><img src="img/gallery/gallery_thumb01.jpg" alt="img"></a>
                             <div class="gallery-overlay">
-                                <h5 class="gallery-overlay-title"><a href="#">Cargo Truck</a></h5>
-                                <span>Blanding , Digital</span>
+                                <h5 class="gallery-overlay-title"><a href="#">Akülü Çim Biçme</a></h5>
+                                <span>Bahçe Makineleri</span>
                             </div>
                         </div>
                     </div>
@@ -770,8 +752,8 @@
                         <div class="single-gallery-img mb-30">
                             <a href="#"><img src="img/gallery/gallery_thumb02.jpg" alt="img"></a>
                             <div class="gallery-overlay">
-                                <h5 class="gallery-overlay-title"><a href="#">Cargo Truck</a></h5>
-                                <span>Blanding , Digital</span>
+                                <h5 class="gallery-overlay-title"><a href="#">Çit Budama</a></h5>
+                                <span>Bahçe Bakımı</span>
                             </div>
                         </div>
                     </div>
@@ -779,8 +761,8 @@
                         <div class="single-gallery-img mb-30">
                             <a href="#"><img src="img/gallery/gallery_thumb03.jpg" alt="img"></a>
                             <div class="gallery-overlay">
-                                <h5 class="gallery-overlay-title"><a href="#">Cargo Truck</a></h5>
-                                <span>Blanding , Digital</span>
+                                <h5 class="gallery-overlay-title"><a href="#">Zincirli Testere</a></h5>
+                                <span>Ağaç Kesimi</span>
                             </div>
                         </div>
                     </div>
@@ -788,8 +770,8 @@
                         <div class="single-gallery-img mb-30">
                             <a href="#"><img src="img/gallery/gallery_thumb04.jpg" alt="img"></a>
                             <div class="gallery-overlay">
-                                <h5 class="gallery-overlay-title"><a href="#">Cargo Truck</a></h5>
-                                <span>Blanding , Digital</span>
+                                <h5 class="gallery-overlay-title"><a href="#">Yaprak Üfleyici</a></h5>
+                                <span>Bahçe Temizliği</span>
                             </div>
                         </div>
                     </div>
@@ -797,11 +779,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="gallery-btn text-center mt-30">
-                            <a href="#" class="btn">view gallery</a>
-                            <div class="gallery-overlay">
-                                <h5 class="gallery-overlay-title"><a href="#">Cargo Truck</a></h5>
-                                <span>Blanding , Digital</span>
-                            </div>
+                            <a href="galeri.html" class="btn">Galeriyi Görüntüle</a>
                         </div>
                     </div>
                 </div>
@@ -1003,20 +981,20 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -1032,9 +1010,9 @@
                                 <ul>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Teslimat Bilgisi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Sartlar & Kosullar</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikasi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Iade Politikasi</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Şartlar & Koşullar</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikası</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> İade Politikasi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1042,7 +1020,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>BIZE ULASIN</h5>
+                                <h5>BİZE ULAŞIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -1094,64 +1072,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        (function () {
-            const cursorEl = document.getElementById('fxCursor');
-            if (!cursorEl) return;
-
-            const hasFine = matchMedia('(pointer:fine)').matches;
-            if (!hasFine) { cursorEl.style.display = 'none'; return; }
-
-            let x = innerWidth / 2, y = innerHeight / 2;  // hedef
-            let cx = x, cy = y;                        // çizilen (lag)
-            let raf = null;
-            const LAG = parseFloat(getComputedStyle(document.documentElement)
-                .getPropertyValue('--lag')) || 0.18;
-
-            function onMove(e) {
-                x = e.clientX; y = e.clientY;
-                if (!cursorEl.classList.contains('--ready')) {
-                    cx = x; cy = y;
-                    cursorEl.style.transform = `translate(${x}px, ${y}px) translate(-50%,-50%)`;
-                    cursorEl.classList.add('--ready');
-                }
-                if (!raf) raf = requestAnimationFrame(loop);
-            }
-
-            function loop() {
-                cx += (x - cx) * LAG;
-                cy += (y - cy) * LAG;
-                cursorEl.style.transform = `translate(${cx}px, ${cy}px) translate(-50%,-50%)`;
-                raf = requestAnimationFrame(loop);
-            }
-
-            // hover edilebilirleri algıla
-            const hoverSel = [
-                'a', 'button', '[role="button"]', 'input', 'textarea', 'label', 'summary', '.cursor-hover'
-            ].join(',');
-
-            document.addEventListener('pointerover', e => {
-                if (e.target.closest(hoverSel)) cursorEl.classList.add('--hover');
-            });
-            document.addEventListener('pointerout', e => {
-                if (e.target.closest(hoverSel)) cursorEl.classList.remove('--hover');
-            });
-
-            // tıklama dalgası
-            document.addEventListener('pointerdown', () => {
-                cursorEl.classList.add('--click');
-                setTimeout(() => cursorEl.classList.remove('--click'), 350);
-            });
-
-            // hareket / odağa göre görünürlük
-            window.addEventListener('pointermove', onMove, { passive: true });
-            window.addEventListener('blur', () => cursorEl.style.opacity = '0');
-            window.addEventListener('focus', () => cursorEl.style.opacity = '1');
-
-            // sayfadan çıkarken temizlik
-            window.addEventListener('beforeunload', () => cancelAnimationFrame(raf));
-        })();
-    </script>
 
     <!-- Contact Form Script -->
     <script>
@@ -1229,6 +1149,23 @@
                 formMessage.textContent = 'Bağlantı hatası. Lütfen internet bağlantınızı kontrol edin.';
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
+            }
+        });
+    </script>
+
+    <!-- GSAP (Mouse Follower için gerekli) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Mouse Follower Script -->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+        // Custom Cursor Ayarları
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sadece mouse olan cihazlarda çalıştır
+            if (window.matchMedia('(pointer: fine)').matches) {
+                const cursor = new MouseFollower({
+                    speed: 0.3,
+                    ease: 'power2.out',
+                });
             }
         });
     </script>

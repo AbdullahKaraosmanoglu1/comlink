@@ -1,11 +1,12 @@
 ﻿<!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="tr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Transprk - Cargo, Logistics & Transport HTML5 Template</title>
-    <meta name="description" content="">
+    <title>Comlink Blog - Bahçe Makineleri Haberleri</title>
+    <meta name="description"
+        content="Comlink akülü bahçe makineleri hakkında güncel haberler, ürün incelemeleri ve bahçe bakımı ipuçları.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -24,6 +25,91 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- Mouse Follower Library -->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <style>
+        /* Custom Cursor Stil Ayarları */
+        :root {
+            --comlink-orange: #ff3f19;
+        }
+
+        /* Dış halka - içi boş */
+        .mf-cursor {
+            width: 40px !important;
+            height: 40px !important;
+            background: transparent !important;
+            border: 2px solid var(--comlink-orange) !important;
+            border-radius: 50% !important;
+            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
+            transition: transform 0.2s ease, border-color 0.2s ease !important;
+        }
+
+        /* İç nokta */
+        .mf-cursor::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 6px;
+            height: 6px;
+            background: var(--comlink-orange);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover durumunda büyüme */
+        .mf-cursor.-pointer {
+            transform: scale(1.5) !important;
+        }
+
+        .mf-cursor.-pointer::before {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+
+        /* Click animasyonu */
+        .mf-cursor.-active {
+            animation: cursorPulse 0.3s ease;
+        }
+
+        @keyframes cursorPulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.8);
+                opacity: 0.5;
+            }
+        }
+
+        /* Text seçimi sırasında */
+        .mf-cursor-text {
+            display: none !important;
+        }
+
+        /* Media için (resim/video hover) */
+        .mf-cursor.-media {
+            border-color: var(--comlink-orange) !important;
+        }
+
+        /* Sadece mouse olan cihazlarda göster */
+        @media (pointer: coarse) {
+            .mf-cursor {
+                display: none !important;
+            }
+        }
+
+        /* Hareket hassasiyeti olanlar için */
+        @media (prefers-reduced-motion: reduce) {
+            .mf-cursor {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -134,12 +220,12 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="dots"></li>
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">News & Media</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
                                     <li class="dots2"></li>
                                 </ol>
                             </nav>
-                            <h2>Latest news</h2>
+                            <h2>Güncel Haberler</h2>
                         </div>
                     </div>
                 </div>
@@ -156,11 +242,11 @@
                             <div class="widget mb-40">
                                 <div class="single-sidebar search-sidebar-md">
                                     <div class="sidebar-title mb-25">
-                                        <h3>Search</h3>
+                                        <h3>Arama</h3>
                                     </div>
                                     <div class="sidebar-form">
                                         <form action="#">
-                                            <input type="text" placeholder="Search type...">
+                                            <input type="text" placeholder="Aramak istediğiniz kelimeyi yazın...">
                                             <button><i class="fas fa-search"></i></button>
                                         </form>
                                     </div>
@@ -169,15 +255,15 @@
                             <div class="widget mb-40">
                                 <div class="single-sidebar white-bg">
                                     <div class="sidebar-title mb-25">
-                                        <h3>Post Category</h3>
+                                        <h3>Kategoriler</h3>
                                     </div>
                                     <div class="cat-list">
                                         <ul>
-                                            <li><a href="#">Retail &amp; Consumer <span>(14)</span></a></li>
-                                            <li><a href="#">Sciences &amp; Healthcare <span>(09)</span></a></li>
-                                            <li><a href="#">Ocean Freight <span>(03)</span></a></li>
-                                            <li><a href="#">Electricity Freight <span>(02)</span></a></li>
-                                            <li><a href="#">Transportation <span>(07)</span></a></li>
+                                            <li><a href="#">Ürün İncelemeleri <span>(14)</span></a></li>
+                                            <li><a href="#">Bahçe Bakımı <span>(09)</span></a></li>
+                                            <li><a href="#">Akülü Teknoloji <span>(03)</span></a></li>
+                                            <li><a href="#">Kullanım İpuçları <span>(02)</span></a></li>
+                                            <li><a href="#">Çevre Dostu Çözümler <span>(07)</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -185,35 +271,41 @@
                             <div class="widget mb-40">
                                 <div class="single-sidebar white-bg">
                                     <div class="sidebar-title mb-25">
-                                        <h3>Recent Posts</h3>
+                                        <h3>Son Yazılar</h3>
                                     </div>
                                     <div class="rc-post">
                                         <ul>
                                             <li>
                                                 <div class="rc-post-thumb">
-                                                    <a href="#"><img src="img/blog/rc_post_thumb01.jpg" alt="img"></a>
+                                                    <a href="blog-details.html"><img src="img/blog/rc_post_thumb01.jpg"
+                                                            alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="#">Express Manegment Effective</a></h5>
-                                                    <span>November 22, 2019</span>
+                                                    <h5><a href="blog-details.html">Akülü Bahçe Makineleri
+                                                            Avantajları</a></h5>
+                                                    <span>22 Kasım, 2024</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="rc-post-thumb">
-                                                    <a href="#"><img src="img/blog/rc_post_thumb02.jpg" alt="img"></a>
+                                                    <a href="blog-details.html"><img src="img/blog/rc_post_thumb02.jpg"
+                                                            alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="#">Customer Logisties Process Overall</a></h5>
-                                                    <span>November 22, 2019</span>
+                                                    <h5><a href="blog-details.html">Bahçe Bakımında Verimlilik
+                                                            İpuçları</a></h5>
+                                                    <span>22 Kasım, 2024</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="rc-post-thumb">
-                                                    <a href="#"><img src="img/blog/rc_post_thumb03.jpg" alt="img"></a>
+                                                    <a href="blog-details.html"><img src="img/blog/rc_post_thumb03.jpg"
+                                                            alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="#">Supply is warehouse Effective</a></h5>
-                                                    <span>November 22, 2019</span>
+                                                    <h5><a href="blog-details.html">Çevre Dostu Bahçe Ekipmanları</a>
+                                                    </h5>
+                                                    <span>22 Kasım, 2024</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -223,18 +315,18 @@
                             <div class="widget">
                                 <div class="single-sidebar white-bg">
                                     <div class="sidebar-title mb-25">
-                                        <h3>Tags Posts</h3>
+                                        <h3>Etiketler</h3>
                                     </div>
                                     <div class="tag-list">
                                         <ul>
-                                            <li><a href="#">Air Freight</a></li>
-                                            <li><a href="#">Railway</a></li>
-                                            <li><a href="#">News</a></li>
-                                            <li><a href="#">Warehouse</a></li>
-                                            <li><a href="#">Was</a></li>
-                                            <li><a href="#">Logistic</a></li>
-                                            <li><a href="#">Requirement</a></li>
-                                            <li><a href="#">Process</a></li>
+                                            <li><a href="#">Akülü Makineler</a></li>
+                                            <li><a href="#">Bahçe Bakımı</a></li>
+                                            <li><a href="#">Haberler</a></li>
+                                            <li><a href="#">Çim Biçme</a></li>
+                                            <li><a href="#">Budama</a></li>
+                                            <li><a href="#">Çevreci</a></li>
+                                            <li><a href="#">İpuçları</a></li>
+                                            <li><a href="#">Teknoloji</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -252,15 +344,16 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">Air Flight</a></li>
-                                                <li>10, May 2019</li>
+                                                <li><a href="#">Akülü Teknoloji</a></li>
+                                                <li>10 Mayıs 2024</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Supply Cargo Management</a></h4>
-                                        <p>Express delivery is an innovativ service is effective logistics solutio for
-                                            delivery of small cargo service dolor sit
-                                            amet, consectetur adipisicing.</p>
-                                        <a href="blog-details.html">Read More <i
+                                        <h4><a href="blog-details.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a>
+                                        </h4>
+                                        <p>Comlink akülü bahçe makineleri, benzinli motorlara göre %100 dumansız çalışma
+                                            sunarak çevre dostu bir alternatif sağlar. Sessiz ve güçlü performans bir
+                                            arada.</p>
+                                        <a href="blog-details.html">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -274,15 +367,15 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">Warehousing</a></li>
-                                                <li>10, May 2019</li>
+                                                <li><a href="#">Bahçe Bakımı</a></li>
+                                                <li>10 Mayıs 2024</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Logistics Originated Military</a></h4>
-                                        <p>Express delivery is an innovativ service is effective logistics solutio for
-                                            delivery of small cargo service dolor sit
-                                            amet, consectetur adipisicing.</p>
-                                        <a href="blog-details.html">Read More <i
+                                        <h4><a href="blog-details.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a>
+                                        </h4>
+                                        <p>Ortak batarya platformu sayesinde tek bir yüksek kapasiteli akü ile tüm
+                                            Comlink ürünlerini kullanabilirsiniz. Ekonomik ve pratik çözüm.</p>
+                                        <a href="blog-details.html">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -296,15 +389,15 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">Warehousing</a></li>
-                                                <li>10, May 2019</li>
+                                                <li><a href="#">Ürün İnceleme</a></li>
+                                                <li>10 Mayıs 2024</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Overall Process of Managing</a></h4>
-                                        <p>Express delivery is an innovativ service is effective logistics solutio for
-                                            delivery of small cargo service dolor sit
-                                            amet, consectetur adipisicing.</p>
-                                        <a href="blog-details.html">Read More <i
+                                        <h4><a href="blog-details.html">Profesyonel Kullanım İçin Comlink</a></h4>
+                                        <p>Zorlu arazi koşullarında bile kesintisiz çalışma. Comlink makineleri
+                                            profesyonel kullanıcılar için özel olarak tasarlandı ve yüksek performans
+                                            sunar.</p>
+                                        <a href="blog-details.html">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -318,15 +411,14 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">Ocean Freight</a></li>
-                                                <li>10, May 2019</li>
+                                                <li><a href="#">Teknoloji</a></li>
+                                                <li>10 Mayıs 2024</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Customer Requirement Timely</a></h4>
-                                        <p>Express delivery is an innovativ service is effective logistics solutio for
-                                            delivery of small cargo service dolor sit
-                                            amet, consectetur adipisicing.</p>
-                                        <a href="blog-details.html">Read More <i
+                                        <h4><a href="blog-details.html">Fırçasız Motor Teknolojisi</a></h4>
+                                        <p>Comlink ürünlerinde kullanılan fırçasız motor teknolojisi, daha uzun ömür,
+                                            daha yüksek verim ve bakımsız çalışma sağlar.</p>
+                                        <a href="blog-details.html">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -340,15 +432,14 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">Ocean Freight</a></li>
-                                                <li>10, May 2019</li>
+                                                <li><a href="#">İpuçları</a></li>
+                                                <li>10 Mayıs 2024</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Goal of Logistics Meet</a></h4>
-                                        <p>Express delivery is an innovativ service is effective logistics solutio for
-                                            delivery of small cargo service dolor sit
-                                            amet, consectetur adipisicing.</p>
-                                        <a href="blog-details.html">Read More <i
+                                        <h4><a href="blog-details.html">Bahçe Bakımında Tasarruf İpuçları</a></h4>
+                                        <p>Akülü bahçe makineleri ile enerji tasarrufu yapın. Benzin ve bakım
+                                            maliyetlerinden kurtulun, sessiz çalışmanın keyfini çıkarın.</p>
+                                        <a href="blog-details.html">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -362,15 +453,14 @@
                                     <div class="blog-content">
                                         <div class="blog-meta">
                                             <ul>
-                                                <li><a href="#">Railway Freight</a></li>
-                                                <li>10, May 2019</li>
+                                                <li><a href="#">Çevre</a></li>
+                                                <li>10 Mayıs 2024</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">That Complicated Activity</a></h4>
-                                        <p>Express delivery is an innovativ service is effective logistics solutio for
-                                            delivery of small cargo service dolor sit
-                                            amet, consectetur adipisicing.</p>
-                                        <a href="blog-details.html">Read More <i
+                                        <h4><a href="blog-details.html">Karbon Ayak İzinizi Azaltın</a></h4>
+                                        <p>Benzinli makinelerin aksine Comlink akülü sistemler sıfır emisyon ile
+                                            çalışır. Doğaya ve geleceğe saygılı bahçe bakımı.</p>
+                                        <a href="blog-details.html">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -383,8 +473,8 @@
                                         <ul class="pagination">
                                             <li class="page-item"><a href="#"><i class="fas fa-chevron-left"></i></a>
                                             </li>
-                                            <li class="page-item"><a href="#">01</a></li>
-                                            <li class="page-item active"><a href="#">02</a></li>
+                                            <li class="page-item active"><a href="#">01</a></li>
+                                            <li class="page-item"><a href="#">02</a></li>
                                             <li class="page-item"><a href="#">03</a></li>
                                             <li class="page-item"><a href="#">...</a></li>
                                             <li class="page-item"><a href="#">10</a></li>
@@ -412,7 +502,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/w_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -438,20 +528,20 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
                                         </div>
                                         <div class="f-rc-content">
-                                            <span>19 Jun, 2019</span>
-                                            <h5><a href="#">which the syste built and actually</a></h5>
+                                            <span>9 Ekim, 2019</span>
+                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -467,9 +557,9 @@
                                 <ul>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
                                     <li><a href="#"><i class="fas fa-caret-right"></i> Teslimat Bilgisi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Sartlar & Kosullar</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikasi</a></li>
-                                    <li><a href="#"><i class="fas fa-caret-right"></i> Iade Politikasi</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Şartlar & Koşullar</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Gizlilik Politikası</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> İade Politikasi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -477,7 +567,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="fw-title mb-30">
-                                <h5>BIZE ULASIN</h5>
+                                <h5>BİZE ULAŞIN</h5>
                             </div>
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
@@ -498,11 +588,6 @@
                     <div class="col-lg-6 col-md-7">
                         <div class="copyright-text">
                             <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="f-payment-method text-center text-md-right">
-                            <img src="img/images/card_img.png" alt="img">
                         </div>
                     </div>
                 </div>
@@ -531,6 +616,22 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <!-- GSAP (Mouse Follower için gerekli) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Mouse Follower Script -->
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+        // Custom Cursor Ayarları
+        document.addEventListener('DOMContentLoaded', function () {
+            // Sadece mouse olan cihazlarda çalıştır
+            if (window.matchMedia('(pointer: fine)').matches) {
+                const cursor = new MouseFollower({
+                    speed: 0.3,
+                    ease: 'power2.out',
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
