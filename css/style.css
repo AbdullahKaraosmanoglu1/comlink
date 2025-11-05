@@ -6038,7 +6038,7 @@ blockquote.classic-blockquote-post::after {
 .product-content {
 	position: relative;
 	z-index: 2;
-	background: rgba(42, 26, 68, 0.95);
+	background: rgba(42, 26, 68, 0.1);
 	padding: 15px 10px;
 }
 
