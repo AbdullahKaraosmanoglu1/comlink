@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html class="no-js" lang="tr">
 
 <head>
@@ -1268,21 +1268,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            max-height: calc(100vh - 200px);
+            max-height: calc(100vh - 180px);
             overflow: hidden;
         }
 
         #flipbook {
-            width: 700px;
-            height: 490px;
+            width: 1600px;
+            height: 900px;
             margin: 0 auto;
+            max-width: 95vw;
+            max-height: calc(100vh - 250px);
         }
 
         #flipbook .page {
-            width: 350px;
-            height: 490px;
+            width: 800px;
+            height: 900px;
             background-color: white;
-            line-height: 490px;
+            line-height: 900px;
             font-size: 20px;
             text-align: center;
         }
@@ -1419,9 +1421,15 @@
                 $('body').css('overflow', 'hidden'); // Disable body scroll
 
                 if (!initialized) {
+                    // Calculate optimal flipbook size
+                    var viewportWidth = $(window).width();
+                    var viewportHeight = $(window).height();
+                    var maxWidth = Math.min(1600, viewportWidth * 0.95);
+                    var maxHeight = Math.min(900, viewportHeight - 250);
+
                     $('#flipbook').turn({
-                        width: 700,
-                        height: 490,
+                        width: maxWidth,
+                        height: maxHeight,
                         autoCenter: true,
                         duration: 800,
                         gradients: true,

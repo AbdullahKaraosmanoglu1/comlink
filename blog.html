@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html class="no-js" lang="tr">
 
 <head>
@@ -27,6 +27,45 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom Cursor CSS -->
     <link rel="stylesheet" href="css/custom-cursor.css">
+
+    <!-- Son Yazılar Küçük Görsel Stili -->
+    <style>
+        .rc-post-thumb {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .rc-post-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rc-post ul li {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .rc-post-content {
+            flex: 1;
+        }
+
+        .rc-post-content h5 {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .rc-post-content span {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
@@ -165,9 +204,10 @@
                                         <h3>Arama</h3>
                                     </div>
                                     <div class="sidebar-form">
-                                        <form action="#">
-                                            <input type="text" placeholder="Aramak istediğiniz kelimeyi yazın...">
-                                            <button><i class="fas fa-search"></i></button>
+                                        <form id="blogSearchForm">
+                                            <input type="text" id="blogSearchInput"
+                                                placeholder="Aramak istediğiniz kelimeyi yazın...">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
                                         </form>
                                     </div>
                                 </div>
@@ -197,35 +237,36 @@
                                         <ul>
                                             <li>
                                                 <div class="rc-post-thumb">
-                                                    <a href="blog-details.html"><img src="img/blog/rc_post_thumb01.jpg"
-                                                            alt="img"></a>
+                                                    <a href="blog-details.html?id=cevre-donusum"><img
+                                                            src="img/blog/s_blog_thumb02.jpg" alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="blog-details.html">Akülü Bahçe Makineleri
-                                                            Avantajları</a></h5>
-                                                    <span>22 Kasım, 2024</span>
+                                                    <h5><a href="blog-details.html?id=cevre-donusum">Soluduğunuz Havayı
+                                                            Düşünün</a></h5>
+                                                    <span>5 Kasım, 2025</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="rc-post-thumb">
-                                                    <a href="blog-details.html"><img src="img/blog/rc_post_thumb02.jpg"
-                                                            alt="img"></a>
+                                                    <a href="blog-details.html?id=akilli-yatirim"><img
+                                                            src="img/blog/s_blog_thumb03.jpg" alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="blog-details.html">Bahçe Bakımında Verimlilik
-                                                            İpuçları</a></h5>
-                                                    <span>22 Kasım, 2024</span>
+                                                    <h5><a href="blog-details.html?id=akilli-yatirim">2 Yıl Sonra
+                                                            Teşekkür Edeceksiniz</a></h5>
+                                                    <span>4 Kasım, 2025</span>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="rc-post-thumb">
-                                                    <a href="blog-details.html"><img src="img/blog/rc_post_thumb03.jpg"
-                                                            alt="img"></a>
+                                                    <a href="blog-details.html?id=profesyonel-performans"><img
+                                                            src="img/blog/s_blog_thumb04.jpg" alt="img"></a>
                                                 </div>
                                                 <div class="rc-post-content">
-                                                    <h5><a href="blog-details.html">Çevre Dostu Bahçe Ekipmanları</a>
+                                                    <h5><a href="blog-details.html?id=profesyonel-performans">Yarış
+                                                            Saatlerle</a>
                                                     </h5>
-                                                    <span>22 Kasım, 2024</span>
+                                                    <span>3 Kasım, 2025</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -259,7 +300,8 @@
                             <div class="col-md-6">
                                 <div class="single-blog-post s-single-blog-post mb-45">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/s_blog_thumb02.jpg"
+                                        <a href="blog-details.html?id=cevre-donusum"><img
+                                                src="img/blog/s_blog_thumb02.jpg"
                                                 alt="Çocuklarınızın Geleceğini Düşünün"></a>
                                     </div>
                                     <div class="blog-content">
@@ -269,10 +311,13 @@
                                                 <li>5 Kasım 2025</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Soluduğunuz Havayı Düşünün: Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a>
+                                        <h4><a href="blog-details.html?id=cevre-donusum">Soluduğunuz Havayı Düşünün:
+                                                Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a>
                                         </h4>
-                                        <p>Her gün binlerce benzinli makine atmosfere ton ton CO2 salıyor. Comlink akülü makinelerle sıfır emisyon, %100 temiz hava. Bugün bir karar verin, yarınlar için. Dönüşüme hazır mısınız?</p>
-                                        <a href="blog-details.html">Devamını Oku <i
+                                        <p>Her gün binlerce benzinli makine atmosfere ton ton CO2 salıyor. Comlink akülü
+                                            makinelerle sıfır emisyon, %100 temiz hava. Bugün bir karar verin, yarınlar
+                                            için. Dönüşüme hazır mısınız?</p>
+                                        <a href="blog-details.html?id=cevre-donusum">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -282,7 +327,8 @@
                             <div class="col-md-6">
                                 <div class="single-blog-post s-single-blog-post mb-45">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/s_blog_thumb03.jpg"
+                                        <a href="blog-details.html?id=akilli-yatirim"><img
+                                                src="img/blog/s_blog_thumb03.jpg"
                                                 alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                                     </div>
                                     <div class="blog-content">
@@ -292,10 +338,13 @@
                                                 <li>4 Kasım 2025</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">2 Yıl Sonra Bana Teşekkür Edeceksiniz: Akıllı Yatırım Rehberi</a>
+                                        <h4><a href="blog-details.html?id=akilli-yatirim">2 Yıl Sonra Bana Teşekkür
+                                                Edeceksiniz: Akıllı Yatırım Rehberi</a>
                                         </h4>
-                                        <p>Benzine harcadığınız para cebinizde kalacak. Bakıma harcadığınız zaman size kalacak. Rakamlar konuşuyor: 2 yılda %300 geri dönüş. Akıllı yatırım, akıllı tasarruf. Comlink.</p>
-                                        <a href="blog-details.html">Devamını Oku <i
+                                        <p>Benzine harcadığınız para cebinizde kalacak. Bakıma harcadığınız zaman size
+                                            kalacak. Rakamlar konuşuyor: 2 yılda %300 geri dönüş. Akıllı yatırım, akıllı
+                                            tasarruf. Comlink.</p>
+                                        <a href="blog-details.html?id=akilli-yatirim">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -305,8 +354,8 @@
                             <div class="col-md-6">
                                 <div class="single-blog-post s-single-blog-post mb-45">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/s_blog_thumb04.jpg"
-                                                alt="Yarış Saatlerle"></a>
+                                        <a href="blog-details.html?id=profesyonel-performans"><img
+                                                src="img/blog/s_blog_thumb04.jpg" alt="Yarış Saatlerle"></a>
                                     </div>
                                     <div class="blog-content">
                                         <div class="blog-meta">
@@ -315,9 +364,12 @@
                                                 <li>3 Kasım 2025</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Yarış Benzinli Makinelerle Değil, Saatlerle: Profesyonel Performans</a></h4>
-                                        <p>400m²'yi 60 dakikadan 35 dakikaya düşürün. Günde 3 müşteriye değil, 5 müşteriye yetişin. Daha hızlı, daha güçlü, daha karlı işler yapın. Performans farkını yaşayın.</p>
-                                        <a href="blog-details.html">Devamını Oku <i
+                                        <h4><a href="blog-details.html?id=profesyonel-performans">Yarış Benzinli
+                                                Makinelerle Değil, Saatlerle: Profesyonel Performans</a></h4>
+                                        <p>400m²'yi 60 dakikadan 35 dakikaya düşürün. Günde 3 müşteriye değil, 5
+                                            müşteriye yetişin. Daha hızlı, daha güçlü, daha karlı işler yapın.
+                                            Performans farkını yaşayın.</p>
+                                        <a href="blog-details.html?id=profesyonel-performans">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -327,8 +379,8 @@
                             <div class="col-md-6">
                                 <div class="single-blog-post s-single-blog-post mb-45">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/s_blog_thumb05.jpg"
-                                                alt="1970'lerin Teknolojisi"></a>
+                                        <a href="blog-details.html?id=teknoloji-inovasyon"><img
+                                                src="img/blog/s_blog_thumb05.jpg" alt="1970'lerin Teknolojisi"></a>
                                     </div>
                                     <div class="blog-content">
                                         <div class="blog-meta">
@@ -337,9 +389,12 @@
                                                 <li>2 Kasım 2025</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">2024'te Hala 1970'lerin Teknolojisiyle mi Çalışıyorsunuz?</a></h4>
-                                        <p>Ödüllü Tayvan teknolojisi, patentli fırçasız motor, akıllı kontrol sistemi. Taiwan Excellence 2017 ve 2019 ödüllü. Geleceğin makineleri bugün sizin elinde. Teknolojiye yatırım yapın.</p>
-                                        <a href="blog-details.html">Devamını Oku <i
+                                        <h4><a href="blog-details.html?id=teknoloji-inovasyon">2024'te Hala 1970'lerin
+                                                Teknolojisiyle mi Çalışıyorsunuz?</a></h4>
+                                        <p>Ödüllü Tayvan teknolojisi, patentli fırçasız motor, akıllı kontrol sistemi.
+                                            Taiwan Excellence 2017 ve 2019 ödüllü. Geleceğin makineleri bugün sizin
+                                            elinde. Teknolojiye yatırım yapın.</p>
+                                        <a href="blog-details.html?id=teknoloji-inovasyon">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -349,8 +404,8 @@
                             <div class="col-md-6">
                                 <div class="single-blog-post s-single-blog-post mb-45">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/s_blog_thumb07.jpg"
-                                                alt="Kuş Seslerini Dinleyin"></a>
+                                        <a href="blog-details.html?id=yasam-kalitesi"><img
+                                                src="img/blog/s_blog_thumb07.jpg" alt="Kuş Seslerini Dinleyin"></a>
                                     </div>
                                     <div class="blog-content">
                                         <div class="blog-meta">
@@ -359,9 +414,12 @@
                                                 <li>1 Kasım 2025</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Sabah 7'de Bahçenize Çıkın: Kuş Seslerini Dinleyin</a></h4>
-                                        <p>Makinenizi açın. Yine kuş sesleri... Sessiz güç bu. Komşunuz sizin çalıştığınızı bile duymasın. Huzurlu bahçe, mutlu hayat. Gürültü kirliliğine son verin, doğayla uyum içinde çalışın.</p>
-                                        <a href="blog-details.html">Devamını Oku <i
+                                        <h4><a href="blog-details.html?id=yasam-kalitesi">Sabah 7'de Bahçenize Çıkın:
+                                                Kuş Seslerini Dinleyin</a></h4>
+                                        <p>Makinenizi açın. Yine kuş sesleri... Sessiz güç bu. Komşunuz sizin
+                                            çalıştığınızı bile duymasın. Huzurlu bahçe, mutlu hayat. Gürültü kirliliğine
+                                            son verin, doğayla uyum içinde çalışın.</p>
+                                        <a href="blog-details.html?id=yasam-kalitesi">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -371,8 +429,8 @@
                             <div class="col-md-6">
                                 <div class="single-blog-post s-single-blog-post mb-45">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html"><img src="img/blog/s_blog_thumb08.jpg"
-                                                alt="Ortak Batarya Platformu"></a>
+                                        <a href="blog-details.html?id=ortak-batarya"><img
+                                                src="img/blog/s_blog_thumb08.jpg" alt="Ortak Batarya Platformu"></a>
                                     </div>
                                     <div class="blog-content">
                                         <div class="blog-meta">
@@ -381,9 +439,12 @@
                                                 <li>31 Ekim 2025</li>
                                             </ul>
                                         </div>
-                                        <h4><a href="blog-details.html">Tek Batarya, Sonsuz Görev: Ortak Platform Devrimi</a></h4>
-                                        <p>Bir batarya ile 9 farklı makine kullanın. Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Aynı batarya, aynı verimlilik. IP66 sertifikalı güvenilir sistem.</p>
-                                        <a href="blog-details.html">Devamını Oku <i
+                                        <h4><a href="blog-details.html?id=ortak-batarya">Tek Batarya, Sonsuz Görev:
+                                                Ortak Platform Devrimi</a></h4>
+                                        <p>Bir batarya ile 9 farklı makine kullanın. Sabah çim biçin, öğleden sonra dal
+                                            budayın, akşam yaprak üfleyin. Aynı batarya, aynı verimlilik. IP66
+                                            sertifikalı güvenilir sistem.</p>
+                                        <a href="blog-details.html?id=ortak-batarya">Devamını Oku <i
                                                 class="fas fa-long-arrow-alt-right"></i></a>
                                     </div>
                                 </div>
@@ -541,6 +602,70 @@
     <script src="js/main.js"></script>
     <!-- Custom Cursor JS -->
     <script src="js/custom-cursor.js"></script>
+
+    <!-- Blog Data -->
+    <script src="js/blogs.js"></script>
+
+    <!-- Blog Search Functionality -->
+    <script>
+        $(document).ready(function () {
+            // Dinamik arama fonksiyonu
+            function performSearch() {
+                // Önceki mesajı her zaman önce kaldır
+                $('#noResultsMessage').remove();
+
+                const searchTerm = $('#blogSearchInput').val().toLowerCase().trim();
+
+                // 2 karakterden az ise tüm blogları göster
+                if (searchTerm.length < 2) {
+                    $('.single-blog-post').parent().show();
+                    return;
+                }
+
+                // Tüm blog kartlarını kontrol et
+                let matchCount = 0;
+
+                $('.single-blog-post').each(function () {
+                    const $blogCard = $(this);
+                    const title = $blogCard.find('h4 a').text().toLowerCase();
+                    const excerpt = $blogCard.find('p').text().toLowerCase();
+                    const category = $blogCard.find('.blog-meta li:first a').text().toLowerCase();
+
+                    // Başlık, özet veya kategoride arama terimi var mı?
+                    if (title.includes(searchTerm) || excerpt.includes(searchTerm) || category.includes(searchTerm)) {
+                        $blogCard.parent().show();
+                        matchCount++;
+                    } else {
+                        $blogCard.parent().hide();
+                    }
+                });
+
+                // Hiç sonuç bulunamadıysa mesaj göster
+                if (matchCount === 0) {
+                    $('.col-lg-8 > .row').first().prepend(`
+                        <div id="noResultsMessage" class="col-12 mb-4">
+                            <div class="alert alert-info" style="background: #f0f8ff; border: 1px solid #b8daff; padding: 20px; border-radius: 8px; text-align: center;">
+                                <i class="fas fa-info-circle" style="font-size: 24px; color: #0c5460; margin-bottom: 10px;"></i>
+                                <h5 style="color: #0c5460; margin-bottom: 10px;">Sonuç Bulunamadı</h5>
+                                <p style="color: #0c5460; margin: 0;">"<strong>${searchTerm}</strong>" için hiç sonuç bulunamadı. Lütfen farklı bir arama terimi deneyin.</p>
+                            </div>
+                        </div>
+                    `);
+                }
+            }
+
+            // Input'a her harf yazıldığında ara (2 harf ve üzeri)
+            $('#blogSearchInput').on('input', function () {
+                performSearch();
+            });
+
+            // Form submit edildiğinde sayfanın yenilenmesini engelle
+            $('#blogSearchForm').on('submit', function (e) {
+                e.preventDefault();
+                performSearch();
+            });
+        });
+    </script>
 </body>
 
 </html>

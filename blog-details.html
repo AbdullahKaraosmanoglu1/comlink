@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html class=\"no-js\" lang=\"tr\">
 
 <head>
@@ -27,6 +27,45 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom Cursor CSS -->
     <link rel="stylesheet" href="css/custom-cursor.css">
+
+    <!-- Son Yazılar Küçük Görsel Stili -->
+    <style>
+        .rc-post-thumb {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .rc-post-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rc-post ul li {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .rc-post-content {
+            flex: 1;
+        }
+
+        .rc-post-content h5 {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .rc-post-content span {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
@@ -247,27 +286,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="avatar-post mt-70 mb-60">
-                                <ul>
-                                    <li>
-                                        <div class="post-avatar-img">
-                                            <img src="img/blog/post_avatar_img.png" alt="img">
-                                        </div>
-                                        <div class="post-avatar-content">
-                                            <h5>Thomas Herlihy</h5>
-                                            <p>Vehicula dolor amet consectetur adipiscing elit. Cras sollicitudin,
-                                                tellus vitae condimem
-                                                egestliberos dolor auctor
-                                                tellus.</p>
-                                            <div class="post-avatar-social mt-15">
-                                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="blog-next-prev">
                                 <ul>
                                     <li class="blog-prev">
@@ -277,62 +295,6 @@
                                         <a href="#">Sonraki Yazı<img src="img/icon/right_arrow.png" alt="img"></a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="blog-comment mt-85">
-                                <h4 class="b-details-inner-title">Yorumlar</h4>
-                                <ul>
-                                    <li>
-                                        <div class="single-comment">
-                                            <div class="comment-avatar-img">
-                                                <img src="img/blog/comment_avatar01.jpg" alt="img">
-                                            </div>
-                                            <div class="comment-text">
-                                                <div class="comment-avatar-info">
-                                                    <h5>Thomas Herlihy <span class="comment-date">17 Kasım,
-                                                            2024</span></h5>
-                                                    <a href="#" class="comment-reply-link">Yanıtla</a>
-                                                </div>
-                                                <p>Vehicula dolor amet consectetur adipiscing elit. Cras sollicitudin,
-                                                    tellus vitae condimem
-                                                    egestliberos dolor auctor
-                                                    tellus.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="comment-reply">
-                                        <div class="single-comment">
-                                            <div class="comment-avatar-img">
-                                                <img src="img/blog/comment_avatar02.jpg" alt="img">
-                                            </div>
-                                            <div class="comment-text">
-                                                <div class="comment-avatar-info">
-                                                    <h5>Thomas Herlihy <span class="comment-date">17 Kasım,
-                                                            2024</span></h5>
-                                                    <a href="#" class="comment-reply-link">Yanıtla</a>
-                                                </div>
-                                                <p>Vehicula dolor amet consectetur adipiscing elit. Cras sollicitudin,
-                                                    tellus vitae condimem
-                                                    egestliberos dolor auctor
-                                                    tellus.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="comment-reply-box mt-85">
-                                <h4 class="b-details-inner-title">Yorum Yapın</h4>
-                                <form action="#" class="comment-form">
-                                    <textarea name="message" id="comment-message" placeholder="Yorumunuz"></textarea>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="Adınız*">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="email" placeholder="E-postanız*">
-                                        </div>
-                                    </div>
-                                    <button class="btn red-btn">Gönder</button>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -561,6 +523,95 @@
     <script src="js/main.js"></script>
     <!-- Custom Cursor JS -->
     <script src="js/custom-cursor.js"></script>
+
+    <!-- Blog Data -->
+    <script src="js/blogs.js"></script>
+
+    <!-- Blog Detail Loader -->
+    <script>
+        $(document).ready(function () {
+            // URL'den post ID'yi al
+            const urlParams = new URLSearchParams(window.location.search);
+            const postId = urlParams.get('id');
+
+            // Post bulunamazsa blog sayfasına yönlendir
+            if (!postId) {
+                window.location.href = 'blog.html';
+                return;
+            }
+
+            // Postu getir
+            const post = getPost(postId);
+
+            // Post yoksa blog sayfasına yönlendir
+            if (!post) {
+                window.location.href = 'blog.html';
+                return;
+            }
+
+            // Sayfa başlığını güncelle
+            document.title = post.title + ' - Comlink Blog';
+
+            // Blog içeriğini doldur
+            $('.blog-thumb img').attr('src', post.image).attr('alt', post.title);
+            $('.blog-details-date ul').html(`
+                <li><a href="#"><i class="far fa-user"></i>${post.author}</a></li>
+                <li><i class="far fa-clock"></i> ${post.date}</li>
+            `);
+            $('.blog-details-content > h4').text(post.title);
+            $('.blog-details-content > p').first().remove(); // Eski içeriği temizle
+            $('.blog-details-content > p').remove(); // Tüm eski paragrafları temizle
+            $('.blog-details-content blockquote').remove(); // Eski blockquote'u temizle
+            $('.blog-details-img').remove(); // Eski görselleri temizle
+
+            // Yeni içeriği ekle (h4'ten sonra)
+            $('.blog-details-content > h4').after(post.content);
+
+            // Etiketleri güncelle
+            const tagsHtml = post.tags.map(tag => `<a href="#">${tag}</a>`).join('');
+            $('.blog-details-tag').html(`<i class="fas fa-tags"></i>${tagsHtml}`);
+
+            // Kategori badge'ini güncelle
+            $('.breadcrumb-content h2 span').text(post.category);
+
+            // Sidebar'daki son yazıları güncelle
+            const recentPosts = getRecentPosts(3);
+            const sidebarPostsHtml = recentPosts.map(p => `
+                <li>
+                    <div class="rc-post-thumb">
+                        <a href="blog-details.html?id=${p.id}"><img src="${p.image}" alt="${p.title}"></a>
+                    </div>
+                    <div class="rc-post-content">
+                        <h5><a href="blog-details.html?id=${p.id}">${p.title.substring(0, 50)}${p.title.length > 50 ? '...' : ''}</a></h5>
+                        <span>${p.date}</span>
+                    </div>
+                </li>
+            `).join('');
+            $('.rc-post ul').html(sidebarPostsHtml);
+
+            // Önceki/Sonraki blog navigasyonunu güncelle
+            const allPosts = getAllPosts();
+            const currentIndex = allPosts.findIndex(p => p.id === postId);
+
+            // Önceki yazı
+            if (currentIndex > 0) {
+                const prevPost = allPosts[currentIndex - 1];
+                $('.blog-prev a').attr('href', `blog-details.html?id=${prevPost.id}`);
+                $('.blog-prev a').html(`<img src="img/icon/left_arrow.png" alt="img">${prevPost.title.substring(0, 30)}${prevPost.title.length > 30 ? '...' : ''}`);
+            } else {
+                $('.blog-prev').hide(); // İlk yazıysa önceki butonu gizle
+            }
+
+            // Sonraki yazı
+            if (currentIndex < allPosts.length - 1) {
+                const nextPost = allPosts[currentIndex + 1];
+                $('.blog-next a').attr('href', `blog-details.html?id=${nextPost.id}`);
+                $('.blog-next a').html(`${nextPost.title.substring(0, 30)}${nextPost.title.length > 30 ? '...' : ''}<img src="img/icon/right_arrow.png" alt="img">`);
+            } else {
+                $('.blog-next').hide(); // Son yazıysa sonraki butonu gizle
+            }
+        });
+    </script>
 </body>
 
 </html>
