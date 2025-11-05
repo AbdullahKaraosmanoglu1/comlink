@@ -14,7 +14,9 @@
       "Bash(copy:*)",
       "Bash(copy \"C:\\Users\\akogl\\projects\\comlink\\img\\images\\control_img02.jpg\" \"C:\\Users\\akogl\\projects\\comlink\\img\\products\\product-5.jpg\")",
       "Bash(node -c:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(git stash pop:*)",
+      "Bash(git stash drop:*)"
     ],
     "deny": [],
     "ask": []

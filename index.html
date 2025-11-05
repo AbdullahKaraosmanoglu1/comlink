@@ -25,85 +25,73 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Mouse Follower Library -->
-    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <style>
         /* Custom Cursor Stil Ayarları */
         :root {
             --comlink-orange: #ff3f19;
         }
 
-        /* Dış halka - içi boş */
-        .mf-cursor {
-            width: 40px !important;
-            height: 40px !important;
-            background: transparent !important;
-            border: 2px solid var(--comlink-orange) !important;
-            border-radius: 50% !important;
-            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
-            transition: transform 0.2s ease, border-color 0.2s ease !important;
-        }
-
-        /* İç nokta */
-        .mf-cursor::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
+        /* İç nokta - YAVAS takip eder */
+        #cursor-dot {
+            position: fixed;
             width: 6px;
             height: 6px;
             background: var(--comlink-orange);
             border-radius: 50%;
+            pointer-events: none;
+            z-index: 100000;
             transform: translate(-50%, -50%);
             box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
-            transition: transform 0.2s ease;
+            transition: all 0.15s ease-out;
         }
 
-        /* Hover durumunda büyüme */
-        .mf-cursor.-pointer {
-            transform: scale(1.5) !important;
+        /* Dış halka - YAVAŞ takip eder (ping efekti) */
+        #cursor-circle {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: transparent;
+            border: 2px solid var(--comlink-orange);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3);
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: all 0.2s ease-out;
         }
 
-        .mf-cursor.-pointer::before {
-            transform: translate(-50%, -50%) scale(1.2);
-        }
-
-        /* Click animasyonu */
-        .mf-cursor.-active {
+        /* Click animasyonu - sadece halka */
+        #cursor-circle.clicked {
             animation: cursorPulse 0.3s ease;
         }
 
         @keyframes cursorPulse {
             0% {
-                transform: scale(0.9);
+                transform: translate(-50%, -50%) scale(0.9);
                 opacity: 1;
             }
-            100% {
-                transform: scale(1.8);
-                opacity: 0.5;
+            50% {
+                transform: translate(-50%, -50%) scale(1.3);
+                opacity: 0.7;
             }
-        }
-
-        /* Text seçimi sırasında */
-        .mf-cursor-text {
-            display: none !important;
-        }
-
-        /* Media için (resim/video hover) */
-        .mf-cursor.-media {
-            border-color: var(--comlink-orange) !important;
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
         }
 
         /* Sadece mouse olan cihazlarda göster */
         @media (pointer: coarse) {
-            .mf-cursor {
+            #cursor-dot,
+            #cursor-circle {
                 display: none !important;
             }
         }
 
         /* Hareket hassasiyeti olanlar için */
         @media (prefers-reduced-motion: reduce) {
-            .mf-cursor {
+            #cursor-dot,
+            #cursor-circle {
                 transition: none !important;
                 animation: none !important;
             }
@@ -173,6 +161,10 @@
 </head>
 
 <body>
+    <!-- Custom Cursor - İki ayrı element -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
     <!-- preloader  -->
     <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
@@ -1153,18 +1145,80 @@
         });
     </script>
 
-    <!-- GSAP (Mouse Follower için gerekli) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <!-- Mouse Follower Script -->
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <!-- Custom Cursor Script - Ping Efekti -->
     <script>
-        // Custom Cursor Ayarları
+        // Custom Cursor - Nokta ve halka ayrı hareket eder
         document.addEventListener('DOMContentLoaded', function() {
             // Sadece mouse olan cihazlarda çalıştır
             if (window.matchMedia('(pointer: fine)').matches) {
-                const cursor = new MouseFollower({
-                    speed: 0.3,
-                    ease: 'power2.out',
+                const cursorDot = document.getElementById('cursor-dot');
+                const cursorCircle = document.getElementById('cursor-circle');
+
+                let mouseX = 0;
+                let mouseY = 0;
+                let circleX = 0;
+                let circleY = 0;
+
+                let dotX = 0;
+                let dotY = 0;
+
+                // Mouse hareketi - gerçek pozisyonu kaydet
+                document.addEventListener('mousemove', function(e) {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                });
+
+                // Nokta da YAVAŞÇA takip eder (ama halkadan biraz daha hızlı)
+                function animateDot() {
+                    const dotSpeed = 0.3; // Halka 0.15, nokta 0.3 (2x daha hızlı)
+
+                    dotX += (mouseX - dotX) * dotSpeed;
+                    dotY += (mouseY - dotY) * dotSpeed;
+
+                    cursorDot.style.left = dotX + 'px';
+                    cursorDot.style.top = dotY + 'px';
+
+                    requestAnimationFrame(animateDot);
+                }
+
+                // Animasyonu başlat
+                animateDot();
+
+                // Halka YAVAŞÇA takip eder (ping efekti)
+                function animateCircle() {
+                    // Easing hesaplaması - halka yavaşça mouse'a yaklaşır
+                    const speed = 0.15; // Ne kadar küçükse o kadar yavaş takip eder
+
+                    circleX += (mouseX - circleX) * speed;
+                    circleY += (mouseY - circleY) * speed;
+
+                    cursorCircle.style.left = circleX + 'px';
+                    cursorCircle.style.top = circleY + 'px';
+
+                    requestAnimationFrame(animateCircle);
+                }
+
+                // Animasyonu başlat
+                animateCircle();
+
+                // Click animasyonu - sadece halka
+                document.addEventListener('mousedown', function() {
+                    cursorCircle.classList.add('clicked');
+                });
+
+                document.addEventListener('mouseup', function() {
+                    cursorCircle.classList.remove('clicked');
+                });
+
+                // Sayfa dışına çıkınca gizle
+                document.addEventListener('mouseleave', function() {
+                    cursorDot.style.opacity = '0';
+                    cursorCircle.style.opacity = '0';
+                });
+
+                document.addEventListener('mouseenter', function() {
+                    cursorDot.style.opacity = '1';
+                    cursorCircle.style.opacity = '1';
                 });
             }
         });

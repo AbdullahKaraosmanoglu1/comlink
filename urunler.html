@@ -25,93 +25,15 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Mouse Follower Library -->
-    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
-    <style>
-        /* Custom Cursor Stil Ayarları */
-        :root {
-            --comlink-orange: #ff3f19;
-        }
-
-        /* Dış halka - içi boş */
-        .mf-cursor {
-            width: 40px !important;
-            height: 40px !important;
-            background: transparent !important;
-            border: 2px solid var(--comlink-orange) !important;
-            border-radius: 50% !important;
-            box-shadow: 0 0 10px rgba(255, 63, 25, 0.3) !important;
-            transition: transform 0.2s ease, border-color 0.2s ease !important;
-        }
-
-        /* İç nokta */
-        .mf-cursor::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 6px;
-            height: 6px;
-            background: var(--comlink-orange);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 8px rgba(255, 63, 25, 0.6);
-            transition: transform 0.2s ease;
-        }
-
-        /* Hover durumunda büyüme */
-        .mf-cursor.-pointer {
-            transform: scale(1.5) !important;
-        }
-
-        .mf-cursor.-pointer::before {
-            transform: translate(-50%, -50%) scale(1.2);
-        }
-
-        /* Click animasyonu */
-        .mf-cursor.-active {
-            animation: cursorPulse 0.3s ease;
-        }
-
-        @keyframes cursorPulse {
-            0% {
-                transform: scale(0.9);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(1.8);
-                opacity: 0.5;
-            }
-        }
-
-        /* Text seçimi sırasında */
-        .mf-cursor-text {
-            display: none !important;
-        }
-
-        /* Media için (resim/video hover) */
-        .mf-cursor.-media {
-            border-color: var(--comlink-orange) !important;
-        }
-
-        /* Sadece mouse olan cihazlarda göster */
-        @media (pointer: coarse) {
-            .mf-cursor {
-                display: none !important;
-            }
-        }
-
-        /* Hareket hassasiyeti olanlar için */
-        @media (prefers-reduced-motion: reduce) {
-            .mf-cursor {
-                transition: none !important;
-                animation: none !important;
-            }
-        }
-    </style>
+    <!-- Custom Cursor CSS -->
+    <link rel="stylesheet" href="css/custom-cursor.css">
 </head>
 
 <body>
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
 
     <!-- preloader  -->
     <div id="preloader">
@@ -1556,22 +1478,8 @@
             }
         });
     </script>
-    <!-- GSAP (Mouse Follower için gerekli) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <!-- Mouse Follower Script -->
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-    <script>
-        // Custom Cursor Ayarları
-        document.addEventListener('DOMContentLoaded', function() {
-            // Sadece mouse olan cihazlarda çalıştır
-            if (window.matchMedia('(pointer: fine)').matches) {
-                const cursor = new MouseFollower({
-                    speed: 0.3,
-                    ease: 'power2.out',
-                });
-            }
-        });
-    </script>
+    <!-- Custom Cursor JS -->
+    <script src="js/custom-cursor.js"></script>
 </body>
 
 </html>
