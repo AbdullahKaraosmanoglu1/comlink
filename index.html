@@ -9,6 +9,26 @@
         content="Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız ve sessiz çalışma ile Yüksek performans.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.comlink.com.tr/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Comlink">
+    <meta property="og:title" content="Comlink – Profesyonel Akülü Bahçe ve Tarım Makineleri">
+    <meta property="og:description"
+        content="Sıfır emisyon, sessiz çalışma, yüksek performans. Comlink akülü bahçe makineleri ile çevre dostu, ekonomik ve güçlü çözümler.">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/slider/slider_img01.png">
+    <meta property="og:url" content="https://www.comlink.com.tr/">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Comlink – Profesyonel Akülü Bahçe ve Tarım Makineleri">
+    <meta name="twitter:description"
+        content="Sıfır emisyon, sessiz çalışma, yüksek performans. Comlink akülü bahçe makineleri ile çevre dostu, ekonomik ve güçlü çözümler.">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/slider/slider_img01.png">
+
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -165,6 +185,9 @@
 </head>
 
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">İçeriğe Git</a>
+
     <!-- Custom Cursor - İki ayrı element -->
     <div id="cursor-dot"></div>
     <div id="cursor-circle"></div>
@@ -246,8 +269,9 @@
                                 </nav>
                             </div>
                             <div class="header-btn">
-                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
-                                        src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
+                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"
+                                    aria-label="Comlink ürün kataloğunu PDF olarak indir"><img
+                                        src="img/icon/calculator-symbols.png" alt="Katalog ikonu">Katalog İndir</a>
                             </div>
                         </div>
                     </div>
@@ -261,9 +285,10 @@
     <!-- header-start-end -->
 
     <!-- main-area -->
-    <main>
+    <main id="main-content">
         <!-- slider-area -->
         <section class="s-slider-area">
+            <h1 class="sr-only">Comlink - Profesyonel Akülü Bahçe ve Tarım Makineleri</h1>
             <div class="video-slider-container">
                 <video id="heroVideo" autoplay muted loop playsinline>
                     <source src="img/video-slider/slider-video.mp4" type="video/mp4">
@@ -631,8 +656,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title text-center mb-70">
-                            <h6>Son Haberler</h6>
-                            <h2>Güncel Haberler ve Duyurular</h2>
+                            <h6>Son Yazılar</h6>
+                            <h2>Güncel Yazılar</h2>
                         </div>
                     </div>
                 </div>
@@ -935,18 +960,25 @@
                                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                                     <div class="cta-form-col d-flex justify-content-between mb-3">
-                                        <input type="text" name="name" placeholder="İsim Soyisim" required
+                                        <label for="cta-name" class="form-label sr-only">İsim Soyisim *</label>
+                                        <input type="text" id="cta-name" name="name" placeholder="İsim Soyisim *"
+                                            required aria-required="true" style="width: 100%;">
+                                    </div>
+                                    <div class="cta-form-col d-flex justify-content-between mb-3">
+                                        <label for="cta-email" class="form-label sr-only">E-posta Adresiniz *</label>
+                                        <input class="cta-email" type="email" id="cta-email" name="email"
+                                            placeholder="E-posta Adresiniz *" required aria-required="true"
                                             style="width: 100%;">
                                     </div>
                                     <div class="cta-form-col d-flex justify-content-between mb-3">
-                                        <input class="cta-email" type="email" name="email"
-                                            placeholder="E-posta Adresiniz" required style="width: 100%;">
-                                    </div>
-                                    <div class="cta-form-col d-flex justify-content-between mb-3">
-                                        <input type="text" name="konu" placeholder="Konu" required style="width: 100%;">
+                                        <label for="cta-konu" class="form-label sr-only">Konu *</label>
+                                        <input type="text" id="cta-konu" name="konu" placeholder="Konu *" required
+                                            aria-required="true" style="width: 100%;">
                                     </div>
                                     <div class="cta-form-col mb-3">
-                                        <textarea name="message" placeholder="Mesajınız" rows="5" required
+                                        <label for="cta-message" class="form-label sr-only">Mesajınız *</label>
+                                        <textarea id="cta-message" name="message" placeholder="Mesajınız *" rows="5"
+                                            required aria-required="true"
                                             style="width: 100%; padding: 15px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: #fff; border-radius: 5px;"></textarea>
                                     </div>
 
@@ -974,7 +1006,7 @@
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="Comlink logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -983,10 +1015,14 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" aria-label="Facebook'ta Comlink"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" aria-label="Twitter'da Comlink"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Pinterest'te Comlink"><i
+                                                class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" aria-label="LinkedIn'de Comlink"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1000,7 +1036,8 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img01.jpg"
+                                                    alt="Akülü bahçe makineleri"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>9 Ekim, 2019</span>
@@ -1010,7 +1047,8 @@
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg" alt="img"></a>
+                                            <a href="blog.html"><img src="img/blog/f_rc_img02.jpg"
+                                                    alt="Ortak batarya platformu"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>9 Ekim, 2019</span>
@@ -1030,10 +1068,14 @@
                             <div class="fw-link">
                                 <ul>
                                     <li><a href="hakkimizda.html"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
-                                    <li><a href="teslimat-bilgisi.html"><i class="fas fa-caret-right"></i> Teslimat Bilgisi</a></li>
-                                    <li><a href="sartlar-kosullar.html"><i class="fas fa-caret-right"></i> Şartlar & Koşullar</a></li>
-                                    <li><a href="gizlilik-politikasi.html"><i class="fas fa-caret-right"></i> Gizlilik Politikası</a></li>
-                                    <li><a href="iade-politikasi.html"><i class="fas fa-caret-right"></i> İade Politikasi</a></li>
+                                    <li><a href="teslimat-bilgisi.html"><i class="fas fa-caret-right"></i> Teslimat
+                                            Bilgisi</a></li>
+                                    <li><a href="sartlar-kosullar.html"><i class="fas fa-caret-right"></i> Şartlar &
+                                            Koşullar</a></li>
+                                    <li><a href="gizlilik-politikasi.html"><i class="fas fa-caret-right"></i> Gizlilik
+                                            Politikası</a></li>
+                                    <li><a href="iade-politikasi.html"><i class="fas fa-caret-right"></i> İade
+                                            Politikasi</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1048,9 +1090,9 @@
                                     bakımsız
                                     ve sessiz çalışma ile Yüksek performans sunar.</p>
                                 <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
-                                        alt="img"></a>
+                                        alt="App Store'dan indir"></a>
                                 <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
-                                        alt="img"></a>
+                                        alt="Google Play'den indir"></a>
                             </div>
                         </div>
                     </div>
