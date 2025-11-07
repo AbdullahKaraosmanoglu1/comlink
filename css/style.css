@@ -1666,6 +1666,16 @@ label {
 	bottom: 15px;
 }
 
+.breadcrumb-content h1 {
+	font-size: 70px;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #FF6B35;
+	margin-bottom: 0;
+	position: relative;
+	display: inline-block;
+}
+
 .breadcrumb-content {
 	padding-top: 220px;
 }
@@ -6175,7 +6185,7 @@ blockquote.classic-blockquote-post::after {
    MODERN GALLERY STYLES - galeri.html
    ======================================== */
 
-/* Override eski gallery-overlay için */
+/* Override eski gallery-overlay iï¿½in */
 .gallery-section .gallery-overlay {
     position: absolute;
     top: 0;
@@ -6389,4 +6399,46 @@ blockquote.classic-blockquote-post::after {
         grid-template-columns: 1fr;
         gap: 15px;
     }
+}
+
+
+/* Skip to content link - Accessibility */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #FF6B35;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 100;
+    font-weight: 600;
+}
+
+.skip-to-content:focus {
+    top: 0;
+    color: white;
+    text-decoration: none;
+}
+
+/* Screen reader only class for hidden labels */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Form label styling */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
 }
