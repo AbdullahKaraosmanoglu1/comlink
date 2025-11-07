@@ -463,13 +463,3 @@
 
 
 })(jQuery);
-
-// Load small helper to normalize the main navigation across pages
-(function () {
-  try {
-    var s = document.createElement('script');
-    s.src = 'js/nav-fix.js';
-    s.defer = true;
-    document.head.appendChild(s);
-  } catch (e) { }
-})();
