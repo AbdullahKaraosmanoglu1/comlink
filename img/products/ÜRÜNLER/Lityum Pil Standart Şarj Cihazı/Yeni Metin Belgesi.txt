@@ -1,0 +1,7 @@
+Boyutlar: 17,5 cm x 8,5 cm x 3,5 cm
+Ağırlık: 0,6 kg
+Giriş voltajı: AC100V-AC240V
+Çıkış voltajı: DC-37,8V
+Çıkış akımı: DC-4A
+Şarj modu: CC-CV
+Standart şarj cihazları lityum demir fosfat pil paketleri ve yüksek güçlü pil paketleri için uygun değildir.

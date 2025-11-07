@@ -1,0 +1,13 @@
+Gövde boyutları (U x G x Y): 22 * ​​​​15 * 6 cm
+Vücut ağırlığı: 0,93 kg
+Giriş: DC 28~38 V
+Çıkış: AC 110 V
+Güç: 600 W
+Dalga formu: Yüksek kaliteli sinüs dalgası
+Kullanım Talimatı: Bu cihaz Donglin pillerinden gelen gücü 110V AC şebeke gücüne dönüştürür.
+Uygulamalar: televizyonlar, stereolar, elektrikli vantilatörler, sokak satıcılarının aydınlatılması, kampçılık, vb.
+ 
+
+* Not: Güç tüketimi 20 W'dan fazla olmalıdır, aksi takdirde lityum pil 5 dakikalık kullanımdan sonra otomatik olarak kapanacaktır.
+
+* Not: Motorlu veya kompresörlü ürünlerde ( ev tipi vantilatörler hariç) kullanıldığında , başlatma sırasında aşırı anlık güç oluşmasını ve makinenin aşırı yüklenmesine ve başlatma korumasının devreye girmesine neden olmaması için maksimum güç çıkışı 1/4 hP (186 watt) veya daha azdır . 1 beygir gücü = 745 watt.
