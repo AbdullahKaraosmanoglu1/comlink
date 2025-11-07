@@ -155,7 +155,7 @@
         <!-- breadcrumb-area-end -->
 
         <!-- blog-area (Products as Blog Cards) -->
-        <div class="blog-area blog-bg pt-120 pb-120">
+        <div class="blog-area blog-bg pt-120 pb-10">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 order-2 order-lg-0">
@@ -181,18 +181,20 @@
                                     <div class="cat-list">
                                         <ul>
                                             <li class="active"><a href="#" data-filter="all">Tüm Ürünler
-                                                    <span>(9)</span></a></li>
+                                                    <span>(11)</span></a></li>
                                             <li><a href="#" data-filter="yaprak-ufleyici">Yaprak Üfleyici
                                                     <span>(1)</span></a></li>
                                             <li><a href="#" data-filter="ot-bicme">Ot Biçme Makineleri
                                                     <span>(1)</span></a></li>
                                             <li><a href="#" data-filter="cim-bicme">Çim Biçme Makineleri
-                                                    <span>(1)</span></a></li>
+                                                    <span>(2)</span></a></li>
                                             <li><a href="#" data-filter="cit-budama">Çit/Çay Budama <span>(2)</span></a>
                                             </li>
                                             <li><a href="#" data-filter="testere">Zincirli Testere <span>(1)</span></a>
                                             </li>
                                             <li><a href="#" data-filter="dal-budama">Yüksek Dal Budama
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="testere-kafa">Testere Kafası
                                                     <span>(1)</span></a></li>
                                             <li><a href="#" data-filter="toprak-burgu">Toprak Burgusu
                                                     <span>(1)</span></a></li>
@@ -251,454 +253,25 @@
                         </aside>
                     </div>
                     <div class="col-lg-8">
-                        <div class="row">
-                            <!-- Product 1: CK-120 Yaprak Üfleyici -->
-                            <div class="col-md-6 product-item" data-category="yaprak-ufleyici"
-                                data-name="CK-120 Profesyonel Yaprak Üfleyici"
-                                data-keywords="yaprak üfleyici ck-120 profesyonel bahçe park">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-120"><img
-                                                src="img/products/ck-120-profesyonel-yaprak-ufleyici.png"
-                                                alt="CK-120 Yaprak Üfleyici"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#yaprak-ufleyici">Yaprak Üfleyici</a></li>
-                                                <li>Model: CK-120</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-120">CK-120 Profesyonel Yaprak Üfleyici</a>
-                                        </h4>
-                                        <p>Güçlü fırçasız motor teknolojisi ile sessiz ve etkili çalışma. Bahçe ve park
-                                            alanlarında yaprakları hızla temizler. Ayarlanabilir hız kontrolü.</p>
-                                        <a href="urun-detay.html?id=ck-120">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
+                        <!-- Ürün Listesi Buraya Dinamik Olarak Yüklenecek -->
+                        <div class="row" id="products-container">
+                            <!-- Loading Indicator -->
+                            <div class="col-12 text-center py-5">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="sr-only">Yükleniyor...</span>
                                 </div>
-                            </div>
-
-                            <!-- Product 2: CK-210 Ot Biçme -->
-                            <div class="col-md-6 product-item" data-category="ot-bicme"
-                                data-name="CK-210 Profesyonel Ot Biçme Makinesi"
-                                data-keywords="ot biçme makinesi ck-210 çim bahçe profesyonel">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-210"><img
-                                                src="img/products/ck-210-profesyonel-ot-bicme-makinesi.png"
-                                                alt="CK-210 Ot Biçme"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#ot-bicme">Ot Biçme</a></li>
-                                                <li>Model: CK-210</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-210">CK-210 Profesyonel Ot Biçme Makinesi</a>
-                                        </h4>
-                                        <p>Profesyonel kullanım için tasarlanmış ot biçme makinesi. Uzun çalışma süresi
-                                            ve
-                                            kolay kullanım. Ergonomik tasarım ile yorulmadan çalışın.</p>
-                                        <a href="urun-detay.html?id=ck-210">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 3: CK-230D Çim Biçme -->
-                            <div class="col-md-6 product-item" data-category="cim-bicme"
-                                data-name="CK-230D Çim Biçme Makinesi" data-keywords="çim biçme ck-230d çim bahçe">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-230d"><img
-                                                src="img/products/ck-230d-cim-bicme-makinesi.png"
-                                                alt="CK-230D Çim Biçme"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#cim-bicme">Çim Biçme</a></li>
-                                                <li>Model: CK-230D</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-230d">CK-230D Çim Biçme Makinesi</a></h4>
-                                        <p>Bahçe bakımı için ideal çim biçme makinesi. Hafif ve kullanışlı tasarımı ile
-                                            kolay manevra kabiliyeti. Sessiz ve güçlü performans.</p>
-                                        <a href="urun-detay.html?id=ck-230d">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 4: CK-300 Çit Budama -->
-                            <div class="col-md-6 product-item" data-category="cit-budama"
-                                data-name="CK-300 Tek Kenarlı Çit Budama"
-                                data-keywords="çit budama ck-300 tek kenarlı sepetli">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-300"><img
-                                                src="img/products/ck-300-elde-tasinabilir-tek-kenarli-sepetli-cit-ve-cay-budama-makinesi.png"
-                                                alt="CK-300 Çit Budama"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#cit-budama">Çit Budama</a></li>
-                                                <li>Model: CK-300</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-300">CK-300 Tek Kenarlı Çit Budama</a></h4>
-                                        <p>Elde taşınabilir tek kenarlı sepetli çit ve çay budama makinesi. Keskin
-                                            bıçaklar
-                                            ile mükemmel kesim performansı. Ergonomik ve hafif tasarım.</p>
-                                        <a href="urun-detay.html?id=ck-300">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 5: CK-320 Çift Taraflı Çit Budama -->
-                            <div class="col-md-6 product-item" data-category="cit-budama"
-                                data-name="CK-320 Çift Taraflı Çit Budama"
-                                data-keywords="çit budama ck-320 çift taraflı">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-320"><img
-                                                src="img/products/ck-320-elde-tasinabilir-cift-tarafli-cit-budama-makinesi.png"
-                                                alt="CK-320 Çift Taraflı Çit Budama"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#cit-budama">Çit Budama</a></li>
-                                                <li>Model: CK-320</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-320">CK-320 Çift Taraflı Çit Budama</a></h4>
-                                        <p>Elde taşınabilir çift taraflı çit budama makinesi. Profesyonel kesim kalitesi
-                                            ve yüksek verimlilik. İki taraflı kesim özelliği ile hızlı çalışma.</p>
-                                        <a href="urun-detay.html?id=ck-320">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 6: CK-400 Zincirli Testere -->
-                            <div class="col-md-6 product-item" data-category="testere"
-                                data-name="CK-400 El Tipi Zincirli Testere"
-                                data-keywords="zincirli testere ck-400 ağaç kesimi budama">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-400"><img
-                                                src="img/products/ck-400-el-tipi-zincirli-testere.png"
-                                                alt="CK-400 Zincirli Testere"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#testere">Zincirli Testere</a></li>
-                                                <li>Model: CK-400</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-400">CK-400 El Tipi Zincirli Testere</a></h4>
-                                        <p>Güçlü kesim kapasitesi ile ağaç kesimi ve budama işlerinde profesyonel
-                                            performans. Güvenli kullanım özellikleri ve otomatik zincir yağlama sistemi.
-                                        </p>
-                                        <a href="urun-detay.html?id=ck-400">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 7: CK-412 Yüksek Dal Budama -->
-                            <div class="col-md-6 product-item" data-category="dal-budama"
-                                data-name="CK-412 Profesyonel Yüksek Dal Budama"
-                                data-keywords="dal budama ck-412 yüksek teleskopik">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-412"><img
-                                                src="img/products/ck-412-profesyonel-yuksek-dal-budama-makinesi.png"
-                                                alt="CK-412 Yüksek Dal Budama"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#dal-budama">Dal Budama</a></li>
-                                                <li>Model: CK-412</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-412">CK-412 Profesyonel Yüksek Dal Budama</a>
-                                        </h4>
-                                        <p>Teleskopik sap ile yüksek dallara kolayca ulaşın. Güvenli ve etkili budama
-                                            için özel tasarım. Meyve bahçeleri ve park alanları için mükemmel.</p>
-                                        <a href="urun-detay.html?id=ck-412">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 8: CK-500 Toprak Burgusu -->
-                            <div class="col-md-6 product-item" data-category="toprak-burgu"
-                                data-name="CK-500 Toprak Burgu Makinesi"
-                                data-keywords="toprak burgu matkap ck-500 direk dikimi">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-500"><img
-                                                src="img/products/ck-500-toprak-burgu-makinesi.png"
-                                                alt="CK-500 Toprak Burgusu"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#toprak-burgu">Toprak Burgusu</a></li>
-                                                <li>Model: CK-500</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-500">CK-500 Toprak Burgu Makinesi</a></h4>
-                                        <p>Direk dikimi, ağaç dikimi ve tarım işleri için güçlü toprak burgusu. Farklı
-                                            çap seçenekleri ile her türlü işe uygun. Yüksek tork gücü.</p>
-                                        <a href="urun-detay.html?id=ck-500">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Product 9: CK-600 Akülü Çapa Makinesi -->
-                            <div class="col-md-6 product-item" data-category="capa-makinesi"
-                                data-name="CK-600 Akülü Çapa Makinesi"
-                                data-keywords="çapa makinesi ck-600 akülü tarım bahçe">
-                                <div class="single-blog-post s-single-blog-post mb-45">
-                                    <div class="blog-thumb">
-                                        <a href="urun-detay.html?id=ck-600"><img
-                                                src="img/products/ck-600-akulu-capa-makinesi.png"
-                                                alt="CK-600 Akülü Çapa Makinesi"></a>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            <ul>
-                                                <li><a href="#capa-makinesi">Çapa Makinesi</a></li>
-                                                <li>Model: CK-600</li>
-                                            </ul>
-                                        </div>
-                                        <h4><a href="urun-detay.html?id=ck-600">CK-600 Akülü Çapa Makinesi</a></h4>
-                                        <p>Bahçe ve tarla çapalama işleri için ideal akülü çapa makinesi. Güçlü motor ve
-                                            dayanıklı yapısı ile uzun ömürlü kullanım. Ergonomik ve kolay kullanım.</p>
-                                        <a href="urun-detay.html?id=ck-600">Detaylı İncele <i
-                                                class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
+                                <p class="mt-3">Ürünler yükleniyor...</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12">
+                        <!-- Pagination Buraya Eklenecek -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- blog-area-end -->
-
-
     </main>
     <!-- main-area-end -->
-
-    <!-- Comlink Ürünler ve Katalog - Modern Tasarım -->
-    <section class="pt-120 pb-90" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
-        <div class="container">
-            <!-- Başlık -->
-            <div class="row mb-60">
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <span
-                            style="color: #ff6b35; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Comlink
-                            Ürün Ailesi</span>
-                        <h2 class="mt-10 mb-20" style="font-size: 42px; font-weight: 700;">Profesyonel Akülü Bahçe
-                            Ekipmanları</h2>
-                        <p style="max-width: 700px; margin: 0 auto; font-size: 16px; color: #666;">
-                            Tek batarya platformu ile tüm ürünleri kullanın. Fırçasız motor teknolojisi, uzun çalışma
-                            süresi ve çevre dostu performans.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ürün Kartları -->
-            <div class="row mb-50">
-                <!-- CK-120 -->
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-wind"></i>
-                        </div>
-                        <h4>CK-120</h4>
-                        <p class="product-title">Profesyonel Yaprak Üfleyici</p>
-                        <p class="product-desc">Güçlü hava akışı ile bahçe temizliği</p>
-                        <a href="urun-detay.html?id=ck-120" class="product-link">Detaylı İncele →</a>
-                    </div>
-                </div>
-
-                <!-- CK-200/210 -->
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h4>CK-200/210</h4>
-                        <p class="product-title">Tek Kesimli Ot Biçme</p>
-                        <p class="product-desc">Geniş alanlarda profesyonel performans</p>
-                        <a href="urun-detay.html?id=ck-200" class="product-link">Detaylı İncele →</a>
-                    </div>
-                </div>
-
-                <!-- CK-300/320 -->
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-cut"></i>
-                        </div>
-                        <h4>CK-300/320</h4>
-                        <p class="product-title">Çit/Çay Budama</p>
-                        <p class="product-desc">Tek ve çift kenarlı kesim seçenekleri</p>
-                        <a href="urun-detay.html?id=ck-300" class="product-link">Detaylı İncele →</a>
-                    </div>
-                </div>
-
-                <!-- CK-400 -->
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-tree"></i>
-                        </div>
-                        <h4>CK-400</h4>
-                        <p class="product-title">Zincirli Testere</p>
-                        <p class="product-desc">Güçlü kesim kapasitesi, güvenli kullanım</p>
-                        <a href="urun-detay.html?id=ck-400" class="product-link">Detaylı İncele →</a>
-                    </div>
-                </div>
-
-                <!-- CK-412 -->
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-arrows-alt-v"></i>
-                        </div>
-                        <h4>CK-412</h4>
-                        <p class="product-title">Yüksek Dal Budama</p>
-                        <p class="product-desc">Teleskopik sap ile 3 metreye kadar ulaşım</p>
-                        <a href="urun-detay.html?id=ck-412" class="product-link">Detaylı İncele →</a>
-                    </div>
-                </div>
-
-                <!-- CK-500 -->
-                <div class="col-lg-4 col-md-6 mb-30">
-                    <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-sync-alt"></i>
-                        </div>
-                        <h4>CK-500</h4>
-                        <p class="product-title">Toprak Burgu/Matkap</p>
-                        <p class="product-desc">Yüksek tork gücü, sert toprak performansı</p>
-                        <a href="urun-detay.html?id=ck-500" class="product-link">Detaylı İncele →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Batarya Platformu -->
-            <div class="row mb-50">
-                <div class="col-12">
-                    <div class="battery-section">
-                        <h3 class="text-center mb-40" style="font-size: 32px; font-weight: 700;">Ortak Batarya Platformu
-                        </h3>
-                        <div class="row">
-                            <!-- V6 -->
-                            <div class="col-lg-4 col-md-6 mb-30">
-                                <div class="battery-card">
-                                    <div class="battery-icon">
-                                        <i class="fas fa-battery-three-quarters"></i>
-                                    </div>
-                                    <h4>V6-5Ah</h4>
-                                    <ul class="battery-specs">
-                                        <li><i class="fas fa-check"></i> IP66 Koruma</li>
-                                        <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
-                                        <li><i class="fas fa-check"></i> 56V Li-ion</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- V7 -->
-                            <div class="col-lg-4 col-md-6 mb-30">
-                                <div class="battery-card featured">
-                                    <div class="badge">Popüler</div>
-                                    <div class="battery-icon">
-                                        <i class="fas fa-battery-full"></i>
-                                    </div>
-                                    <h4>V7-20/30Ah</h4>
-                                    <ul class="battery-specs">
-                                        <li><i class="fas fa-check"></i> IP66 Koruma</li>
-                                        <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
-                                        <li><i class="fas fa-check"></i> 56V Li-ion</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- V8 -->
-                            <div class="col-lg-4 col-md-6 mb-30">
-                                <div class="battery-card">
-                                    <div class="battery-icon">
-                                        <i class="fas fa-battery-full"></i>
-                                    </div>
-                                    <h4>V8-15Ah</h4>
-                                    <ul class="battery-specs">
-                                        <li><i class="fas fa-check"></i> IP66 Koruma</li>
-                                        <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
-                                        <li><i class="fas fa-check"></i> 56V Li-ion</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Katalog Bölümü -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="catalog-section">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-30">
-                                <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 20px;">Ürün Kataloğumuz
-                                </h3>
-                                <p style="font-size: 16px; color: #666; margin-bottom: 30px;">
-                                    Tüm ürünlerimiz hakkında detaylı bilgi için kataloğumuzu inceleyebilirsiniz.
-                                    İnteraktif flipbook özelliği ile dijital katalogda gezinin veya PDF olarak indirin.
-                                </p>
-                                <div class="catalog-buttons">
-                                    <button class="btn catalog-btn-primary" id="openFlipbook">
-                                        <i class="fas fa-book-open"></i> Kataloğu İncele (Flipbook)
-                                    </button>
-                                    <a class="btn catalog-btn-secondary" href="kataloglar/comlink-catalog.pdf" download>
-                                        <i class="fas fa-download"></i> Katalog İndir (PDF)
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 mb-30">
-                                <div class="catalog-preview" id="catalogPreview" style="cursor: pointer;">
-                                    <picture>
-                                        <source srcset="images/yeni-katalog/katalog-1.jpg" type="image/jpeg">
-                                        <img src="images/yeni-katalog/katalog-1.jpg" alt="Comlink Katalog Kapak"
-                                            loading="lazy" class="img-fluid">
-                                    </picture>
-                                    <div class="catalog-overlay">
-                                        <i class="fas fa-book-open"></i>
-                                        <p>Kataloğu İncele</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Modern CSS Stilleri -->
     <style>
@@ -1048,7 +621,7 @@
 
     <!-- footer -->
     <footer>
-        <div class="footer-wrap pt-190 pb-40" data-background="img/bg/footer_bg.jpg">
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
@@ -1084,7 +657,8 @@
                                         </div>
                                         <div class="f-rc-content">
                                             <span>9 Ekim, 2019</span>
-                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a></h5>
+                                            <h5><a href="blog.html">Akülü Bahçe Makineleri ile Çevreci Çözümler</a>
+                                            </h5>
                                         </div>
                                     </li>
                                     <li>
@@ -1093,7 +667,8 @@
                                         </div>
                                         <div class="f-rc-content">
                                             <span>9 Ekim, 2019</span>
-                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a></h5>
+                                            <h5><a href="blog.html">Tek Akü ile Birden Fazla Cihaz Kullanımı</a>
+                                            </h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -1122,7 +697,8 @@
                                 <h5>BİZE ULAŞIN</h5>
                             </div>
                             <div class="f-support-content">
-                                <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
+                                <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz,
+                                    bakımsız
                                     ve sessiz çalışma ile Yüksek performans sunar.</p>
                                 <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
                                         alt="img"></a>
@@ -1210,12 +786,6 @@
         .single-blog-post.s-single-blog-post .blog-content p {
             flex: 1;
             min-height: 90px;
-        }
-
-        /* Grid row için eşit yükseklik */
-        .blog-area .row>[class*="col-"] {
-            display: flex;
-            margin-bottom: 30px;
         }
     </style>
 
@@ -1596,8 +1166,54 @@
             }
         });
     </script>
+
+    <!-- Comlink Products Data & Catalog System -->
+    <script src="js/products.js"></script>
+    <script src="js/products-catalog.js"></script>
+
     <!-- Custom Cursor JS -->
     <script src="js/custom-cursor.js"></script>
+
+    <!-- Lazy Loading ve Loading State için minimal CSS -->
+    <style>
+        /* Lazy Loading */
+        img.lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        img.lazy-loaded {
+            opacity: 1;
+        }
+
+        /* Loading Spinner */
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            border: 0.25em solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border 0.75s linear infinite;
+        }
+
+        @keyframes spinner-border {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
 </body>
 
 </html>

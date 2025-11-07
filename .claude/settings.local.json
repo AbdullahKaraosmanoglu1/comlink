@@ -19,7 +19,14 @@
       "Bash(git stash drop:*)",
       "Bash(ren:*)",
       "Bash(mv:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(node:*)",
+      "Bash(findstr:*)",
+      "Bash(xargs:*)",
+      "Bash(Sort-Object -Property Size -Descending)",
+      "Bash(Select-Object -First 20)",
+      "Bash(git diff:*)",
+      "Bash(git reset:*)"
     ],
     "deny": [],
     "ask": []
