@@ -28,7 +28,9 @@
       "Bash(git diff:*)",
       "Bash(git reset:*)",
       "Bash(echo:*)",
-      "Bash(\"C:\\Users\\akogl\\projects\\comlink\\css\\style.css\")"
+      "Bash(\"C:\\Users\\akogl\\projects\\comlink\\css\\style.css\")",
+      "WebSearch",
+      "WebFetch(domain:flippingbook.com)"
     ],
     "deny": [],
     "ask": []

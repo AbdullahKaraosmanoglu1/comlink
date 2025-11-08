@@ -802,43 +802,11 @@
         <div class="flipbook-modal-content">
             <span class="flipbook-close">&times;</span>
             <div class="flipbook-container">
-                <div id="flipbook">
-                    <div class="hard"><img src="images/yeni-katalog/katalog-1.jpg" alt="Sayfa 1"></div>
-                    <div class="hard"><img src="images/yeni-katalog/katalog-2.jpg" alt="Sayfa 2"></div>
-                    <div><img src="images/yeni-katalog/katalog-3.jpg" alt="Sayfa 3"></div>
-                    <div><img src="images/yeni-katalog/katalog-4.jpg" alt="Sayfa 4"></div>
-                    <div><img src="images/yeni-katalog/katalog-5.jpg" alt="Sayfa 5"></div>
-                    <div><img src="images/yeni-katalog/katalog-6.jpg" alt="Sayfa 6"></div>
-                    <div><img src="images/yeni-katalog/katalog-7.jpg" alt="Sayfa 7"></div>
-                    <div><img src="images/yeni-katalog/katalog-8.jpg" alt="Sayfa 8"></div>
-                    <div><img src="images/yeni-katalog/katalog-9.jpg" alt="Sayfa 9"></div>
-                    <div><img src="images/yeni-katalog/katalog-10.jpg" alt="Sayfa 10"></div>
-                    <div><img src="images/yeni-katalog/katalog-11.jpg" alt="Sayfa 11"></div>
-                    <div><img src="images/yeni-katalog/katalog-12.jpg" alt="Sayfa 12"></div>
-                    <div><img src="images/yeni-katalog/katalog-13.jpg" alt="Sayfa 13"></div>
-                    <div><img src="images/yeni-katalog/katalog-14.jpg" alt="Sayfa 14"></div>
-                    <div><img src="images/yeni-katalog/katalog-15.jpg" alt="Sayfa 15"></div>
-                    <div><img src="images/yeni-katalog/katalog-16.jpg" alt="Sayfa 16"></div>
-                    <div><img src="images/yeni-katalog/katalog-17.jpg" alt="Sayfa 17"></div>
-                    <div><img src="images/yeni-katalog/katalog-18.jpg" alt="Sayfa 18"></div>
-                    <div><img src="images/yeni-katalog/katalog-19.jpg" alt="Sayfa 19"></div>
-                    <div><img src="images/yeni-katalog/katalog-20.jpg" alt="Sayfa 20"></div>
-                    <div><img src="images/yeni-katalog/katalog-21.jpg" alt="Sayfa 21"></div>
-                    <div><img src="images/yeni-katalog/katalog-22.jpg" alt="Sayfa 22"></div>
-                    <div><img src="images/yeni-katalog/katalog-23.jpg" alt="Sayfa 23"></div>
-                    <div><img src="images/yeni-katalog/katalog-24.jpg" alt="Sayfa 24"></div>
-                    <div><img src="images/yeni-katalog/katalog-25.jpg" alt="Sayfa 25"></div>
-                    <div><img src="images/yeni-katalog/katalog-26.jpg" alt="Sayfa 26"></div>
-                    <div><img src="images/yeni-katalog/katalog-27.jpg" alt="Sayfa 27"></div>
-                    <div><img src="images/yeni-katalog/katalog-28.jpg" alt="Sayfa 28"></div>
-                    <div><img src="images/yeni-katalog/katalog-29.jpg" alt="Sayfa 29"></div>
-                    <div><img src="images/yeni-katalog/katalog-30.jpg" alt="Sayfa 30"></div>
-                    <div class="hard"><img src="images/yeni-katalog/katalog-31.jpg" alt="Sayfa 31"></div>
-                </div>
+                <div id="flipbook"></div>
             </div>
             <div class="flipbook-controls">
                 <button id="prevPage" class="flipbook-btn">← Önceki</button>
-                <span id="pageNum">1 / 31</span>
+                <span id="pageNum">0 / 31</span>
                 <button id="nextPage" class="flipbook-btn">Sonraki →</button>
             </div>
         </div>
@@ -980,8 +948,8 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- Turn.js Flipbook Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+    <!-- StPageFlip Library - Modern Realistic Flipbook -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
 
     <!-- Product Cards Uniform Size CSS -->
     <style>
@@ -1034,180 +1002,147 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.95);
+            background: rgba(0, 0, 0, 0.8);
             overflow: hidden;
+            backdrop-filter: blur(8px);
         }
 
         .flipbook-modal-content {
             position: relative;
             margin: 0 auto;
-            width: 90%;
-            max-width: 1200px;
+            width: fit-content;
             height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            padding: 70px 20px 30px;
+            justify-content: center;
+            padding: 20px;
             box-sizing: border-box;
         }
 
         .flipbook-close {
             position: absolute;
-            top: 10px;
-            right: 30px;
-            color: #fff;
-            font-size: 40px;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 35px;
             font-weight: bold;
             cursor: pointer;
-            z-index: 10000;
+            z-index: 10001;
+            transition: all 0.3s ease;
+            background: rgba(255, 107, 53, 0.9);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            line-height: 1;
         }
 
         .flipbook-close:hover {
-            color: #ff6b6b;
+            background: #ff6b35;
+            transform: scale(1.1);
         }
 
         .flipbook-container {
-            width: 100%;
-            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            max-height: calc(100vh - 180px);
-            overflow: hidden;
+            margin-bottom: 15px;
+            perspective: 2500px;
         }
 
         #flipbook {
-            width: 1600px;
-            height: 900px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .stf__parent {
             margin: 0 auto;
-            max-width: 95vw;
-            max-height: calc(100vh - 250px);
         }
 
-        #flipbook .page {
-            width: 800px;
-            height: 900px;
-            background-color: white;
-            line-height: 900px;
-            font-size: 20px;
-            text-align: center;
+        .stf__wrapper {
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
         }
 
-        #flipbook img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            pointer-events: none;
-            user-select: none;
-        }
-
-        #flipbook .turn-page {
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Remove blue border */
-        #flipbook .page-wrapper {
-            border: none !important;
-        }
-
-        #flipbook div {
-            border: none !important;
+        .stf__block {
+            background: white;
         }
 
         .flipbook-controls {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px 40px;
-            border-radius: 50px;
-            flex-shrink: 0;
-            margin-top: auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .flipbook-btn {
             background: #ff6b35;
             color: white;
             border: none;
-            padding: 12px 25px;
-            border-radius: 25px;
+            padding: 10px 20px;
+            border-radius: 20px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             transition: all 0.3s;
         }
 
         .flipbook-btn:hover {
             background: #ff8c42;
-            transform: scale(1.05);
+            transform: translateY(-2px);
         }
 
         .flipbook-btn:disabled {
             background: #ccc;
             cursor: not-allowed;
-            transform: scale(1);
+            transform: translateY(0);
         }
 
         #pageNum {
-            color: white;
-            font-size: 18px;
+            color: #333;
+            font-size: 15px;
             font-weight: 600;
-            min-width: 80px;
+            min-width: 70px;
             text-align: center;
         }
 
         @media (max-width: 992px) {
-            #flipbook {
-                width: 560px;
-                height: 392px;
-            }
-
-            #flipbook .page {
-                width: 280px;
-                height: 392px;
-            }
-
             .flipbook-modal-content {
-                padding: 60px 15px 20px;
+                padding: 15px;
             }
 
-            .flipbook-container {
-                max-height: calc(100vh - 180px);
+            .flipbook-controls {
+                padding: 10px 25px;
             }
         }
 
         @media (max-width: 767px) {
-            #flipbook {
-                width: 85vw;
-                height: calc(85vw * 0.7);
-                max-height: 400px;
-            }
-
-            #flipbook .page {
-                width: 42.5vw;
-                height: calc(85vw * 0.7);
-            }
-
-            .flipbook-modal-content {
-                padding: 50px 10px 15px;
-            }
-
-            .flipbook-container {
-                max-height: calc(100vh - 150px);
+            .flipbook-close {
+                width: 40px;
+                height: 40px;
+                font-size: 28px;
+                top: 10px;
+                right: 10px;
             }
 
             .flipbook-controls {
-                flex-direction: row;
                 gap: 10px;
-                padding: 12px 20px;
-                font-size: 14px;
+                padding: 8px 20px;
             }
 
             .flipbook-btn {
                 padding: 8px 15px;
+                font-size: 13px;
+            }
+
+            #pageNum {
                 font-size: 14px;
+                min-width: 60px;
             }
         }
     </style>
@@ -1218,59 +1153,129 @@
             var modal = $('#flipbookModal');
             var openBtn = $('#openFlipbook');
             var closeBtn = $('.flipbook-close');
+            var pageFlip = null;
             var initialized = false;
+
+            // Katalog sayfaları
+            var catalogPages = [
+                'images/yeni-katalog/katalog-1.jpg',
+                'images/yeni-katalog/katalog-2.jpg',
+                'images/yeni-katalog/katalog-3.jpg',
+                'images/yeni-katalog/katalog-4.jpg',
+                'images/yeni-katalog/katalog-5.jpg',
+                'images/yeni-katalog/katalog-6.jpg',
+                'images/yeni-katalog/katalog-7.jpg',
+                'images/yeni-katalog/katalog-8.jpg',
+                'images/yeni-katalog/katalog-9.jpg',
+                'images/yeni-katalog/katalog-10.jpg',
+                'images/yeni-katalog/katalog-11.jpg',
+                'images/yeni-katalog/katalog-12.jpg',
+                'images/yeni-katalog/katalog-13.jpg',
+                'images/yeni-katalog/katalog-14.jpg',
+                'images/yeni-katalog/katalog-15.jpg',
+                'images/yeni-katalog/katalog-16.jpg',
+                'images/yeni-katalog/katalog-17.jpg',
+                'images/yeni-katalog/katalog-18.jpg',
+                'images/yeni-katalog/katalog-19.jpg',
+                'images/yeni-katalog/katalog-20.jpg',
+                'images/yeni-katalog/katalog-21.jpg',
+                'images/yeni-katalog/katalog-22.jpg',
+                'images/yeni-katalog/katalog-23.jpg',
+                'images/yeni-katalog/katalog-24.jpg',
+                'images/yeni-katalog/katalog-25.jpg',
+                'images/yeni-katalog/katalog-26.jpg',
+                'images/yeni-katalog/katalog-27.jpg',
+                'images/yeni-katalog/katalog-28.jpg',
+                'images/yeni-katalog/katalog-29.jpg',
+                'images/yeni-katalog/katalog-30.jpg',
+                'images/yeni-katalog/katalog-31.jpg'
+            ];
+
+            // Sayfa çevirme ses efekti - Gerçek ses dosyası kullanımı
+            var pageFlipAudio = new Audio('media/paper-flip.wav');
+            pageFlipAudio.volume = 0.4; // Ses seviyesi (0.0 - 1.0)
+
+            function playPageFlipSound() {
+                try {
+                    // Ses dosyasını baştan çal
+                    pageFlipAudio.currentTime = 0;
+                    pageFlipAudio.play().catch(function(error) {
+                        console.log('Ses çalınamadı:', error);
+                    });
+                } catch (e) {
+                    console.log('Ses efekti çalınamadı');
+                }
+            }
 
             // Open modal and initialize flipbook
             openBtn.click(function () {
                 modal.fadeIn();
-                $('body').css('overflow', 'hidden'); // Disable body scroll
+                $('body').css('overflow', 'hidden');
 
                 if (!initialized) {
-                    // Calculate optimal flipbook size
+                    // Ekran boyutuna göre kitap boyutunu ayarla
                     var viewportWidth = $(window).width();
                     var viewportHeight = $(window).height();
-                    var maxWidth = Math.min(1600, viewportWidth * 0.95);
-                    var maxHeight = Math.min(900, viewportHeight - 250);
 
-                    $('#flipbook').turn({
-                        width: maxWidth,
-                        height: maxHeight,
-                        autoCenter: true,
-                        duration: 800,
-                        gradients: true,
-                        acceleration: true,
-                        elevation: 50,
-                        pages: 31,
-                        display: 'double',
-                        when: {
-                            turning: function (event, page, view) {
-                                // Disable scrolling during turn
-                                event.preventDefault();
-                            }
-                        }
+                    // Her sayfa için genişlik (çift sayfa gösterilecek)
+                    var pageWidth = 450;
+                    var pageHeight = 550;
+
+                    // StPageFlip'i başlat
+                    pageFlip = new St.PageFlip(document.getElementById('flipbook'), {
+                        width: pageWidth,
+                        height: pageHeight,
+                        size: 'fixed',
+                        minWidth: 300,
+                        maxWidth: 500,
+                        minHeight: 400,
+                        maxHeight: 600,
+                        maxShadowOpacity: 0.4,
+                        showCover: true,
+                        mobileScrollSupport: false,
+                        swipeDistance: 30,
+                        clickEventForward: true,
+                        usePortrait: false,
+                        startPage: 0,
+                        drawShadow: true,
+                        flippingTime: 800,
+                        useMouseEvents: true,
+                        autoSize: false,
+                        showPageCorners: true,
+                        disableFlipByClick: false
                     });
 
-                    // Prevent image clicks from triggering any popup
-                    $('#flipbook img').on('click', function (e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        return false;
+                    // Sayfaları yükle
+                    pageFlip.loadFromImages(catalogPages);
+
+                    // Sayfa değiştiğinde
+                    pageFlip.on('flip', (e) => {
+                        playPageFlipSound();
+                        updatePageNumber();
                     });
 
-                    // Update page number on turn
-                    $('#flipbook').bind('turned', function (event, page, view) {
-                        $('#pageNum').text(page + ' / 31');
-
-                        // Disable/enable buttons
-                        $('#prevPage').prop('disabled', page === 1);
-                        $('#nextPage').prop('disabled', page === 31);
+                    pageFlip.on('changeState', (e) => {
+                        updatePageNumber();
                     });
 
                     initialized = true;
+                    updatePageNumber();
                 }
             });
 
-            // Catalog preview click - also opens flipbook
+            // Sayfa numarasını güncelle
+            function updatePageNumber() {
+                if (pageFlip) {
+                    var currentPage = pageFlip.getCurrentPageIndex();
+                    var totalPages = catalogPages.length;
+                    $('#pageNum').text((currentPage + 1) + ' / ' + totalPages);
+
+                    $('#prevPage').prop('disabled', currentPage === 0);
+                    $('#nextPage').prop('disabled', currentPage >= totalPages - 1);
+                }
+            }
+
+            // Catalog preview click
             $('#catalogPreview').click(function () {
                 openBtn.trigger('click');
             });
@@ -1278,14 +1283,13 @@
             // Close modal
             function closeModal() {
                 modal.fadeOut();
-                $('body').css('overflow', 'auto'); // Re-enable body scroll
+                $('body').css('overflow', 'auto');
             }
 
             closeBtn.click(function () {
                 closeModal();
             });
 
-            // Close modal on outside click
             $(window).click(function (event) {
                 if (event.target == modal[0]) {
                     closeModal();
@@ -1294,20 +1298,24 @@
 
             // Navigation buttons
             $('#prevPage').click(function () {
-                $('#flipbook').turn('previous');
+                if (pageFlip) {
+                    pageFlip.flipPrev();
+                }
             });
 
             $('#nextPage').click(function () {
-                $('#flipbook').turn('next');
+                if (pageFlip) {
+                    pageFlip.flipNext();
+                }
             });
 
             // Keyboard navigation
             $(document).keydown(function (e) {
-                if (modal.is(':visible')) {
-                    if (e.keyCode === 37) { // Left arrow
-                        $('#flipbook').turn('previous');
-                    } else if (e.keyCode === 39) { // Right arrow
-                        $('#flipbook').turn('next');
+                if (modal.is(':visible') && pageFlip) {
+                    if (e.keyCode === 37) { // Left
+                        pageFlip.flipPrev();
+                    } else if (e.keyCode === 39) { // Right
+                        pageFlip.flipNext();
                     } else if (e.keyCode === 27) { // Escape
                         closeModal();
                     }
