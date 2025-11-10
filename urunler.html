@@ -200,25 +200,27 @@
                                     <div class="cat-list">
                                         <ul>
                                             <li class="active"><a href="#" data-filter="all">Tüm Ürünler
-                                                    <span>(11)</span></a></li>
+                                                    <span>(31)</span></a></li>
+                                            <li><a href="#" data-filter="batarya">Bataryalar
+                                                    <span>(4)</span></a></li>
+                                            <li><a href="#" data-filter="ot-bicme">Ot Biçme
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="dal-budama">Dal Budama
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="yuksek-dal-budama">Yüksek Dal Budama
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="cit-budama">Çit Budama
+                                                    <span>(3)</span></a></li>
                                             <li><a href="#" data-filter="yaprak-ufleyici">Yaprak Üfleyici
                                                     <span>(1)</span></a></li>
-                                            <li><a href="#" data-filter="ot-bicme">Ot Biçme Makineleri
+                                            <li><a href="#" data-filter="cim-bicme">Çim Biçme
                                                     <span>(1)</span></a></li>
-                                            <li><a href="#" data-filter="cim-bicme">Çim Biçme Makineleri
-                                                    <span>(2)</span></a></li>
-                                            <li><a href="#" data-filter="cit-budama">Çit/Çay Budama <span>(2)</span></a>
-                                            </li>
-                                            <li><a href="#" data-filter="testere">Zincirli Testere <span>(1)</span></a>
-                                            </li>
-                                            <li><a href="#" data-filter="dal-budama">Yüksek Dal Budama
+                                            <li><a href="#" data-filter="toprak-burgu">Toprak Burgu
                                                     <span>(1)</span></a></li>
-                                            <li><a href="#" data-filter="testere-kafa">Testere Kafası
+                                            <li><a href="#" data-filter="capa-makinesi">Çapa Makinası
                                                     <span>(1)</span></a></li>
-                                            <li><a href="#" data-filter="toprak-burgu">Toprak Burgusu
-                                                    <span>(1)</span></a></li>
-                                            <li><a href="#" data-filter="capa-makinesi">Çapa Makinesi
-                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="aksesuar">Aksesuarlar
+                                                    <span>(17)</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -497,6 +499,84 @@
         </div>
     </main>
     <!-- main-area-end -->
+
+    <!-- Mobile Filter Button (Floating) -->
+    <button id="mobileFilterBtn" class="mobile-filter-btn" aria-label="Filtreleri Aç">
+        <i class="fas fa-filter"></i>
+        <span>Filtrele</span>
+    </button>
+
+    <!-- Mobile Sidebar (Slide-in) -->
+    <div id="mobileSidebarOverlay" class="mobile-sidebar-overlay"></div>
+    <div id="mobileSidebar" class="mobile-sidebar">
+        <div class="mobile-sidebar-header">
+            <h3><i class="fas fa-sliders-h"></i> Filtreler</h3>
+            <button id="closeMobileSidebar" class="close-sidebar-btn" aria-label="Kapat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="mobile-sidebar-content">
+            <!-- Arama -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-search"></i> Ürün Ara</h4>
+                <div class="sidebar-form">
+                    <form id="mobileProductSearchForm">
+                        <input type="text" id="mobileProductSearchInput" placeholder="Ürün ara...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Kategoriler -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-folder"></i> Ürün Kategorileri</h4>
+                <div class="cat-list mobile-cat-list">
+                    <ul>
+                        <!-- Kategoriler dinamik olarak yüklenecek -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Katalog İndir -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-file-pdf"></i> Katalog İndir</h4>
+                <a href="kataloglar/comlink-catalog.pdf" download class="mobile-catalog-download">
+                    <div class="catalog-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="catalog-info">
+                        <h5>Comlink Ürün Kataloğu</h5>
+                        <span>PDF Format</span>
+                    </div>
+                    <div class="catalog-download-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Ürün Etiketleri -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-tags"></i> Ürün Etiketleri</h4>
+                <div class="tag-list mobile-tag-list">
+                    <ul>
+                        <li><a href="#">Akülü</a></li>
+                        <li><a href="#">Profesyonel</a></li>
+                        <li><a href="#">Bahçe</a></li>
+                        <li><a href="#">Tarım</a></li>
+                        <li><a href="#">Sessiz</a></li>
+                        <li><a href="#">Çevreci</a></li>
+                        <li><a href="#">Taiwan Excellence</a></li>
+                        <li><a href="#">Ergonomik</a></li>
+                        <li><a href="#">Fırçasız Motor</a></li>
+                        <li><a href="#">IP66</a></li>
+                        <li><a href="#">Dayanıklı</a></li>
+                        <li><a href="#">Ortak Batarya</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modern CSS Stilleri -->
     <style>
@@ -1456,7 +1536,550 @@
             white-space: nowrap;
             border-width: 0;
         }
+
+        /* ============================================
+           MOBILE FLOATING SIDEBAR SYSTEM - PRODUCTS
+           ============================================ */
+
+        /* Floating Filter Button */
+        .mobile-filter-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 90px;
+            /* ScrollUp butonundan sola kaydırıldı */
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            cursor: pointer;
+            z-index: 998;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .mobile-filter-btn span {
+            font-size: 10px;
+            font-weight: 600;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-filter-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+        }
+
+        .mobile-filter-btn:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 10px 40px rgba(255, 107, 53, 0.7);
+            }
+        }
+
+        /* Overlay */
+        .mobile-sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .mobile-sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Mobile Sidebar */
+        .mobile-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 85%;
+            max-width: 350px;
+            height: 100vh;
+            background: white;
+            transform: translateX(-100%);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .mobile-sidebar.active {
+            transform: translateX(0);
+        }
+
+        /* Sidebar Header */
+        .mobile-sidebar-header {
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .mobile-sidebar-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .close-sidebar-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .close-sidebar-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        /* Sidebar Content */
+        .mobile-sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar-thumb {
+            background: #ff6b35;
+            border-radius: 3px;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar-thumb:hover {
+            background: #d23c19;
+        }
+
+        /* Sidebar Sections */
+        .mobile-sidebar-section {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .mobile-sidebar-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .mobile-sidebar-section h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mobile-sidebar-section h4 i {
+            color: #ff6b35;
+            font-size: 14px;
+        }
+
+        /* Mobile Category List */
+        .mobile-cat-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-cat-list ul li {
+            margin-bottom: 10px;
+        }
+
+        .mobile-cat-list ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .mobile-cat-list ul li a:hover,
+        .mobile-cat-list ul li.active a {
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .mobile-cat-list ul li a span {
+            background: rgba(255, 107, 53, 0.1);
+            color: #ff6b35;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .mobile-cat-list ul li.active a span,
+        .mobile-cat-list ul li a:hover span {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        /* Mobile Search Form */
+        .mobile-sidebar-section .sidebar-form {
+            margin-top: 10px;
+        }
+
+        .mobile-sidebar-section .sidebar-form form {
+            position: relative;
+        }
+
+        .mobile-sidebar-section .sidebar-form input {
+            width: 100%;
+            padding: 12px 50px 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-sidebar-section .sidebar-form input:focus {
+            border-color: #ff6b35;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .mobile-sidebar-section .sidebar-form button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: #ff6b35;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-sidebar-section .sidebar-form button:hover {
+            background: #d23c19;
+        }
+
+        /* Mobile Catalog Download */
+        .mobile-catalog-download {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: linear-gradient(135deg, #fff5f0, #ffe8dc);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #ff6b35;
+        }
+
+        .mobile-catalog-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .mobile-catalog-download .catalog-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .mobile-catalog-download .catalog-icon i {
+            font-size: 24px;
+            color: white;
+        }
+
+        .mobile-catalog-download .catalog-info {
+            flex: 1;
+        }
+
+        .mobile-catalog-download .catalog-info h5 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 0 0 3px 0;
+        }
+
+        .mobile-catalog-download .catalog-info span {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .mobile-catalog-download .catalog-download-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .mobile-catalog-download .catalog-download-icon i {
+            font-size: 16px;
+            color: #ff6b35;
+        }
+
+        .mobile-catalog-download:hover .catalog-download-icon {
+            background: #ff6b35;
+        }
+
+        .mobile-catalog-download:hover .catalog-download-icon i {
+            color: white;
+        }
+
+        /* Mobile Tags */
+        .mobile-tag-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .mobile-tag-list ul li a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #f8f9fa;
+            border-radius: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-tag-list ul li a:hover {
+            background: #ff6b35;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Body Lock - Scroll olmaması için */
+        body.mobile-sidebar-open {
+            overflow: hidden;
+        }
+
+        /* Responsive - Sadece mobilde görünsün */
+        @media (max-width: 991px) {
+            .mobile-filter-btn {
+                display: flex;
+            }
+
+            /* Desktop sidebar'ı mobilde gizle */
+            .blog-sidebar,
+            .col-lg-4.order-2 {
+                display: none !important;
+            }
+
+            /* Ürünler tam genişlik olsun mobilde */
+            .col-lg-8 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            /* Ürün kartları full width */
+            .col-lg-9 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .mobile-filter-btn,
+            .mobile-sidebar,
+            .mobile-sidebar-overlay {
+                display: none !important;
+            }
+        }
+
+        /* Tablet için sidebar genişliği */
+        @media (min-width: 576px) and (max-width: 991px) {
+            .mobile-sidebar {
+                max-width: 380px;
+            }
+        }
     </style>
+
+    <!-- Mobile Sidebar JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtn = document.getElementById('mobileFilterBtn');
+            const sidebar = document.getElementById('mobileSidebar');
+            const overlay = document.getElementById('mobileSidebarOverlay');
+            const closeBtn = document.getElementById('closeMobileSidebar');
+            const body = document.body;
+
+            // Kategorileri mobile sidebar'a kopyala
+            function syncCategories() {
+                const desktopCategories = document.querySelector('.product-sidebar .cat-list ul, aside .cat-list ul');
+                const mobileCategories = document.querySelector('.mobile-cat-list ul');
+
+                if (desktopCategories && mobileCategories) {
+                    mobileCategories.innerHTML = desktopCategories.innerHTML;
+                }
+            }
+
+            // Sidebar'ı aç
+            function openSidebar() {
+                syncCategories(); // Kategorileri senkronize et
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+                body.classList.add('mobile-sidebar-open');
+            }
+
+            // Sidebar'ı kapat
+            function closeSidebar() {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                body.classList.remove('mobile-sidebar-open');
+            }
+
+            // Event Listeners
+            if (filterBtn) {
+                filterBtn.addEventListener('click', openSidebar);
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeSidebar);
+            }
+
+            if (overlay) {
+                overlay.addEventListener('click', closeSidebar);
+            }
+
+            // Escape tuşu ile kapat
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+                    closeSidebar();
+                }
+            });
+
+            // Swipe to close (touch support)
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            sidebar.addEventListener('touchstart', function (e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            sidebar.addEventListener('touchend', function (e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+
+            function handleSwipe() {
+                if (touchStartX - touchEndX > 100) { // Swipe left
+                    closeSidebar();
+                }
+            }
+
+            // Mobile arama formu
+            const mobileSearchForm = document.getElementById('mobileProductSearchForm');
+            const mobileSearchInput = document.getElementById('mobileProductSearchInput');
+            const desktopSearchInput = document.getElementById('product-search-input');
+
+            if (mobileSearchForm && desktopSearchInput) {
+                mobileSearchForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    // Desktop input'a değeri aktar
+                    desktopSearchInput.value = mobileSearchInput.value;
+
+                    // Arama event'ini tetikle
+                    const searchEvent = new Event('keyup');
+                    desktopSearchInput.dispatchEvent(searchEvent);
+
+                    closeSidebar();
+                });
+            }
+
+            // Kategori tıklamalarını mobile'dan desktop'a yönlendir
+            document.addEventListener('click', function (e) {
+                const mobileCatLink = e.target.closest('.mobile-cat-list a');
+                if (mobileCatLink) {
+                    e.preventDefault();
+                    const filter = mobileCatLink.getAttribute('data-filter');
+
+                    // Desktop kategorisindeki aynı filtreyi tıklat
+                    const desktopCatLink = document.querySelector(`.cat-list a[data-filter="${filter}"]`);
+                    if (desktopCatLink) {
+                        desktopCatLink.click();
+                    }
+
+                    closeSidebar();
+                }
+            });
+
+            // Sayfa yüklendiğinde kategorileri senkronize et
+            setTimeout(syncCategories, 500);
+        });
+    </script>
 </body>
 
 </html>
