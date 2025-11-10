@@ -606,3 +606,114 @@ function getPostsByCategory(categoryId) {
 function getRecentPosts(count = 3) {
     return Object.values(blogsData).slice(0, count);
 }
+
+// ==================== FİLTRELEME FONKSİYONLARI ====================
+
+// Blog yazılarını filtrele
+function filterPosts(filters = {}) {
+    let posts = getAllPosts();
+
+    // Kategoriye göre filtrele
+    if (filters.category && filters.category !== 'all') {
+        posts = posts.filter(post => post.categoryId === filters.category);
+    }
+
+    // Aramaya göre filtrele
+    if (filters.search && filters.search.trim() !== '') {
+        const searchTerm = filters.search.toLowerCase().trim();
+        posts = posts.filter(post => {
+            const titleMatch = post.title.toLowerCase().includes(searchTerm);
+            const excerptMatch = post.excerpt.toLowerCase().includes(searchTerm);
+            const categoryMatch = post.category.toLowerCase().includes(searchTerm);
+            const tagsMatch = post.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+            return titleMatch || excerptMatch || categoryMatch || tagsMatch;
+        });
+    }
+
+    // Sıralamaya göre düzenle
+    if (filters.sort) {
+        switch (filters.sort) {
+            case 'date-desc':
+                // Yeni yazılar önce (varsayılan)
+                posts = posts.sort((a, b) => b.id.localeCompare(a.id));
+                break;
+            case 'date-asc':
+                // Eski yazılar önce
+                posts = posts.sort((a, b) => a.id.localeCompare(b.id));
+                break;
+            case 'title-asc':
+                // A-Z
+                posts = posts.sort((a, b) => a.title.localeCompare(b.title, 'tr'));
+                break;
+            case 'title-desc':
+                // Z-A
+                posts = posts.sort((a, b) => b.title.localeCompare(a.title, 'tr'));
+                break;
+            default:
+                // Varsayılan: Yeni yazılar önce
+                posts = posts.sort((a, b) => b.id.localeCompare(a.id));
+        }
+    }
+
+    return posts;
+}
+
+// ==================== PAGINATION FONKSİYONLARI ====================
+
+// Sayfalanmış blog yazılarını getir
+function getPostsPaginated(page = 1, itemsPerPage = 6, filters = {}) {
+    const allPosts = filterPosts(filters);
+    const totalItems = allPosts.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+    // Sayfa numarasını düzelt
+    page = Math.max(1, Math.min(page, totalPages));
+
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const posts = allPosts.slice(startIndex, endIndex);
+
+    return {
+        posts: posts,
+        pagination: {
+            currentPage: page,
+            totalPages: totalPages,
+            totalItems: totalItems,
+            itemsPerPage: itemsPerPage,
+            hasNextPage: page < totalPages,
+            hasPrevPage: page > 1,
+            startIndex: startIndex + 1,
+            endIndex: Math.min(endIndex, totalItems)
+        }
+    };
+}
+
+// Toplam sayfa sayısını getir
+function getTotalBlogPages(itemsPerPage = 6, filters = {}) {
+    const allPosts = filterPosts(filters);
+    return Math.ceil(allPosts.length / itemsPerPage);
+}
+
+// Tüm kategorileri getir (blog sayısıyla birlikte)
+function getBlogCategories() {
+    const categories = {};
+    const posts = getAllPosts();
+
+    posts.forEach(post => {
+        if (!categories[post.categoryId]) {
+            categories[post.categoryId] = {
+                id: post.categoryId,
+                name: post.category,
+                count: 0
+            };
+        }
+        categories[post.categoryId].count++;
+    });
+
+    return Object.values(categories).sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+}
+
+// Toplam blog yazısı sayısını getir
+function getTotalPostCount() {
+    return getAllPosts().length;
+}
