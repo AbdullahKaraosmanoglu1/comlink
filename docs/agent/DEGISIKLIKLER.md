@@ -8,7 +8,7 @@
 ## Yeni Sayfalar
 - `website/hakkimizda.html` (about-us.html kopyası, TR başlık/meta/nav)
 - `website/urunler.html` (service-warehouse.html tabanlı, ürün bölümü eklendi)
-- `website/galeri.html` (blog.html tabanlı, galeri bölümü eklendi)
+- `website/oduller-sertifikalar.html` (blog.html tabanlı, galeri bölümü eklendi)
 - `website/iletisim.html` (support.html kopyası, TR nav ve form placeholder’lar)
 
 ## Ortak Düzenlemeler

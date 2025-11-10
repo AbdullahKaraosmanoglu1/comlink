@@ -4,7 +4,7 @@
 - Ana sayfa: `website/index.html`
 - Hakkımızda: `website/hakkimizda.html`
 - Ürünler: `website/urunler.html`
-- Galeri: `website/galeri.html`
+- Galeri: `website/oduller-sertifikalar.html`
 - İletişim: `website/iletisim.html`
 
 Metin düzenleme: İlgili HTML dosyasındaki başlık ve paragrafları güncelleyin (`<h1..h6>`, `<p>`, `<li>`).
@@ -12,7 +12,7 @@ Metin düzenleme: İlgili HTML dosyasındaki başlık ve paragrafları güncelle
 ## Yeni Ürün Ekleme
 1. Ürün satırını `website/urunler.html` içinde uygun listeye ekleyin.
 2. Gerekirse görselini `website/images/` içine kopyalayın.
-3. Galeriye de eklemek isterseniz `website/galeri.html` içinde yeni bir blok oluşturun (örneği izleyin).
+3. Galeriye de eklemek isterseniz `website/oduller-sertifikalar.html` içinde yeni bir blok oluşturun (örneği izleyin).
 
 ## Görsel Değiştirme
 - Var olan görseller `website/images/` altında. Dosyayı aynı adla değiştirirseniz sayfalar otomatik güncellenir.

@@ -13,7 +13,7 @@
   - Nice Select (select stilleri)
 
 ## Dosya Yapısı (website/)
-- Kök HTML: `index.html`, `hakkimizda.html`, `urunler.html`, `galeri.html`, `iletisim.html`
+- Kök HTML: `index.html`, `hakkimizda.html`, `urunler.html`, `oduller-sertifikalar.html`, `iletisim.html`
 - Stil: `css/` (bootstrap, responsive, theme)
 - Script: `js/` (eklenti ve `main.js`)
 - Tema görselleri: `img/`

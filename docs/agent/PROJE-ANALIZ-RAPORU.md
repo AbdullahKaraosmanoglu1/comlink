@@ -146,7 +146,7 @@ Comlink projesi **profesyonel bir template** (Startesk - Cargo/Logistics) üzeri
 | Müşteri Yorumları | "Express delivery iş an innovative service..." | index.html:722-724 |
 | Hakkımızda - FAQ | "What iş cargo and logistics?" | hakkimizda.html:614-620 |
 | Ürünler - Avantajlar | "Express delivery iş an innovative service..." | urunler.html:440-446 |
-| Galeri - Blog Cards | "Logistics Originated Military" | galeri.html:422 |
+| Galeri - Blog Cards | "Logistics Originated Military" | oduller-sertifikalar.html:422 |
 | Video Bölümü | "never break our promise" | hakkimizda.html:467 |
 | Newsletter | "Newsletter Sign Up" | Tüm sayfalar:1016 |
 | Modal Başlıklar | "Get Fare Rate", "Select Your Destination" | Tüm sayfalar:140, 165 |
@@ -263,7 +263,7 @@ Disallow: /.vs/
 
 **Mevcut Durum:**
 ```html
-<!-- galeri.html:518 -->
+<!-- oduller-sertifikalar.html:518 -->
 <a class="popup-image" href="images/comlink-page-0001.avif">
     <picture>
         <source srcset="images/comlink-page-0001.avif" type="image/avif">
@@ -550,7 +550,7 @@ cleancss -o style.min.css style.css
 
 ### 🟡 22. GALERI SAYFALAMA ÇALIŞMIYOR
 
-**Dosya:** `galeri.html:540-548`
+**Dosya:** `oduller-sertifikalar.html:540-548`
 
 ```html
 <li class="page-item"><a href="#"><i class="fas fa-chevron-left"></i></a></li>
@@ -578,7 +578,7 @@ cleancss -o style.min.css style.css
 **✅ ÇÖZÜLDÜ:** 6 dosyada breadcrumb düzeltildi (27 Ekim 2025)
 - hakkimizda.html
 - urunler.html
-- galeri.html
+- oduller-sertifikalar.html
 - iletisim.html
 - blog-classic.html
 - blog-details.html
@@ -1419,7 +1419,7 @@ comlink/
 │   ├── index.html (php)
 │   ├── hakkimizda.html
 │   ├── urunler.html
-│   ├── galeri.html
+│   ├── oduller-sertifikalar.html
 │   ├── iletisim.html
 │   ├── blog.html
 │   ├── 404.html

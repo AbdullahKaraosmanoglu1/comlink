@@ -6,7 +6,7 @@
 
 ## Klasör Yapısı
 - `website/` klasörü yayına çıkılacak içeriğin köküdür.
-  - `index.html, hakkimizda.html, urunler.html, galeri.html, iletisim.html`
+  - `index.html, hakkimizda.html, urunler.html, oduller-sertifikalar.html, iletisim.html`
   - `css/`, `js/`, `img/`, `fonts/`
   - `images/` (proje görselleri)
   - `kataloglar/` (PDF dosyaları)
