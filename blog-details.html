@@ -547,15 +547,17 @@
     <!-- Blog Data -->
     <script src="js/blogs.js"></script>
 
+    <!-- URL Helper (Dual-Mode URL System) -->
+    <script src="js/url-helper.js"></script>
+
     <!-- Blog Visual Renderer -->
     <script src="js/blog-visual-renderer.js"></script>
 
     <!-- Blog Detail Loader -->
     <script>
         $(document).ready(function () {
-            // URL'den post ID'yi al
-            const urlParams = new URLSearchParams(window.location.search);
-            const postId = urlParams.get('id');
+            // URL'den post ID'yi al (hem /blog/slug hem ?id=slug formatını destekler)
+            const postId = URLHelper.getBlogIdFromURL();
 
             // Post bulunamazsa blog sayfasına yönlendir
             if (!postId) {
@@ -606,17 +608,20 @@
 
             // Sidebar'daki son yazıları güncelle
             const recentPosts = getRecentPosts(3);
-            const sidebarPostsHtml = recentPosts.map(p => `
-                <li>
-                    <div class="rc-post-thumb">
-                        <a href="blog-details.html?id=${p.id}"><img src="${p.image}" alt="${p.title}"></a>
-                    </div>
-                    <div class="rc-post-content">
-                        <h5><a href="blog-details.html?id=${p.id}">${p.title.substring(0, 50)}${p.title.length > 50 ? '...' : ''}</a></h5>
-                        <span>${p.date}</span>
-                    </div>
-                </li>
-            `).join('');
+            const sidebarPostsHtml = recentPosts.map(p => {
+                const blogURL = URLHelper.createBlogDetailURL(p.id);
+                return `
+                    <li>
+                        <div class="rc-post-thumb">
+                            <a href="${blogURL}"><img src="${p.image}" alt="${p.title}"></a>
+                        </div>
+                        <div class="rc-post-content">
+                            <h5><a href="${blogURL}">${p.title.substring(0, 50)}${p.title.length > 50 ? '...' : ''}</a></h5>
+                            <span>${p.date}</span>
+                        </div>
+                    </li>
+                `;
+            }).join('');
             $('.rc-post ul').html(sidebarPostsHtml);
 
             // Önceki/Sonraki blog navigasyonunu güncelle
@@ -626,7 +631,8 @@
             // Önceki yazı
             if (currentIndex > 0) {
                 const prevPost = allPosts[currentIndex - 1];
-                $('.blog-prev a').attr('href', `blog-details.html?id=${prevPost.id}`);
+                const prevURL = URLHelper.createBlogDetailURL(prevPost.id);
+                $('.blog-prev a').attr('href', prevURL);
                 $('.blog-prev a').html(`<img src="img/icon/left_arrow.png" alt="img">${prevPost.title.substring(0, 30)}${prevPost.title.length > 30 ? '...' : ''}`);
             } else {
                 $('.blog-prev').hide(); // İlk yazıysa önceki butonu gizle
@@ -635,7 +641,8 @@
             // Sonraki yazı
             if (currentIndex < allPosts.length - 1) {
                 const nextPost = allPosts[currentIndex + 1];
-                $('.blog-next a').attr('href', `blog-details.html?id=${nextPost.id}`);
+                const nextURL = URLHelper.createBlogDetailURL(nextPost.id);
+                $('.blog-next a').attr('href', nextURL);
                 $('.blog-next a').html(`${nextPost.title.substring(0, 30)}${nextPost.title.length > 30 ? '...' : ''}<img src="img/icon/right_arrow.png" alt="img">`);
             } else {
                 $('.blog-next').hide(); // Son yazıysa sonraki butonu gizle

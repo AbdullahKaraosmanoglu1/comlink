@@ -158,10 +158,15 @@ function createBlogCard(post) {
     col.setAttribute('data-title', post.title);
     col.setAttribute('data-keywords', post.tags ? post.tags.join(' ').toLowerCase() : '');
 
+    // URL Helper ile blog detay linki oluştur (hem dev hem prod için çalışır)
+    const blogURL = typeof URLHelper !== 'undefined'
+        ? URLHelper.createBlogDetailURL(post.id)
+        : `blog-details.html?id=${post.id}`; // Fallback
+
     col.innerHTML = `
         <div class="single-blog-post s-single-blog-post mb-45">
             <div class="blog-thumb">
-                <a href="blog-details.html?id=${post.id}">
+                <a href="${blogURL}">
                     <img src="${post.image}"
                          data-src="${post.image}"
                          alt="${post.title}"
@@ -176,9 +181,9 @@ function createBlogCard(post) {
                         <li>${post.date}</li>
                     </ul>
                 </div>
-                <h4><a href="blog-details.html?id=${post.id}">${post.title}</a></h4>
+                <h4><a href="${blogURL}">${post.title}</a></h4>
                 <p>${post.excerpt}</p>
-                <a href="blog-details.html?id=${post.id}">Devamını Oku <i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="${blogURL}">Devamını Oku <i class="fas fa-long-arrow-alt-right"></i></a>
             </div>
         </div>
     `;

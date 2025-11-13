@@ -1,0 +1,143 @@
+# ============================================
+# COMLINK SEO-FRIENDLY URL CONFIGURATION
+# Apache Server (.htaccess)
+# ============================================
+#
+# Bu dosya production ortamında kullanılacak.
+# Deployment öncesi ".htaccess" olarak rename edilmelidir.
+# Development ortamında bu dosya devre dışıdır.
+#
+
+# ==================== GENEL AYARLAR ====================
+
+# Rewrite Engine'i aktif et
+RewriteEngine On
+
+# Encoding ayarı
+AddDefaultCharset UTF-8
+
+# ==================== GZIP COMPRESSION ====================
+
+<IfModule mod_deflate.c>
+    # HTML, CSS, JavaScript, Text, XML ve fonts için sıkıştırma
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ==================== BROWSER CACHING ====================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images - 1 yıl
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+
+    # CSS ve JavaScript - 1 ay
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+
+    # Fonts - 1 yıl
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+
+    # HTML - 1 hafta
+    ExpiresByType text/html "access plus 1 week"
+</IfModule>
+
+# ==================== SECURITY ====================
+
+# Directory listing'i kapat
+Options -Indexes
+
+# Dosya yüklemelerini engelle (güvenlik)
+<FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|jsp|asp|sh|cgi)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# .htaccess ve diğer gizli dosyaları koru
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ==================== WWW REDIRECT (İSTEĞE BAĞLI) ====================
+
+# www eklemek için (www.comlink.com.tr)
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# www kaldırmak için (comlink.com.tr)
+# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ==================== HTTPS REDIRECT ====================
+
+# HTTP'yi HTTPS'e yönlendir (SSL sertifikası varsa aktif et)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==================== URL REWRITING - CLEAN URLS ====================
+
+# 1. index.html'i gizle (ana sayfa)
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L,NC]
+
+# 2. .html uzantılarını URL'den gizle
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L,NC]
+
+# 3. .html uzantısı olmadan istek geldiğinde .html dosyasını sun
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# ==================== BLOG URL REWRITING ====================
+
+# Blog detay sayfası: /blog/slug-name
+# Örnek: /blog/cevre-donusum -> blog-details.html?id=cevre-donusum
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog-details.html?id=$1 [L,QSA]
+
+# ==================== ÜRÜN URL REWRITING ====================
+
+# Ürün detay sayfası: /urun/product-slug
+# Örnek: /urun/ck-210 -> urun-detay.html?id=ck-210
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^urun/([a-zA-Z0-9-]+)/?$ urun-detay.html?id=$1 [L,QSA]
+
+# Kategori sayfası: /kategori/category-slug
+# Örnek: /kategori/cim-bicme -> urunler.html?kategori=cim-bicme
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^kategori/([a-zA-Z0-9-]+)/?$ urunler.html?kategori=$1 [L,QSA]
+
+# ==================== HATA SAYFALARI ====================
+
+# 404 Hata sayfası (özel 404 sayfası oluşturulursa)
+# ErrorDocument 404 /404.html
+
+# 500 Hata sayfası
+# ErrorDocument 500 /500.html
+
+# ==================== TRAILING SLASH ====================
+
+# Trailing slash ekle (isteğe bağlı)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_URI} !(.*)/$
+# RewriteRule ^(.*)$ $1/ [L,R=301]
+
+# ==================== SON NOTLAR ====================
+
+# QSA: Query String Append - Mevcut query parametrelerini korur
+# L: Last - Bu rule çalışırsa diğer rule'ları kontrol etme
+# R=301: Permanent Redirect - SEO için önemli
+# NC: No Case - Büyük/küçük harf duyarsız

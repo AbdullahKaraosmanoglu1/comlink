@@ -50,7 +50,56 @@ const productsData = {
         },
         tags: ['Yaprak Üfleyici', 'Akülü', 'Profesyonel', 'Bahçe'],
         whyChoose: 'Comlink CK-120 yaprak üfleyici, profesyonel kullanıcılar için özel olarak geliştirilmiş yüksek performanslı bir üründür. Fırçasız motor teknolojisi sayesinde uzun ömürlü kullanım, bakım gerektirmeyen yapı ve sessiz çalışma özellikleri sunar.',
-        whyChoose2: 'IP66 sertifikalı bataryalar ile her türlü hava koşulunda güvenle kullanabilirsiniz. Ortak batarya platformu sayesinde tüm Comlink ürünleriyle uyumlu çalışır, bu da hem ekonomik hem de pratik bir çözüm sağlar.'
+        whyChoose2: 'IP66 sertifikalı bataryalar ile her türlü hava koşulunda güvenle kullanabilirsiniz. Ortak batarya platformu sayesinde tüm Comlink ürünleriyle uyumlu çalışır, bu da hem ekonomik hem de pratik bir çözüm sağlar.',
+        visualElements: {
+            statistics: [
+                { value: '240 km/h', label: 'MAX HAVA HIZI', icon: 'fa-wind', color: 'blue' },
+                { value: '85 dB', label: 'SES SEVİYESİ', icon: 'fa-volume-down', color: 'green' },
+                { value: '2.8 kg', label: 'HAFİF TASARIM', icon: 'fa-weight', color: 'purple' }
+            ],
+            performanceMetrics: [
+                { label: 'Güç/Performans', percentage: 95, color: 'blue', icon: 'fa-bolt' },
+                { label: 'Sessiz Çalışma', percentage: 88, color: 'green', icon: 'fa-volume-down' },
+                { label: 'Batarya Verimliliği', percentage: 92, color: 'purple', icon: 'fa-battery-full' }
+            ],
+            badges: [
+                { text: 'Taiwan Excellence', icon: 'fa-award', type: 'award' },
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'Fırçasız Motor', icon: 'fa-cog', type: 'tech' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-check-circle',
+                    title: 'Ayarlanabilir Hız Kontrolü',
+                    text: '0-240 km/h arası hassas hız ayarı. İş yüküne göre optimize edin, batarya ömrünü uzatın.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-battery-full',
+                    title: 'Ortak Batarya Platformu',
+                    text: 'Tüm Comlink ürünleriyle uyumlu. Bir batarya, 9 farklı makine. Ekonomik ve pratik.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli vs Comlink CK-120',
+                benzinli: [
+                    { label: 'Çalışma Süresi', value: '2-3 saat', icon: 'fa-clock', note: 'Yakıt dolumu gerekir' },
+                    { label: 'Ses Seviyesi', value: '100+ dB', icon: 'fa-volume-up', note: 'Kulaklık gerekli' },
+                    { label: 'Ağırlık', value: '4-5 kg', icon: 'fa-weight-hanging', note: 'Yorucu' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Yağ, filtre değişimi' },
+                    { label: 'Emisyon', value: 'Yüksek CO2', icon: 'fa-smog', note: 'Çevre kirliliği' }
+                ],
+                comlink: [
+                    { label: 'Çalışma Süresi', value: '40-90 dk', icon: 'fa-battery-three-quarters', note: 'Bataryaya göre' },
+                    { label: 'Ses Seviyesi', value: '≤85 dB', icon: 'fa-volume-down', note: 'Sessiz çalışma' },
+                    { label: 'Ağırlık', value: '2.8 kg', icon: 'fa-feather', note: 'Hafif ve ergonomik' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-times-circle', note: 'Bakım gerektirmez' },
+                    { label: 'Emisyon', value: 'Sıfır', icon: 'fa-leaf', note: 'Çevre dostu' }
+                ]
+            }
+        }
     },
     'ck-200': {
         id: 'ck-200',
@@ -98,7 +147,56 @@ const productsData = {
         },
         tags: ['Ot Biçme', 'Akülü', 'Profesyonel', 'Bahçe'],
         whyChoose: 'CK-200/210 ot biçme makinesi, geniş alanlarda profesyonel performans sunar. Tek kesimli sistemi ile düzgün ve temiz kesim sağlar. Fırçasız motor teknolojisi sayesinde uzun ömürlü ve bakım gerektirmeyen kullanım imkanı sunar.',
-        whyChoose2: 'IP66 sertifikalı bataryalar ile her türlü hava koşulunda güvenle çalışabilirsiniz. Ergonomik tasarımı sayesinde uzun süreli kullanımlarda bile yorulmadan çalışırsınız.'
+        whyChoose2: 'IP66 sertifikalı bataryalar ile her türlü hava koşulunda güvenle çalışabilirsiniz. Ergonomik tasarımı sayesinde uzun süreli kullanımlarda bile yorulmadan çalışırsınız.',
+        visualElements: {
+            statistics: [
+                { value: '42 cm', label: 'KESİM GENİŞLİĞİ', icon: 'fa-arrows-alt-h', color: 'blue' },
+                { value: '≤88 dB', label: 'SES SEVİYESİ', icon: 'fa-volume-down', color: 'green' },
+                { value: '8.5 kg', label: 'AĞIRLIK', icon: 'fa-weight', color: 'purple' }
+            ],
+            performanceMetrics: [
+                { label: 'Güç/Performans', percentage: 90, color: 'blue', icon: 'fa-bolt' },
+                { label: 'Kesim Kalitesi', percentage: 93, color: 'green', icon: 'fa-cut' },
+                { label: 'Batarya Verimliliği', percentage: 90, color: 'purple', icon: 'fa-battery-full' }
+            ],
+            badges: [
+                { text: 'Taiwan Excellence', icon: 'fa-award', type: 'award' },
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'Fırçasız Motor', icon: 'fa-cog', type: 'tech' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-ruler-horizontal',
+                    title: 'Geniş Kesim Alanı (42cm)',
+                    text: 'Profesyonel performans için tasarlanmış 42cm geniş kesim alanı. Daha az geçişle daha çok iş yapın.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-battery-full',
+                    title: 'Uzun Çalışma Süresi',
+                    text: 'V7-30Ah batarya ile 120 dakikaya kadar kesintisiz çalışma. Geniş alanları tek şarjla bitirin.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli vs Comlink CK-200/210',
+                benzinli: [
+                    { label: 'Çalışma Süresi', value: '2-3 saat', icon: 'fa-clock', note: 'Yakıt dolumu gerekir' },
+                    { label: 'Ses Seviyesi', value: '95+ dB', icon: 'fa-volume-up', note: 'Kulaklık gerekli' },
+                    { label: 'Ağırlık', value: '15-20 kg', icon: 'fa-weight-hanging', note: 'Ağır ve hantal' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Yağ, filtre, bujiler' },
+                    { label: 'Emisyon', value: 'Yüksek CO2', icon: 'fa-smog', note: 'Çevre kirliliği' }
+                ],
+                comlink: [
+                    { label: 'Çalışma Süresi', value: '45-120 dk', icon: 'fa-battery-three-quarters', note: 'Bataryaya göre' },
+                    { label: 'Ses Seviyesi', value: '≤88 dB', icon: 'fa-volume-down', note: 'Sessiz çalışma' },
+                    { label: 'Ağırlık', value: '8.5 kg', icon: 'fa-feather', note: 'Hafif ve dengeli' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-times-circle', note: 'Bakım gerektirmez' },
+                    { label: 'Emisyon', value: 'Sıfır', icon: 'fa-leaf', note: 'Çevre dostu' }
+                ]
+            }
+        }
     },
     'ck-400': {
         id: 'ck-400',
@@ -147,7 +245,56 @@ const productsData = {
         },
         tags: ['Zincirli Testere', 'Akülü', 'Profesyonel', 'Ağaç Kesimi'],
         whyChoose: 'CK-400 zincirli testere, profesyonel ağaç kesimi ve budama işleri için idealdir. Otomatik yağlama sistemi sayesinde bakım gerektirmez. Güvenlik özellikleri ile korumalı kullanım sağlar.',
-        whyChoose2: 'Benzinli testerelere göre çok daha sessiz ve çevre dostudur. Bakım maliyeti düşüktür. IP66 sertifikalı bataryalar ile her hava koşulunda güvenle kullanılabilir.'
+        whyChoose2: 'Benzinli testerelere göre çok daha sessiz ve çevre dostudur. Bakım maliyeti düşüktür. IP66 sertifikalı bataryalar ile her hava koşulunda güvenle kullanılabilir.',
+        visualElements: {
+            statistics: [
+                { value: '35 cm', label: 'KILIÇ UZUNLUĞU', icon: 'fa-ruler', color: 'blue' },
+                { value: '15 m/s', label: 'ZİNCİR HIZI', icon: 'fa-tachometer-alt', color: 'red' },
+                { value: '4.8 kg', label: 'AĞIRLIK', icon: 'fa-weight', color: 'purple' }
+            ],
+            performanceMetrics: [
+                { label: 'Kesim Gücü', percentage: 92, color: 'blue', icon: 'fa-cut' },
+                { label: 'Güvenlik', percentage: 95, color: 'green', icon: 'fa-shield-alt' },
+                { label: 'Batarya Verimliliği', percentage: 88, color: 'purple', icon: 'fa-battery-full' }
+            ],
+            badges: [
+                { text: 'Taiwan Excellence', icon: 'fa-award', type: 'award' },
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'Zincir Fren Sistemi', icon: 'fa-hand-paper', type: 'tech' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-oil-can',
+                    title: 'Otomatik Zincir Yağlama',
+                    text: 'Otomatik yağlama sistemi ile zincir sürekli yağlanır. Bakım ihtiyacını minimize eder.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-hand-paper',
+                    title: 'Gelişmiş Güvenlik Sistemi',
+                    text: 'Zincir fren sistemi ve geri tepme koruması ile maksimum güvenlik. Her koşulda güvenle çalışın.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli Testere vs Comlink CK-400',
+                benzinli: [
+                    { label: 'Çalışma Süresi', value: '2-3 saat', icon: 'fa-clock', note: 'Yakıt dolumu gerekir' },
+                    { label: 'Ses Seviyesi', value: '110+ dB', icon: 'fa-volume-up', note: 'Çok gürültülü' },
+                    { label: 'Ağırlık', value: '6-8 kg', icon: 'fa-weight-hanging', note: 'Ağır' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Yağ, filtre, bujiler' },
+                    { label: 'Titreşim', value: 'Yüksek', icon: 'fa-exclamation-triangle', note: 'Yorucu' }
+                ],
+                comlink: [
+                    { label: 'Çalışma Süresi', value: '30-60 dk', icon: 'fa-battery-three-quarters', note: 'Bataryaya göre' },
+                    { label: 'Ses Seviyesi', value: '≤95 dB', icon: 'fa-volume-down', note: 'Sessiz çalışma' },
+                    { label: 'Ağırlık', value: '4.8 kg', icon: 'fa-feather', note: 'Hafif ve dengeli' },
+                    { label: 'Bakım', value: 'Minimum', icon: 'fa-check-circle', note: 'Sadece zincir yağı' },
+                    { label: 'Titreşim', value: 'Düşük', icon: 'fa-smile', note: 'Rahat kullanım' }
+                ]
+            }
+        }
     },
     'ck-230d': {
         id: 'ck-230d',
@@ -193,7 +340,56 @@ const productsData = {
         },
         tags: ['Çim Biçme', 'Akülü', 'Profesyonel', 'Küçük Tank'],
         whyChoose: 'CK-230D çim biçme makinesi, küçük ve orta boy bahçeler için ideal bir çözümdür. Motor ve uzatma borusu dahil olarak gelen makine, kolay montaj ve kullanım sağlar.',
-        whyChoose2: 'Hafif yapısı sayesinde uzun süreli kullanımlarda yorulmadan çalışabilirsiniz. Çift bölmeli tasarımı ile depolama alanından tasarruf edersiniz.'
+        whyChoose2: 'Hafif yapısı sayesinde uzun süreli kullanımlarda yorulmadan çalışabilirsiniz. Çift bölmeli tasarımı ile depolama alanından tasarruf edersiniz.',
+        visualElements: {
+            statistics: [
+                { value: '4 kg', label: 'AĞIRLIK', icon: 'fa-weight', color: 'purple' },
+                { value: 'IP46', label: 'SU/TOZ KORUMA', icon: 'fa-shield-alt', color: 'blue' },
+                { value: '167 cm', label: 'UZUNLUK', icon: 'fa-ruler-vertical', color: 'green' }
+            ],
+            performanceMetrics: [
+                { label: 'Hafiflik', percentage: 95, color: 'purple', icon: 'fa-feather-alt' },
+                { label: 'Taşınabilirlik', percentage: 93, color: 'blue', icon: 'fa-suitcase' },
+                { label: 'Dayanıklılık', percentage: 90, color: 'green', icon: 'fa-shield-alt' }
+            ],
+            badges: [
+                { text: 'IP46 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'Çift Bölmeli', icon: 'fa-layer-group', type: 'tech' },
+                { text: 'Hafif Tasarım', icon: 'fa-feather', type: 'tech' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-archive',
+                    title: 'Kolay Depolama',
+                    text: 'Çift bölmeli tasarımı sayesinde 54x38x16 cm\'ye kadar küçülür. Dar alanlarda kolayca saklanır.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-tools',
+                    title: 'Komple Set',
+                    text: 'Motor ve uzatma borusu dahil. Kutudan çıkar çıkmaz kullanıma hazır. Ek aksesuar almaya gerek yok.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli vs Comlink CK-230D',
+                benzinli: [
+                    { label: 'Ağırlık', value: '6-8 kg', icon: 'fa-weight-hanging', note: 'Yorucu' },
+                    { label: 'Ses Seviyesi', value: '95+ dB', icon: 'fa-volume-up', note: 'Gürültülü' },
+                    { label: 'Depolama', value: 'Büyük', icon: 'fa-warehouse', note: 'Yer kaplar' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Sürekli bakım' },
+                    { label: 'Emisyon', value: 'Yüksek CO2', icon: 'fa-smog', note: 'Çevre kirliliği' }
+                ],
+                comlink: [
+                    { label: 'Ağırlık', value: '4 kg', icon: 'fa-feather', note: 'Çok hafif' },
+                    { label: 'Ses Seviyesi', value: '≤85 dB', icon: 'fa-volume-down', note: 'Sessiz' },
+                    { label: 'Depolama', value: '54x38x16 cm', icon: 'fa-compress', note: 'Kompakt' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-check-circle', note: 'Bakımsız' },
+                    { label: 'Emisyon', value: 'Sıfır', icon: 'fa-leaf', note: 'Çevre dostu' }
+                ]
+            }
+        }
     },
     'ck-320': {
         id: 'ck-320',
@@ -239,7 +435,56 @@ const productsData = {
         },
         tags: ['Çit Budama', 'Akülü', 'Profesyonel', 'Çift Taraflı'],
         whyChoose: 'CK-320 çift taraflı çit budama makinesi, profesyonel budama işleri için en verimli çözümdür. Çift kenarlı bıçağı sayesinde hem ileriye hem geriye doğru kesim yapabilirsiniz, bu da iş verimliliğini artırır.',
-        whyChoose2: 'Çitler, çay bahçeleri ve meyve ağaçlarının budanmasında mükemmel performans gösterir. Hafif yapısı ve dengeli tasarımı ile uzun süreli kullanımlarda yorulmadan çalışabilirsiniz.'
+        whyChoose2: 'Çitler, çay bahçeleri ve meyve ağaçlarının budanmasında mükemmel performans gösterir. Hafif yapısı ve dengeli tasarımı ile uzun süreli kulanımlarda yorulmadan çalışabilirsiniz.',
+        visualElements: {
+            statistics: [
+                { value: '60 cm', label: 'BIÇAK UZUNLUĞU', icon: 'fa-ruler-horizontal', color: 'blue' },
+                { value: '3.7 kg', label: 'AĞIRLIK', icon: 'fa-weight', color: 'purple' },
+                { value: '2 Yön', label: 'ÇİFT TARAFLI', icon: 'fa-arrows-alt-h', color: 'green' }
+            ],
+            performanceMetrics: [
+                { label: 'Kesim Verimliliği', percentage: 94, color: 'blue', icon: 'fa-cut' },
+                { label: 'Ergonomi', percentage: 92, color: 'green', icon: 'fa-hand-holding' },
+                { label: 'Batarya Verimliliği', percentage: 90, color: 'purple', icon: 'fa-battery-full' }
+            ],
+            badges: [
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'Çift Taraflı Bıçak', icon: 'fa-arrows-alt-h', type: 'tech' },
+                { text: 'BSMI Onaylı', icon: 'fa-certificate', type: 'cert' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-ruler-horizontal',
+                    title: '60cm Uzun Bıçak',
+                    text: '60 cm çift kenarlı bıçak ile geniş alanları hızla budayın. Profesyonel sonuçlar alın.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-arrows-alt-h',
+                    title: 'Çift Yönlü Kesim',
+                    text: 'İleri ve geri yönde kesim yapabilen çift taraflı bıçak. Çalışma verimliliğini %50 artırır.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli vs Comlink CK-320',
+                benzinli: [
+                    { label: 'Ağırlık', value: '5-6 kg', icon: 'fa-weight-hanging', note: 'Yorucu' },
+                    { label: 'Ses Seviyesi', value: '100+ dB', icon: 'fa-volume-up', note: 'Çok gürültülü' },
+                    { label: 'Titreşim', value: 'Yüksek', icon: 'fa-exclamation-triangle', note: 'El yorgunluğu' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Sürekli bakım' },
+                    { label: 'Emisyon', value: 'Yüksek CO2', icon: 'fa-smog', note: 'Çevre kirliliği' }
+                ],
+                comlink: [
+                    { label: 'Ağırlık', value: '3.7 kg', icon: 'fa-feather', note: 'Çok hafif' },
+                    { label: 'Ses Seviyesi', value: '≤85 dB', icon: 'fa-volume-down', note: 'Sessiz' },
+                    { label: 'Titreşim', value: 'Düşük', icon: 'fa-smile', note: 'Rahat kullanım' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-check-circle', note: 'Bakımsız' },
+                    { label: 'Emisyon', value: 'Sıfır', icon: 'fa-leaf', note: 'Çevre dostu' }
+                ]
+            }
+        }
     },
     'ck-500': {
         id: 'ck-500',
@@ -287,7 +532,56 @@ const productsData = {
         },
         tags: ['Toprak Burgusu', 'Akülü', 'Profesyonel', 'Tarım'],
         whyChoose: 'CK-500 profesyonel toprak matkabı, iki farklı çalışma modu ile hem standart hem de zorlu toprak koşullarında etkili çalışma imkanı sunar. 1150W güçlü motor ile sert topraklarda bile güvenle kullanılabilir.',
-        whyChoose2: 'Standart mod günlük işler için, Uzman modu ise zorlu ve sert topraklar için idealdir. IP66 sertifikalı batarya ile her hava koşulunda güvenle çalışabilirsiniz.'
+        whyChoose2: 'Standart mod günlük işler için, Uzman modu ise zorlu ve sert topraklar için idealdir. IP66 sertifikalı batarya ile her hava koşulunda güvenle çalışabilirsiniz.',
+        visualElements: {
+            statistics: [
+                { value: '1150W', label: 'MOTOR GÜCÜ', icon: 'fa-bolt', color: 'red' },
+                { value: '2 Mod', label: 'ÇALIŞMA MODU', icon: 'fa-cogs', color: 'blue' },
+                { value: '4.5 kg', label: 'AĞIRLIK', icon: 'fa-weight', color: 'purple' }
+            ],
+            performanceMetrics: [
+                { label: 'Güç', percentage: 95, color: 'red', icon: 'fa-bolt' },
+                { label: 'Verimlilik', percentage: 90, color: 'blue', icon: 'fa-chart-line' },
+                { label: 'Dayanıklılık', percentage: 93, color: 'green', icon: 'fa-shield-alt' }
+            ],
+            badges: [
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'BSMI Onaylı', icon: 'fa-certificate', type: 'cert' },
+                { text: 'Çift Çalışma Modu', icon: 'fa-cogs', type: 'tech' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-cogs',
+                    title: 'İki Çalışma Modu',
+                    text: 'Standart mod günlük işler için, Uzman modu zorlu topraklar için. Her koşulda maksimum verim.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-bolt',
+                    title: '1150W Güçlü Motor',
+                    text: 'Profesyonel güç ile sert topraklarda bile kolay delme. Direk dikimi ve ağaç dikimi için ideal.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli Matkap vs Comlink CK-500',
+                benzinli: [
+                    { label: 'Ağırlık', value: '8-10 kg', icon: 'fa-weight-hanging', note: 'Çok ağır' },
+                    { label: 'Ses Seviyesi', value: '110+ dB', icon: 'fa-volume-up', note: 'Çok gürültülü' },
+                    { label: 'Titreşim', value: 'Çok Yüksek', icon: 'fa-exclamation-triangle', note: 'Yorucu' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Sürekli bakım' },
+                    { label: 'Emisyon', value: 'Yüksek CO2', icon: 'fa-smog', note: 'Çevre kirliliği' }
+                ],
+                comlink: [
+                    { label: 'Ağırlık', value: '4.5 kg', icon: 'fa-feather', note: 'Hafif' },
+                    { label: 'Ses Seviyesi', value: '≤90 dB', icon: 'fa-volume-down', note: 'Sessiz' },
+                    { label: 'Titreşim', value: 'Düşük', icon: 'fa-smile', note: 'Rahat kullanım' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-check-circle', note: 'Bakımsız' },
+                    { label: 'Emisyon', value: 'Sıfır', icon: 'fa-leaf', note: 'Çevre dostu' }
+                ]
+            }
+        }
     },
     'ck-600': {
         id: 'ck-600',
@@ -332,7 +626,56 @@ const productsData = {
         },
         tags: ['Çapa Makinesi', 'Akülü', 'Profesyonel', 'Tarım'],
         whyChoose: 'CK-600 akülü çapa makinesi, bahçe ve tarla çapalama işlerinde benzinli makinelere çevreci bir alternatiftir. Sessiz çalışması sayesinde yerleşim yerlerinde rahatlıkla kullanılabilir.',
-        whyChoose2: 'Dumansız, benzinsiz ve bakımsız çalışma özelliği ile düşük işletme maliyeti sunar. Ortak batarya platformu sayesinde ekonomik kullanım imkanı sağlar.'
+        whyChoose2: 'Dumansız, benzinsiz ve bakımsız çalışma özelliği ile düşük işletme maliyeti sunar. Ortak batarya platformu sayesinde ekonomik kullanım imkanı sağlar.',
+        visualElements: {
+            statistics: [
+                { value: '56V', label: 'BATARYA GERİLİMİ', icon: 'fa-battery-full', color: 'blue' },
+                { value: 'IP66', label: 'SU/TOZ KORUMA', icon: 'fa-shield-alt', color: 'green' },
+                { value: '%0', label: 'BAKIM GEREKSİNİMİ', icon: 'fa-times-circle', color: 'purple' }
+            ],
+            performanceMetrics: [
+                { label: 'Verimlilik', percentage: 92, color: 'blue', icon: 'fa-chart-line' },
+                { label: 'Dayanıklılık', percentage: 90, color: 'green', icon: 'fa-shield-alt' },
+                { label: 'Çevre Dostu', percentage: 100, color: 'green', icon: 'fa-leaf' }
+            ],
+            badges: [
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'BSMI Onaylı', icon: 'fa-certificate', type: 'cert' },
+                { text: 'Fırçasız Motor', icon: 'fa-cog', type: 'tech' },
+                { text: 'Sıfır Emisyon', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-leaf',
+                    title: 'Dumansız, Benzinsiz, Bakımsız',
+                    text: 'Çevre dostu akülü sistem. Yakıt, yağ, filtre değişimi yok. Düşük işletme maliyeti.'
+                },
+                {
+                    type: 'tip',
+                    icon: 'fa-battery-full',
+                    title: 'Ortak Batarya Platformu',
+                    text: 'Tüm Comlink ürünleriyle aynı bataryayı kullanın. Bir batarya, 9 farklı makine. Ekonomik.'
+                }
+            ],
+            comparison: {
+                title: 'Benzinli Çapa vs Comlink CK-600',
+                benzinli: [
+                    { label: 'Ses Seviyesi', value: '100+ dB', icon: 'fa-volume-up', note: 'Çok gürültülü' },
+                    { label: 'Emisyon', value: 'Yüksek CO2', icon: 'fa-smog', note: 'Çevre kirliliği' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench', note: 'Yağ, filtre, bujiler' },
+                    { label: 'Çalıştırma', value: 'Zor', icon: 'fa-exclamation-triangle', note: 'Manuel starterli' },
+                    { label: 'Maliyet', value: 'Yüksek', icon: 'fa-money-bill-wave', note: 'Yakıt + bakım' }
+                ],
+                comlink: [
+                    { label: 'Ses Seviyesi', value: '≤85 dB', icon: 'fa-volume-down', note: 'Sessiz' },
+                    { label: 'Emisyon', value: 'Sıfır', icon: 'fa-leaf', note: 'Çevre dostu' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-check-circle', note: 'Bakımsız' },
+                    { label: 'Çalıştırma', value: 'Kolay', icon: 'fa-power-off', note: 'Tek tuşla başlat' },
+                    { label: 'Maliyet', value: 'Düşük', icon: 'fa-piggy-bank', note: 'Sadece elektrik' }
+                ]
+            }
+        }
     },
     'ck-300v2': {
         id: 'ck-300v2',
