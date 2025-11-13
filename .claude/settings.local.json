@@ -30,7 +30,9 @@
       "Bash(echo:*)",
       "Bash(\"C:\\Users\\akogl\\projects\\comlink\\css\\style.css\")",
       "WebSearch",
-      "WebFetch(domain:flippingbook.com)"
+      "WebFetch(domain:flippingbook.com)",
+      "Bash(python update_categories.py:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []

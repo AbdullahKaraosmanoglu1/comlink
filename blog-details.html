@@ -46,6 +46,9 @@
     <!-- Custom Cursor CSS -->
     <link rel="stylesheet" href="css/custom-cursor.css">
 
+    <!-- Blog Visual Elements CSS -->
+    <link rel="stylesheet" href="css/blog-visuals.css">
+
     <!-- Son Yazılar Küçük Görsel Stili -->
     <style>
         .rc-post-thumb {
@@ -544,6 +547,9 @@
     <!-- Blog Data -->
     <script src="js/blogs.js"></script>
 
+    <!-- Blog Visual Renderer -->
+    <script src="js/blog-visual-renderer.js"></script>
+
     <!-- Blog Detail Loader -->
     <script>
         $(document).ready(function () {
@@ -583,6 +589,13 @@
 
             // Yeni içeriği ekle (h4'ten sonra)
             $('.blog-details-content > h4').after(post.content);
+
+            // Görsel öğeleri ekle (yeni içerik yüklendikten sonra)
+            if (typeof BlogVisualRenderer !== 'undefined') {
+                setTimeout(function() {
+                    BlogVisualRenderer.injectVisualElements(post);
+                }, 100);
+            }
 
             // Etiketleri güncelle
             const tagsHtml = post.tags.map(tag => `<a href="#">${tag}</a>`).join('');

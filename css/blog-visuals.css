@@ -1,0 +1,784 @@
+/* ============================================
+   BLOG GÖRSEL ÖĞELER CSS FRAMEWORK
+   Comlink Blog Görselleştirme Sistemi
+   ============================================ */
+
+/* ==================== 1. İSTATİSTİK KARTLARI ==================== */
+
+.stat-card {
+    background: linear-gradient(135deg, #ff6b35 0%, #d23c19 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 25px 0;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 107, 53, 0.5);
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.stat-card-value {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.stat-card-label {
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.95;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-card-icon {
+    font-size: 60px;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Alternatif renkler */
+.stat-card.green {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+}
+
+.stat-card.blue {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+}
+
+.stat-card.purple {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+    box-shadow: 0 10px 30px rgba(111, 66, 193, 0.3);
+}
+
+/* Stat Grid */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-grid .stat-card {
+    margin: 0;
+}
+
+/* ==================== 2. KARŞILAŞTIRMA TABLOLARI ==================== */
+
+.comparison-table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+
+.comparison-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: #f8f9fa;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+.comparison-col-header {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.comparison-col-header.benzinli {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+}
+
+.comparison-col-header.akulu {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    color: white;
+}
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.3s ease;
+}
+
+.comparison-row:hover {
+    background: #f8f9fa;
+}
+
+.comparison-cell {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.comparison-cell.benzinli {
+    border-right: 1px solid #e0e0e0;
+}
+
+.comparison-cell i {
+    font-size: 24px;
+}
+
+.comparison-cell.benzinli i {
+    color: #dc3545;
+}
+
+.comparison-cell.akulu i {
+    color: #28a745;
+}
+
+.comparison-cell-content {
+    flex: 1;
+}
+
+.comparison-cell-title {
+    font-weight: 600;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.comparison-cell-value {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ==================== 3. SES SEVİYESİ GÖSTERGESİ ==================== */
+
+.noise-comparison {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+
+.noise-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.noise-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.noise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.noise-label {
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.noise-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+.noise-bar-container {
+    width: 100%;
+    height: 30px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.noise-bar {
+    height: 100%;
+    border-radius: 15px;
+    transition: width 1s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.noise-bar.high {
+    background: linear-gradient(90deg, #dc3545 0%, #c82333 100%);
+}
+
+.noise-bar.medium {
+    background: linear-gradient(90deg, #ffc107 0%, #e0a800 100%);
+}
+
+.noise-bar.low {
+    background: linear-gradient(90deg, #28a745 0%, #1e7e34 100%);
+}
+
+.noise-description {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* ==================== 4. TIMELINE / SÜREÇ GÖSTERGESİ ==================== */
+
+.timeline {
+    margin: 30px 0;
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #ff6b35 0%, #d23c19 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    transform: translateX(5px);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 25px;
+    width: 15px;
+    height: 15px;
+    background: #ff6b35;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #ff6b35;
+}
+
+.timeline-time {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b35 0%, #d23c19 100%);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.timeline-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+}
+
+.timeline-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.timeline-stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.timeline-stat {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.timeline-stat i {
+    color: #ff6b35;
+    margin-right: 5px;
+}
+
+/* ==================== 5. BADGE VE LABEL'LAR ==================== */
+
+.badge-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1a1a2e;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.award-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6);
+}
+
+.award-badge i {
+    font-size: 18px;
+}
+
+.cert-badge {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+.eco-badge {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+    color: white;
+}
+
+.tech-badge {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%);
+    color: white;
+}
+
+/* ==================== 6. PROGRESS BARS (İLERLEME ÇUBUKLARI) ==================== */
+
+.progress-item {
+    margin-bottom: 25px;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.progress-label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1a1a2e;
+}
+
+.progress-percentage {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ff6b35;
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b35 0%, #d23c19 100%);
+    border-radius: 12px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: inset 0 2px 5px rgba(255,255,255,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar-fill.progress-green {
+    background: linear-gradient(90deg, #28a745 0%, #1e7e34 100%);
+}
+
+.progress-bar-fill.progress-blue {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+}
+
+.progress-bar-fill.progress-purple {
+    background: linear-gradient(90deg, #6f42c1 0%, #5a32a3 100%);
+}
+
+.progress-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* ==================== 7. HIGHLIGHT BOXES (VURGU KUTULARI) ==================== */
+
+.highlight-box {
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+    border-left: 5px solid;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.highlight-box:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transform: translateX(5px);
+}
+
+.highlight-box i {
+    font-size: 28px;
+    margin-top: 2px;
+}
+
+.highlight-box-content h5 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.highlight-box-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.highlight-box.tip {
+    background: #e7f5ff;
+    border-left-color: #007bff;
+}
+
+.highlight-box.tip i {
+    color: #007bff;
+}
+
+.highlight-box.warning {
+    background: #fff3cd;
+    border-left-color: #ffc107;
+}
+
+.highlight-box.warning i {
+    color: #ffc107;
+}
+
+.highlight-box.success {
+    background: #d4edda;
+    border-left-color: #28a745;
+}
+
+.highlight-box.success i {
+    color: #28a745;
+}
+
+.highlight-box.danger {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+}
+
+.highlight-box.danger i {
+    color: #dc3545;
+}
+
+.highlight-box.info {
+    background: #d1ecf1;
+    border-left-color: #17a2b8;
+}
+
+.highlight-box.info i {
+    color: #17a2b8;
+}
+
+/* ==================== 8. İKONLU LİSTELER ==================== */
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.icon-list li {
+    padding: 12px 0 12px 40px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.6;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.icon-list li:last-child {
+    border-bottom: none;
+}
+
+.icon-list li:hover {
+    background: #f8f9fa;
+    padding-left: 45px;
+}
+
+.icon-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+}
+
+.icon-list.cross li::before {
+    content: '\f00d';
+    color: #dc3545;
+}
+
+.icon-list.star li::before {
+    content: '\f005';
+    color: #ffc107;
+}
+
+.icon-list.check-circle li::before {
+    content: '\f058';
+    color: #28a745;
+}
+
+.icon-list.arrow li::before {
+    content: '\f061';
+    color: #ff6b35;
+}
+
+.icon-list.bolt li::before {
+    content: '\f0e7';
+    color: #ff6b35;
+}
+
+/* ==================== 9. COUNTER ANIMATION ==================== */
+
+.counter {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ff6b35;
+    display: inline-block;
+    min-width: 100px;
+}
+
+/* ==================== 10. HOVER EFFECT CARDS ==================== */
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    border-top: 4px solid #ff6b35;
+}
+
+.info-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+}
+
+.info-card h5 {
+    color: #1a1a2e;
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-card h5 i {
+    color: #ff6b35;
+    font-size: 22px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ==================== 11. RESPONSIVE TASARIM ==================== */
+
+@media (max-width: 768px) {
+    .stat-card-value {
+        font-size: 36px;
+    }
+
+    .stat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-header,
+    .comparison-row {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-cell.benzinli {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item::before {
+        left: -26px;
+    }
+
+    .noise-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .badge-container {
+        flex-direction: column;
+    }
+}
+
+/* ==================== 12. SCROLL ANIMATIONS ==================== */
+
+[data-aos] {
+    pointer-events: auto;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== 13. LOADING STATES ==================== */
+
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ==================== 14. QUOTE ENHANCEMENT ==================== */
+
+blockquote {
+    position: relative;
+    background: linear-gradient(135deg, #fff5f0 0%, #ffe8db 100%);
+    border-left: 5px solid #ff6b35;
+    padding: 25px 30px 25px 60px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.8;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(255, 107, 53, 0.1);
+}
+
+blockquote::before {
+    content: '\f10d';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 24px;
+    color: #ff6b35;
+    opacity: 0.5;
+}
+
+/* ==================== 15. IMAGE ENHANCEMENTS ==================== */
+
+.blog-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.blog-image-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.blog-image-item:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+}
+
+.blog-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

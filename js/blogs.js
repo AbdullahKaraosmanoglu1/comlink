@@ -10,6 +10,31 @@ const blogsData = {
         author: 'Comlink Ekibi',
         excerpt: 'Her gün binlerce benzinli makine atmosfere ton ton CO2 salıyor. Comlink akülü makinelerle sıfır emisyon, %100 temiz hava. Bugün bir karar verin, yarınlar için. Dönüşüme hazır mısınız?',
         image: 'img/blog/s_blog_thumb02.jpg',
+        visualElements: {
+            statistics: [
+                { value: '0%', label: 'SIFIR EMİSYON', icon: 'fa-leaf', color: 'green' },
+                { value: '160km', label: 'BENZİNLİ KİRLETİCİ EŞDEĞERİ', icon: 'fa-car', color: '' },
+                { value: '2026', label: 'AB YASAKLAMA YILI', icon: 'fa-ban', color: 'blue' }
+            ],
+            badges: [
+                { text: '100% Sıfır Emisyon', icon: 'fa-check-circle', type: 'eco' },
+                { text: 'Çevre Dostu Teknoloji', icon: 'fa-leaf', type: 'eco' }
+            ],
+            highlights: [
+                {
+                    type: 'success',
+                    icon: 'fa-lightbulb',
+                    title: 'Temiz Hava İçin Karar Verin',
+                    text: 'Her küçük adım önemli. Bahçe bakımı düşündüğünüzden çok daha büyük bir etki yaratıyor.'
+                },
+                {
+                    type: 'info',
+                    icon: 'fa-info-circle',
+                    title: 'Avrupa Birliği Yasağı',
+                    text: '2026\'dan itibaren yeni benzinli bahçe makineleri yasaklanıyor. Yeşil dönüşüm başladı.'
+                }
+            ]
+        },
         content: `
             <p>Her sabah bahçenize çıktığınızda, benzinli makinenizin egzozundan çıkan dumanı görüyor musunuz? O duman sadece havayı kirletmiyor, çocuklarınızın geleceğini de karartıyor.</p>
 
@@ -55,6 +80,41 @@ const blogsData = {
         author: 'Comlink Ekibi',
         excerpt: 'Benzine harcadığınız para cebinizde kalacak. Bakıma harcadığınız zaman size kalacak. Rakamlar konuşuyor: 2 yılda %300 geri dönüş. Akıllı yatırım, akıllı tasarruf. Comlink.',
         image: 'img/blog/s_blog_thumb03.jpg',
+        visualElements: {
+            statistics: [
+                { value: '₺11,750', label: '5 YILLIK TASARRUF', icon: 'fa-piggy-bank', color: 'green' },
+                { value: '%47', label: 'MALİYET AZALMASI', icon: 'fa-arrow-down', color: 'blue' },
+                { value: '40+ Saat', label: 'YILLIK ZAMAN TASARRUFU', icon: 'fa-clock', color: 'purple' }
+            ],
+            comparison: {
+                title: '5 Yıllık Maliyet Karşılaştırması',
+                benzinli: [
+                    { label: 'Makine Maliyeti', value: '₺8,000', icon: 'fa-shopping-cart' },
+                    { label: 'Benzin (5 yıl)', value: '₺7,500', icon: 'fa-gas-pump' },
+                    { label: 'Yağ Değişimi', value: '₺2,500', icon: 'fa-oil-can' },
+                    { label: 'Filtre & Bujiler', value: '₺2,000', icon: 'fa-filter' },
+                    { label: 'Bakım & Tamir', value: '₺5,000', icon: 'fa-wrench' }
+                ],
+                akulu: [
+                    { label: 'Makine + Batarya', value: '₺12,000', icon: 'fa-shopping-cart' },
+                    { label: 'Elektrik (5 yıl)', value: '₺750', icon: 'fa-plug' },
+                    { label: 'Bakım', value: '₺0', icon: 'fa-times-circle' },
+                    { label: 'Filtre & Bujiler', value: '₺0', icon: 'fa-times-circle' },
+                    { label: 'Tamir (5 yıl)', value: '₺500', icon: 'fa-tools' }
+                ],
+                totalBenzinli: '₺25,000',
+                totalAkulu: '₺13,250'
+            },
+            progressBars: [
+                { label: 'Maliyet Tasarrufu', percentage: 47, color: 'green' },
+                { label: 'Zaman Tasarrufu', percentage: 85, color: 'blue' },
+                { label: 'Bakım Kolaylığı', percentage: 95, color: 'purple' }
+            ],
+            badges: [
+                { text: '2 Yılda Amorti', icon: 'fa-chart-line', type: 'award' },
+                { text: 'Sıfır Bakım Maliyeti', icon: 'fa-wrench', type: 'tech' }
+            ]
+        },
         content: `
             <p>Şimdi size bir soru soracağım: Geçen yıl bahçe makinelerinize ne kadar harcadınız? Benzin, yağ, filtre, bujiler, periyodik bakımlar... Hesapladınız mı hiç?</p>
 
@@ -134,6 +194,54 @@ const blogsData = {
         author: 'Comlink Ekibi',
         excerpt: '400m²\'yi 60 dakikadan 35 dakikaya düşürün. Günde 3 müşteriye değil, 5 müşteriye yetişin. Daha hızlı, daha güçlü, daha karlı işler yapın. Performans farkını yaşayın.',
         image: 'img/blog/s_blog_thumb04.jpg',
+        visualElements: {
+            statistics: [
+                { value: '27 Dk', label: '400M² ZAMAN TASARRUFU', icon: 'fa-stopwatch', color: 'green' },
+                { value: '%65', label: 'GELİR ARTIŞI', icon: 'fa-chart-line', color: 'blue' },
+                { value: '%30', label: 'DAHA FAZLA GÜÇ', icon: 'fa-bolt', color: 'purple' }
+            ],
+            comparison: {
+                title: '400m² Bahçe Biçme Karşılaştırması',
+                benzinli: [
+                    { label: 'Hazırlık', value: '5 dakika', icon: 'fa-cog' },
+                    { label: 'Biçme Süresi', value: '45 dakika', icon: 'fa-cut' },
+                    { label: 'Ara Kesinti', value: '5 dakika', icon: 'fa-pause' },
+                    { label: 'Temizlik', value: '5 dakika', icon: 'fa-broom' }
+                ],
+                akulu: [
+                    { label: 'Hazırlık', value: '30 saniye', icon: 'fa-cog' },
+                    { label: 'Biçme Süresi', value: '30 dakika', icon: 'fa-cut' },
+                    { label: 'Ara Kesinti', value: '0 dakika', icon: 'fa-times-circle' },
+                    { label: 'Temizlik', value: '2 dakika', icon: 'fa-broom' }
+                ],
+                totalBenzinli: '60 dakika',
+                totalAkulu: '33 dakika'
+            },
+            progressBars: [
+                { label: 'İş Hızı', percentage: 82, color: 'green' },
+                { label: 'Güvenilirlik', percentage: 98, color: 'blue' },
+                { label: 'Müşteri Memnuniyeti', percentage: 95, color: 'purple' }
+            ],
+            badges: [
+                { text: 'Taiwan Excellence Ödüllü', icon: 'fa-award', type: 'award' },
+                { text: 'IP66 Sertifikalı', icon: 'fa-certificate', type: 'cert' },
+                { text: 'Profesyonel Kullanım', icon: 'fa-star', type: 'tech' }
+            ],
+            highlights: [
+                {
+                    type: 'tip',
+                    icon: 'fa-lightbulb',
+                    title: 'Sabah 7\'de Başlayın',
+                    text: 'Sessiz çalışma sayesinde erken saatlerde işe başlayabilirsiniz. Günde 2-3 saat daha fazla çalışma imkanı.'
+                },
+                {
+                    type: 'success',
+                    icon: 'fa-check-circle',
+                    title: 'Ara Vermeden Çalışın',
+                    text: 'Ortak batarya sistemi sayesinde bir batarya biterken diğerini takıyorsunuz. Sıfır bekleme.'
+                }
+            ]
+        },
         content: `
             <p>"Akülü makineler güçsüzdür" diyenlere bu yazıyı okumalarını öneririm. Çünkü 2025'te artık akülü teknoloji, benzinli makineleri performansta geride bırakıyor.</p>
 
@@ -223,6 +331,57 @@ const blogsData = {
         author: 'Comlink Ekibi',
         excerpt: 'Ödüllü Tayvan teknolojisi, patentli fırçasız motor, akıllı kontrol sistemi. Taiwan Excellence 2017 ve 2019 ödüllü. Geleceğin makineleri bugün sizin elinde. Teknolojiye yatırım yapın.',
         image: 'img/blog/s_blog_thumb05.jpg',
+        visualElements: {
+            statistics: [
+                { value: '%30', label: 'DAHA VERİMLİ', icon: 'fa-bolt', color: 'purple' },
+                { value: '10,000+', label: 'SAAT ÖMÜR', icon: 'fa-infinity', color: 'blue' },
+                { value: '2', label: 'TAIWAN EXCELLENCE ÖDÜLÜ', icon: 'fa-trophy', color: '' }
+            ],
+            comparison: {
+                title: 'Benzinli vs Fırçasız Motor Teknolojisi',
+                benzinli: [
+                    { label: 'Motor Tipi', value: 'Karbüratörlü', icon: 'fa-cog' },
+                    { label: 'Verimlilik', value: '%65-70', icon: 'fa-battery-quarter' },
+                    { label: 'Bakım', value: 'Yüksek', icon: 'fa-wrench' },
+                    { label: 'Güç Kaybı', value: 'Zamanla artar', icon: 'fa-arrow-down' },
+                    { label: 'Ömür', value: '2,000 saat', icon: 'fa-hourglass' }
+                ],
+                akulu: [
+                    { label: 'Motor Tipi', value: 'Fırçasız (Brushless)', icon: 'fa-microchip' },
+                    { label: 'Verimlilik', value: '%90-95', icon: 'fa-battery-full' },
+                    { label: 'Bakım', value: 'Sıfır', icon: 'fa-times-circle' },
+                    { label: 'Güç Kaybı', value: 'Yok', icon: 'fa-check-circle' },
+                    { label: 'Ömür', value: '10,000+ saat', icon: 'fa-infinity' }
+                ],
+                totalBenzinli: '1950\'ler Teknolojisi',
+                totalAkulu: '2025 Teknolojisi'
+            },
+            progressBars: [
+                { label: 'Enerji Verimliliği', percentage: 95, color: 'green' },
+                { label: 'Dayanıklılık', percentage: 100, color: 'blue' },
+                { label: 'Teknoloji Seviyesi', percentage: 100, color: 'purple' }
+            ],
+            badges: [
+                { text: 'Taiwan Excellence 2017', icon: 'fa-award', type: 'award' },
+                { text: 'Taiwan Excellence 2019', icon: 'fa-award', type: 'award' },
+                { text: 'Patentli Fırçasız Motor', icon: 'fa-certificate', type: 'tech' },
+                { text: 'IP66 Koruma', icon: 'fa-shield-alt', type: 'cert' }
+            ],
+            highlights: [
+                {
+                    type: 'tip',
+                    icon: 'fa-lightbulb',
+                    title: 'Tesla Teknolojisi Bahçenizde',
+                    text: 'Fırçasız motor teknolojisi, Tesla\'nın elektrikli araçlarda kullandığı aynı teknoloji. Artık bahçe makinelerinizde.'
+                },
+                {
+                    type: 'info',
+                    icon: 'fa-ban',
+                    title: 'Benzinli Motor Yasağı',
+                    text: 'AB 2026\'dan, California 2024\'ten itibaren benzinli bahçe makinelerini yasakladı. Gelecek akülü teknolojide.'
+                }
+            ]
+        },
         content: `
             <p>Benzinli bahçe makineleri 1950'lerde icat edildi. 70 yıldır aynı prensiple çalışıyor: Yakıt yakma, piston hareketi, mekanik güç. 2025'te hala bu teknolojiyi kullanıyor musunuz?</p>
 
@@ -323,6 +482,74 @@ const blogsData = {
         author: 'Comlink Ekibi',
         excerpt: 'Makinenizi açın. Yine kuş sesleri... Sessiz güç bu. Komşunuz sizin çalıştığınızı bile duymasın. Huzurlu bahçe, mutlu hayat. Gürültü kirliliğine son verin, doğayla uyum içinde çalışın.',
         image: 'img/blog/s_blog_thumb07.jpg',
+        visualElements: {
+            statistics: [
+                { value: '75-85 dB', label: 'COMLINK SES SEVİYESİ', icon: 'fa-volume-down', color: 'green' },
+                { value: '100 dB', label: 'BENZİNLİ GÜRÜLTÜusü', icon: 'fa-volume-up', color: '' },
+                { value: '20m', label: 'KOMŞU DUYMA MESAFESİ', icon: 'fa-home', color: 'blue' }
+            ],
+            noiseComparison: [
+                {
+                    label: '🔇 Normal Konuşma',
+                    value: 65,
+                    maxValue: 120,
+                    db: '60-65 dB',
+                    level: 'low',
+                    description: 'Rahat ve konforlu seviye'
+                },
+                {
+                    label: '🔉 Comlink Akülü Makineler',
+                    value: 80,
+                    maxValue: 120,
+                    db: '75-85 dB',
+                    level: 'low',
+                    description: 'Sessiz ve çevre dostu'
+                },
+                {
+                    label: '🔊 Trafik Gürültüsü',
+                    value: 85,
+                    maxValue: 120,
+                    db: '85 dB',
+                    level: 'medium',
+                    description: 'Orta seviye, uzun süre zararlı'
+                },
+                {
+                    label: '🔊 Benzinli Çim Biçme',
+                    value: 100,
+                    maxValue: 120,
+                    db: '95-105 dB',
+                    level: 'high',
+                    description: 'Yüksek seviye - işitme kaybı riski'
+                },
+                {
+                    label: '🔊🔊 Rock Konseri',
+                    value: 115,
+                    maxValue: 120,
+                    db: '110-120 dB',
+                    level: 'high',
+                    description: 'Tehlikeli seviye - hemen koruma gerekli'
+                }
+            ],
+            badges: [
+                { text: 'Sessiz Çalışma', icon: 'fa-volume-down', type: 'eco' },
+                { text: 'Komşu Dostu', icon: 'fa-home', type: 'eco' },
+                { text: 'WHO Standartlarında', icon: 'fa-check-circle', type: 'cert' }
+            ],
+            highlights: [
+                {
+                    type: 'info',
+                    icon: 'fa-info-circle',
+                    title: 'DSÖ Uyarısı',
+                    text: 'Dünya Sağlık Örgütü, gürültü kirliliğini hava kirliliğinden sonra ikinci en önemli çevre sağlık riski olarak tanımlıyor.'
+                },
+                {
+                    type: 'success',
+                    icon: 'fa-dove',
+                    title: 'Doğa İle Uyum',
+                    text: 'Comlink kullanıcılarının en çok sevdiği şey: Çalışırken kuş seslerini duyabilmek.'
+                }
+            ]
+        },
         content: `
             <p>Pazar sabahı saat 7. Güneş yeni doğuyor. Kuşlar cıvıldıyor. Komşularınız uyuyor. Ve siz bahçenizde çalışmak istiyorsunuz.</p>
 
@@ -434,6 +661,79 @@ const blogsData = {
         author: 'Comlink Ekibi',
         excerpt: 'Bir batarya ile 9 farklı makine kullanın. Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Aynı batarya, aynı verimlilik. IP66 sertifikalı güvenilir sistem.',
         image: 'img/blog/s_blog_thumb08.jpg',
+        visualElements: {
+            statistics: [
+                { value: '9', label: 'FARKLI MAKİNE', icon: 'fa-tools', color: 'blue' },
+                { value: '1', label: 'BATARYA SİSTEMİ', icon: 'fa-battery-full', color: 'green' },
+                { value: '%70', label: 'MALİYET TASARRUFU', icon: 'fa-piggy-bank', color: 'purple' }
+            ],
+            timeline: [
+                {
+                    time: '08:00',
+                    title: 'Çim Biçme (CK-230D + V7-30Ah)',
+                    description: '400m² bahçe, 45 dakika',
+                    stats: [
+                        { icon: 'fa-battery-three-quarters', text: 'Batarya %60 kaldı' },
+                        { icon: 'fa-clock', text: '45 dakika' }
+                    ]
+                },
+                {
+                    time: '09:00',
+                    title: 'Çit Budama (CK-320 + Aynı Batarya)',
+                    description: 'Çit kenarları, 25 dakika',
+                    stats: [
+                        { icon: 'fa-battery-half', text: 'Batarya %40 kaldı' },
+                        { icon: 'fa-clock', text: '25 dakika' }
+                    ]
+                },
+                {
+                    time: '09:30',
+                    title: 'Yaprak Temizleme (CK-120 + Aynı Batarya)',
+                    description: 'Yollar ve bahçe, 20 dakika',
+                    stats: [
+                        { icon: 'fa-battery-quarter', text: 'Batarya %20 kaldı' },
+                        { icon: 'fa-clock', text: '20 dakika' }
+                    ]
+                },
+                {
+                    time: '10:00',
+                    title: 'Şarj + Kahve Molası',
+                    description: 'Batarya şarja takıldı, V7-20Ah yedek batarya kullanıma hazır',
+                    stats: [
+                        { icon: 'fa-charging-station', text: 'Hızlı şarj' },
+                        { icon: 'fa-coffee', text: 'Mola zamanı' }
+                    ]
+                },
+                {
+                    time: '11:00',
+                    title: 'Ağaç Budama (CK-412 + V7-20Ah)',
+                    description: 'Yüksek dallar, 30 dakika',
+                    stats: [
+                        { icon: 'fa-battery-full', text: 'Yeni batarya' },
+                        { icon: 'fa-check', text: 'İş tamamlandı' }
+                    ]
+                }
+            ],
+            badges: [
+                { text: '56V Li-ion Platform', icon: 'fa-battery-full', type: 'tech' },
+                { text: 'IP66 Sertifikalı', icon: 'fa-shield-alt', type: 'cert' },
+                { text: 'Akıllı BMS', icon: 'fa-microchip', type: 'tech' }
+            ],
+            highlights: [
+                {
+                    type: 'tip',
+                    icon: 'fa-lightbulb',
+                    title: 'Tek Platform Avantajı',
+                    text: '9 makine almak istiyorsunuz. Diğer markalarda: 9 ayrı batarya = 45.000+ TL. Comlink\'te: 2-3 batarya yeterli = 12.000 TL. %70 tasarruf.'
+                },
+                {
+                    type: 'info',
+                    icon: 'fa-info-circle',
+                    title: 'Akıllı Güç Yönetimi',
+                    text: 'BMS sayesinde her makine ihtiyacı kadar güç alıyor. Üfleyici az güç çekiyor, testere daha fazla. Aynı batarya, optimize performans.'
+                }
+            ]
+        },
         content: `
             <p>Hayal edin: Sabah bahçenizi çim biçme makinesiyle biçiyorsunuz. Öğleden sonra aynı bataryayı çit budama makinesine takıyorsunuz. Akşam aynı bataryayı yaprak üfleyicide kullanıyorsunuz. Bir batarya, üç farklı iş, sıfır bekleme.</p>
 
