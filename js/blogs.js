@@ -13,7 +13,7 @@ const blogsData = {
         visualElements: {
             statistics: [
                 { value: '0%', label: 'SIFIR EMİSYON', icon: 'fa-leaf', color: 'green' },
-                { value: '160km', label: 'BENZİNLİ KİRLETİCİ EŞDEĞERİ', icon: 'fa-car', color: '' },
+                { value: '160km', label: 'BENZİNLİ KİRLETİCİ EŞDEĞERİ', icon: 'fa-car', color: 'red' },
                 { value: '2026', label: 'AB YASAKLAMA YILI', icon: 'fa-ban', color: 'blue' }
             ],
             badges: [
@@ -166,16 +166,6 @@ const blogsData = {
 
             <p>Rakip markalarda her makine için ayrı batarya almanız gerekiyor. 3 makine = 3 batarya = 15.000+ TL ek maliyet. Comlink'te? Sadece 1-2 batarya yeterli.</p>
 
-            <h4>Profesyoneller İçin Daha Fazla Kazanç</h4>
-            <p>Bahçe bakım işiyle uğraşıyorsanız, tasarruf daha da etkileyici:</p>
-
-            <ul>
-                <li><strong>Daha fazla müşteri:</strong> Sessiz çalışma = sabah 7'de başlayabilirsiniz</li>
-                <li><strong>Daha hızlı iş:</strong> Güçlü motor = daha kısa sürede bitirin</li>
-                <li><strong>Daha az malzeme taşıma:</strong> Benzin bidonu yok = daha fazla makine taşıyabilirsiniz</li>
-                <li><strong>Daha az kesinti:</strong> Arıza riski minimum = müşteri memnuniyeti maksimum</li>
-            </ul>
-
             <h4>2 Yıl Sonra...</h4>
             <p>2 yıl sonra bu yazıyı hatırlayacaksınız. Cebinizde kalan parayı, kazandığınız zamanı, stresinizin azaldığını göreceksiniz. Ve diyeceksiniz ki: "Keşke daha önce geçseydim."</p>
 
@@ -310,9 +300,6 @@ const blogsData = {
                 <li><strong>Minimum Bakım:</strong> Daha az arıza = daha az iş kaybı</li>
             </ul>
 
-            <h4>Gerçek Kullanıcı Deneyimi</h4>
-            <p>Mehmet Bey, İstanbul'da profesyonel bahçe bakımı yapıyor: <em>"3 yıl önce Comlink'e geçtim. İlk yıl 40% daha fazla müşteri aldım. Makinelerim hiç arızalanmadı, her gün sorunsuz çalışıyor. En önemlisi, artık yorulmuyorum. Benzinli makinelerle akşam bitkin düşerdim, şimdi günün sonunda bile enerjim var."</em></p>
-
             <h4>Yarış Zamanla</h4>
             <p>Profesyonel bahçe bakımı sektöründe rekabet çok yüksek. Fark yaratmak için daha hızlı, daha güçlü ve daha verimli olmalısınız. Comlink bu farkı yaratıyor.</p>
 
@@ -335,7 +322,7 @@ const blogsData = {
             statistics: [
                 { value: '%30', label: 'DAHA VERİMLİ', icon: 'fa-bolt', color: 'purple' },
                 { value: '10,000+', label: 'SAAT ÖMÜR', icon: 'fa-infinity', color: 'blue' },
-                { value: '2', label: 'TAIWAN EXCELLENCE ÖDÜLÜ', icon: 'fa-trophy', color: '' }
+                { value: '2', label: 'TAIWAN EXCELLENCE ÖDÜLÜ', icon: 'fa-trophy', color: 'gold' }
             ],
             comparison: {
                 title: 'Benzinli vs Fırçasız Motor Teknolojisi',
@@ -450,13 +437,8 @@ const blogsData = {
             <p>Comlink'te: Bataryayı tak, düğmeye bas. 2 saniye. Anında tam güç.</p>
 
             <h5>Sessiz Çalışma = İleri Teknoloji</h5>
-            <p>Benzinli makineler 95-105 dB gürültü yapıyor. Bu seviye işitme kaybına neden olabilir. Comlink makineler 75-85 dB. Nasıl? İleri akustik mühendislik ve titreşim izolasyonu.</p>
-
-            <h4>Gelecek Bugün Başlıyor</h4>
-            <p>Avrupa Birliği, 2026'dan itibaren benzinli bahçe makinelerini yasaklıyor. ABD'de California eyaleti 2024'te yasağı başlattı. Neden? Çünkü bu teknolojiler artık eski, verimsiz ve kabul edilemez.</p>
-
-            <p>Gelecek akülü teknolojide. Ve Comlink, bu geleceği bugün size sunuyor.</p>
-
+            <p>Benzinli makineler 95-105 dB gürültü yapıyor. Bu seviye işitme kaybına neden olabilir. Comlink makineler 75-85 dB. Nasıl? İleri akustik mühendislik ve titreşim izolasyonu.</p>  
+           
             <h4>Teknoloji = Yatırım</h4>
             <p>İleri teknoloji, başlangıçta daha pahalı görünebilir. Ama uzun vadede:</p>
 
@@ -485,7 +467,7 @@ const blogsData = {
         visualElements: {
             statistics: [
                 { value: '75-85 dB', label: 'COMLINK SES SEVİYESİ', icon: 'fa-volume-down', color: 'green' },
-                { value: '100 dB', label: 'BENZİNLİ GÜRÜLTÜusü', icon: 'fa-volume-up', color: '' },
+                { value: '100 dB', label: 'BENZİNLİ GÜRÜLTÜSÜ', icon: 'fa-volume-up', color: 'red' },
                 { value: '20m', label: 'KOMŞU DUYMA MESAFESİ', icon: 'fa-home', color: 'blue' }
             ],
             noiseComparison: [
@@ -612,41 +594,8 @@ const blogsData = {
                 <li>Komşu ilişkilerinizi koruyun</li>
                 <li>İstediğiniz saatte bahçe bakımı yapın</li>
             </ul>
-
-            <h4>Doğa İle Uyum</h4>
-            <p>Comlink kullanıcılarının en çok sevdiği şey: Çalışırken kuş seslerini duyabilmek.</p>
-
-            <p>Ayşe Hanım, Bodrum'da villa sahibi: <em>"Her sabah bahçeme çıkıyorum. Comlink makinemi açtığımda kuşlar kaçmıyor. Onlar cıvıldarken ben çalışıyorum. Bu duygu paha biçilemez. Benzinli makinem varken kuşlar hemen uçup giderdi."</em></p>
-
-            <h4>Komşu İlişkileri</h4>
-            <p>Gürültü, komşu problemlerinin başında geliyor. Özellikle yaz aylarında, hafta sonu sabahları...</p>
-
-            <p>Benzinli bir makine açtığınızda, komşularınızın pencerelerini kapattığını gördünüz mü? Veya rahatsız bakışları? Comlink ile bu sorun yok.</p>
-
-            <ul>
-                <li>Pencere açık = gürültü yok</li>
-                <li>Bebek uyuyor = sorun yok</li>
-                <li>Hafta sonu sabahı = huzur bozulmuyor</li>
-            </ul>
-
-            <h4>Huzurlu Bahçe, Mutlu Hayat</h4>
-            <p>Bahçe bakımı stresli bir iş olmamalı. Rahatlamanız gereken bir aktivite. Ama benzinli makinelerle:</p>
-
-            <ul>
-                <li>Motor başlatma stresi (çalışmazsa ne yapacağım?)</li>
-                <li>Gürültü stresi (komşular rahatsız olacak mı?)</li>
-                <li>Koku stresi (egzoz gazı, benzin kokusu)</li>
-                <li>Bakım stresi (ne zaman servise götürmeliyim?)</li>
-            </ul>
-
-            <p>Comlink ile tüm bu stresler ortadan kalkıyor. Bataryayı tak, düğmeye bas, huzur içinde çalış.</p>
-
-            <h4>Sessizlik Bir Seçim</h4>
-            <p>Gürültü kirliliği, modern hayatın kaçınılmaz bir parçası değil. Bir seçim. Ve siz sessizliği seçebilirsiniz.</p>
-
-            <p>Comlink akülü makineler ile sabah 7'de bahçenize çıkın. Makinenizi açın. Ve kuş seslerini dinleyin. Komşularınız uyurken, siz çalışın. Doğayla uyum içinde, huzur içinde.</p>
-
-            <p><strong>Sessiz güç. Huzurlu bahçe. Mutlu hayat.</strong> Comlink ile gürültü kirliliğine son verin. Bahçenizi cennet yapın, mahallenizi de.</p>
+            
+           
         `,
         tags: ['Yaşam Kalitesi', 'Sessiz Çalışma', 'Huzur', 'Komşu İlişkileri', 'Doğa'],
         readTime: '6 dk'
@@ -861,19 +810,6 @@ const blogsData = {
             Yüksek dallar, 30 dakika.</p>
 
             <p>Toplam: 4 farklı makine, 2 batarya, 3 saat iş. Ara vermeden, verimli, profesyonel.</p>
-
-            <h4>Profesyoneller İçin Kritik</h4>
-            <p>Bahçe bakım firmaları için ortak batarya sistemi oyun değiştirici:</p>
-
-            <ul>
-                <li><strong>Ekip Verimliliği:</strong> Herkes aynı bataryaları kullanabiliyor</li>
-                <li><strong>Yedek Batarya:</strong> Bir batarya bitse bile iş durmaz</li>
-                <li><strong>Envanter Yönetimi:</strong> Batarya stok takibi kolay</li>
-                <li><strong>Maliyet Kontrolü:</strong> Daha az yatırım, daha fazla makine</li>
-            </ul>
-
-            <h4>Gelecek Yatırımı</h4>
-            <p>Comlink sürekli yeni makineler geliştiriyor. Ve hepsi aynı batarya platformunda çalışacak. Yani bugün aldığınız bataryalar, gelecekte çıkacak tüm makinelerle uyumlu olacak.</p>
 
             <p>Bu bir ekosistem. Bir kere platforma girdiniz mi, her yeni makine eklemeniz çok daha ekonomik ve kolay oluyor.</p>
 

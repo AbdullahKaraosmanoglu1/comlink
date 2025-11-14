@@ -188,11 +188,14 @@
         let html = '<div class="badge-container" data-aos="fade-up">';
 
         badges.forEach((badge, index) => {
-            const typeClass = badge.type ? ` ${badge.type}-badge` : ' award-badge';
+            // Tüm badge'lere temel award-badge class'ını ekle, sonra tip varsa ek class ekle
+            const baseClass = 'award-badge';
+            const typeClass = badge.type && badge.type !== 'award' ? ` ${badge.type}-badge` : '';
+            const fullClass = baseClass + typeClass;
             const delay = index * 50;
 
             html += `
-                <div class="${typeClass}" data-aos="zoom-in" data-aos-delay="${delay}">
+                <div class="${fullClass}" data-aos="zoom-in" data-aos-delay="${delay}">
                     <i class="fas ${badge.icon}"></i>
                     <span>${badge.text}</span>
                 </div>
