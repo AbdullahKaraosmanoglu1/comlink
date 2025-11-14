@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Yönlendiriliyor... - Comlink</title>
+    <script>
+        /**
+         * GitHub Pages 404 Handler
+         *
+         * GitHub Pages doesn't support .htaccess, so we use this 404.html
+         * to handle client-side routing for clean URLs.
+         *
+         * This script captures the URL path and redirects to the appropriate
+         * HTML file with query parameters.
+         */
+        (function() {
+            const path = window.location.pathname;
+            const hash = window.location.hash;
+            const search = window.location.search;
+
+            // GitHub Pages base URL auto-detection
+            // Eğer /comlink/ gibi bir subdirectory varsa otomatik algılar
+            let baseURL = '/';
+            const pathSegments = window.location.pathname.split('/').filter(s => s);
+
+            // Eğer ilk segment bir repo adıysa (comlink gibi), onu base URL'e ekle
+            // Ama blog, urun, kategori gibi bilinen route'lar değilse
+            const knownRoutes = ['blog', 'urun', 'kategori'];
+            if (pathSegments.length > 0 && !knownRoutes.includes(pathSegments[0])) {
+                // İlk segment muhtemelen repo adı (örn: /comlink/)
+                // Ama bunu sadece gerekirse kullan
+                // Şimdilik basit tut
+                baseURL = '/';
+            }
+
+            // Blog detail pattern: /blog/slug-name
+            const blogMatch = path.match(/\/blog\/([a-zA-Z0-9\-]+)\/?$/);
+            if (blogMatch) {
+                const blogId = blogMatch[1];
+                window.location.replace(baseURL + 'blog-details.html?id=' + blogId + hash);
+                return;
+            }
+
+            // Ürün detail pattern: /urun/product-slug
+            const productMatch = path.match(/\/urun\/([a-zA-Z0-9\-]+)\/?$/);
+            if (productMatch) {
+                const productId = productMatch[1];
+                window.location.replace(baseURL + 'urun-detay.html?id=' + productId + hash);
+                return;
+            }
+
+            // Kategori pattern: /kategori/category-slug
+            const categoryMatch = path.match(/\/kategori\/([a-zA-Z0-9\-]+)\/?$/);
+            if (categoryMatch) {
+                const categoryId = categoryMatch[1];
+                window.location.replace(baseURL + 'urunler.html?kategori=' + categoryId + hash);
+                return;
+            }
+
+            // Sayfa pattern: /page-name -> page-name.html
+            // Clean URL desteği (örn: /hakkimizda -> hakkimizda.html)
+            const cleanPageMatch = path.match(/\/([a-zA-Z0-9\-]+)\/?$/);
+            if (cleanPageMatch) {
+                const pageName = cleanPageMatch[1];
+                // Bazı bilinen sayfa isimleri
+                const knownPages = [
+                    'hakkimizda',
+                    'iletisim',
+                    'blog',
+                    'urunler',
+                    'gizlilik-politikasi',
+                    'iade-politikasi',
+                    'sartlar-kosullar',
+                    'teslimat-bilgisi',
+                    'oduller-sertifikalar'
+                ];
+
+                if (knownPages.includes(pageName)) {
+                    window.location.replace(baseURL + pageName + '.html' + search + hash);
+                    return;
+                }
+            }
+
+            // Hiçbir pattern eşleşmediyse, ana sayfaya yönlendir
+            // Ama önce gerçekten 404 olduğunu göster (3 saniye bekle)
+            document.body.innerHTML = `
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 100px auto; padding: 20px; text-align: center;">
+                    <h1 style="color: #333; font-size: 48px; margin-bottom: 20px;">404</h1>
+                    <h2 style="color: #666; font-size: 24px; margin-bottom: 20px;">Sayfa Bulunamadı</h2>
+                    <p style="color: #888; font-size: 16px; margin-bottom: 30px;">
+                        Aradığınız sayfa bulunamadı. Ana sayfaya yönlendiriliyorsunuz...
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="${baseURL}" style="display: inline-block; padding: 12px 30px; background: #4CAF50; color: white; text-decoration: none; border-radius: 4px; font-size: 16px;">
+                            Ana Sayfaya Git
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            // 3 saniye sonra ana sayfaya yönlendir
+            setTimeout(function() {
+                window.location.replace(baseURL);
+            }, 3000);
+
+        })();
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 100px auto; padding: 20px; text-align: center;">
+        <h1 style="color: #333;">Yönlendiriliyor...</h1>
+        <p style="color: #666;">Lütfen bekleyiniz...</p>
+    </div>
+</body>
+</html>
