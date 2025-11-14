@@ -32,7 +32,8 @@
       "WebSearch",
       "WebFetch(domain:flippingbook.com)",
       "Bash(python update_categories.py:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(where:*)"
     ],
     "deny": [],
     "ask": []

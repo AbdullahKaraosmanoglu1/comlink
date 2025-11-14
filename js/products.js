@@ -1671,50 +1671,6 @@ const productsData = {
         whyChoose2: 'Ayarlanabilir askı ve rahat omuz bantları ile yorulmadan çalışma imkanı sunar. Profesyonel kullanıcılar için idealdir.'
     },
     // ==================== GÜVENLİK EKİPMANLARI ====================
-    'demir-yuz-siperi': {
-        id: 'demir-yuz-siperi',
-        model: 'Demir Örgülü Koruyucu Yüz Siperi',
-        name: 'Demir Örgülü Koruyucu Yüz Siperi',
-        category: 'Aksesuarlar',
-        categoryId: 'aksesuar',
-        shortDesc: 'Metal örgülü yüz koruyucu. Ot biçme ve budama işleri için. Maksimum görüş açısı. Dayanıklı yapı. EN standardı.',
-        description: 'Demir örgülü koruyucu yüz siperi, ot biçme, çit budama ve ağaç kesimi işlemlerinde yüzü korur. Metal örgü yapısı ile maksimum koruma ve havalandırma sağlar.',
-        description2: 'Geniş görüş açısı ile rahat çalışma imkanı sunar. Ayarlanabilir kafa bandı ile tüm baş ölçülerine uyum sağlar. CE ve EN standartlarına uygundur. Profesyonel güvenlik ekipmanı.',
-        features: [
-            'Metal örgü yapı',
-            'Maksimum yüz koruması',
-            'Geniş görüş açısı',
-            'Havalandırma sistemi',
-            'Ayarlanabilir kafa bandı',
-            'Tüm baş ölçülerine uygun',
-            'CE ve EN standartları',
-            'Profesyonel kalite'
-        ],
-        specs: {
-            'Model': 'Demir Örgülü Yüz Siperi',
-            'Malzeme': 'Metal örgü + plastik çerçeve',
-            'Standart': 'CE, EN 1731',
-            'Ayarlama': 'Ayarlanabilir kafa bandı',
-            'Özellik': 'Havalandırma sistemi',
-            'Ağırlık': 'Hafif',
-            'Kullanım': 'Ot biçme, budama, kesim'
-        },
-        usageAreas: [
-            { icon: 'shield', text: 'Yüz koruması' },
-            { icon: 'leaf', text: 'Ot biçme' },
-            { icon: 'cut', text: 'Budama işleri' },
-            { icon: 'tree', text: 'Ağaç kesimi' },
-            { icon: 'user-shield', text: 'Güvenlik' },
-            { icon: 'award', text: 'CE standartlı' }
-        ],
-        images: {
-            main: 'img/products/ÜRÜNLER/Demir Örgülü Koruyucu Yüz Siperi/1.jpg',
-            gallery: ['img/products/ÜRÜNLER/Demir Örgülü Koruyucu Yüz Siperi/1.jpg', 'img/products/ÜRÜNLER/Demir Örgülü Koruyucu Yüz Siperi/1.jpg']
-        },
-        tags: ['Güvenlik', 'Yüz Siperi', 'Metal Örgü', 'CE Standartlı', 'Koruyucu'],
-        whyChoose: 'Demir örgülü yüz siperi, ot biçme ve budama işlemlerinde yüzü taş, dal ve debris parçalarına karşı korur. Metal örgü yapısı ile maksimum koruma sağlar.',
-        whyChoose2: 'Geniş görüş açısı ve havalandırma sistemi ile rahat kullanım sunar. CE ve EN standartlarına uygun profesyonel güvenlik ekipmanıdır.'
-    },
     'koruyucu-onluk': {
         id: 'koruyucu-onluk',
         model: 'Koruyucu Önlük',
