@@ -18,9 +18,15 @@
         const protocol = window.location.protocol;
         const hostname = window.location.hostname;
 
+        // GitHub Pages kontrolü - demo amaçlı development gibi davransın
+        if (hostname.includes('github.io')) {
+            return false;
+        }
+
         // Production koşulları:
         // 1. HTTPS veya HTTP protokolü (file:// değil)
         // 2. Domain adı localhost, 127.0.0.1 veya boş değil
+        // 3. GitHub Pages DEĞİL
         const isHTTPProtocol = protocol === 'https:' || protocol === 'http:';
         const isRealDomain = hostname &&
                              hostname !== 'localhost' &&
