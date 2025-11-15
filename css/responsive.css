@@ -88,6 +88,9 @@
 }
 .about-img img {
 	width: 100%;
+	max-width: 539px;
+	height: auto;
+	object-fit: cover;
 }
 .about-title h2 {
 	font-size: 27px;
@@ -383,10 +386,16 @@ blockquote.classic-blockquote-post::after {
 .about-img {
 	text-align: center;
 	margin-bottom: 45px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .about-img img {
-	width: auto;
+	width: 100%;
+	max-width: 539px;
+	height: auto;
 	display: inline-block;
+	object-fit: cover;
 }
 .about-title h2 {
 	font-size: 36px;
@@ -703,9 +712,15 @@ blockquote.blockquote-post::before {
 .about-img {
 	text-align: center;
 	margin-bottom: 35px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .about-img img {
 	width: 100%;
+	max-width: 539px;
+	height: auto;
+	object-fit: cover;
 	display: inline-block;
 }
 .about-title h2 {

@@ -2733,6 +2733,22 @@ label {
 	padding-left: 30px;
 }
 
+.about-img {
+	max-width: 539px;
+	max-height: 343px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-img img {
+	width: 539px;
+	height: 343px;
+	object-fit: cover;
+	object-position: center;
+}
+
 .about-active .slick-dots {
 	position: absolute;
 	left: 0;
