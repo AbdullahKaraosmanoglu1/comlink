@@ -6,7 +6,7 @@
 // Katalog State Yönetimi
 const blogCatalogState = {
     currentPage: 1,
-    itemsPerPage: 4,
+    itemsPerPage: 9999, // Tüm blogları tek sayfada göster (pagination kapalı)
     currentCategory: 'all',
     currentSearch: '',
     currentSort: 'date-desc',
@@ -201,6 +201,9 @@ function renderBlogPagination(pagination) {
     if (existingPagination) {
         existingPagination.remove();
     }
+
+    // Pagination devre dışı - tüm bloglar tek sayfada gösteriliyor
+    return;
 
     // Pagination için row wrapper oluştur
     const rowDiv = document.createElement('div');
