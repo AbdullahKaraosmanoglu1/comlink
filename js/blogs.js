@@ -1,4 +1,5 @@
 // Comlink Blog Veritabanı
+
 const blogsData = {
     'cevre-donusum': {
         id: 'cevre-donusum',
