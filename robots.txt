@@ -7,13 +7,16 @@ Allow: /
 # Sitemap location
 Sitemap: https://www.comlink.com.tr/sitemap.xml
 
-# Disallow admin and config directories if any
-Disallow: /admin/
+# Disallow config and internal directories
 Disallow: /.vs/
 Disallow: /docs/
+Disallow: /website/
 
-# Allow CSS, JS, and image files
+# Allow CSS, JS, fonts, and media files
 Allow: /css/
 Allow: /js/
 Allow: /img/
+Allow: /images/
 Allow: /fonts/
+Allow: /media/
+Allow: /kataloglar/

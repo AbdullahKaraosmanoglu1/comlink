@@ -4,7 +4,10 @@
       "Bash(echo:*)",
       "Bash(move HOSTING-KURULUM.md docs )",
       "Bash(move:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(test:*)",
+      "Bash(nul)",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []
