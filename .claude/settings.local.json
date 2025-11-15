@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(echo:*)"
+      "Bash(echo:*)",
+      "Bash(move HOSTING-KURULUM.md docs )",
+      "Bash(move:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []
