@@ -1,0 +1,220 @@
+# Comlink.com.tr - Natro Hosting Configuration
+# Apache .htaccess dosyası
+
+# ============================================
+# 1. GÜVENLIK BAŞLIKLARI
+# ============================================
+<IfModule mod_headers.c>
+    # XSS koruması
+    Header set X-XSS-Protection "1; mode=block"
+
+    # MIME type sniffing engelleme
+    Header set X-Content-Type-Options "nosniff"
+
+    # Clickjacking koruması
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # Referrer politikası
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions Policy
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ============================================
+# 2. GZIP SIKIŞTIRMA (Performans)
+# ============================================
+<IfModule mod_deflate.c>
+    # HTML, CSS, JavaScript sıkıştır
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom_xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE application/json
+
+    # Font dosyaları sıkıştır
+    AddOutputFilterByType DEFLATE application/font-woff
+    AddOutputFilterByType DEFLATE application/font-woff2
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/eot
+    AddOutputFilterByType DEFLATE font/otf
+</IfModule>
+
+# ============================================
+# 3. TARAYICI ÖNBELLEK (Browser Caching)
+# ============================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # Görsel dosyalar - 1 yıl
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Font dosyaları - 1 yıl
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+
+    # CSS ve JavaScript - 1 ay
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+
+    # HTML - 1 gün
+    ExpiresByType text/html "access plus 1 day"
+
+    # PDF ve diğer dökümanlar - 1 ay
+    ExpiresByType application/pdf "access plus 1 month"
+
+    # Video dosyaları - 1 yıl
+    ExpiresByType video/mp4 "access plus 1 year"
+    ExpiresByType video/webm "access plus 1 year"
+</IfModule>
+
+# Cache-Control başlıkları
+<IfModule mod_headers.c>
+    # Görseller için
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # CSS ve JS için
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+
+    # Font dosyaları için
+    <FilesMatch "\.(ttf|woff|woff2|eot|otf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>
+
+# ============================================
+# 4. CLEAN URL (SEO Friendly URLs)
+# ============================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # HTTPS yönlendirmesi (Natro SSL aktif olduktan sonra)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # www olmadan yönlendirme (isteğe bağlı)
+    # RewriteCond %{HTTP_HOST} ^www\.comlink\.com\.tr [NC]
+    # RewriteRule ^(.*)$ https://comlink.com.tr/$1 [L,R=301]
+
+    # index.html'i gizle
+    RewriteCond %{THE_REQUEST} /index\.html [NC]
+    RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+    # .html uzantısını gizle (SEO için temiz URL'ler)
+    # Örnek: /hakkimizda.html -> /hakkimizda
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^([^/]+)/?$ $1.html [L]
+
+    # .html uzantısı ile erişilirse yönlendir
+    RewriteCond %{THE_REQUEST} ^GET\ /[^?\s]+\.html
+    RewriteRule (.*)\.html$ /$1 [R=301,L]
+</IfModule>
+
+# ============================================
+# 5. DOSYA KORUMASI
+# ============================================
+# .htaccess dosyasına erişimi engelle
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Hassas dosyalara erişimi engelle
+<FilesMatch "(^\..*|\.bak|\.config|\.sql|\.log|\.md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ============================================
+# 6. ERROR PAGES
+# ============================================
+ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html
+# ErrorDocument 500 /500.html
+
+# ============================================
+# 7. CHARSET & ENCODING
+# ============================================
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+    AddCharset UTF-8 .html .css .js .xml .json .rss .atom
+</IfModule>
+
+# ============================================
+# 8. MIME TYPES
+# ============================================
+<IfModule mod_mime.c>
+    # Webp desteği
+    AddType image/webp .webp
+
+    # Web Fonts
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+    AddType application/vnd.ms-fontobject .eot
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+
+    # Video
+    AddType video/mp4 .mp4
+    AddType video/webm .webm
+
+    # SVG
+    AddType image/svg+xml .svg .svgz
+
+    # JSON
+    AddType application/json .json
+</IfModule>
+
+# ============================================
+# 9. PHP AYARLARI (Natro için)
+# ============================================
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 64M
+    php_value post_max_size 64M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+</IfModule>
+
+# ============================================
+# 10. DİZİN LISTELEMEYI ENGELLE
+# ============================================
+Options -Indexes
+
+# ============================================
+# 11. SERVER SIGNATURE GIZLE
+# ============================================
+ServerSignature Off
+
+# ============================================
+# 12. ETAGs KALDIRMA (Performans)
+# ============================================
+<IfModule mod_headers.c>
+    Header unset ETag
+</IfModule>
+FileETag None
