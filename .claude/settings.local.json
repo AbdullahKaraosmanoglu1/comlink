@@ -1,11 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(*)",
-      "Read(C:\\Users\\akogl\\projects\\**)",
-      "Write(C:\\Users\\akogl\\projects\\**)",
-      "WebSearch",
-      "WebFetch(*)"
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []
