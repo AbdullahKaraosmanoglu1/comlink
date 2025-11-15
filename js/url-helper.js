@@ -206,7 +206,7 @@
                 url = createHomeURL();
                 break;
             default:
-                console.warn('Unknown link type:', type);
+                // Unknown link type - silently ignore in production
                 return;
         }
 
