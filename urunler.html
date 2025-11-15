@@ -1033,7 +1033,6 @@
 
     <!-- Product System Scripts -->
     <script src="js/url-helper.js"></script>
-    <script src="js/products.js"></script>
     <script src="js/product-visual-renderer.js"></script>
 
     <!-- StPageFlip Library - Modern Realistic Flipbook -->
@@ -1108,6 +1107,20 @@
             box-sizing: border-box;
         }
 
+        /* Mobil tam ekran optimizasyonu */
+        @media (max-width: 767px) {
+            .flipbook-modal-content {
+                padding: 10px;
+                width: 100%;
+                justify-content: flex-start;
+                padding-top: 60px;
+            }
+
+            .flipbook-modal {
+                background: rgba(0, 0, 0, 0.95);
+            }
+        }
+
         .flipbook-close {
             position: absolute;
             top: 20px;
@@ -1140,6 +1153,19 @@
             align-items: center;
             margin-bottom: 15px;
             perspective: 2500px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* Mobil flipbook container */
+        @media (max-width: 767px) {
+            .flipbook-container {
+                perspective: 1500px;
+                margin-bottom: 10px;
+                flex: 1;
+                align-items: flex-start;
+                padding-top: 20px;
+            }
         }
 
         #flipbook {
@@ -1156,6 +1182,31 @@
 
         .stf__block {
             background: white;
+        }
+
+        /* ===== YÜKSEK KALİTE GÖRSEL RENDERİNG ===== */
+        .stf__block img,
+        .stf__wrapper img,
+        #flipbook img,
+        .page-content img {
+            image-rendering: -webkit-optimize-contrast !important;
+            image-rendering: crisp-edges !important;
+            image-rendering: high-quality !important;
+            -ms-interpolation-mode: bicubic !important;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Canvas için yüksek kalite */
+        .stf__wrapper canvas,
+        #flipbook canvas {
+            image-rendering: -webkit-optimize-contrast !important;
+            image-rendering: crisp-edges !important;
+            image-rendering: high-quality !important;
         }
 
         .flipbook-controls {
@@ -1178,11 +1229,17 @@
             font-size: 14px;
             font-weight: 600;
             transition: all 0.3s;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .flipbook-btn:hover {
             background: #ff8c42;
             transform: translateY(-2px);
+        }
+
+        .flipbook-btn:active {
+            transform: scale(0.95);
         }
 
         .flipbook-btn:disabled {
@@ -1199,38 +1256,49 @@
             text-align: center;
         }
 
-        @media (max-width: 992px) {
-            .flipbook-modal-content {
-                padding: 15px;
-            }
-
-            .flipbook-controls {
-                padding: 10px 25px;
-            }
-        }
-
+        /* Mobil kontroller - Büyük ve touch-friendly */
         @media (max-width: 767px) {
-            .flipbook-close {
-                width: 40px;
-                height: 40px;
-                font-size: 28px;
-                top: 10px;
-                right: 10px;
-            }
-
             .flipbook-controls {
                 gap: 10px;
-                padding: 8px 20px;
+                padding: 12px 20px;
+                border-radius: 25px;
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10002;
             }
 
             .flipbook-btn {
-                padding: 8px 15px;
-                font-size: 13px;
+                padding: 12px 18px;
+                font-size: 15px;
+                border-radius: 18px;
+                min-width: 90px;
             }
 
             #pageNum {
                 font-size: 14px;
-                min-width: 60px;
+                min-width: 55px;
+                font-weight: 700;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .flipbook-controls {
+                gap: 8px;
+                padding: 10px 15px;
+                max-width: 95%;
+            }
+
+            .flipbook-btn {
+                padding: 10px 14px;
+                font-size: 13px;
+                min-width: 75px;
+            }
+
+            #pageNum {
+                font-size: 13px;
+                min-width: 50px;
             }
         }
     </style>
@@ -1298,45 +1366,175 @@
                 $('body').css('overflow', 'hidden');
 
                 if (!initialized) {
-                    // Ekran boyutuna göre kitap boyutunu ayarla
+                    // ===== RESPONSIVE EKRAN BOYUTU ALGILAMA =====
                     var viewportWidth = $(window).width();
                     var viewportHeight = $(window).height();
 
-                    // Her sayfa için genişlik (çift sayfa gösterilecek)
-                    var pageWidth = 450;
-                    var pageHeight = 550;
+                    // Cihaz tipi belirleme
+                    var isMobile = viewportWidth < 768;
+                    var isTablet = viewportWidth >= 768 && viewportWidth < 992;
+                    var isDesktop = viewportWidth >= 992;
 
-                    // StPageFlip'i başlat
-                    pageFlip = new St.PageFlip(document.getElementById('flipbook'), {
-                        width: pageWidth,
-                        height: pageHeight,
-                        size: 'fixed',
-                        minWidth: 300,
-                        maxWidth: 500,
-                        minHeight: 400,
-                        maxHeight: 600,
-                        maxShadowOpacity: 0.4,
-                        showCover: true,
-                        mobileScrollSupport: false,
-                        swipeDistance: 30,
-                        clickEventForward: true,
-                        usePortrait: false,
-                        startPage: 0,
-                        drawShadow: true,
-                        flippingTime: 800,
-                        useMouseEvents: true,
-                        autoSize: false,
-                        showPageCorners: true,
-                        disableFlipByClick: false
-                    });
+                    // ===== DİNAMİK BOYUT HESAPLAMA - YÜksek Kalite =====
+                    var pageWidth, pageHeight, flipbookConfig;
 
-                    // Sayfaları yükle
-                    pageFlip.loadFromImages(catalogPages);
+                    if (isMobile) {
+                        // MOBİL: Tek sayfa, küçük boyut - Performans optimizasyonu
+                        pageWidth = Math.min(viewportWidth * 0.75, 320);
+                        pageHeight = Math.min(viewportHeight * 0.55, 450);
+
+                        flipbookConfig = {
+                            width: pageWidth,
+                            height: pageHeight,
+                            size: 'stretch',
+                            minWidth: 250,
+                            maxWidth: 350,
+                            minHeight: 350,
+                            maxHeight: 500,
+                            maxShadowOpacity: 0.2,
+                            showCover: true,
+                            mobileScrollSupport: true,
+                            swipeDistance: 60,
+                            clickEventForward: true,
+                            usePortrait: true,  // TEK SAYFA MOD
+                            startPage: 0,
+                            drawShadow: false,  // Performans için
+                            flippingTime: 600,
+                            useMouseEvents: false,
+                            autoSize: true,
+                            showPageCorners: false,
+                            disableFlipByClick: false
+                        };
+                    } else if (isTablet) {
+                        // TABLET: Orta boyut, tek veya çift sayfa
+                        pageWidth = Math.min(viewportWidth * 0.4, 480);
+                        pageHeight = Math.min(viewportHeight * 0.7, 650);
+
+                        flipbookConfig = {
+                            width: pageWidth,
+                            height: pageHeight,
+                            size: 'stretch',
+                            minWidth: 350,
+                            maxWidth: 500,
+                            minHeight: 450,
+                            maxHeight: 700,
+                            maxShadowOpacity: 0.4,
+                            showCover: true,
+                            mobileScrollSupport: true,
+                            swipeDistance: 40,
+                            clickEventForward: true,
+                            usePortrait: false,
+                            startPage: 0,
+                            drawShadow: true,
+                            flippingTime: 850,
+                            useMouseEvents: true,
+                            autoSize: true,
+                            showPageCorners: true,
+                            disableFlipByClick: false
+                        };
+                    } else {
+                        // DESKTOP: Çift sayfa, maksimum kalite
+                        pageWidth = 600;
+                        pageHeight = 750;
+
+                        flipbookConfig = {
+                            width: pageWidth,
+                            height: pageHeight,
+                            size: 'fixed',
+                            minWidth: 400,
+                            maxWidth: 800,
+                            minHeight: 500,
+                            maxHeight: 1000,
+                            maxShadowOpacity: 0.5,
+                            showCover: true,
+                            mobileScrollSupport: false,
+                            swipeDistance: 30,
+                            clickEventForward: true,
+                            usePortrait: false,
+                            startPage: 0,
+                            drawShadow: true,
+                            flippingTime: 1000,
+                            useMouseEvents: true,
+                            autoSize: false,
+                            showPageCorners: true,
+                            disableFlipByClick: false
+                        };
+                    }
+
+                    // ===== StPageFlip'i Başlat - Responsive + Yüksek Kalite =====
+                    try {
+                        pageFlip = new St.PageFlip(document.getElementById('flipbook'), flipbookConfig);
+
+                        // Sayfaları yükle
+                        pageFlip.loadFromImages(catalogPages);
+
+                        // Loading tamamlandığında
+                        pageFlip.on('flip', function(e) {
+                            console.log('Flipbook loaded successfully');
+                        });
+
+                        // Error handling
+                        pageFlip.on('changeState', function(e) {
+                            if (e.data === 'read') {
+                                console.log('Flipbook ready to use');
+                            }
+                        });
+
+                    } catch (error) {
+                        console.error('Flipbook initialization error:', error);
+                        alert('Katalog yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.');
+                    }
+
+                    // Canvas kalite ayarlarını uygula - Cihaz tipine göre optimize
+                    setTimeout(function() {
+                        var canvases = document.querySelectorAll('#flipbook canvas, .stf__wrapper canvas');
+                        canvases.forEach(function(canvas) {
+                            var ctx = canvas.getContext('2d');
+                            if (ctx) {
+                                // Yüksek kalite rendering - Her cihaz için
+                                ctx.imageSmoothingEnabled = true;
+                                ctx.imageSmoothingQuality = 'high';
+                                ctx.webkitImageSmoothingEnabled = true;
+                                ctx.mozImageSmoothingEnabled = true;
+                                ctx.msImageSmoothingEnabled = true;
+
+                                // High DPI/Retina desteği - Responsive
+                                var dpr = window.devicePixelRatio || 1;
+
+                                // Mobil için DPI optimize edilmiş (performans dengesi)
+                                if (isMobile && dpr > 2) {
+                                    dpr = 2; // Mobilde max 2x kalite (performans için)
+                                }
+
+                                if (dpr > 1) {
+                                    var oldWidth = canvas.width;
+                                    var oldHeight = canvas.height;
+                                    canvas.width = oldWidth * dpr;
+                                    canvas.height = oldHeight * dpr;
+                                    canvas.style.width = oldWidth + 'px';
+                                    canvas.style.height = oldHeight + 'px';
+                                    ctx.scale(dpr, dpr);
+                                }
+                            }
+                        });
+                    }, isMobile ? 300 : 500);
 
                     // Sayfa değiştiğinde
                     pageFlip.on('flip', (e) => {
                         playPageFlipSound();
                         updatePageNumber();
+
+                        // Her sayfa değişiminde canvas kalitesini yeniden ayarla
+                        setTimeout(function() {
+                            var canvases = document.querySelectorAll('#flipbook canvas, .stf__wrapper canvas');
+                            canvases.forEach(function(canvas) {
+                                var ctx = canvas.getContext('2d');
+                                if (ctx) {
+                                    ctx.imageSmoothingEnabled = true;
+                                    ctx.imageSmoothingQuality = 'high';
+                                }
+                            });
+                        }, 100);
                     });
 
                     pageFlip.on('changeState', (e) => {
