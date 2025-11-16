@@ -1917,15 +1917,43 @@ function updateProductPageMeta() {
     }
 }
 
+// Sonraki ürün butonunu güncelle
+function updateNextProductButton() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentProductId = urlParams.get('id');
+
+    if (!currentProductId) return;
+
+    // Tüm ürün ID'lerini al
+    const productIds = Object.keys(productsData);
+
+    // Mevcut ürünün indeksini bul
+    const currentIndex = productIds.indexOf(currentProductId);
+
+    if (currentIndex === -1) return;
+
+    // Sonraki ürünün indeksini hesapla (döngüsel: son üründen sonra ilk ürüne dön)
+    const nextIndex = (currentIndex + 1) % productIds.length;
+    const nextProductId = productIds[nextIndex];
+
+    // Butonu güncelle
+    const nextButton = document.querySelector('.blog-next a');
+    if (nextButton) {
+        nextButton.href = `urun-detay.html?id=${nextProductId}`;
+    }
+}
+
 // Sayfa yüklendiğinde çalıştır (urun-detay sayfasında)
 if (window.location.pathname.includes('urun-detay')) {
     // Tüm kaynaklar yüklendikten sonra çalıştır (en garantili yöntem)
     window.addEventListener('load', function() {
         updateProductPageMeta();
+        updateNextProductButton();
     });
 
     // DOMContentLoaded'da da çalıştır (daha hızlı için)
     document.addEventListener('DOMContentLoaded', function() {
         updateProductPageMeta();
+        updateNextProductButton();
     });
 }
