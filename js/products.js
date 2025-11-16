@@ -942,7 +942,7 @@ const productsData = {
             { icon: 'battery-full', text: 'Maksimum süre' },
             { icon: 'award', text: 'Profesyonel' },
             { icon: 'tools', text: 'Tüm makineler' },
-            { icon: 'check', text: 'Dayanıklı' }
+            { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/30.0Ah/30.0Ah.jpg',
@@ -1391,7 +1391,7 @@ const productsData = {
             { icon: 'cog', text: 'CK-230D' },
             { icon: 'sync', text: 'Yedek parça' },
             { icon: 'award', text: 'Orijinal' },
-            { icon: 'check', text: 'Dayanıklı' }
+            { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Alüminyum Bobin/11.png',
@@ -1477,7 +1477,7 @@ const productsData = {
             { icon: 'tools', text: 'CK-460D' },
             { icon: 'sync', text: 'Yedek bıçak' },
             { icon: 'award', text: 'Orijinal' },
-            { icon: 'check', text: 'Dayanıklı' }
+            { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png',
@@ -1520,7 +1520,7 @@ const productsData = {
             { icon: 'bolt', text: 'Hızlı kesim' },
             { icon: 'tools', text: 'Comlink makineler' },
             { icon: 'award', text: 'Orijinal' },
-            { icon: 'check', text: 'Dayanıklı' }
+            { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Üç Bıçak/1.jpg',
