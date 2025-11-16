@@ -4722,6 +4722,17 @@ label {
 	object-position: center top;
 }
 
+/* Detay sayfalarında görsellerin tam gösterilmesi için özel kural */
+.blog-thumb-detail img {
+	height: auto !important;
+	max-height: 600px;
+	object-fit: contain !important;
+	object-position: center center !important;
+	background-color: #f8f8f8;
+	padding: 20px;
+	border-radius: 8px;
+}
+
 .blog-content {
 	padding: 35px 30px;
 	display: flex;

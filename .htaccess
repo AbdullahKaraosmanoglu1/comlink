@@ -102,23 +102,26 @@ RewriteRule ^(.*)$ $1.html [L]
 
 # Blog detay sayfası: /blog/slug-name
 # Örnek: /blog/cevre-donusum -> blog-details.html?id=cevre-donusum
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog-details.html?id=$1 [L,QSA]
+# DISABLED: Using query string format instead (blog-details.html?id=slug)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog-details.html?id=$1 [L,QSA]
 
 # ==================== ÜRÜN URL REWRITING ====================
 
 # Ürün detay sayfası: /urun/product-slug
 # Örnek: /urun/ck-210 -> urun-detay.html?id=ck-210
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^urun/([a-zA-Z0-9-]+)/?$ urun-detay.html?id=$1 [L,QSA]
+# DISABLED: Using query string format instead (urun-detay.html?id=product-id)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^urun/([a-zA-Z0-9-]+)/?$ urun-detay.html?id=$1 [L,QSA]
 
 # Kategori sayfası: /kategori/category-slug
 # Örnek: /kategori/cim-bicme -> urunler.html?kategori=cim-bicme
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^kategori/([a-zA-Z0-9-]+)/?$ urunler.html?kategori=$1 [L,QSA]
+# DISABLED: Using query string format instead (urunler.html?kategori=category-id)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^kategori/([a-zA-Z0-9-]+)/?$ urunler.html?kategori=$1 [L,QSA]
 
 # ==================== HATA SAYFALARI ====================
 
