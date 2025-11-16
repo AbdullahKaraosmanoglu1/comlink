@@ -2,7 +2,12 @@
   "use strict";
 
   // preloader
+  var preloaderClosed = false;
+
   function loader() {
+    if (preloaderClosed) return; // Bir kez çalışsın
+    preloaderClosed = true;
+
     $('#ctn-preloader').addClass('loaded');
     $("#loading").fadeOut(500);
     // Preloader tamamlandıktan sonra scroll gösterilir
@@ -15,6 +20,15 @@
     }
   }
 
+  // 1. DOMContentLoaded - Hızlı başlat (1 saniye sonra)
+  $(document).ready(function () {
+    setTimeout(loader, 1000);
+  });
+
+  // 2. Maksimum timeout - Mobil için güvenlik (3 saniye sonra zorla)
+  setTimeout(loader, 3000);
+
+  // 3. Window load - Normal akış (tüm kaynaklar yüklendiğinde)
   $(window).on('load', function () {
     loader();
     wowanimation();
