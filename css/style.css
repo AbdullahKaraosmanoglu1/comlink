@@ -243,7 +243,10 @@ label {
 
 /* button style */
 .btn {
+	-webkit-user-select: none;
 	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	background: #ff4612 none repeat scroll 0 0;
 	border: medium none;
 	border-radius: 0;
@@ -451,7 +454,7 @@ label {
 
 .main-menu ul li {
 	display: inline-block;
-	margin-left: 42px;
+	margin-left: 28px;
 	position: relative;
 }
 
@@ -472,16 +475,16 @@ label {
 
 /* ===== YENİ BELİRGİN MENU LİNK STİLİ (TEST) ===== */
 .main-menu ul li a {
-	font-size: 16px;
-	/* 15px -> 16px (Daha büyük) */
-	font-weight: 700;
-	/* 600 -> 700 (Daha kalın) */
+	font-size: 15px;
+	/* Daha kompakt görünüm */
+	font-weight: 600;
+	/* Orta kalınlık */
 	color: #52465e;
 	display: block;
 	padding: 35px 0;
 	line-height: 1;
-	letter-spacing: 0.3px;
-	/* Harfler arası boşluk (daha okunabilir) */
+	letter-spacing: 0.2px;
+	/* Harfler arası boşluk hafif azaltıldı */
 	transition: all 0.3s ease;
 	/* Smooth geçiş */
 	position: relative;
@@ -2689,11 +2692,11 @@ label {
 /* 8. About */
 .about-bg {
 	background-image: url(../img/bg/about_bg.jpg);
-	padding-top: 185px;
+	padding-top: 50px;
 	background-position: center;
 	background-size: cover;
 	margin-top: -100px;
-	padding-bottom: 150px;
+	padding-bottom: 10px;
 }
 
 .single-about-wrap {
@@ -3360,7 +3363,8 @@ label {
 	background-image: url(../img/bg/video_bg.jpg);
 	overflow: hidden;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .video-overlay {
@@ -4722,6 +4726,17 @@ label {
 	object-position: center top;
 }
 
+/* Detay sayfalarında görsellerin tam gösterilmesi için özel kural */
+.blog-thumb-detail img {
+	height: auto !important;
+	max-height: 600px;
+	object-fit: contain !important;
+	object-position: center center !important;
+	background-color: #f8f8f8;
+	padding: 20px;
+	border-radius: 8px;
+}
+
 .blog-content {
 	padding: 35px 30px;
 	display: flex;
@@ -4764,7 +4779,6 @@ label {
 	font-weight: 600;
 	line-height: 30px;
 	color: #463756;
-	margin-bottom: 16px;
 	padding-right: 20px;
 	min-height: 60px;
 	display: flex;
@@ -4857,7 +4871,6 @@ label {
 	font-weight: 700;
 	line-height: 30px;
 	color: #4f405e;
-	margin-bottom: 15px;
 	padding-right: 0;
 }
 
@@ -5178,7 +5191,6 @@ blockquote.blockquote-post::after {
 .blog-classic-post .blog-content h4 {
 	color: #3c3444;
 	font-size: 30px;
-	margin-bottom: 25px;
 	font-weight: 700;
 	padding-right: 0;
 	line-height: 1.4;
@@ -5296,6 +5308,14 @@ blockquote.classic-blockquote-post::after {
 
 .blog-classic-post .blog-details-content p {
 	margin-bottom: 10px;
+}
+
+/* DENEME: blog-para class'ı - p yerine div kullanımı */
+.blog-para {
+	margin-bottom: 12px;
+	line-height: 1.8;
+	font-size: 15px;
+	color: #545454;
 }
 
 .blog-details-img {

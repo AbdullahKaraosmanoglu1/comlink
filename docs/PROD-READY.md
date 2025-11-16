@@ -93,11 +93,6 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 
 ### ✅ AŞAMA 4: GÖRSEL OPTİMİZASYONU
 
-- [ ] **4.1** Büyük görselleri optimize et
-  - Maksimum genişlik: 1920px
-  - JPEG kalitesi: 80-85%
-  - PNG'leri TinyPNG ile sıkıştır: https://tinypng.com/
-
 - [ ] **4.2** Kullanılmayan görselleri sil
   ```bash
   # Kullanılmayan img/ altındaki dosyalar var mı kontrol et
@@ -111,69 +106,8 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 
 - [ ] **4.4** Favicon ve icon'ları kontrol et
   - `img/favicon.png` yüklü mü?
-  - Mobil icon'lar (apple-touch-icon) var mı?
 
 ---
-
-### ✅ AŞAMA 5: JAVASCRIPT VE CSS
-
-- [ ] **5.1** JavaScript hatalarını kontrol et
-  - Tarayıcı Console (F12) açık ve hatasız mı?
-  - Blog sayfası çalışıyor mu?
-  - Blog kategori filtreleme çalışıyor mu?
-  - Ürün sayfası çalışıyor mu?
-  - Ürün kategori filtreleme çalışıyor mu?
-  - URLHelper dual-mode sistem çalışıyor mu?
-
-- [ ] **5.2** CSS dosyalarını kontrol et
-  - Kullanılmayan CSS dosyası var mı?
-  - CSS minify edilmiş mi? (opsiyonel)
-
-- [ ] **5.3** External script'leri kontrol et
-  ```html
-  <!-- Google Maps API key gerçek mi? -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=GERÇEK_API_KEY"></script>
-
-  <!-- AOS, jQuery vb. CDN'ler çalışıyor mu? -->
-  ```
-
-- [ ] **5.4** Blog Visual Renderer çalışıyor mu?
-  - Blog detay sayfalarında görsel öğeler render ediliyor mu?
-  - Counter animasyonları çalışıyor mu?
-  - Progress bar'lar doluyor mu?
-
-- [ ] **5.5** Product Visual Renderer çalışıyor mu?
-  - Ürün detay sayfalarında görsel öğeler render ediliyor mu?
-  - İstatistik kartları gösteriliyor mu?
-  - Performans metrikleri (progress bar'lar) çalışıyor mu?
-  - Karşılaştırma tabloları (Benzinli vs Comlink) gösteriliyor mu?
-  - Badge'ler ve sertifikalar gösteriliyor mu?
-
----
-
-### ✅ AŞAMA 6: FORM VE İLETİŞİM
-
-- [ ] **6.1** İletişim formu çalışıyor mu?
-  - Form submission backend bağlantısı var mı?
-  - Email gönderimi test edildi mi?
-  - Hata mesajları gösteriliyor mu?
-
-- [ ] **6.2** Telefon numaraları doğru mu?
-  ```html
-  <a href="tel:+905XXXXXXXXX">+90 5XX XXX XX XX</a>
-  ```
-
-- [ ] **6.3** Email adresleri doğru mu?
-  ```html
-  <a href="mailto:info@comlink.com.tr">info@comlink.com.tr</a>
-  ```
-
-- [ ] **6.4** Sosyal medya linkleri doğru mu?
-  - Facebook, Twitter, Instagram URL'leri gerçek mi?
-  - `<a href="#">` şeklinde placeholder bırakılmamış mı?
-
----
-
 ### ✅ AŞAMA 7: SEO VE ANALİTİK
 
 - [ ] **7.1** Google Analytics kodu eklendi mi?
@@ -219,31 +153,6 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 
 ---
 
-### ✅ AŞAMA 9: MOBİL UYUMLULUK
-
-- [ ] **9.1** Tüm sayfalar mobilde test edildi mi?
-  - Chrome DevTools (F12) → Device Toolbar
-  - iPhone 12, Samsung Galaxy, iPad
-
-- [ ] **9.2** Mobil menü çalışıyor mu?
-  - Hamburger menü açılıyor mu?
-  - Tüm linkler tıklanabiliyor mu?
-
-- [ ] **9.3** Touch event'ler çalışıyor mu?
-  - Slider'lar swipe ile çalışıyor mu?
-  - Blog filter mobilde açılıyor mu?
-
----
-
-### ✅ AŞAMA 10: TARAYICI UYUMLULUĞU
-
-- [ ] **10.1** Chrome'da test edildi
-- [ ] **10.2** Firefox'ta test edildi
-- [ ] **10.3** Safari'de test edildi (Mac veya iPhone)
-- [ ] **10.4** Edge'de test edildi
-
----
-
 ### ✅ AŞAMA 11: GÜVENLİK
 
 - [ ] **11.1** .htaccess güvenlik ayarları aktif mi?
@@ -261,14 +170,6 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 
 ---
 
-### ✅ AŞAMA 12: DOKÜMANTASYON
-
-- [ ] **12.1** `HOSTING-KURULUM.md` dosyası pakette mi?
-- [ ] **12.2** `PROD-READY.md` dosyası pakette mi? (bu dosya)
-- [ ] **12.3** `README.md` dosyası varsa güncellendi mi?
-- [ ] **12.4** Lisans bilgileri eklendi mi? (eğer gerekiyorsa)
-
----
 
 ## 🎁 TESLİMAT PAKETİ HAZIRLAMA
 
@@ -331,9 +232,6 @@ comlink/
 ```bash
 # Komut satırında:
 zip -r comlink-website-v1.0.zip comlink/
-
-# Veya manuel olarak:
-# Proje klasörüne sağ tıkla → Sıkıştır → ZIP
 ```
 
 ### Adım 4: Teslim Notu Hazırla

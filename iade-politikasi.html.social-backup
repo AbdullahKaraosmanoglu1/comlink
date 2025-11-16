@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Comlink – İade Politikası</title>
+    <meta name="description" content="Comlink ürün iade ve değişim koşulları hakkında bilgiler.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.comlink.com.tr/iade-politikasi.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Comlink">
+    <meta property="og:title" content="Comlink İade Politikası">
+    <meta property="og:description" content="Comlink ürün iade ve değişim koşulları hakkında bilgiler.">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
+    <meta property="og:url" content="https://www.comlink.com.tr/iade-politikasi.html">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Comlink İade Politikası">
+    <meta name="twitter:description" content="Comlink ürün iade ve değişim koşulları hakkında bilgiler.">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom-cursor.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="C" class="letters-loading">C</span>
+                    <span data-text-preloader="O" class="letters-loading">O</span>
+                    <span data-text-preloader="M" class="letters-loading">M</span>
+                    <span data-text-preloader="L" class="letters-loading">L</span>
+                    <span data-text-preloader="I" class="letters-loading">I</span>
+                    <span data-text-preloader="N" class="letters-loading">N</span>
+                    <span data-text-preloader="K" class="letters-loading">K</span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header-start -->
+    <header>
+        <div id="header-sticky" class="main-header transparent-header">
+            <div class="container-fluid header-container-p">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                                    alt="Logo"></a>
+                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                                    alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-6 d-none d-md-block">
+                        <div class="menu-area">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="urunler.html">Ürünler</a></li>
+                                        <li><a href="oduller-sertifikalar.html">Ödüller & Sertifikalar</a></li>
+                                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                        <li><a href="iletisim.html">İletişim</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-btn">
+                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
+                                        src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main-area -->
+    <main>
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb-area breadcrumb-bg s-breadcrumb-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="dots"></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">İade Politikası</li>
+                                    <li class="dots2"></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- policy-content -->
+        <section class="blog-area blog-bg pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="single-blog-post blog-classic-post">
+                            <div class="blog-content blog-details-content">
+                                <p>Comlink olarak müşteri memnuniyeti önceliğimizdir. İade ve değişim işlemlerinizi
+                                    kolaylaştırmak için aşağıdaki politikamızı uygulamaktayız.</p>
+
+                                <div class="alert alert-warning mb-40 mt-30">
+                                    <i class="fas fa-exclamation-triangle"></i> <strong>Önemli:</strong> İade ve değişim
+                                    işlemleri Tüketicinin Korunması Hakkında Kanun (6502 sayılı) kapsamında
+                                    gerçekleştirilmektedir.
+                                </div>
+
+                                <h5 class="mb-20">İade Süresi</h5>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-calendar-check"></i> Ürünü teslim aldığınız tarihten itibaren
+                                        <strong>14 gün</strong> içerisinde cayma hakkınızı kullanabilirsiniz
+                                    </li>
+                                    <li><i class="fas fa-box-open"></i> İade için ürünün kullanılmamış ve orijinal
+                                        ambalajında olması gerekmektedir</li>
+                                    <li><i class="fas fa-receipt"></i> Fatura ve garanti belgesi iade ile birlikte
+                                        gönderilmelidir</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">İade Edilebilir Ürünler</h5>
+                                <p>Aşağıdaki koşulları sağlayan ürünler iade edilebilir:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Ürün kullanılmamış olmalıdır</li>
+                                    <li><i class="fas fa-check"></i> Orijinal ambalajı ve etiketleri hasarsız olmalıdır
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Aksesuarları ve tüm parçaları eksiksiz olmalıdır
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Fatura, garanti belgesi ve kullanım kılavuzu
+                                        olmalıdır</li>
+                                    <li><i class="fas fa-check"></i> Ürün satılabilir durumda olmalıdır</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">İade Edilemeyen Ürünler</h5>
+                                <p>Aşağıdaki durumlarda ürün iadesi kabul edilemez:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-times"></i> Kullanılmış veya hasar görmüş ürünler</li>
+                                    <li><i class="fas fa-times"></i> Ambalajı açılmış veya bozulmuş ürünler</li>
+                                    <li><i class="fas fa-times"></i> Eksik parça veya aksesuarları olan ürünler</li>
+                                    <li><i class="fas fa-times"></i> Kişiye özel üretilmiş veya sipariş üzerine
+                                        getirtilmiş ürünler</li>
+                                    <li><i class="fas fa-times"></i> Kampanya ürünleri (kampanya koşullarına bağlı)</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">İade Süreci</h5>
+                                <ol class="mb-30">
+                                    <li><strong>İade Talebi:</strong> <a href="iletisim.html">İletişim sayfamızdan</a>
+                                        veya müşteri hizmetlerimizi arayarak iade talebinde bulununuz</li>
+                                    <li><strong>İade Onayı:</strong> Talebiniz değerlendirilip size iade kodu ve kargo
+                                        adresi gönderilir</li>
+                                    <li><strong>Ürünü Paketleme:</strong> Ürünü orijinal ambalajı ile birlikte özenli
+                                        bir şekilde paketleyiniz</li>
+                                    <li><strong>Kargoya Verme:</strong> Ürünü anlaşmalı kargo firmamıza veriniz (kargo
+                                        ücreti tarafımızca karşılanır)</li>
+                                    <li><strong>İnceleme:</strong> Ürün tarafımıza ulaştıktan sonra 3-5 iş günü içinde
+                                        incelenir</li>
+                                    <li><strong>Para İadesi:</strong> İade onaylandıktan sonra 7-10 iş günü içinde ödeme
+                                        iadeniz yapılır</li>
+                                </ol>
+
+                                <h5 class="mt-40 mb-20">Para İadesi</h5>
+                                <p>İade edilen ürünlerin bedeli, ödeme yönteminize göre iade edilir:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-credit-card"></i> <strong>Kredi Kartı:</strong> Ödeme kartınıza
+                                        iade edilir (7-10 iş günü)</li>
+                                    <li><i class="fas fa-university"></i> <strong>Banka Havalesi/EFT:</strong>
+                                        Belirttiğiniz hesaba iade edilir (3-5 iş günü)</li>
+                                    <li><i class="fas fa-money-bill-wave"></i> <strong>Kapıda Ödeme:</strong> Banka
+                                        hesabınıza EFT ile iade edilir</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Ürün Değişimi</h5>
+                                <p>Eğer ürünü iade etmek yerine farklı bir ürün ile değiştirmek isterseniz:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> İade prosedürünü takip ediniz</li>
+                                    <li><i class="fas fa-check"></i> Yeni ürün için ayrı bir sipariş oluşturabilirsiniz
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Fiyat farkı varsa, fark tutarı tarafınızdan
+                                        karşılanır veya size iade edilir</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Hasarlı veya Kusurlu Ürün</h5>
+                                <p>Eğer ürün hasarlı veya kusurlu olarak size ulaştıysa:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-exclamation-circle"></i> <strong>7 gün</strong> içinde bize
+                                        bildirin</li>
+                                    <li><i class="fas fa-camera"></i> Ürünün fotoğraflarını çekiniz</li>
+                                    <li><i class="fas fa-phone-alt"></i> Müşteri hizmetlerimiz ile iletişime geçiniz
+                                    </li>
+                                    <li><i class="fas fa-sync-alt"></i> Ürün değiştirilir veya ücretsiz tamir edilir
+                                    </li>
+                                    <li><i class="fas fa-truck"></i> Kusurlu ürünün kargo ücreti tarafımızca karşılanır
+                                    </li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Garanti Kapsamı</h5>
+                                <p>Ürünlerde meydana gelen arızalar garanti kapsamında değerlendirilir. Garanti
+                                    kapsamındaki ürünler iade edilemez, yetkili servise gönderilmelidir.</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Garanti süresi: 2 yıl</li>
+                                    <li><i class="fas fa-check"></i> Üretim hatalarından kaynaklanan arızalar ücretsiz
+                                        onarılır</li>
+                                    <li><i class="fas fa-check"></i> Kullanım hatasından kaynaklanan arızalar garanti
+                                        kapsamı dışındadır</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Kargo Ücreti</h5>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> <strong>Cayma hakkı kullanımı:</strong> İlk iade
+                                        için kargo ücreti müşteriye aittir</li>
+                                    <li><i class="fas fa-check"></i> <strong>Hasarlı/Kusurlu ürün:</strong> Kargo ücreti
+                                        tarafımızca karşılanır</li>
+                                    <li><i class="fas fa-check"></i> <strong>Yanlış ürün gönderimi:</strong> Kargo
+                                        ücreti tarafımızca karşılanır</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">İletişim</h5>
+                                <p>İade ve değişim işlemleri için müşteri hizmetlerimiz ile iletişime geçebilirsiniz:
+                                </p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-envelope"></i> E-posta: <a
+                                            href="mailto:info@comlink.com.tr.tr">info@comlink.com.tr.tr</a></li>
+                                    <li><i class="fas fa-globe"></i> <a href="iletisim.html">İletişim Formu</a></li>
+                                </ul>
+
+                                <div class="alert alert-info mt-40">
+                                    <i class="fas fa-info-circle"></i> Bu iade politikası Tüketicinin Korunması Hakkında
+                                    Kanun (6502 sayılı) çerçevesinde hazırlanmıştır. Yasal haklarınız saklıdır.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="footer-logo mb-35">
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu çözümler
+                                    sunmaktadır. Yüksek performans, düşük bakım maliyeti.</p>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>GÜNCEL YAZILAR</h5>
+                            </div>
+                            <div class="f-rc-post">
+                                <ul>
+                                    <li>
+                                        <div class="f-rc-thumb">
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg"
+                                                    alt="Soluduğunuz Havayı Düşünün"></a>
+                                        </div>
+                                        <div class="f-rc-content">
+                                            <span>5 Kasım, 2025</span>
+                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin
+                                                    Yeşil Dönüşüm</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="f-rc-thumb">
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg"
+                                                    alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                        </div>
+                                        <div class="f-rc-content">
+                                            <span>4 Kasım, 2025</span>
+                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş:
+                                                    Akıllı Yatırım</a></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>FAYDALI LİNKLER</h5>
+                            </div>
+                            <div class="fw-link">
+                                <ul>
+                                    <li><a href="hakkimizda.html"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
+                                    <li><a href="teslimat-bilgisi.html"><i class="fas fa-caret-right"></i> Teslimat
+                                            Bilgisi</a></li>
+                                    <li><a href="sartlar-kosullar.html"><i class="fas fa-caret-right"></i> Şartlar &
+                                            Koşullar</a></li>
+                                    <li><a href="gizlilik-politikasi.html"><i class="fas fa-caret-right"></i> Gizlilik
+                                            Politikası</a></li>
+                                    <li><a href="iade-politikasi.html"><i class="fas fa-caret-right"></i> İade
+                                            Politikasi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>BİZE ULAŞIN</h5>
+                            </div>
+                            <div class="f-support-content">
+                                <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
+                                    ve sessiz çalışma ile Yüksek performans sunar.</p>
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
+                                        alt="img"></a>
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
+                                        alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="copyright-text">
+                            <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/url-helper.js"></script>
+    <script src="js/custom-cursor.js"></script>
+</body>
+
+</html>

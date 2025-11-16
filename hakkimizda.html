@@ -47,6 +47,120 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom Cursor CSS -->
     <link rel="stylesheet" href="css/custom-cursor.css">
+
+    <!-- About Tabs Professional Styling -->
+    <style>
+        /* Smooth transitions for all tab elements */
+        .about-tab * {
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 991px) {
+            .about-tabs-wrapper {
+                margin-bottom: 35px !important;
+            }
+
+            .about-tabs {
+                flex-direction: column !important;
+                gap: 10px !important;
+                padding: 8px !important;
+            }
+
+            .about-tab {
+                padding: 15px 12px !important;
+            }
+
+            .tab-number {
+                font-size: 12px !important;
+            }
+
+            .tab-title {
+                font-size: 14px !important;
+            }
+
+            .tab-subtitle {
+                font-size: 11px !important;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .about-tab {
+                padding: 12px 10px !important;
+            }
+
+            .tab-title {
+                font-size: 13px !important;
+            }
+        }
+
+        /* Enhanced hover animation */
+        .about-tab {
+            position: relative;
+        }
+
+        .about-tab::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(210, 60, 25, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 12px;
+            pointer-events: none;
+        }
+
+        .about-tab:hover::before {
+            opacity: 1;
+        }
+
+        /* Progress bar animation */
+        .progress-fill {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Tab indicator pulse effect */
+        @keyframes indicatorPulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 4px rgba(255, 107, 53, 0);
+            }
+        }
+
+        .about-tab.active .tab-indicator {
+            animation: indicatorPulse 2s infinite;
+        }
+    </style>
 </head>
 
 <body>
@@ -212,7 +326,7 @@
                                 </div>
                                 <div class="choose-content">
                                     <p>Sessiz çalışma özelliği ile hem kullanıcıya hem çevreye konfor. Sıfır emisyon ile
-                                        karbon ayak izini azaltır.</p>
+                                        karbon ayak izini sıfırlar.</p>
                                 </div>
                             </div>
                         </div>
@@ -225,8 +339,9 @@
                                     <h3><a href="#">Bakım Maliyetini Ortadan Kaldıran Çözümler</a></h3>
                                 </div>
                                 <div class="choose-content">
-                                    <p>Motor yağı değişimi, karbüratör temizliği veya egzoz bakımı gerektirmez. Düşük
-                                        bakım ihtiyacı ile ekonomik kullanım.</p>
+                                    <p>Motor yağı değişimi, karbüratör temizliği veya silindir piston
+                                        değişimi..Bunların hiçbirinin olmadığını düşünün.. Düşük bakım ihtiyacı ile
+                                        ekonomik kullanım.</p>
                                 </div>
                             </div>
                         </div>
@@ -281,6 +396,64 @@
         <!-- about-area -->
         <section class="about-area about-bg">
             <div class="container">
+                <!-- Modern Tab Navigation -->
+                <div class="about-tabs-wrapper" style="margin-bottom: 50px;">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="about-tabs"
+                                style="display: flex; gap: 15px; background: white; padding: 10px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.08);">
+                                <div class="about-tab active" data-slide="0"
+                                    style="flex: 1; text-align: center; padding: 20px 15px; cursor: pointer; border-radius: 12px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: linear-gradient(135deg, #ff6b35, #d23c19); position: relative; overflow: hidden;">
+                                    <div class="tab-number"
+                                        style="font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.8); margin-bottom: 5px; letter-spacing: 1px;">
+                                        01</div>
+                                    <div class="tab-title"
+                                        style="font-size: 16px; font-weight: 700; color: white; margin-bottom: 3px;">
+                                        Comlink Türkiye</div>
+                                    <div class="tab-subtitle" style="font-size: 12px; color: rgba(255,255,255,0.7);">
+                                        Hakkımızda</div>
+                                    <div class="tab-indicator"
+                                        style="position: absolute; bottom: 0; left: 0; width: 100%; height: 4px; background: rgba(255,255,255,0.3); border-radius: 2px 2px 0 0;">
+                                    </div>
+                                </div>
+                                <div class="about-tab" data-slide="1"
+                                    style="flex: 1; text-align: center; padding: 20px 15px; cursor: pointer; border-radius: 12px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: #f8f9fa; position: relative; overflow: hidden;">
+                                    <div class="tab-number"
+                                        style="font-size: 14px; font-weight: 700; color: #999; margin-bottom: 5px; letter-spacing: 1px;">
+                                        02</div>
+                                    <div class="tab-title"
+                                        style="font-size: 16px; font-weight: 700; color: #666; margin-bottom: 3px;">
+                                        Çevre Dostu</div>
+                                    <div class="tab-subtitle" style="font-size: 12px; color: #999;">Teknoloji</div>
+                                    <div class="tab-indicator"
+                                        style="position: absolute; bottom: 0; left: 0; width: 0%; height: 4px; background: #ff6b35; border-radius: 2px 2px 0 0; transition: width 0.4s ease;">
+                                    </div>
+                                </div>
+                                <div class="about-tab" data-slide="2"
+                                    style="flex: 1; text-align: center; padding: 20px 15px; cursor: pointer; border-radius: 12px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); background: #f8f9fa; position: relative; overflow: hidden;">
+                                    <div class="tab-number"
+                                        style="font-size: 14px; font-weight: 700; color: #999; margin-bottom: 5px; letter-spacing: 1px;">
+                                        03</div>
+                                    <div class="tab-title"
+                                        style="font-size: 16px; font-weight: 700; color: #666; margin-bottom: 3px;">
+                                        Vizyon & Misyon</div>
+                                    <div class="tab-subtitle" style="font-size: 12px; color: #999;">Geleceğimiz</div>
+                                    <div class="tab-indicator"
+                                        style="position: absolute; bottom: 0; left: 0; width: 0%; height: 4px; background: #ff6b35; border-radius: 2px 2px 0 0; transition: width 0.4s ease;">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Progress Bar -->
+                            <div class="about-progress"
+                                style="margin-top: 15px; background: #e9ecef; height: 4px; border-radius: 2px; overflow: hidden;">
+                                <div class="progress-fill"
+                                    style="width: 33.33%; height: 100%; background: linear-gradient(90deg, #ff6b35, #d23c19); transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1); border-radius: 2px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-12">
                         <div class="about-active">
@@ -510,7 +683,9 @@
                                                         aria-labelledby="headingFour" data-parent="#accordionExample">
                                                         <div class="card-body">
                                                             <p>Uzun süre kullanılmadığında bile sorunsuz çalışır; hızlı
-                                                                kurulum ve kolay kullanım.</p>
+                                                                kurulum ve kolay kullanım. Eksik veya yanlış yağ koyma
+                                                                şansınız yok..Silindir yok.. Piston yok.. karbüratör
+                                                                yok..İçten yanmalı motorlara veda zamanı gelmedimi ?</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -527,11 +702,13 @@
                                                     <div id="collapseFive" class="collapse"
                                                         aria-labelledby="headingFive" data-parent="#accordionExample">
                                                         <div class="card-body">
-                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
-                                                                çevreci, sessiz ve bakım
-                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
-                                                                platformu ile ekonomik kullanım
-                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            <p>Comlink bataryaları çeşitli dakikalarda çalışan amatör ve
+                                                                profesyonellere hitap eden akü çeşitliliği ile herkese
+                                                                hitap eder. Normal ve uzman olmak üzere iki ayrı çalışma
+                                                                moduyla performans ve akü verimliliğini bir arada sunar.
+                                                                Böylelikle kullanıcı o anki ihtiyaca göre hareket etme
+                                                                lüksüne sahip olur. Mutlaka kendinize uygun bir batarya
+                                                                bulacaksınız.
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1057,13 +1234,18 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="#" aria-label="Facebook'ta Comlink"><i
+                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank"
+                                            rel="noopener noreferrer" aria-label="Facebook'ta Comlink"><i
                                                 class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" aria-label="Twitter'da Comlink"><i class="fab fa-twitter"></i></a>
+                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank"
+                                            rel="noopener noreferrer" aria-label="Twitter'da Comlink"><i
+                                                class="fab fa-twitter"></i></a>
                                     </li>
-                                    <li><a href="#" aria-label="Pinterest'te Comlink"><i
+                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank"
+                                            rel="noopener noreferrer" aria-label="Pinterest'te Comlink"><i
                                                 class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="#" aria-label="LinkedIn'de Comlink"><i
+                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank"
+                                            rel="noopener noreferrer" aria-label="LinkedIn'de Comlink"><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
@@ -1083,7 +1265,8 @@
                                         </div>
                                         <div class="f-rc-content">
                                             <span>5 Kasım, 2025</span>
-                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a></h5>
+                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin
+                                                    Yeşil Dönüşüm</a></h5>
                                         </div>
                                     </li>
                                     <li>
@@ -1093,7 +1276,8 @@
                                         </div>
                                         <div class="f-rc-content">
                                             <span>4 Kasım, 2025</span>
-                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş: Akıllı Yatırım</a></h5>
+                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş:
+                                                    Akıllı Yatırım</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -1173,6 +1357,113 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/url-helper.js"></script>
+
+    <!-- About Slider Professional Navigation -->
+    <script>
+        $(document).ready(function () {
+            // Wait for slider to be initialized by main.js
+            setTimeout(function () {
+                var aboutSlider = $('.about-active');
+                var totalSlides = 3;
+
+                if (aboutSlider.length && aboutSlider.hasClass('slick-initialized')) {
+                    console.log('About slider found and initialized');
+
+                    // Tab click navigation
+                    $('.about-tab').on('click', function () {
+                        var slideIndex = $(this).data('slide');
+                        console.log('Tab clicked, going to slide:', slideIndex);
+                        aboutSlider.slick('slickGoTo', slideIndex);
+                    });
+
+                    // Update tabs and progress on slide change
+                    aboutSlider.on('afterChange', function (event, slick, currentSlide) {
+                        console.log('Slide changed to:', currentSlide);
+                        updateNavigation(currentSlide);
+                    });
+
+                    // Initial navigation update
+                    var initialSlide = aboutSlider.slick('slickCurrentSlide');
+                    updateNavigation(initialSlide);
+
+                    function updateNavigation(slideIndex) {
+                        console.log('Updating navigation for slide:', slideIndex);
+
+                        // Update tabs
+                        $('.about-tab').each(function (index) {
+                            var tab = $(this);
+                            var tabNumber = tab.find('.tab-number');
+                            var tabTitle = tab.find('.tab-title');
+                            var tabSubtitle = tab.find('.tab-subtitle');
+                            var tabIndicator = tab.find('.tab-indicator');
+
+                            if (index === slideIndex) {
+                                // Active tab
+                                tab.removeClass('inactive').addClass('active');
+                                tab.css({
+                                    'background': 'linear-gradient(135deg, #ff6b35, #d23c19)',
+                                    'transform': 'translateY(-5px)',
+                                    'box-shadow': '0 15px 40px rgba(255,107,53,0.3)'
+                                });
+                                tabNumber.css('color', 'rgba(255,255,255,0.8)');
+                                tabTitle.css('color', 'white');
+                                tabSubtitle.css('color', 'rgba(255,255,255,0.7)');
+                                tabIndicator.css({ 'width': '100%', 'background': 'rgba(255,255,255,0.3)' });
+                            } else {
+                                // Inactive tab
+                                tab.removeClass('active').addClass('inactive');
+                                tab.css({
+                                    'background': '#f8f9fa',
+                                    'transform': 'translateY(0)',
+                                    'box-shadow': 'none'
+                                });
+                                tabNumber.css('color', '#999');
+                                tabTitle.css('color', '#666');
+                                tabSubtitle.css('color', '#999');
+                                tabIndicator.css({ 'width': '0%', 'background': '#ff6b35' });
+                            }
+                        });
+
+                        // Update progress bar
+                        var progressWidth = ((slideIndex + 1) / totalSlides) * 100;
+                        $('.progress-fill').css('width', progressWidth + '%');
+                    }
+
+                    // Keyboard navigation
+                    $(document).on('keydown', function (e) {
+                        if (e.key === 'ArrowLeft') {
+                            aboutSlider.slick('slickPrev');
+                        } else if (e.key === 'ArrowRight') {
+                            aboutSlider.slick('slickNext');
+                        }
+                    });
+
+                    // Tab hover effects
+                    $('.about-tab').hover(
+                        function () {
+                            if (!$(this).hasClass('active')) {
+                                $(this).css({
+                                    'transform': 'translateY(-2px)',
+                                    'box-shadow': '0 5px 20px rgba(0,0,0,0.08)'
+                                });
+                            }
+                        },
+                        function () {
+                            if (!$(this).hasClass('active')) {
+                                $(this).css({
+                                    'transform': 'translateY(0)',
+                                    'box-shadow': 'none'
+                                });
+                            }
+                        }
+                    );
+                } else {
+                    console.error('About slider not found or not initialized');
+                }
+            }, 500); // Wait 500ms for main.js to initialize the slider
+        });
+    </script>
+
     <!-- Custom Cursor JS -->
     <script src="js/custom-cursor.js"></script>
 </body>

@@ -1,0 +1,2288 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Comlink – Ürünler</title>
+    <meta name="description"
+        content="Comlink ürün ailesi: Üfleyici, ot Biçme, çit budama, testere, Yüksek dal budama ve toprak burgusu. Ortak batarya platformu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.comlink.com.tr/urunler.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Comlink">
+    <meta property="og:title" content="Comlink Ürünleri – Akülü Bahçe Makineleri">
+    <meta property="og:description"
+        content="9 farklı profesyonel akülü bahçe makinesi. Çim biçme, ot biçme, çit budama, testere ve daha fazlası. Ortak batarya platformu ile ekonomik çözümler.">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/products/ck-230d-cim-bicme-makinesi.png">
+    <meta property="og:url" content="https://www.comlink.com.tr/urunler.html">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Comlink Ürünleri – Akülü Bahçe Makineleri">
+    <meta name="twitter:description"
+        content="9 farklı profesyonel akülü bahçe makinesi. Çim biçme, ot biçme, çit budama, testere ve daha fazlası.">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/products/ck-230d-cim-bicme-makinesi.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom Cursor CSS -->
+    <link rel="stylesheet" href="css/custom-cursor.css">
+    <!-- Product Visual Elements CSS -->
+    <link rel="stylesheet" href="css/blog-visuals.css">
+</head>
+
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">İçeriğe Git</a>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
+
+    <!-- preloader  -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="M" class="letters-loading">
+                        M
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header-start -->
+    <header>
+        <div id="header-sticky" class="main-header transparent-header">
+            <div class="container-fluid header-container-p">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                                    alt="Logo"></a>
+                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                                    alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-6 d-none d-md-block">
+                        <div class="menu-area">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li class="active"><a href="urunler.html">Ürünler</a></li>
+                                        <li><a href="oduller-sertifikalar.html">Ödüller & Sertifikalar</a></li>
+                                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                                        <li><a href="iletisim.html">İletişim</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-btn">
+                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"
+                                    aria-label="Comlink ürün kataloğunu PDF olarak indir"><img
+                                        src="img/icon/calculator-symbols.png" alt="Katalog ikonu">Katalog İndir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-start-end -->
+
+    <!-- main-area -->
+    <main id="main-content">
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb-area breadcrumb-bg s-breadcrumb-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="dots"></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Ürünler</li>
+                                    <li class="dots2"></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
+
+        <!-- blog-area (Products as Blog Cards) -->
+        <div class="blog-area blog-bg pt-120 pb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 order-2 order-lg-0">
+                        <aside class="blog-sidebar">
+                            <div class="widget mb-40">
+                                <div class="single-sidebar search-sidebar-md">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Ürün Ara</h3>
+                                    </div>
+                                    <div class="sidebar-form">
+                                        <form action="#" id="product-search-form">
+                                            <input type="text" id="product-search-input" placeholder="Ürün ara...">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget mb-40">
+                                <div class="single-sidebar white-bg">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Ürün Kategorileri</h3>
+                                    </div>
+                                    <div class="cat-list">
+                                        <ul>
+                                            <li class="active"><a href="#" data-filter="all">Tüm Ürünler
+                                                    <span>(31)</span></a></li>
+                                            <li><a href="#" data-filter="batarya">Bataryalar
+                                                    <span>(4)</span></a></li>
+                                            <li><a href="#" data-filter="ot-bicme">Ot Biçme
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="dal-budama">Dal Budama
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="yuksek-dal-budama">Yüksek Dal Budama
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="cit-budama">Çit Budama
+                                                    <span>(3)</span></a></li>
+                                            <li><a href="#" data-filter="yaprak-ufleyici">Yaprak Üfleyici
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="cim-bicme">Çim Biçme
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="toprak-burgu">Toprak Burgu
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="capa-makinesi">Çapa Makinası
+                                                    <span>(1)</span></a></li>
+                                            <li><a href="#" data-filter="aksesuar">Aksesuarlar
+                                                    <span>(17)</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget mb-40">
+                                <div class="single-sidebar white-bg">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Katalog İndir</h3>
+                                    </div>
+                                    <div class="rc-post">
+                                        <ul>
+                                            <li style="border-bottom: none;">
+                                                <div class="rc-post-thumb">
+                                                    <a href="kataloglar/comlink-catalog.pdf" download><i
+                                                            class="fas fa-file-pdf"
+                                                            style="font-size: 40px; color: #ff6b35;"></i></a>
+                                                </div>
+                                                <div class="rc-post-content">
+                                                    <h5><a href="kataloglar/comlink-catalog.pdf" download>Comlink Ürün
+                                                            Kataloğu</a></h5>
+                                                    <span>PDF Format</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="single-sidebar white-bg">
+                                    <div class="sidebar-title mb-25">
+                                        <h3>Ürün Etiketleri</h3>
+                                    </div>
+                                    <div class="tag-list">
+                                        <ul>
+                                            <li><a href="#">Akülü</a></li>
+                                            <li><a href="#">Profesyonel</a></li>
+                                            <li><a href="#">Bahçe</a></li>
+                                            <li><a href="#">Tarım</a></li>
+                                            <li><a href="#">Sessiz</a></li>
+                                            <li><a href="#">Çevreci</a></li>
+                                            <li><a href="#">Taiwan Excellence</a></li>
+                                            <li><a href="#">Ergonomik</a></li>
+                                            <li><a href="#">Fırçasız Motor</a></li>
+                                            <li><a href="#">IP66</a></li>
+                                            <li><a href="#">Dayanıklı</a></li>
+                                            <li><a href="#">Ortak Batarya</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-8">
+                        <!-- Ürün Listesi Buraya Dinamik Olarak Yüklenecek -->
+                        <div class="row" id="products-container">
+                            <!-- Loading Indicator -->
+                            <div class="col-12 text-center py-5">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="sr-only">Yükleniyor...</span>
+                                </div>
+                                <p class="mt-3">Ürünler yükleniyor...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <!-- Pagination Buraya Eklenecek -->
+                    </div>
+                </div>
+                <!-- Comlink Ürünler ve Katalog - Modern Tasarım -->
+                <section class="pt-120 pb-90" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+                    <div class="container">
+                        <!-- Başlık -->
+                        <div class="row mb-60">
+                            <div class="col-12 text-center">
+                                <div class="section-title">
+                                    <span
+                                        style="color: #ff6b35; font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Comlink
+                                        Ürün Ailesi</span>
+                                    <h2 class="mt-10 mb-20" style="font-size: 42px; font-weight: 700;">Profesyonel Akülü
+                                        Bahçe
+                                        Ekipmanları</h2>
+                                    <p style="max-width: 700px; margin: 0 auto; font-size: 16px; color: #666;">
+                                        Tek batarya platformu ile tüm ürünleri kullanın. Fırçasız motor teknolojisi,
+                                        uzun çalışma
+                                        süresi ve çevre dostu performans.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ürün Kartları -->
+                        <div class="row mb-50">
+                            <!-- CK-120 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="product-card">
+                                    <div class="product-icon">
+                                        <i class="fas fa-wind"></i>
+                                    </div>
+                                    <h4>CK-120</h4>
+                                    <p class="product-title">Profesyonel Yaprak Üfleyici</p>
+                                    <p class="product-desc">Güçlü hava akışı ile bahçe temizliği</p>
+                                    <a href="urun-detay.html?id=ck-120" class="product-link">Detaylı İncele →</a>
+                                </div>
+                            </div>
+
+                            <!-- CK-200/210 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="product-card">
+                                    <div class="product-icon">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                    <h4>CK-200/210</h4>
+                                    <p class="product-title">Tek Kesimli Ot Biçme</p>
+                                    <p class="product-desc">Geniş alanlarda profesyonel performans</p>
+                                    <a href="urun-detay.html?id=ck-200" class="product-link">Detaylı İncele →</a>
+                                </div>
+                            </div>
+
+                            <!-- CK-300/320 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="product-card">
+                                    <div class="product-icon">
+                                        <i class="fas fa-cut"></i>
+                                    </div>
+                                    <h4>CK-300/320</h4>
+                                    <p class="product-title">Çit/Çay Budama</p>
+                                    <p class="product-desc">Tek ve çift kenarlı kesim seçenekleri</p>
+                                    <a href="urun-detay.html?id=ck-300" class="product-link">Detaylı İncele →</a>
+                                </div>
+                            </div>
+
+                            <!-- CK-400 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="product-card">
+                                    <div class="product-icon">
+                                        <i class="fas fa-tree"></i>
+                                    </div>
+                                    <h4>CK-400</h4>
+                                    <p class="product-title">Zincirli Testere</p>
+                                    <p class="product-desc">Güçlü kesim kapasitesi, güvenli kullanım</p>
+                                    <a href="urun-detay.html?id=ck-400" class="product-link">Detaylı İncele →</a>
+                                </div>
+                            </div>
+
+                            <!-- CK-412 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="product-card">
+                                    <div class="product-icon">
+                                        <i class="fas fa-arrows-alt-v"></i>
+                                    </div>
+                                    <h4>CK-412</h4>
+                                    <p class="product-title">Yüksek Dal Budama</p>
+                                    <p class="product-desc">Teleskopik sap ile 3 metreye kadar ulaşım</p>
+                                    <a href="urun-detay.html?id=ck-412" class="product-link">Detaylı İncele →</a>
+                                </div>
+                            </div>
+
+                            <!-- CK-500 -->
+                            <div class="col-lg-4 col-md-6 mb-30">
+                                <div class="product-card">
+                                    <div class="product-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <h4>CK-500</h4>
+                                    <p class="product-title">Toprak Burgu/Matkap</p>
+                                    <p class="product-desc">Yüksek tork gücü, sert toprak performansı</p>
+                                    <a href="urun-detay.html?id=ck-500" class="product-link">Detaylı İncele →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Batarya Platformu -->
+                        <div class="row mb-50">
+                            <div class="col-12">
+                                <div class="battery-section">
+                                    <h3 class="text-center mb-40" style="font-size: 32px; font-weight: 700;">Ortak
+                                        Batarya Platformu
+                                    </h3>
+                                    <div class="row">
+                                        <!-- V6 -->
+                                        <div class="col-lg-4 col-md-6 mb-30">
+                                            <div class="battery-card">
+                                                <div class="battery-icon">
+                                                    <i class="fas fa-battery-three-quarters"></i>
+                                                </div>
+                                                <h4>V6-5Ah</h4>
+                                                <ul class="battery-specs">
+                                                    <li><i class="fas fa-check"></i> IP66 Koruma</li>
+                                                    <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
+                                                    <li><i class="fas fa-check"></i> 56V Li-ion</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- V7 -->
+                                        <div class="col-lg-4 col-md-6 mb-30">
+                                            <div class="battery-card featured">
+                                                <div class="badge">Popüler</div>
+                                                <div class="battery-icon">
+                                                    <i class="fas fa-battery-full"></i>
+                                                </div>
+                                                <h4>V7-20/30Ah</h4>
+                                                <ul class="battery-specs">
+                                                    <li><i class="fas fa-check"></i> IP66 Koruma</li>
+                                                    <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
+                                                    <li><i class="fas fa-check"></i> 56V Li-ion</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- V8 -->
+                                        <div class="col-lg-4 col-md-6 mb-30">
+                                            <div class="battery-card">
+                                                <div class="battery-icon">
+                                                    <i class="fas fa-battery-full"></i>
+                                                </div>
+                                                <h4>V8-15Ah</h4>
+                                                <ul class="battery-specs">
+                                                    <li><i class="fas fa-check"></i> IP66 Koruma</li>
+                                                    <li><i class="fas fa-check"></i> BSMI Sertifikalı</li>
+                                                    <li><i class="fas fa-check"></i> 56V Li-ion</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Katalog Bölümü -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="catalog-section">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 mb-30">
+                                            <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 20px;">Ürün
+                                                Kataloğumuz
+                                            </h3>
+                                            <p style="font-size: 16px; color: #666; margin-bottom: 30px;">
+                                                Tüm ürünlerimiz hakkında detaylı bilgi için kataloğumuzu
+                                                inceleyebilirsiniz.
+                                                İnteraktif flipbook özelliği ile dijital katalogda gezinin veya PDF
+                                                olarak indirin.
+                                            </p>
+                                            <div class="catalog-buttons">
+                                                <button class="btn catalog-btn-primary" id="openFlipbook">
+                                                    <i class="fas fa-book-open"></i> Kataloğu İncele (Flipbook)
+                                                </button>
+                                                <a class="btn catalog-btn-secondary"
+                                                    href="kataloglar/comlink-catalog.pdf" download>
+                                                    <i class="fas fa-download"></i> Katalog İndir (PDF)
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-30">
+                                            <div class="catalog-preview" id="catalogPreview" style="cursor: pointer;">
+                                                <picture>
+                                                    <source srcset="images/yeni-katalog/katalog-1.jpg"
+                                                        type="image/jpeg">
+                                                    <img src="images/yeni-katalog/katalog-1.jpg"
+                                                        alt="Comlink Katalog Kapak" loading="lazy" class="img-fluid">
+                                                </picture>
+                                                <div class="catalog-overlay">
+                                                    <i class="fas fa-book-open"></i>
+                                                    <p>Kataloğu İncele</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- main-area-end -->
+
+    <!-- Mobile Filter Button (Floating) -->
+    <button id="mobileFilterBtn" class="mobile-filter-btn" aria-label="Filtreleri Aç">
+        <i class="fas fa-filter"></i>
+        <span>Filtrele</span>
+    </button>
+
+    <!-- Mobile Sidebar (Slide-in) -->
+    <div id="mobileSidebarOverlay" class="mobile-sidebar-overlay"></div>
+    <div id="mobileSidebar" class="mobile-sidebar">
+        <div class="mobile-sidebar-header">
+            <h3><i class="fas fa-sliders-h"></i> Filtreler</h3>
+            <button id="closeMobileSidebar" class="close-sidebar-btn" aria-label="Kapat">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="mobile-sidebar-content">
+            <!-- Arama -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-search"></i> Ürün Ara</h4>
+                <div class="sidebar-form">
+                    <form id="mobileProductSearchForm">
+                        <input type="text" id="mobileProductSearchInput" placeholder="Ürün ara...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Kategoriler -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-folder"></i> Ürün Kategorileri</h4>
+                <div class="cat-list mobile-cat-list">
+                    <ul>
+                        <!-- Kategoriler dinamik olarak yüklenecek -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Katalog İndir -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-file-pdf"></i> Katalog İndir</h4>
+                <a href="kataloglar/comlink-catalog.pdf" download class="mobile-catalog-download">
+                    <div class="catalog-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="catalog-info">
+                        <h5>Comlink Ürün Kataloğu</h5>
+                        <span>PDF Format</span>
+                    </div>
+                    <div class="catalog-download-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Ürün Etiketleri -->
+            <div class="mobile-sidebar-section">
+                <h4><i class="fas fa-tags"></i> Ürün Etiketleri</h4>
+                <div class="tag-list mobile-tag-list">
+                    <ul>
+                        <li><a href="#">Akülü</a></li>
+                        <li><a href="#">Profesyonel</a></li>
+                        <li><a href="#">Bahçe</a></li>
+                        <li><a href="#">Tarım</a></li>
+                        <li><a href="#">Sessiz</a></li>
+                        <li><a href="#">Çevreci</a></li>
+                        <li><a href="#">Taiwan Excellence</a></li>
+                        <li><a href="#">Ergonomik</a></li>
+                        <li><a href="#">Fırçasız Motor</a></li>
+                        <li><a href="#">IP66</a></li>
+                        <li><a href="#">Dayanıklı</a></li>
+                        <li><a href="#">Ortak Batarya</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern CSS Stilleri -->
+    <style>
+        /* Ürün Kartları */
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #f7931e);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.2);
+        }
+
+        .product-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .product-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .product-icon i {
+            font-size: 36px;
+            color: white;
+        }
+
+        .product-card h4 {
+            color: #ff6b35;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product-link {
+            color: #ff6b35;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .product-link:hover {
+            color: #f7931e;
+            transform: translateX(5px);
+        }
+
+        /* Batarya Kartları */
+        .battery-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 30px;
+        }
+
+        .battery-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+        }
+
+        .battery-card.featured {
+            background: linear-gradient(135deg, #fff5f0 0%, #ffe8dc 100%);
+            border-color: #ff6b35;
+        }
+
+        .battery-card.featured .badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff6b35;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .battery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .battery-icon {
+            font-size: 48px;
+            color: #ff6b35;
+            margin-bottom: 20px;
+        }
+
+        .battery-card h4 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .battery-specs {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .battery-specs li {
+            padding: 8px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .battery-specs i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        /* Katalog Bölümü */
+        .catalog-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .catalog-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .catalog-btn-primary,
+        .catalog-btn-secondary {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none !important;
+            outline: none !important;
+            box-shadow: none;
+        }
+
+        .catalog-btn-primary {
+            background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+            color: white !important;
+            border: none !important;
+        }
+
+        .catalog-btn-primary:hover,
+        .catalog-btn-primary:focus,
+        .catalog-btn-primary:active {
+            background: linear-gradient(135deg, #f7931e, #ff6b35) !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3) !important;
+            color: white !important;
+            text-decoration: none !important;
+            border: none !important;
+            outline: none !important;
+        }
+
+        .catalog-btn-secondary {
+            background: white !important;
+            color: #ff6b35 !important;
+            border: 2px solid #ff6b35 !important;
+        }
+
+        .catalog-btn-secondary:hover,
+        .catalog-btn-secondary:focus,
+        .catalog-btn-secondary:active {
+            background: #ff6b35 !important;
+            color: white !important;
+            border: 2px solid #ff6b35 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3) !important;
+            text-decoration: none !important;
+            outline: none !important;
+        }
+
+        .catalog-preview {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .catalog-preview:hover {
+            transform: scale(1.05);
+        }
+
+        .catalog-preview img {
+            border-radius: 15px;
+            width: 100%;
+        }
+
+        .catalog-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .catalog-preview:hover .catalog-overlay {
+            opacity: 1;
+        }
+
+        .catalog-overlay i {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .catalog-preview:hover .catalog-overlay i {
+            transform: scale(1.1);
+        }
+
+        .catalog-overlay p {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .catalog-section {
+                padding: 30px 20px;
+            }
+
+            .catalog-buttons {
+                flex-direction: column;
+            }
+
+            .catalog-btn-primary,
+            .catalog-btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <!-- Flipbook Modal -->
+    <div id="flipbookModal" class="flipbook-modal">
+        <div class="flipbook-modal-content">
+            <span class="flipbook-close">&times;</span>
+            <div class="flipbook-container">
+                <div id="flipbook"></div>
+            </div>
+            <div class="flipbook-controls">
+                <button id="prevPage" class="flipbook-btn">← Önceki</button>
+                <span id="pageNum">0 / 31</span>
+                <button id="nextPage" class="flipbook-btn">Sonraki →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="footer-logo mb-35">
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="Comlink logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
+                                    çözümler sunmaktadır. Yüksek performans, düşük bakım maliyeti.
+                                </p>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#" aria-label="Facebook'ta Comlink"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" aria-label="Twitter'da Comlink"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Pinterest'te Comlink"><i
+                                                class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" aria-label="LinkedIn'de Comlink"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>GÜNCEL YAZILAR</h5>
+                            </div>
+                            <div class="f-rc-post">
+                                <ul>
+                                    <li>
+                                        <div class="f-rc-thumb">
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg"
+                                                    alt="Soluduğunuz Havayı Düşünün"></a>
+                                        </div>
+                                        <div class="f-rc-content">
+                                            <span>5 Kasım, 2025</span>
+                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a>
+                                            </h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="f-rc-thumb">
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg"
+                                                    alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                        </div>
+                                        <div class="f-rc-content">
+                                            <span>4 Kasım, 2025</span>
+                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş: Akıllı Yatırım</a>
+                                            </h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>FAYDALI LİNKLER</h5>
+                            </div>
+                            <div class="fw-link">
+                                <ul>
+                                    <li><a href="hakkimizda.html"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
+                                    <li><a href="teslimat-bilgisi.html"><i class="fas fa-caret-right"></i> Teslimat
+                                            Bilgisi</a></li>
+                                    <li><a href="sartlar-kosullar.html"><i class="fas fa-caret-right"></i> Şartlar &
+                                            Koşullar</a></li>
+                                    <li><a href="gizlilik-politikasi.html"><i class="fas fa-caret-right"></i> Gizlilik
+                                            Politikası</a></li>
+                                    <li><a href="iade-politikasi.html"><i class="fas fa-caret-right"></i> İade
+                                            Politikasi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>BİZE ULAŞIN</h5>
+                            </div>
+                            <div class="f-support-content">
+                                <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz,
+                                    bakımsız
+                                    ve sessiz çalışma ile Yüksek performans sunar.</p>
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
+                                        alt="img"></a>
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
+                                        alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="copyright-text">
+                            <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/url-helper.js"></script>
+
+    <!-- Product System Scripts -->
+    <script src="js/url-helper.js"></script>
+    <script src="js/product-visual-renderer.js"></script>
+
+    <!-- StPageFlip Library - Modern Realistic Flipbook -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+    <!-- Product Cards Uniform Size CSS -->
+    <style>
+        /* Ürün kartları için sabit boyutlar */
+        .single-blog-post.s-single-blog-post {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-thumb {
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f8f8f8;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-content h4 {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .single-blog-post.s-single-blog-post .blog-content p {
+            flex: 1;
+            min-height: 90px;
+        }
+    </style>
+
+    <!-- Flipbook CSS -->
+    <style>
+        .flipbook-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+        }
+
+        .flipbook-modal-content {
+            position: relative;
+            margin: 0 auto;
+            width: fit-content;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Mobil tam ekran optimizasyonu */
+        @media (max-width: 767px) {
+            .flipbook-modal-content {
+                padding: 10px;
+                width: 100%;
+                justify-content: flex-start;
+                padding-top: 60px;
+            }
+
+            .flipbook-modal {
+                background: rgba(0, 0, 0, 0.95);
+            }
+        }
+
+        .flipbook-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10001;
+            transition: all 0.3s ease;
+            background: rgba(255, 107, 53, 0.9);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            line-height: 1;
+        }
+
+        .flipbook-close:hover {
+            background: #ff6b35;
+            transform: scale(1.1);
+        }
+
+        .flipbook-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            perspective: 2500px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* Mobil flipbook container */
+        @media (max-width: 767px) {
+            .flipbook-container {
+                perspective: 1500px;
+                margin-bottom: 10px;
+                flex: 1;
+                align-items: flex-start;
+                padding-top: 20px;
+            }
+        }
+
+        #flipbook {
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .stf__parent {
+            margin: 0 auto;
+        }
+
+        .stf__wrapper {
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .stf__block {
+            background: white;
+        }
+
+        /* ===== YÜKSEK KALİTE GÖRSEL RENDERİNG ===== */
+        .stf__block img,
+        .stf__wrapper img,
+        #flipbook img,
+        .page-content img {
+            image-rendering: -webkit-optimize-contrast !important;
+            image-rendering: crisp-edges !important;
+            image-rendering: high-quality !important;
+            -ms-interpolation-mode: bicubic !important;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Canvas için yüksek kalite */
+        .stf__wrapper canvas,
+        #flipbook canvas {
+            image-rendering: -webkit-optimize-contrast !important;
+            image-rendering: crisp-edges !important;
+            image-rendering: high-quality !important;
+        }
+
+        .flipbook-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .flipbook-btn {
+            background: #ff6b35;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .flipbook-btn:hover {
+            background: #ff8c42;
+            transform: translateY(-2px);
+        }
+
+        .flipbook-btn:active {
+            transform: scale(0.95);
+        }
+
+        .flipbook-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: translateY(0);
+        }
+
+        #pageNum {
+            color: #333;
+            font-size: 15px;
+            font-weight: 600;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        /* Mobil kontroller - Büyük ve touch-friendly */
+        @media (max-width: 767px) {
+            .flipbook-controls {
+                gap: 10px;
+                padding: 12px 20px;
+                border-radius: 25px;
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10002;
+            }
+
+            .flipbook-btn {
+                padding: 12px 18px;
+                font-size: 15px;
+                border-radius: 18px;
+                min-width: 90px;
+            }
+
+            #pageNum {
+                font-size: 14px;
+                min-width: 55px;
+                font-weight: 700;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .flipbook-controls {
+                gap: 8px;
+                padding: 10px 15px;
+                max-width: 95%;
+            }
+
+            .flipbook-btn {
+                padding: 10px 14px;
+                font-size: 13px;
+                min-width: 75px;
+            }
+
+            #pageNum {
+                font-size: 13px;
+                min-width: 50px;
+            }
+        }
+    </style>
+
+    <!-- Flipbook JavaScript -->
+    <script>
+        $(document).ready(function () {
+            var modal = $('#flipbookModal');
+            var openBtn = $('#openFlipbook');
+            var closeBtn = $('.flipbook-close');
+            var pageFlip = null;
+            var initialized = false;
+
+            // Katalog sayfaları
+            var catalogPages = [
+                'images/yeni-katalog/katalog-1.jpg',
+                'images/yeni-katalog/katalog-2.jpg',
+                'images/yeni-katalog/katalog-3.jpg',
+                'images/yeni-katalog/katalog-4.jpg',
+                'images/yeni-katalog/katalog-5.jpg',
+                'images/yeni-katalog/katalog-6.jpg',
+                'images/yeni-katalog/katalog-7.jpg',
+                'images/yeni-katalog/katalog-8.jpg',
+                'images/yeni-katalog/katalog-9.jpg',
+                'images/yeni-katalog/katalog-10.jpg',
+                'images/yeni-katalog/katalog-11.jpg',
+                'images/yeni-katalog/katalog-12.jpg',
+                'images/yeni-katalog/katalog-13.jpg',
+                'images/yeni-katalog/katalog-14.jpg',
+                'images/yeni-katalog/katalog-15.jpg',
+                'images/yeni-katalog/katalog-16.jpg',
+                'images/yeni-katalog/katalog-17.jpg',
+                'images/yeni-katalog/katalog-18.jpg',
+                'images/yeni-katalog/katalog-19.jpg',
+                'images/yeni-katalog/katalog-20.jpg',
+                'images/yeni-katalog/katalog-21.jpg',
+                'images/yeni-katalog/katalog-22.jpg',
+                'images/yeni-katalog/katalog-23.jpg',
+                'images/yeni-katalog/katalog-24.jpg',
+                'images/yeni-katalog/katalog-25.jpg',
+                'images/yeni-katalog/katalog-26.jpg',
+                'images/yeni-katalog/katalog-27.jpg',
+                'images/yeni-katalog/katalog-28.jpg'
+            ];
+
+            // Sayfa çevirme ses efekti - Gerçek ses dosyası kullanımı
+            var pageFlipAudio = new Audio('media/paper-flip.wav');
+            pageFlipAudio.volume = 0.4; // Ses seviyesi (0.0 - 1.0)
+
+            function playPageFlipSound() {
+                try {
+                    // Ses dosyasını baştan çal
+                    pageFlipAudio.currentTime = 0;
+                    pageFlipAudio.play().catch(function (error) {
+                        console.log('Ses çalınamadı:', error);
+                    });
+                } catch (e) {
+                    console.log('Ses efekti çalınamadı');
+                }
+            }
+
+            // Open modal and initialize flipbook
+            openBtn.click(function () {
+                modal.fadeIn();
+                $('body').css('overflow', 'hidden');
+
+                if (!initialized) {
+                    // ===== RESPONSIVE EKRAN BOYUTU ALGILAMA =====
+                    var viewportWidth = $(window).width();
+                    var viewportHeight = $(window).height();
+
+                    // Cihaz tipi belirleme
+                    var isMobile = viewportWidth < 768;
+                    var isTablet = viewportWidth >= 768 && viewportWidth < 992;
+                    var isDesktop = viewportWidth >= 992;
+
+                    // ===== DİNAMİK BOYUT HESAPLAMA - YÜksek Kalite =====
+                    var pageWidth, pageHeight, flipbookConfig;
+
+                    if (isMobile) {
+                        // MOBİL: Tek sayfa, küçük boyut - Performans optimizasyonu
+                        pageWidth = Math.min(viewportWidth * 0.75, 320);
+                        pageHeight = Math.min(viewportHeight * 0.55, 450);
+
+                        flipbookConfig = {
+                            width: pageWidth,
+                            height: pageHeight,
+                            size: 'stretch',
+                            minWidth: 250,
+                            maxWidth: 350,
+                            minHeight: 350,
+                            maxHeight: 500,
+                            maxShadowOpacity: 0.2,
+                            showCover: true,
+                            mobileScrollSupport: true,
+                            swipeDistance: 60,
+                            clickEventForward: true,
+                            usePortrait: true,  // TEK SAYFA MOD
+                            startPage: 0,
+                            drawShadow: false,  // Performans için
+                            flippingTime: 600,
+                            useMouseEvents: false,
+                            autoSize: true,
+                            showPageCorners: false,
+                            disableFlipByClick: false
+                        };
+                    } else if (isTablet) {
+                        // TABLET: Orta boyut, tek veya çift sayfa
+                        pageWidth = Math.min(viewportWidth * 0.4, 480);
+                        pageHeight = Math.min(viewportHeight * 0.7, 650);
+
+                        flipbookConfig = {
+                            width: pageWidth,
+                            height: pageHeight,
+                            size: 'stretch',
+                            minWidth: 350,
+                            maxWidth: 500,
+                            minHeight: 450,
+                            maxHeight: 700,
+                            maxShadowOpacity: 0.4,
+                            showCover: true,
+                            mobileScrollSupport: true,
+                            swipeDistance: 40,
+                            clickEventForward: true,
+                            usePortrait: false,
+                            startPage: 0,
+                            drawShadow: true,
+                            flippingTime: 850,
+                            useMouseEvents: true,
+                            autoSize: true,
+                            showPageCorners: true,
+                            disableFlipByClick: false
+                        };
+                    } else {
+                        // DESKTOP: Çift sayfa, maksimum kalite
+                        pageWidth = 600;
+                        pageHeight = 750;
+
+                        flipbookConfig = {
+                            width: pageWidth,
+                            height: pageHeight,
+                            size: 'fixed',
+                            minWidth: 400,
+                            maxWidth: 800,
+                            minHeight: 500,
+                            maxHeight: 1000,
+                            maxShadowOpacity: 0.5,
+                            showCover: true,
+                            mobileScrollSupport: false,
+                            swipeDistance: 30,
+                            clickEventForward: true,
+                            usePortrait: false,
+                            startPage: 0,
+                            drawShadow: true,
+                            flippingTime: 1000,
+                            useMouseEvents: true,
+                            autoSize: false,
+                            showPageCorners: true,
+                            disableFlipByClick: false
+                        };
+                    }
+
+                    // ===== StPageFlip'i Başlat - Responsive + Yüksek Kalite =====
+                    try {
+                        pageFlip = new St.PageFlip(document.getElementById('flipbook'), flipbookConfig);
+
+                        // Sayfaları yükle
+                        pageFlip.loadFromImages(catalogPages);
+
+                        // Loading tamamlandığında
+                        pageFlip.on('flip', function(e) {
+                            console.log('Flipbook loaded successfully');
+                        });
+
+                        // Error handling
+                        pageFlip.on('changeState', function(e) {
+                            if (e.data === 'read') {
+                                console.log('Flipbook ready to use');
+                            }
+                        });
+
+                    } catch (error) {
+                        console.error('Flipbook initialization error:', error);
+                        alert('Katalog yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.');
+                    }
+
+                    // Canvas kalite ayarlarını uygula - Cihaz tipine göre optimize
+                    setTimeout(function() {
+                        var canvases = document.querySelectorAll('#flipbook canvas, .stf__wrapper canvas');
+                        canvases.forEach(function(canvas) {
+                            var ctx = canvas.getContext('2d');
+                            if (ctx) {
+                                // Yüksek kalite rendering - Her cihaz için
+                                ctx.imageSmoothingEnabled = true;
+                                ctx.imageSmoothingQuality = 'high';
+                                ctx.webkitImageSmoothingEnabled = true;
+                                ctx.mozImageSmoothingEnabled = true;
+                                ctx.msImageSmoothingEnabled = true;
+
+                                // High DPI/Retina desteği - Responsive
+                                var dpr = window.devicePixelRatio || 1;
+
+                                // Mobil için DPI optimize edilmiş (performans dengesi)
+                                if (isMobile && dpr > 2) {
+                                    dpr = 2; // Mobilde max 2x kalite (performans için)
+                                }
+
+                                if (dpr > 1) {
+                                    var oldWidth = canvas.width;
+                                    var oldHeight = canvas.height;
+                                    canvas.width = oldWidth * dpr;
+                                    canvas.height = oldHeight * dpr;
+                                    canvas.style.width = oldWidth + 'px';
+                                    canvas.style.height = oldHeight + 'px';
+                                    ctx.scale(dpr, dpr);
+                                }
+                            }
+                        });
+                    }, isMobile ? 300 : 500);
+
+                    // Sayfa değiştiğinde
+                    pageFlip.on('flip', (e) => {
+                        playPageFlipSound();
+                        updatePageNumber();
+
+                        // Her sayfa değişiminde canvas kalitesini yeniden ayarla
+                        setTimeout(function() {
+                            var canvases = document.querySelectorAll('#flipbook canvas, .stf__wrapper canvas');
+                            canvases.forEach(function(canvas) {
+                                var ctx = canvas.getContext('2d');
+                                if (ctx) {
+                                    ctx.imageSmoothingEnabled = true;
+                                    ctx.imageSmoothingQuality = 'high';
+                                }
+                            });
+                        }, 100);
+                    });
+
+                    pageFlip.on('changeState', (e) => {
+                        updatePageNumber();
+                    });
+
+                    initialized = true;
+                    updatePageNumber();
+                }
+            });
+
+            // Sayfa numarasını güncelle
+            function updatePageNumber() {
+                if (pageFlip) {
+                    var currentPage = pageFlip.getCurrentPageIndex();
+                    var totalPages = catalogPages.length;
+                    $('#pageNum').text((currentPage + 1) + ' / ' + totalPages);
+
+                    $('#prevPage').prop('disabled', currentPage === 0);
+                    $('#nextPage').prop('disabled', currentPage >= totalPages - 1);
+                }
+            }
+
+            // Catalog preview click
+            $('#catalogPreview').click(function () {
+                openBtn.trigger('click');
+            });
+
+            // Close modal
+            function closeModal() {
+                modal.fadeOut();
+                $('body').css('overflow', 'auto');
+            }
+
+            closeBtn.click(function () {
+                closeModal();
+            });
+
+            $(window).click(function (event) {
+                if (event.target == modal[0]) {
+                    closeModal();
+                }
+            });
+
+            // Navigation buttons
+            $('#prevPage').click(function () {
+                if (pageFlip) {
+                    pageFlip.flipPrev();
+                }
+            });
+
+            $('#nextPage').click(function () {
+                if (pageFlip) {
+                    pageFlip.flipNext();
+                }
+            });
+
+            // Keyboard navigation
+            $(document).keydown(function (e) {
+                if (modal.is(':visible') && pageFlip) {
+                    if (e.keyCode === 37) { // Left
+                        pageFlip.flipPrev();
+                    } else if (e.keyCode === 39) { // Right
+                        pageFlip.flipNext();
+                    } else if (e.keyCode === 27) { // Escape
+                        closeModal();
+                    }
+                }
+            });
+
+            // ===== KATEGORI FILTRELEME SİSTEMİ =====
+            $('.cat-list a').on('click', function (e) {
+                e.preventDefault();
+
+                // Arama kutusunu temizle
+                $('#product-search-input').val('');
+
+                // Aktif kategoriyi güncelle
+                $('.cat-list li').removeClass('active');
+                $(this).parent('li').addClass('active');
+
+                // Filtreyi al
+                var filterValue = $(this).attr('data-filter');
+
+                if (filterValue === 'all') {
+                    // Tüm ürünleri göster
+                    $('.product-item').fadeIn(400);
+                } else {
+                    // Seçili kategoriyi göster, diğerlerini gizle
+                    $('.product-item').each(function () {
+                        if ($(this).attr('data-category') === filterValue) {
+                            $(this).fadeIn(400);
+                        } else {
+                            $(this).fadeOut(400);
+                        }
+                    });
+                }
+
+                // Sayfayı ürünler bölümüne scroll et
+                $('html, body').animate({
+                    scrollTop: $('.blog-area').offset().top - 100
+                }, 500);
+            });
+
+            // ===== ÜRÜN ARAMA SİSTEMİ =====
+            // Real-time arama (her tuş vuruşunda)
+            $('#product-search-input').on('keyup', function () {
+                performSearch();
+            });
+
+            // Form submit olduğunda
+            $('#product-search-form').on('submit', function (e) {
+                e.preventDefault();
+                performSearch();
+            });
+
+            function performSearch() {
+                var searchTerm = $('#product-search-input').val().toLowerCase().trim();
+
+                // Kategori filtresini temizle
+                $('.cat-list li').removeClass('active');
+                $('.cat-list a[data-filter="all"]').parent().addClass('active');
+
+                if (searchTerm === '') {
+                    // Arama boşsa tüm ürünleri göster
+                    $('.product-item').fadeIn(400);
+                } else {
+                    // Arama yap
+                    var foundCount = 0;
+                    $('.product-item').each(function () {
+                        var productName = $(this).attr('data-name').toLowerCase();
+                        var productKeywords = $(this).attr('data-keywords').toLowerCase();
+
+                        // Ürün adı veya anahtar kelimelerde ara
+                        if (productName.indexOf(searchTerm) !== -1 || productKeywords.indexOf(searchTerm) !== -1) {
+                            $(this).fadeIn(400);
+                            foundCount++;
+                        } else {
+                            $(this).fadeOut(400);
+                        }
+                    });
+
+                    // Sonuç bulunamadıysa bilgilendirme (opsiyonel)
+                    if (foundCount === 0) {
+                        console.log('Arama sonucu bulunamadı: ' + searchTerm);
+                    }
+                }
+
+                // Sayfayı ürünler bölümüne scroll et
+                if (searchTerm !== '') {
+                    $('html, body').animate({
+                        scrollTop: $('.blog-area').offset().top - 100
+                    }, 500);
+                }
+            }
+        });
+    </script>
+
+    <!-- Comlink Products Data & Catalog System -->
+    <script src="js/products.js"></script>
+    <script src="js/products-catalog.js"></script>
+
+    <!-- Custom Cursor JS -->
+    <script src="js/custom-cursor.js"></script>
+
+    <!-- Lazy Loading ve Loading State için minimal CSS -->
+    <style>
+        /* Lazy Loading */
+        img.lazy-load {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        img.lazy-loaded {
+            opacity: 1;
+        }
+
+        /* Loading Spinner */
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            border: 0.25em solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border 0.75s linear infinite;
+        }
+
+        @keyframes spinner-border {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* ============================================
+           MOBILE FLOATING SIDEBAR SYSTEM - PRODUCTS
+           ============================================ */
+
+        /* Floating Filter Button */
+        .mobile-filter-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 90px;
+            /* ScrollUp butonundan sola kaydırıldı */
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            cursor: pointer;
+            z-index: 998;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .mobile-filter-btn span {
+            font-size: 10px;
+            font-weight: 600;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-filter-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+        }
+
+        .mobile-filter-btn:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 10px 40px rgba(255, 107, 53, 0.7);
+            }
+        }
+
+        /* Overlay */
+        .mobile-sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .mobile-sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Mobile Sidebar */
+        .mobile-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 85%;
+            max-width: 350px;
+            height: 100vh;
+            background: white;
+            transform: translateX(-100%);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .mobile-sidebar.active {
+            transform: translateX(0);
+        }
+
+        /* Sidebar Header */
+        .mobile-sidebar-header {
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .mobile-sidebar-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .close-sidebar-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .close-sidebar-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        /* Sidebar Content */
+        .mobile-sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar-thumb {
+            background: #ff6b35;
+            border-radius: 3px;
+        }
+
+        .mobile-sidebar-content::-webkit-scrollbar-thumb:hover {
+            background: #d23c19;
+        }
+
+        /* Sidebar Sections */
+        .mobile-sidebar-section {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .mobile-sidebar-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .mobile-sidebar-section h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mobile-sidebar-section h4 i {
+            color: #ff6b35;
+            font-size: 14px;
+        }
+
+        /* Mobile Category List */
+        .mobile-cat-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-cat-list ul li {
+            margin-bottom: 10px;
+        }
+
+        .mobile-cat-list ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .mobile-cat-list ul li a:hover,
+        .mobile-cat-list ul li.active a {
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .mobile-cat-list ul li a span {
+            background: rgba(255, 107, 53, 0.1);
+            color: #ff6b35;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .mobile-cat-list ul li.active a span,
+        .mobile-cat-list ul li a:hover span {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        /* Mobile Search Form */
+        .mobile-sidebar-section .sidebar-form {
+            margin-top: 10px;
+        }
+
+        .mobile-sidebar-section .sidebar-form form {
+            position: relative;
+        }
+
+        .mobile-sidebar-section .sidebar-form input {
+            width: 100%;
+            padding: 12px 50px 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-sidebar-section .sidebar-form input:focus {
+            border-color: #ff6b35;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .mobile-sidebar-section .sidebar-form button {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: #ff6b35;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-sidebar-section .sidebar-form button:hover {
+            background: #d23c19;
+        }
+
+        /* Mobile Catalog Download */
+        .mobile-catalog-download {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: linear-gradient(135deg, #fff5f0, #ffe8dc);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #ff6b35;
+        }
+
+        .mobile-catalog-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .mobile-catalog-download .catalog-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6b35, #d23c19);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .mobile-catalog-download .catalog-icon i {
+            font-size: 24px;
+            color: white;
+        }
+
+        .mobile-catalog-download .catalog-info {
+            flex: 1;
+        }
+
+        .mobile-catalog-download .catalog-info h5 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 0 0 3px 0;
+        }
+
+        .mobile-catalog-download .catalog-info span {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .mobile-catalog-download .catalog-download-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 107, 53, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .mobile-catalog-download .catalog-download-icon i {
+            font-size: 16px;
+            color: #ff6b35;
+        }
+
+        .mobile-catalog-download:hover .catalog-download-icon {
+            background: #ff6b35;
+        }
+
+        .mobile-catalog-download:hover .catalog-download-icon i {
+            color: white;
+        }
+
+        /* Mobile Tags */
+        .mobile-tag-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .mobile-tag-list ul li a {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #f8f9fa;
+            border-radius: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-tag-list ul li a:hover {
+            background: #ff6b35;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Body Lock - Scroll olmaması için */
+        body.mobile-sidebar-open {
+            overflow: hidden;
+        }
+
+        /* Responsive - Sadece mobilde görünsün */
+        @media (max-width: 991px) {
+            .mobile-filter-btn {
+                display: flex;
+            }
+
+            /* Desktop sidebar'ı mobilde gizle */
+            .blog-sidebar,
+            .col-lg-4.order-2 {
+                display: none !important;
+            }
+
+            /* Ürünler tam genişlik olsun mobilde */
+            .col-lg-8 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            /* Ürün kartları full width */
+            .col-lg-9 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .mobile-filter-btn,
+            .mobile-sidebar,
+            .mobile-sidebar-overlay {
+                display: none !important;
+            }
+        }
+
+        /* Tablet için sidebar genişliği */
+        @media (min-width: 576px) and (max-width: 991px) {
+            .mobile-sidebar {
+                max-width: 380px;
+            }
+        }
+    </style>
+
+    <!-- Mobile Sidebar JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterBtn = document.getElementById('mobileFilterBtn');
+            const sidebar = document.getElementById('mobileSidebar');
+            const overlay = document.getElementById('mobileSidebarOverlay');
+            const closeBtn = document.getElementById('closeMobileSidebar');
+            const body = document.body;
+
+            // Kategorileri mobile sidebar'a kopyala
+            function syncCategories() {
+                const desktopCategories = document.querySelector('.product-sidebar .cat-list ul, aside .cat-list ul');
+                const mobileCategories = document.querySelector('.mobile-cat-list ul');
+
+                if (desktopCategories && mobileCategories) {
+                    mobileCategories.innerHTML = desktopCategories.innerHTML;
+                }
+            }
+
+            // Sidebar'ı aç
+            function openSidebar() {
+                syncCategories(); // Kategorileri senkronize et
+                sidebar.classList.add('active');
+                overlay.classList.add('active');
+                body.classList.add('mobile-sidebar-open');
+            }
+
+            // Sidebar'ı kapat
+            function closeSidebar() {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                body.classList.remove('mobile-sidebar-open');
+            }
+
+            // Event Listeners
+            if (filterBtn) {
+                filterBtn.addEventListener('click', openSidebar);
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeSidebar);
+            }
+
+            if (overlay) {
+                overlay.addEventListener('click', closeSidebar);
+            }
+
+            // Escape tuşu ile kapat
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+                    closeSidebar();
+                }
+            });
+
+            // Swipe to close (touch support)
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            sidebar.addEventListener('touchstart', function (e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            sidebar.addEventListener('touchend', function (e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+
+            function handleSwipe() {
+                if (touchStartX - touchEndX > 100) { // Swipe left
+                    closeSidebar();
+                }
+            }
+
+            // Mobile arama formu
+            const mobileSearchForm = document.getElementById('mobileProductSearchForm');
+            const mobileSearchInput = document.getElementById('mobileProductSearchInput');
+            const desktopSearchInput = document.getElementById('product-search-input');
+
+            if (mobileSearchForm && desktopSearchInput) {
+                mobileSearchForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    // Desktop input'a değeri aktar
+                    desktopSearchInput.value = mobileSearchInput.value;
+
+                    // Arama event'ini tetikle
+                    const searchEvent = new Event('keyup');
+                    desktopSearchInput.dispatchEvent(searchEvent);
+
+                    closeSidebar();
+                });
+            }
+
+            // Kategori tıklamalarını mobile'dan desktop'a yönlendir
+            document.addEventListener('click', function (e) {
+                const mobileCatLink = e.target.closest('.mobile-cat-list a');
+                if (mobileCatLink) {
+                    e.preventDefault();
+                    const filter = mobileCatLink.getAttribute('data-filter');
+
+                    // Desktop kategorisindeki aynı filtreyi tıklat
+                    const desktopCatLink = document.querySelector(`.cat-list a[data-filter="${filter}"]`);
+                    if (desktopCatLink) {
+                        desktopCatLink.click();
+                    }
+
+                    closeSidebar();
+                }
+            });
+
+            // Sayfa yüklendiğinde kategorileri senkronize et
+            setTimeout(syncCategories, 500);
+        });
+    </script>
+</body>
+
+</html>

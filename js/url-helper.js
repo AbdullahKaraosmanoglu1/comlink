@@ -42,13 +42,8 @@
      * @returns {string} - Oluşturulan URL
      */
     function createBlogDetailURL(blogId) {
-        if (isProductionEnvironment()) {
-            // Production: Clean URL
-            return `/blog/${blogId}`;
-        } else {
-            // Development: .html uzantılı
-            return `blog-details.html?id=${blogId}`;
-        }
+        // Always use query string format for blog (clean URLs disabled)
+        return `blog-details.html?id=${blogId}`;
     }
 
     /**
@@ -72,13 +67,8 @@
      * @returns {string} - Oluşturulan URL
      */
     function createProductDetailURL(productId) {
-        if (isProductionEnvironment()) {
-            // Production: Clean URL
-            return `/urun/${productId}`;
-        } else {
-            // Development: .html uzantılı
-            return `urun-detay.html?id=${productId}`;
-        }
+        // Always use query string format for products (clean URLs disabled)
+        return `urun-detay.html?id=${productId}`;
     }
 
     /**
@@ -87,13 +77,8 @@
      * @returns {string} - Oluşturulan URL
      */
     function createCategoryURL(categoryId) {
-        if (isProductionEnvironment()) {
-            // Production: Clean URL
-            return `/kategori/${categoryId}`;
-        } else {
-            // Development: .html uzantılı
-            return `urunler.html?kategori=${categoryId}`;
-        }
+        // Always use query string format for categories (clean URLs disabled)
+        return `urunler.html?kategori=${categoryId}`;
     }
 
     /**
@@ -206,7 +191,7 @@
                 url = createHomeURL();
                 break;
             default:
-                console.warn('Unknown link type:', type);
+                // Unknown link type - silently ignore in production
                 return;
         }
 

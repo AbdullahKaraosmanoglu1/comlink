@@ -1,0 +1,1180 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Comlink – Hakkımızda</title>
+    <meta name="description"
+        content="Comlink akıllı ve çevreci bahçe/tarım ekipmanları: ortak batarya platformu, profesyonel performans; dumansız, benzinsiz, bakımsız ve sessiz çalışma.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.comlink.com.tr/hakkimizda.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Comlink">
+    <meta property="og:title" content="Comlink Hakkımızda – Akülü Bahçe Makineleri">
+    <meta property="og:description"
+        content="Comlink akıllı ve çevreci bahçe/tarım ekipmanları: ortak batarya platformu, profesyonel performans; dumansız, benzinsiz, bakımsız ve sessiz çalışma.">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
+    <meta property="og:url" content="https://www.comlink.com.tr/hakkimizda.html">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Comlink Hakkımızda – Akülü Bahçe Makineleri">
+    <meta name="twitter:description"
+        content="Comlink akıllı ve çevreci bahçe/tarım ekipmanları. Ortak batarya platformu, profesyonel performans.">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom Cursor CSS -->
+    <link rel="stylesheet" href="css/custom-cursor.css">
+</head>
+
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">İçeriğe Git</a>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-circle"></div>
+
+
+    <!-- preloader  -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="M" class="letters-loading">
+                        M
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header-start -->
+    <header>
+        <div id="header-sticky" class="main-header transparent-header">
+            <div class="container-fluid header-container-p">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                                    alt="Logo"></a>
+                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                                    alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-6 d-none d-md-block">
+                        <div class="menu-area">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Ana Sayfa</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="urunler.html">Ürünler</a></li>
+                                        <li><a href="oduller-sertifikalar.html">Ödüller & Sertifikalar</a></li>
+                                        <li class="active"><a href="hakkimizda.html">Hakkımızda</a></li>
+                                        <li><a href="iletisim.html">İletişim</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-btn">
+                                <a href="kataloglar/comlink-catalog.pdf" download class="btn"
+                                    aria-label="Comlink ürün kataloğunu PDF olarak indir"><img
+                                        src="img/icon/calculator-symbols.png" alt="Katalog ikonu">Katalog İndir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-start-end -->
+
+    <!-- main-area -->
+    <main id="main-content">
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb-area breadcrumb-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="dots"></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Hakkımızda</li>
+                                    <li class="dots2"></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
+
+        <!-- choose-area -->
+        <section class="choose-area pt-110 pb-80">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-10">
+                        <div class="s-section-title text-center mb-60">
+                            <h2>Neden Comlink?</h2>
+                            <p>Akülü bahçe makinelerinde gücün ve yeniliğin adı Comlink Türkiye.
+                                Çevre dostu, sessiz ve bakım maliyetsiz çözümlerimizle bahçe bakımında yeni bir çağ
+                                açıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img01.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Akülü Teknoloji ile Fark Yaratan Ürünler</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Güçlü akü teknolojisi ile uzun süreli çalışma imkânı. Hafif ve ergonomik tasarım
+                                        sayesinde kolay taşıma.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img02.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Sessiz, Dumansız ve Zahmetsiz Kullanım</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Sessiz çalışma özelliği ile hem kullanıcıya hem çevreye konfor. Sıfır emisyon ile
+                                        karbon ayak izini azaltır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img03.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Bakım Maliyetini Ortadan Kaldıran Çözümler</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Motor yağı değişimi, karbüratör temizliği veya egzoz bakımı gerektirmez. Düşük
+                                        bakım ihtiyacı ile ekonomik kullanım.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img04.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Çevre Dostu ve Sürdürülebilir Ürünler</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Sıfır emisyon prensibiyle çalışan makineler. Enerji verimliliği ile hem çevre hem
+                                        de ekonomi korunur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img05.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Profesyonel Performans</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>Yoğun iş temposunda kesintisiz çalışma. Zorlu koşullara dayanıklı ekipmanlar ve
+                                        verimliliği artıran güçlü motor teknolojisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-choose mb-40">
+                                <div class="choose-head">
+                                    <div class="choose-icon mb-25">
+                                        <img src="img/icon/choose_img06.png" alt="img">
+                                    </div>
+                                    <h3><a href="#">Sezon Bahçe Güvencesi</a></h3>
+                                </div>
+                                <div class="choose-content">
+                                    <p>30 yılı aşkın sektör deneyimiyle güvenilirliği kanıtlanmış "Sezon Bahçe"
+                                        güvencesiyle servis ve yedek parça desteği.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose-area-end -->
+
+        <!-- about-area -->
+        <section class="about-area about-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="about-active">
+                            <div class="single-about-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="about-img">
+                                            <img src="img/images/about_img01.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="about-content">
+                                            <div class="section-title about-title mb-25">
+                                                <h2>Comlink Türkiye Hakkında</h2>
+                                                <h6>Bahçe makinelerinde yeni bir çağ</h6>
+                                            </div>
+                                            <p>Bahçe ve tarım makineleri sektöründe teknolojinin geldiği son nokta artık
+                                                akülü çözümler ile şekilleniyor.
+                                                Dünyanın önde gelen markalarından biri olan Comlink yenilikçi yaklaşımı,
+                                                kullanıcı dostu tasarımları ve
+                                                çevreye duyarlı ürünleriyle bahçe bakımında yeni bir çağ açıyor.
+                                                Türkiye'de Comlink ürünleri, 30 yılı aşkın
+                                                sektör deneyimiyle güvenilirliği kanıtlanmış "Sezon Bahçe" güvencesiyle
+                                                kullanıcılarla buluşuyor.</p>
+                                            <a href="urunler.html" class="btn">Ürünlerimiz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-about-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="about-img">
+                                            <img src="img/images/about_img02.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="about-content">
+                                            <div class="section-title about-title mb-25">
+                                                <h2>Çevre Dostu Teknoloji</h2>
+                                                <h6>Karbon ayak izini azaltan güç</h6>
+                                            </div>
+                                            <p>Comlink, çevre dostu akülü bahçe makineleri ile yalnızca kullanıcıların
+                                                hayatını kolaylaştırmakla kalmaz,
+                                                aynı zamanda gezegenimizin geleceğine de yatırım yapar. Sıfır emisyon
+                                                prensibiyle çalışan makineler,
+                                                karbon salınımını azaltır ve temiz bir hava ortamı sağlar. Sessiz motor
+                                                teknolojisiyle de hem kullanıcı
+                                                konforunu hem de çevresel huzuru garanti altına alır.</p>
+                                            <a href="oduller-sertifikalar.html" class="btn">Galeri</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-about-wrap">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="about-img">
+                                            <img src="img/images/about_img03.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="about-content">
+                                            <div class="section-title about-title mb-25">
+                                                <h2>Vizyonumuz ve Misyonumuz</h2>
+                                                <h6>Geleceğin bahçe makineleri bugünden</h6>
+                                            </div>
+                                            <p>Comlink Türkiye vizyonu, bahçe makineleri sektöründe akülü teknolojilerin
+                                                öncüsü ve lideri olmaktır.
+                                                Çevre dostu ve sürdürülebilir ürünlerimizle gelecek nesillere daha
+                                                yaşanabilir bir dünya bırakmak,
+                                                profesyonel ve amatör kullanıcılara pratik, güvenli ve ekonomik çözümler
+                                                sunmak temel misyonumuzdur.
+                                                Comlink ile geleceğin gücü, bugünün bahçelerindedir.</p>
+                                            <a href="iletisim.html" class="btn">İletişim</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+
+        <!-- faq-area -->
+        <section class="faq-area faq-bg pt-110 pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-10">
+                        <div class="s-section-title text-center mb-60">
+                            <h2>Sıkça Sorulan Sorular</h2>
+                            <p>Comlink akülü makineler hakkında merak ettiğiniz her şey. Ürünlerimiz,
+                                batarya platformumuz ve kullanım avantajları hakkında detaylı bilgiler.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-wrapper">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="nav flex-column nav-pills faq-tab-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                    role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    <div class="faq-tab-icon">
+                                        <i class="far fa-bell"></i>
+                                    </div>
+                                    <div class="faq-tab-content d-none d-lg-block">
+                                        <h5>Geniş Ürün Yelpazesi</h5>
+                                        <p>Ot biçme, dal budama, testere ve daha fazlası.</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                                    role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div class="faq-tab-content d-none d-lg-block">
+                                        <h5>Tek Akü Platformu</h5>
+                                        <p>Bir aküyle birden fazla cihazı çalıştırın.</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                                    href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                    aria-selected="false">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-bullseye"></i>
+                                    </div>
+                                    <div class="faq-tab-content d-none d-lg-block">
+                                        <h5>Profesyonel Performans</h5>
+                                        <p>Zorlu koşullarda dengeli ve güçlü performans.</p>
+                                    </div>
+                                </a>
+                                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                    href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                    aria-selected="false">
+                                    <div class="faq-tab-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    <div class="faq-tab-content d-none d-lg-block">
+                                        <h5>Garanti ve Destek</h5>
+                                        <p>Yetkili servis ve yedek parça güvencesi.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                    aria-labelledby="v-pills-home-tab">
+                                    <div class="faq-accordion">
+                                        <div class="faq-tab-icon">
+                                            <i class="far fa-bell"></i>
+                                        </div>
+                                        <div class="faq-accordion-content fix">
+                                            <div class="faq-tab-content mb-30">
+                                                <h5>Tek Akü, Çok Cihaz</h5>
+                                                <p>Ortak batarya ile farklı aletlerde esnek kullanım.</p>
+                                            </div>
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseOne"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                                Comlink nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink; benzinli motorların yerine geçen akıllı, çevreci
+                                                                ve sessiz akülü bahçe/tarım makineleri ailesidir.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link" data-toggle="collapse"
+                                                                data-target="#collapseTwo" aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                                Tek akü platformu nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse show"
+                                                        aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <p>Yüksek kapasiteli bir akü, birden fazla cihazı
+                                                                çalıştırır; verim ve ekonomi sağlar.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseThree"
+                                                                aria-expanded="false" aria-controls="collapseThree">
+                                                                Neden benzinli yerine akülü?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse"
+                                                        aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <p>Dumansız, benzinsiz, bakımsız ve sessiz çalışma; daha
+                                                                düşük işletme maliyeti.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFour">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseFour"
+                                                                aria-expanded="false" aria-controls="collapseFour">
+                                                                Bakım ve kullanım avantajları neler?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseFour" class="collapse"
+                                                        aria-labelledby="headingFour" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <p>Uzun süre kullanılmadığında bile sorunsuz çalışır; hızlı
+                                                                kurulum ve kolay kullanım.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingFive">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseFive"
+                                                                aria-expanded="false" aria-controls="collapseFive">
+                                                                Hangi ürün modelleri mevcut?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseFive" class="collapse"
+                                                        aria-labelledby="headingFive" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingSix">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseSix"
+                                                                aria-expanded="false" aria-controls="collapseSix">
+                                                                Batarya ne kadar süre dayanır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                    aria-labelledby="v-pills-profile-tab">
+                                    <div class="faq-accordion">
+                                        <div class="faq-tab-icon">
+                                            <i class="fas fa-award"></i>
+                                        </div>
+                                        <div class="faq-accordion-content fix">
+                                            <div class="faq-tab-content mb-30">
+                                                <h5>Tek Akü Platformu</h5>
+                                                <p>Ortak batarya sistemi ile tüm cihazlarda kullanım.</p>
+                                            </div>
+                                            <div class="accordion" id="accordionAwardExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingAwardOne">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseAwardOne"
+                                                                aria-expanded="true" aria-controls="collapseAwardOne">
+                                                                Comlink nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseAwardOne" class="collapse"
+                                                        aria-labelledby="headingAwardOne"
+                                                        data-parent="#accordionAwardExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingAwardTwo">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link" data-toggle="collapse"
+                                                                data-target="#collapseAwardTwo" aria-expanded="false"
+                                                                aria-controls="collapseAwardTwo">
+                                                                Comlink nedir ve nasıl çalışır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseAwardTwo" class="collapse show"
+                                                        aria-labelledby="headingAwardTwo"
+                                                        data-parent="#accordionAwardExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingAwardThree">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseAwardThree"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseAwardThree">
+                                                                Benzinli makinelerden farkı nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseAwardThree" class="collapse"
+                                                        aria-labelledby="headingAwardThree"
+                                                        data-parent="#accordionAwardExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingAwardFour">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseAwardFour"
+                                                                aria-expanded="false" aria-controls="collapseAwardFour">
+                                                                Garanti ve servis desteği var mı?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseAwardFour" class="collapse"
+                                                        aria-labelledby="headingAwardFour"
+                                                        data-parent="#accordionAwardExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingAwardFive">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseAwardFive"
+                                                                aria-expanded="false" aria-controls="collapseAwardFive">
+                                                                Hangi ürün modelleri mevcut?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseAwardFive" class="collapse"
+                                                        aria-labelledby="headingAwardFive"
+                                                        data-parent="#accordionAwardExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingAwardSix">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseAwardSix"
+                                                                aria-expanded="false" aria-controls="collapseAwardSix">
+                                                                Batarya ne kadar süre dayanır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseAwardSix" class="collapse"
+                                                        aria-labelledby="headingAwardSix"
+                                                        data-parent="#accordionAwardExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                    aria-labelledby="v-pills-messages-tab">
+                                    <div class="faq-accordion">
+                                        <div class="faq-tab-icon">
+                                            <i class="fas fa-bullseye"></i>
+                                        </div>
+                                        <div class="faq-accordion-content fix">
+                                            <div class="faq-tab-content mb-30">
+                                                <h5>Profesyonel Performans</h5>
+                                                <p>Zorlu koşullarda dengeli ve güçlü çalışma.</p>
+                                            </div>
+                                            <div class="accordion" id="accordionBullseyeExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingBullseyeOne">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseBullseyeOne" aria-expanded="true"
+                                                                aria-controls="collapseBullseyeOne">
+                                                                Comlink nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseBullseyeOne" class="collapse"
+                                                        aria-labelledby="headingBullseyeOne"
+                                                        data-parent="#accordionBullseyeExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingBullseyeTwo">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link" data-toggle="collapse"
+                                                                data-target="#collapseBullseyeTwo" aria-expanded="false"
+                                                                aria-controls="collapseBullseyeTwo">
+                                                                Comlink nedir ve nasıl çalışır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseBullseyeTwo" class="collapse show"
+                                                        aria-labelledby="headingBullseyeTwo"
+                                                        data-parent="#accordionBullseyeExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingBullseyeThree">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseBullseyeThree"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseBullseyeThree">
+                                                                Benzinli makinelerden farkı nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseBullseyeThree" class="collapse"
+                                                        aria-labelledby="headingBullseyeThree"
+                                                        data-parent="#accordionBullseyeExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingBullseyeFour">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseBullseyeFour"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseBullseyeFour">
+                                                                Garanti ve servis desteği var mı?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseBullseyeFour" class="collapse"
+                                                        aria-labelledby="headingBullseyeFour"
+                                                        data-parent="#accordionBullseyeExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingBullseyeFive">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseBullseyeFive"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseBullseyeFive">
+                                                                Hangi ürün modelleri mevcut?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseBullseyeFive" class="collapse"
+                                                        aria-labelledby="headingBullseyeFive"
+                                                        data-parent="#accordionBullseyeExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingBullseyeSix">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse"
+                                                                data-target="#collapseBullseyeSix" aria-expanded="false"
+                                                                aria-controls="collapseBullseyeSix">
+                                                                Batarya ne kadar süre dayanır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseBullseyeSix" class="collapse"
+                                                        aria-labelledby="headingBullseyeSix"
+                                                        data-parent="#accordionBullseyeExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab">
+                                    <div class="faq-accordion">
+                                        <div class="faq-tab-icon">
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                        <div class="faq-accordion-content fix">
+                                            <div class="faq-tab-content mb-30">
+                                                <h5>Garanti ve Destek</h5>
+                                                <p>Yetkili servis ve yedek parça güvencesi.</p>
+                                            </div>
+                                            <div class="accordion" id="accordionCogExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingCogOne">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseCogOne"
+                                                                aria-expanded="true" aria-controls="collapseCogOne">
+                                                                Comlink nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseCogOne" class="collapse"
+                                                        aria-labelledby="headingCogOne"
+                                                        data-parent="#accordionCogExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink; benzinli motorların yerine geçen akıllı, çevreci
+                                                                ve sessiz akülü bahçe/tarım makineleri ailesidir.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingCogTwo">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link" data-toggle="collapse"
+                                                                data-target="#collapseCogTwo" aria-expanded="false"
+                                                                aria-controls="collapseCogTwo">
+                                                                Comlink nedir ve nasıl çalışır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseCogTwo" class="collapse show"
+                                                        aria-labelledby="headingCogTwo"
+                                                        data-parent="#accordionCogExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingCogThree">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseCogThree"
+                                                                aria-expanded="false" aria-controls="collapseCogThree">
+                                                                Benzinli makinelerden farkı nedir?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseCogThree" class="collapse"
+                                                        aria-labelledby="headingCogThree"
+                                                        data-parent="#accordionCogExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingCogFour">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseCogFour"
+                                                                aria-expanded="false" aria-controls="collapseCogFour">
+                                                                Garanti ve servis desteği var mı?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseCogFour" class="collapse"
+                                                        aria-labelledby="headingCogFour"
+                                                        data-parent="#accordionCogExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingCogFive">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseCogFive"
+                                                                aria-expanded="false" aria-controls="collapseCogFive">
+                                                                Hangi ürün modelleri mevcut?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseCogFive" class="collapse"
+                                                        aria-labelledby="headingCogFive"
+                                                        data-parent="#accordionCogExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingCogSix">
+                                                        <h5 class="mb-0">
+                                                            <a href="#" class="btn-link collapsed"
+                                                                data-toggle="collapse" data-target="#collapseCogSix"
+                                                                aria-expanded="false" aria-controls="collapseCogSix">
+                                                                Batarya ne kadar süre dayanır?
+                                                            </a>
+                                                        </h5>
+                                                    </div>
+                                                    <div id="collapseCogSix" class="collapse"
+                                                        aria-labelledby="headingCogSix"
+                                                        data-parent="#accordionCogExample">
+                                                        <div class="card-body">
+                                                            <p>Comlink akülü makineler, benzinli motorlara göre daha
+                                                                çevreci, sessiz ve bakım
+                                                                gerektirmeyen bir alternatif sunar. Ortak batarya
+                                                                platformu ile ekonomik kullanım
+                                                                sağlar ve profesyonel ihtiyaçlar için tasarlanmıştır.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="footer-logo mb-35">
+                                <a href="index.html"><img src="img/logo/s_logo.png" alt="Comlink logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
+                                    çözümler sunmaktadır. Yüksek performans, düşük bakım maliyeti.
+                                </p>
+                            </div>
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="#" aria-label="Facebook'ta Comlink"><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" aria-label="Twitter'da Comlink"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Pinterest'te Comlink"><i
+                                                class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" aria-label="LinkedIn'de Comlink"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>GÜNCEL YAZILAR</h5>
+                            </div>
+                            <div class="f-rc-post">
+                                <ul>
+                                    <li>
+                                        <div class="f-rc-thumb">
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg"
+                                                    alt="Soluduğunuz Havayı Düşünün"></a>
+                                        </div>
+                                        <div class="f-rc-content">
+                                            <span>5 Kasım, 2025</span>
+                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a></h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="f-rc-thumb">
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg"
+                                                    alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                        </div>
+                                        <div class="f-rc-content">
+                                            <span>4 Kasım, 2025</span>
+                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş: Akıllı Yatırım</a></h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>FAYDALI LİNKLER</h5>
+                            </div>
+                            <div class="fw-link">
+                                <ul>
+                                    <li><a href="hakkimizda.html"><i class="fas fa-caret-right"></i> Hakkımızda</a></li>
+                                    <li><a href="teslimat-bilgisi.html"><i class="fas fa-caret-right"></i> Teslimat
+                                            Bilgisi</a></li>
+                                    <li><a href="sartlar-kosullar.html"><i class="fas fa-caret-right"></i> Şartlar &
+                                            Koşullar</a></li>
+                                    <li><a href="gizlilik-politikasi.html"><i class="fas fa-caret-right"></i> Gizlilik
+                                            Politikası</a></li>
+                                    <li><a href="iade-politikasi.html"><i class="fas fa-caret-right"></i> İade
+                                            Politikasi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="footer-widget mb-50">
+                            <div class="fw-title mb-30">
+                                <h5>BİZE ULAŞIN</h5>
+                            </div>
+                            <div class="f-support-content">
+                                <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
+                                    ve sessiz çalışma ile Yüksek performans sunar.</p>
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
+                                        alt="img"></a>
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
+                                        alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="copyright-text">
+                            <p>Telif Hakkı © <span>Comlink</span> | Tüm Hakları Saklıdır</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/paroller.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_pcAdFNbTDCAvMwAD19oRTuEmb9M50c"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/url-helper.js"></script>
+    <!-- Custom Cursor JS -->
+    <script src="js/custom-cursor.js"></script>
+</body>
+
+</html>

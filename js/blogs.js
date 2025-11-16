@@ -10,7 +10,7 @@ const blogsData = {
         date: '5 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Her gün binlerce benzinli makine atmosfere ton ton CO2 salıyor. Comlink akülü makinelerle sıfır emisyon, %100 temiz hava. Bugün bir karar verin, yarınlar için. Dönüşüme hazır mısınız?',
-        image: 'img/blog/new-blog-images/SoluduğunuzHavayıDüşünün.webp',
+        image: 'img/blog/new-blog-images/SoluduğunuzHavayıDüşünün.png',
         visualElements: {
             statistics: [
                 { value: '0%', label: 'SIFIR EMİSYON', icon: 'fa-leaf', color: 'green' },
@@ -37,19 +37,19 @@ const blogsData = {
             ]
         },
         content: `
-            <p>Her sabah bahçenize çıktığınızda, benzinli makinenizin egzozundan çıkan dumanı görüyor musunuz? O duman sadece havayı kirletmiyor, çocuklarınızın geleceğini de karartıyor.</p>
+            <div class="blog-para">Her sabah bahçenize çıktığınızda, benzinli makinenizin egzozundan çıkan dumanı görüyor musunuz? O duman sadece havayı kirletmiyor, çocuklarınızın geleceğini de karartıyor.</div>
 
-            <p>İstatistikler çarpıcı: Bir benzinli çim biçme makinesi, 1 saatlik kullanımda bir otomobilin 160 km yol katederken yaydığı kadar kirletici salıyor. Türkiye'de her gün yüz binlerce benzinli bahçe makinesi çalışıyor. Bu ne anlama geliyor? Tonlarca CO2, azot oksitler ve uçucu organik bileşikler atmosfere karışıyor.</p>
+            <div class="blog-para">İstatistikler çarpıcı: Bir benzinli çim biçme makinesi, 1 saatlik kullanımda bir otomobilin 160 km yol katederken yaydığı kadar kirletici salıyor. Türkiye'de her gün yüz binlerce benzinli bahçe makinesi çalışıyor. Bu ne anlama geliyor? Tonlarca CO2, azot oksitler ve uçucu organik bileşikler atmosfere karışıyor.</div>
 
             <h4>Çocuklarınıza Nasıl Bir Dünya Bırakıyorsunuz?</h4>
-            <p>Düşünün: Çocuğunuzun 20 yıl sonra temiz hava soluyabileceği bir dünya için bugün ne yapıyorsunuz? Her küçük adım önemli. Ve bahçe bakımı, düşündüğünüzden çok daha büyük bir etki yaratıyor.</p>
+            <div class="blog-para">Düşünün: Çocuğunuzun 20 yıl sonra temiz hava soluyabileceği bir dünya için bugün ne yapıyorsunuz? Her küçük adım önemli. Ve bahçe bakımı, düşündüğünüzden çok daha büyük bir etki yaratıyor.</div>
 
             <blockquote>
                 "Sıfır emisyon, %100 temiz hava. Comlink akülü makinelerle bugün bir karar verin, yarınlar için."
             </blockquote>
 
             <h4>Comlink Farkı: Sıfır Emisyon</h4>
-            <p>Comlink akülü bahçe makineleri, tam anlamıyla sıfır emisyon sunar. Hiç egzoz gazı yok, hiç yakıt kokusu yok, hiç duman yok. Sadece temiz, sessiz ve verimli çalışma.</p>
+            <div class="blog-para">Comlink akülü bahçe makineleri, tam anlamıyla sıfır emisyon sunar. Hiç egzoz gazı yok, hiç yakıt kokusu yok, hiç duman yok. Sadece temiz, sessiz ve verimli çalışma.</div>
 
             <ul>
                 <li><strong>%100 Sıfır Emisyon:</strong> Hiçbir sera gazı salınmıyor</li>
@@ -59,14 +59,14 @@ const blogsData = {
             </ul>
 
             <h4>Yeşil Dönüşüm Başlıyor</h4>
-            <p>Avrupa Birliği, 2026'dan itibaren yeni benzinli bahçe makinelerini yasaklıyor. Neden? Çünkü artık herkes biliyor: Benzinli makineler sürdürülemez. Siz neden bekliyorsunuz?</p>
+            <div class="blog-para">Avrupa Birliği, 2026'dan itibaren yeni benzinli bahçe makinelerini yasaklıyor. Neden? Çünkü artık herkes biliyor: Benzinli makineler sürdürülemez. Siz neden bekliyorsunuz?</div>
 
-            <p>Bugün akülü teknolojiye geçiş yapın. Sadece çevreye değil, kendinize de iyilik yapın. Daha sessiz, daha temiz, daha sağlıklı bir bahçe deneyimi yaşayın.</p>
+            <div class="blog-para">Bugün akülü teknolojiye geçiş yapın. Sadece çevreye değil, kendinize de iyilik yapın. Daha sessiz, daha temiz, daha sağlıklı bir bahçe deneyimi yaşayın.</div>
 
             <h4>Karar Verme Zamanı</h4>
-            <p>Her gün, her kullanımda, bir seçim yapıyorsunuz. Ya geçmişin kirli teknolojisiyle devam edeceksiniz, ya da geleceğin temiz çözümüne geçeceksiniz. Çocuklarınız bu kararı hatırlayacak.</p>
+            <div class="blog-para">Her gün, her kullanımda, bir seçim yapıyorsunuz. Ya geçmişin kirli teknolojisiyle devam edeceksiniz, ya da geleceğin temiz çözümüne geçeceksiniz. Çocuklarınız bu kararı hatırlayacak.</div>
 
-            <p><strong>Dönüşüme hazır mısınız?</strong> Comlink akülü bahçe makineleri ile temiz hava solumanın keyfini çıkarın. Bugün bir adım atın, yarınlar için.</p>
+            <div class="blog-para"><strong>Dönüşüme hazır mısınız?</strong> Comlink akülü bahçe makineleri ile temiz hava solumanın keyfini çıkarın. Bugün bir adım atın, yarınlar için.</div>
         `,
         tags: ['Çevre', 'Sürdürülebilirlik', 'Sıfır Emisyon', 'Gelecek', 'Temiz Enerji'],
         readTime: '5 dk'
@@ -80,7 +80,7 @@ const blogsData = {
         date: '4 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Benzine harcadığınız para cebinizde kalacak. Bakıma harcadığınız zaman size kalacak. Rakamlar konuşuyor: 2 yılda %300 geri dönüş. Akıllı yatırım, akıllı tasarruf. Comlink.',
-        image: 'img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.webp',
+        image: 'img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.png',
         visualElements: {
             statistics: [
                 { value: '₺11,750', label: '5 YILLIK TASARRUF', icon: 'fa-piggy-bank', color: 'green' },
@@ -90,24 +90,24 @@ const blogsData = {
             comparison: {
                 title: '5 Yıllık Maliyet Karşılaştırması',
                 benzinli: [
-                    { label: 'Makine Maliyeti', value: '₺8,000', icon: 'fa-shopping-cart' },
-                    { label: 'Benzin (5 yıl)', value: '₺7,500', icon: 'fa-gas-pump' },
-                    { label: 'Yağ Değişimi', value: '₺2,500', icon: 'fa-oil-can' },
-                    { label: 'Filtre & Bujiler', value: '₺2,000', icon: 'fa-filter' },
-                    { label: 'Bakım & Tamir', value: '₺5,000', icon: 'fa-wrench' }
+                    { label: 'Makine Maliyeti', value: '₺50.000,00', icon: 'fa-shopping-cart' },
+                    { label: 'Benzin (5 yıl)', value: '₺50.000,00', icon: 'fa-gas-pump' },
+                    { label: 'Yağ Değişimi', value: '₺10,000', icon: 'fa-oil-can' },
+                    { label: 'Filtre & Bujiler', value: '₺5,000', icon: 'fa-filter' },
+                    { label: 'Bakım & Tamir', value: '₺50.000', icon: 'fa-wrench' }
                 ],
                 akulu: [
-                    { label: 'Makine + Batarya', value: '₺12,000', icon: 'fa-shopping-cart' },
-                    { label: 'Elektrik (5 yıl)', value: '₺750', icon: 'fa-plug' },
+                    { label: 'Makine + Batarya', value: '₺100.000,00 ', icon: 'fa-shopping-cart' },
+                    { label: 'Elektrik (5 yıl)', value: '₺10.000,00', icon: 'fa-plug' },
                     { label: 'Bakım', value: '₺0', icon: 'fa-times-circle' },
                     { label: 'Filtre & Bujiler', value: '₺0', icon: 'fa-times-circle' },
-                    { label: 'Tamir (5 yıl)', value: '₺500', icon: 'fa-tools' }
+                    { label: 'Tamir (5 yıl)', value: '₺0', icon: 'fa-tools' }
                 ],
-                totalBenzinli: '₺25,000',
-                totalAkulu: '₺13,250'
+                totalBenzinli: '₺165,000',
+                totalAkulu: '₺110,000'
             },
             progressBars: [
-                { label: 'Maliyet Tasarrufu', percentage: 47, color: 'green' },
+                { label: 'Maliyet Tasarrufu', percentage: 50, color: 'green' },
                 { label: 'Zaman Tasarrufu', percentage: 85, color: 'blue' },
                 { label: 'Bakım Kolaylığı', percentage: 95, color: 'purple' }
             ],
@@ -117,60 +117,61 @@ const blogsData = {
             ]
         },
         content: `
-            <p>Şimdi size bir soru soracağım: Geçen yıl bahçe makinelerinize ne kadar harcadınız? Benzin, yağ, filtre, bujiler, periyodik bakımlar... Hesapladınız mı hiç?</p>
+            <div class="blog-para">Şimdi size bir soru soracağım: Geçen yıl bahçe makinelerinize ne kadar harcadınız? Benzin, yağ, filtre, bujiler, periyodik bakımlar... Hesapladınız mı hiç?</div>
 
-            <p>Çoğu kişi hesaplamıyor. Ama rakamlar çok net: Ortalama bir benzinli çim biçme makinesi yılda 2.000-3.000 TL işletme maliyeti demek. 5 yılda bu rakam 10.000-15.000 TL'yi buluyor.</p>
+            <div class="blog-para">Çoğu kişi hesaplamıyor. Ama rakamlar çok net: Ortalama bir benzinli çim biçme makinesi yılda 2.000-3.000 TL işletme maliyeti demek. 5 yılda bu rakam 10.000-15.000 TL'yi buluyor.</div>
 
             <h4>Gerçek Maliyet Hesabı</h4>
-            <p>Bir benzinli çim biçme makinesi ile bir Comlink akülü makineyi karşılaştıralım:</p>
+            <div class="blog-para">Bir benzinli çim biçme makinesi ile bir Comlink akülü makineyi karşılaştıralım:</div>
 
             <div style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
                 <h5>BENZİNLİ MAKİNE (5 Yıllık Maliyet)</h5>
                 <ul>
-                    <li>Makine maliyeti: 8.000 TL</li>
-                    <li>Benzin (yıllık): 1.500 TL x 5 = 7.500 TL</li>
-                    <li>Yağ değişimi: 500 TL x 5 = 2.500 TL</li>
-                    <li>Filtre ve bujiler: 400 TL x 5 = 2.000 TL</li>
-                    <li>Bakım ve tamir: 1.000 TL x 5 = 5.000 TL</li>
-                    <li><strong>TOPLAM: 25.000 TL</strong></li>
+                    <li>Makine maliyeti: 50.000 TL</li>
+                    <li>Benzin (yıllık): 5.000 TL x 5 = 25.000 TL</li>
+                    <li>Yağ değişimi: 2.000 TL x 5 = 10.000 TL</li>
+                    <li>Filtre ve bujiler: 500 TL x 5 = 2.500 TL</li>
+                    <li>Bakım ve tamir: 15.000 TL x 5 = 75.000 TL</li>
+                    <li><strong>TOPLAM: 162.500 TL</strong></li>
                 </ul>
 
                 <h5 style="margin-top: 30px;">COMLINK AKÜLÜ MAKİNE (5 Yıllık Maliyet)</h5>
                 <ul>
-                    <li>Makine + Batarya maliyeti: 12.000 TL</li>
-                    <li>Elektrik (yıllık): 150 TL x 5 = 750 TL</li>
+                    <li>Makine + Batarya maliyeti: 100.000 TL</li>
+                    <li>Elektrik (yıllık): 1000 TL x 5 = 5.000 TL</li>
                     <li>Bakım: 0 TL (bakımsız sistem)</li>
                     <li>Tamir: 500 TL (5 yılda)</li>
-                    <li><strong>TOPLAM: 13.250 TL</strong></li>
+                    <li><strong>TOPLAM: 105.500 TL</strong></li>
                 </ul>
             </div>
 
             <blockquote>
-                "5 yılda 11.750 TL tasarruf. Yani neredeyse makine kendini ödüyor. 2 yıl sonra bana teşekkür edeceksiniz."
+                "5 yılda 57.000 TL tasarruf. Yani neredeyse makine kendini ödüyor. 2 yıl sonra bana teşekkür edeceksiniz."<br>
+                • Hesaplamalar günün şartlarına göre hesaplanmıştır. Yıllık zam oranları, dolar kuru vs. hesaba katılmamıştır. Bir fikir vermesi açısından karşılaştırılmıştır.
             </blockquote>
 
             <h4>Zaman = Para</h4>
-            <p>Ama sadece para değil. Zamandan da bahsedelim. Benzinli bir makineyle ne kadar zaman harcıyorsunuz?</p>
+            <div class="blog-para">Ama sadece para değil. Zamandan da bahsedelim. Benzinli bir makineyle ne kadar zaman harcıyorsunuz?</div>
 
             <ul>
                 <li>Benzin istasyonuna gidip gelme: Ayda 2 saat</li>
                 <li>Motor bakımı, yağ değişimi: Yılda 4 saat</li>
-                <li>Arıza ve tamir: Yılda ortalama 6 saat</li>
+                <li>Arıza ve tamir: Yılda ortalama 12 saat</li>
                 <li>Kış depolama hazırlığı: Yılda 2 saat</li>
                 <li><strong>Yılda toplam: 40+ saat kayıp</strong></li>
             </ul>
 
-            <p>Comlink akülü makinelerle bu süre neredeyse sıfır. Bataryayı takın, çalışın, bitince şarja bırakın. O kadar.</p>
+            <div class="blog-para">Comlink akülü makinelerle bu süre neredeyse sıfır. Bataryayı takın, çalışın, bitince şarja bırakın. O kadar.</div>
 
             <h4>Ortak Batarya Platformu: Asıl Tasarruf Burada</h4>
-            <p>Comlink'in en büyük avantajı: Tek batarya ile 9 farklı makine kullanabiliyorsunuz. Üfleyici, çim biçme, çit budama, zincirli testere... Hepsi aynı batarya.</p>
+            <div class="blog-para">Comlink'in en büyük avantajı: Tek batarya ile 9 farklı makine kullanabiliyorsunuz. Üfleyici, çim biçme, çit budama, zincirli testere... Hepsi aynı batarya.</div>
 
-            <p>Rakip markalarda her makine için ayrı batarya almanız gerekiyor. 3 makine = 3 batarya = 15.000+ TL ek maliyet. Comlink'te? Sadece 1-2 batarya yeterli.</p>
+            <div class="blog-para">Rakip markalarda her makine için ayrı batarya almanız gerekiyor. 3 makine = 3 batarya = 20.000+ TL ek maliyet. Comlink'te? Sadece 1 batarya yeterli. Comlink'teki 30Ah'lik bataryanın en yakın rakibi 5Ah'lik bataryalar. Yani Comlink'te 9 saat çalışabilen batarya varken en yakın rakibi 1 saat çalışabiliyor. İnanılmaz değil mi?</div>
 
             <h4>2 Yıl Sonra...</h4>
-            <p>2 yıl sonra bu yazıyı hatırlayacaksınız. Cebinizde kalan parayı, kazandığınız zamanı, stresinizin azaldığını göreceksiniz. Ve diyeceksiniz ki: "Keşke daha önce geçseydim."</p>
+            <div class="blog-para">2 yıl sonra bu yazıyı hatırlayacaksınız. Cebinizde kalan parayı, kazandığınız zamanı, stresinizin azaldığını göreceksiniz. Ve diyeceksiniz ki: "Keşke daha önce geçseydim."</div>
 
-            <p><strong>Akıllı yatırım, akıllı tasarruf.</strong> Comlink akülü bahçe makineleri ile hem paranızı hem zamanınızı kazanın. Bugün yatırım yapın, her gün tasarruf edin.</p>
+            <div class="blog-para"><strong>Akıllı yatırım, akıllı tasarruf.</strong> Comlink akülü bahçe makineleri ile hem paranızı hem zamanınızı kazanın. Bugün yatırım yapın, her gün tasarruf edin. Bu işten daha çok keyif aldığınızı tecrübe edeceksiniz.</div>
         `,
         tags: ['Ekonomi', 'Tasarruf', 'Yatırım', 'Maliyet Analizi', 'ROI'],
         readTime: '6 dk'
@@ -184,7 +185,7 @@ const blogsData = {
         date: '3 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: '400m²\'yi 60 dakikadan 35 dakikaya düşürün. Günde 3 müşteriye değil, 5 müşteriye yetişin. Daha hızlı, daha güçlü, daha karlı işler yapın. Performans farkını yaşayın.',
-        image: 'img/blog/new-blog-images/YarışBenzinliMakinelerleDeğil.webp',
+        image: 'img/blog/new-blog-images/YarışBenzinliMakinelerleDeğil.png',
         visualElements: {
             statistics: [
                 { value: '27 Dk', label: '400M² ZAMAN TASARRUFU', icon: 'fa-stopwatch', color: 'green' },
@@ -234,18 +235,18 @@ const blogsData = {
             ]
         },
         content: `
-            <p>"Akülü makineler güçsüzdür" diyenlere bu yazıyı okumalarını öneririm. Çünkü 2025'te artık akülü teknoloji, benzinli makineleri performansta geride bırakıyor.</p>
+            <div class="blog-para">"Akülü makineler güçsüzdür" diyenlere bu yazıyı okumalarını öneririm. Çünkü 2025'te artık akülü teknoloji, benzinli makineleri performansta geride bırakıyor.</div>
 
             <h4>Performans = Zaman x Güç x Verimlilik</h4>
-            <p>Bir profesyonel bahçıvan olarak başarınız üç faktöre bağlı: Ne kadar hızlı çalışıyorsunuz, ne kadar güçlü ekipman kullanıyorsunuz ve ne kadar verimli iş çıkarıyorsunuz.</p>
+            <div class="blog-para">Bir profesyonel bahçıvan olarak başarınız üç faktöre bağlı: Ne kadar hızlı çalışıyorsunuz, ne kadar güçlü ekipman kullanıyorsunuz ve ne kadar verimli iş çıkarıyorsunuz.</div>
 
-            <p>Comlink akülü makineler, bu üç faktörde de benzinli rakiplerini geride bırakıyor. Nasıl mı? İşte gerçek rakamlar:</p>
+            <div class="blog-para">Comlink akülü makineler, bu üç faktörde de benzinli rakiplerini geride bırakıyor. Nasıl mı? İşte gerçek rakamlar:</div>
 
             <h4>Gerçek Performans Testi</h4>
             <div style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
                 <h5>400m² Bahçe Biçme Karşılaştırması</h5>
 
-                <p><strong>Benzinli Makine:</strong></p>
+                <div class="blog-para"><strong>Benzinli Makine:</strong></div>
                 <ul>
                     <li>Hazırlık (yakıt kontrolü, çekme, ısınma): 5 dakika</li>
                     <li>Biçme süresi: 45 dakika</li>
@@ -254,7 +255,7 @@ const blogsData = {
                     <li><strong>Toplam: 60 dakika</strong></li>
                 </ul>
 
-                <p><strong>Comlink Akülü Makine:</strong></p>
+                <div class="blog-para"><strong>Comlink Akülü Makine:</strong></div>
                 <ul>
                     <li>Hazırlık (batarya takma): 30 saniye</li>
                     <li>Biçme süresi: 30 dakika (daha güçlü motor)</li>
@@ -269,7 +270,7 @@ const blogsData = {
             </blockquote>
 
             <h4>Fırçasız Motor Teknolojisi: Gücün Sırrı</h4>
-            <p>Comlink makineler, patentli fırçasız (brushless) motor teknolojisi kullanıyor. Bu ne demek?</p>
+            <div class="blog-para">Comlink makineler, patentli fırçasız (brushless) motor teknolojisi kullanıyor. Bu ne demek?</div>
 
             <ul>
                 <li><strong>%30 Daha Fazla Güç:</strong> Aynı enerjiyle daha fazla iş</li>
@@ -278,21 +279,21 @@ const blogsData = {
                 <li><strong>Anında Maksimum Tork:</strong> Düğmeye bastığınız anda full güç</li>
             </ul>
 
-            <p>Benzinli makinelerde motor yıprandıkça güç düşer. 2-3 yıl sonra aynı işi yapmak daha uzun sürer. Comlink'te bu sorun yok.</p>
+            <div class="blog-para">Benzinli makinelerde motor yıprandıkça güç düşer. 2-3 yıl sonra aynı işi yapmak daha uzun sürer. Comlink'te bu sorun yok.</div>
 
             <h4>Profesyoneller İçin Kritik Avantajlar</h4>
 
             <h5>1. Sabah 7'de Başlayın</h5>
-            <p>Sessiz çalışma sayesinde komşuları rahatsız etmeden erken saatlerde işe başlayabilirsiniz. Bu da demek oluyor ki günde 2-3 saat daha fazla çalışma imkanı.</p>
+            <div class="blog-para">Sessiz çalışma sayesinde komşuları rahatsız etmeden erken saatlerde işe başlayabilirsiniz. Bu da demek oluyor ki günde 2-3 saat daha fazla çalışma imkanı.</div>
 
             <h5>2. Ara Vermeden Çalışın</h5>
-            <p>Comlink'in ortak batarya sistemi sayesinde bir batarya biterken diğerini takıyorsunuz. Yakıt dolumu için durmaya, benzin istasyonuna gitmeye gerek yok.</p>
+            <div class="blog-para">Comlink'in ortak batarya sistemi sayesinde bir batarya biterken diğerini takıyorsunuz. Yakıt dolumu için durmaya, benzin istasyonuna gitmeye gerek yok.</div>
 
             <h5>3. Daha Fazla Müşteri, Daha Fazla Kazanç</h5>
-            <p>Hesaplayalım: Günde ortalama 3 müşteri yerine 5 müşteriye gidebiliyorsunuz. Aylık 40 yerine 66 müşteri. %65 gelir artışı. Yıllık hesaplarsanız, makine kendini 6 ayda amorti ediyor.</p>
+            <div class="blog-para">Hesaplayalım: Günde ortalama 3 müşteri yerine 5 müşteriye gidebiliyorsunuz. Aylık 40 yerine 66 müşteri. %65 gelir artışı. Yıllık hesaplarsanız, makine kendini 6 ayda amorti ediyor.</div>
 
             <h4>Dayanıklılık ve Güvenilirlik</h4>
-            <p>Performans sadece hız değil, güvenilirlik de önemli. Comlink makineler:</p>
+            <div class="blog-para">Performans sadece hız değil, güvenilirlik de önemli. Comlink makineler:</div>
 
             <ul>
                 <li><strong>IP66 Sertifika:</strong> Her hava koşulunda çalışır</li>
@@ -302,9 +303,9 @@ const blogsData = {
             </ul>
 
             <h4>Yarış Zamanla</h4>
-            <p>Profesyonel bahçe bakımı sektöründe rekabet çok yüksek. Fark yaratmak için daha hızlı, daha güçlü ve daha verimli olmalısınız. Comlink bu farkı yaratıyor.</p>
+            <div class="blog-para">Profesyonel bahçe bakımı sektöründe rekabet çok yüksek. Fark yaratmak için daha hızlı, daha güçlü ve daha verimli olmalısınız. Comlink bu farkı yaratıyor.</div>
 
-            <p><strong>Yarış benzinli makinelerle değil, saatlerle.</strong> Her dakika değerli. Her müşteri önemli. Comlink akülü makineler ile performans farkını yaşayın. Daha hızlı, daha güçlü, daha karlı işler yapın.</p>
+            <div class="blog-para"><strong>Yarış benzinli makinelerle değil, saatlerle.</strong> Her dakika değerli. Her müşteri önemli. Comlink akülü makineler ile performans farkını yaşayın. Daha hızlı, daha güçlü, daha karlı işler yapın.</div>
         `,
         tags: ['Performans', 'Verimlilik', 'Profesyonel', 'Hız', 'Güç'],
         readTime: '6 dk'
@@ -318,7 +319,7 @@ const blogsData = {
         date: '2 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Ödüllü Tayvan teknolojisi, patentli fırçasız motor, akıllı kontrol sistemi. Taiwan Excellence 2017 ve 2019 ödüllü. Geleceğin makineleri bugün sizin elinde. Teknolojiye yatırım yapın.',
-        image: 'img/blog/new-blog-images/2024tehala1970lerin teknolojisiilemi.webp',
+        image: 'img/blog/new-blog-images/2024tehala1970lerin teknolojisiilemi.png',
         visualElements: {
             statistics: [
                 { value: '%30', label: 'DAHA VERİMLİ', icon: 'fa-bolt', color: 'purple' },
@@ -371,12 +372,12 @@ const blogsData = {
             ]
         },
         content: `
-            <p>Benzinli bahçe makineleri 1950'lerde icat edildi. 70 yıldır aynı prensiple çalışıyor: Yakıt yakma, piston hareketi, mekanik güç. 2025'te hala bu teknolojiyi kullanıyor musunuz?</p>
+            <div class="blog-para">Benzinli bahçe makineleri 1950'lerde icat edildi. 70 yıldır aynı prensiple çalışıyor: Yakıt yakma, piston hareketi, mekanik güç. 2025'te hala bu teknolojiyi kullanıyor musunuz?</div>
 
-            <p>Düşünün: Telefonunuz 70 yıl öncesinin teknolojisi mi? Arabanız? Bilgisayarınız? Hayır. Öyleyse bahçe makineniz neden olsun?</p>
+            <div class="blog-para">Düşünün: Telefonunuz 70 yıl öncesinin teknolojisi mi? Arabanız? Bilgisayarınız? Hayır. Öyleyse bahçe makineniz neden olsun?</div>
 
             <h4>Benzinli Motor: 1950'lerin Mirası</h4>
-            <p>Benzinli bahçe makinelerinin teknolojisi temelde değişmedi:</p>
+            <div class="blog-para">Benzinli bahçe makinelerinin teknolojisi temelde değişmedi:</div>
 
             <ul>
                 <li>Karbüratör sistemi (1950'lerden kalma)</li>
@@ -386,12 +387,12 @@ const blogsData = {
                 <li>Mekanik şanzıman (vites değiştirme, kavrama)</li>
             </ul>
 
-            <p>Bu sistemler eski, verimsiz ve çevreye zararlı. 2025'te bunları kullanmaya devam etmek mantıklı mı?</p>
+            <div class="blog-para">Bu sistemler eski, verimsiz ve çevreye zararlı. 2025'te bunları kullanmaya devam etmek mantıklı mı?</div>
 
             <h4>Comlink Teknolojisi: 2025'in Çözümü</h4>
 
             <h5>1. Fırçasız (Brushless) Motor Teknolojisi</h5>
-            <p>Comlink'in kalbi: Patentli fırçasız motor sistemi. Bu teknoloji nedir?</p>
+            <div class="blog-para">Comlink'in kalbi: Patentli fırçasız motor sistemi. Bu teknoloji nedir?</div>
 
             <ul>
                 <li><strong>Elektronik Komütasyon:</strong> Mekanik parça yok, elektronik kontrol var</li>
@@ -406,7 +407,7 @@ const blogsData = {
             </blockquote>
 
             <h5>2. Akıllı Batarya Yönetim Sistemi (BMS)</h5>
-            <p>Comlink bataryaları sadece enerji deposu değil, akıllı güç merkezleri:</p>
+            <div class="blog-para">Comlink bataryaları sadece enerji deposu değil, akıllı güç merkezleri:</div>
 
             <ul>
                 <li><strong>Sıcaklık Kontrolü:</strong> Aşırı ısınmayı engelleyen sensörler</li>
@@ -417,7 +418,7 @@ const blogsData = {
             </ul>
 
             <h5>3. Taiwan Excellence: Uluslararası Kalite</h5>
-            <p>Comlink makineler, Taiwan Excellence 2017 ve 2019 ödüllerine sahip. Bu ödüller tesadüf değil:</p>
+            <div class="blog-para">Comlink makineler, Taiwan Excellence 2017 ve 2019 ödüllerine sahip. Bu ödüller tesadüf değil:</div>
 
             <ul>
                 <li><strong>Ar-Ge Mükemmelliği:</strong> 5 yıllık araştırma ve geliştirme</li>
@@ -429,19 +430,19 @@ const blogsData = {
             <h4>Dijital Çağın Makineleri</h4>
 
             <h5>Ortak Batarya Platformu</h5>
-            <p>Comlink'in en büyük teknolojik yeniliği: Ortak batarya sistemi. 1 batarya = 9 farklı makine.</p>
+            <div class="blog-para">Comlink'in en büyük teknolojik yeniliği: Ortak batarya sistemi. 1 batarya = 9 farklı makine.</div>
 
-            <p>Bu sistem nasıl çalışıyor? Akıllı BMS sayesinde her makine ihtiyacı olan gücü otomatik alıyor. Üfleyici az güç çekiyor, testere daha fazla. Aynı batarya, her makineye optimize performans veriyor.</p>
+            <div class="blog-para">Bu sistem nasıl çalışıyor? Akıllı BMS sayesinde her makine ihtiyacı olan gücü otomatik alıyor. Üfleyici az güç çekiyor, testere daha fazla. Aynı batarya, her makineye optimize performans veriyor.</div>
 
             <h5>Anında Başlatma</h5>
-            <p>Benzinli makinelerde: Çekme, ısınma, ayarlama, bekleme... 5 dakika hazırlık.</p>
-            <p>Comlink'te: Bataryayı tak, düğmeye bas. 2 saniye. Anında tam güç.</p>
+            <div class="blog-para">Benzinli makinelerde: Çekme, ısınma, ayarlama, bekleme... 5 dakika hazırlık.</div>
+            <div class="blog-para">Comlink'te: Bataryayı tak, düğmeye bas. 2 saniye. Anında tam güç.</div>
 
             <h5>Sessiz Çalışma = İleri Teknoloji</h5>
-            <p>Benzinli makineler 95-105 dB gürültü yapıyor. Bu seviye işitme kaybına neden olabilir. Comlink makineler 75-85 dB. Nasıl? İleri akustik mühendislik ve titreşim izolasyonu.</p>  
+            <div class="blog-para">Benzinli makineler 95-105 dB gürültü yapıyor. Bu seviye işitme kaybına neden olabilir. Comlink makineler 75-85 dB. Nasıl? İleri akustik mühendislik ve titreşim izolasyonu.</div>  
            
             <h4>Teknoloji = Yatırım</h4>
-            <p>İleri teknoloji, başlangıçta daha pahalı görünebilir. Ama uzun vadede:</p>
+            <div class="blog-para">İleri teknoloji, başlangıçta daha pahalı görünebilir. Ama uzun vadede:</div>
 
             <ul>
                 <li>Daha az arıza = daha az maliyet</li>
@@ -450,7 +451,7 @@ const blogsData = {
                 <li>Daha uzun ömür = daha iyi yatırım getirisi</li>
             </ul>
 
-            <p><strong>2025'te hala 1970'lerin teknolojisiyle mi çalışacaksınız?</strong> Yoksa geleceğin makinelerine geçiş yapacak mısınız? Comlink ile teknolojiye yatırım yapın. Taiwan Excellence ödüllü, patentli fırçasız motor, akıllı batarya sistemi. Gelecek, bugün elinizde.</p>
+            <div class="blog-para"><strong>2025'te hala 1970'lerin teknolojisiyle mi çalışacaksınız?</strong> Yoksa geleceğin makinelerine geçiş yapacak mısınız? Comlink ile teknolojiye yatırım yapın. Taiwan Excellence ödüllü, patentli fırçasız motor, akıllı batarya sistemi. Gelecek, bugün elinizde.</div>
         `,
         tags: ['Teknoloji', 'İnovasyon', 'Taiwan Excellence', 'Fırçasız Motor', 'Akıllı Sistem'],
         readTime: '7 dk'
@@ -464,7 +465,7 @@ const blogsData = {
         date: '1 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Makinenizi açın. Yine kuş sesleri... Sessiz güç bu. Komşunuz sizin çalıştığınızı bile duymasın. Huzurlu bahçe, mutlu hayat. Gürültü kirliliğine son verin, doğayla uyum içinde çalışın.',
-        image: 'img/blog/new-blog-images/Sabah7debahçenizeçıkın.webp',
+        image: 'img/blog/new-blog-images/Sabah7debahçenizeçıkın.png',
         visualElements: {
             statistics: [
                 { value: '75-85 dB', label: 'COMLINK SES SEVİYESİ', icon: 'fa-volume-down', color: 'green' },
@@ -534,14 +535,14 @@ const blogsData = {
             ]
         },
         content: `
-            <p>Pazar sabahı saat 7. Güneş yeni doğuyor. Kuşlar cıvıldıyor. Komşularınız uyuyor. Ve siz bahçenizde çalışmak istiyorsunuz.</p>
+            <div class="blog-para">Pazar sabahı saat 7. Güneş yeni doğuyor. Kuşlar cıvıldıyor. Komşularınız uyuyor. Ve siz bahçenizde çalışmak istiyorsunuz.</div>
 
-            <p>Benzinli bir makine ile bu mümkün mü? Hayır. Ama Comlink akülü makinelerle? Evet.</p>
+            <div class="blog-para">Benzinli bir makine ile bu mümkün mü? Hayır. Ama Comlink akülü makinelerle? Evet.</div>
 
             <h4>Sessizlik: Unutulan Lüks</h4>
-            <p>Modern dünyada gürültü her yerde. Trafik, inşaat, makineler... Sürekli bir uğultu. Ev sizin huzur alanınız olmalı değil mi? Bahçeniz sizin sessiz köşeniz olmalı değil mi?</p>
+            <div class="blog-para">Modern dünyada gürültü her yerde. Trafik, inşaat, makineler... Sürekli bir uğultu. Ev sizin huzur alanınız olmalı değil mi? Bahçeniz sizin sessiz köşeniz olmalı değil mi?</div>
 
-            <p>Ama benzinli bir çim biçme makinesi açtığınızda ne oluyor? 100 dB gürültü. Bu seviye ne demek?</p>
+            <div class="blog-para">Ama benzinli bir çim biçme makinesi açtığınızda ne oluyor? 100 dB gürültü. Bu seviye ne demek?</div>
 
             <ul>
                 <li>Caddede klakson sesi: 90-95 dB</li>
@@ -549,10 +550,10 @@ const blogsData = {
                 <li>Rock konseri: 110-120 dB</li>
             </ul>
 
-            <p>Yani bahçenizi biçmek, caddenin ortasında klakürlü araba sürücüleri arasında olmak gibi.</p>
+            <div class="blog-para">Yani bahçenizi biçmek, caddenin ortasında klakürlü araba sürücüleri arasında olmak gibi.</div>
 
             <h4>Gürültü Kirliliği: Görünmeyen Tehlike</h4>
-            <p>Gürültü sadece rahatsız etmiyor. Sağlığa da zararlı:</p>
+            <div class="blog-para">Gürültü sadece rahatsız etmiyor. Sağlığa da zararlı:</div>
 
             <ul>
                 <li><strong>İşitme Kaybı:</strong> 85 dB üzeri uzun süre maruz kalma kalıcı hasar verir</li>
@@ -566,7 +567,7 @@ const blogsData = {
             </blockquote>
 
             <h4>Comlink Farkı: Sessiz Güç</h4>
-            <p>Comlink akülü makineler, 75-85 dB seviyesinde çalışıyor. Bu ne kadar sessiz?</p>
+            <div class="blog-para">Comlink akülü makineler, 75-85 dB seviyesinde çalışıyor. Bu ne kadar sessiz?</div>
 
             <ul>
                 <li>Normal konuşma: 60-65 dB</li>
@@ -575,10 +576,10 @@ const blogsData = {
                 <li>Trafik gürültüsü: 85 dB</li>
             </ul>
 
-            <p>Yani Comlink makinenizi çalıştırmak, trafikte yürümekten daha sessiz. Komşunuz 20 metre ötede, sizin çalıştığınızı duyamayabilir.</p>
+            <div class="blog-para">Yani Comlink makinenizi çalıştırmak, trafikte yürümekten daha sessiz. Komşunuz 20 metre ötede, sizin çalıştığınızı duyamayabilir.</div>
 
             <h4>Sabah 7'de Başlayın</h4>
-            <p>Sessiz çalışma sadece konfor değil, pratik avantaj da:</p>
+            <div class="blog-para">Sessiz çalışma sadece konfor değil, pratik avantaj da:</div>
 
             <h5>Profesyoneller İçin:</h5>
             <ul>
@@ -610,7 +611,7 @@ const blogsData = {
         date: '31 Ekim 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Bir batarya ile 9 farklı makine kullanın. Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Aynı batarya, aynı verimlilik. IP66 sertifikalı güvenilir sistem.',
-        image: 'img/blog/new-blog-images/TekBataryaSonsuzGörev-OrtakPlatform.webp',
+        image: 'img/blog/new-blog-images/TekBataryaSonsuzGörev-OrtakPlatform.png',
         visualElements: {
             statistics: [
                 { value: '9', label: 'FARKLI MAKİNE', icon: 'fa-tools', color: 'blue' },
@@ -685,14 +686,14 @@ const blogsData = {
             ]
         },
         content: `
-            <p>Hayal edin: Sabah bahçenizi çim biçme makinesiyle biçiyorsunuz. Öğleden sonra aynı bataryayı çit budama makinesine takıyorsunuz. Akşam aynı bataryayı yaprak üfleyicide kullanıyorsunuz. Bir batarya, üç farklı iş, sıfır bekleme.</p>
+            <div class="blog-para">Hayal edin: Sabah bahçenizi çim biçme makinesiyle biçiyorsunuz. Öğleden sonra aynı bataryayı çit budama makinesine takıyorsunuz. Akşam aynı bataryayı yaprak üfleyicide kullanıyorsunuz. Bir batarya, üç farklı iş, sıfır bekleme.</div>
 
-            <p>Bu sadece hayal değil. Comlink ortak batarya platformunun gerçeği bu.</p>
+            <div class="blog-para">Bu sadece hayal değil. Comlink ortak batarya platformunun gerçeği bu.</div>
 
             <h4>Sorun: Her Makine Için Ayrı Batarya</h4>
-            <p>Akülü araç gereçler sektöründeki en büyük sorun: Parçalanmış batarya sistemleri.</p>
+            <div class="blog-para">Akülü araç gereçler sektöründeki en büyük sorun: Parçalanmış batarya sistemleri.</div>
 
-            <p>Diğer markalarda durum şöyle:</p>
+            <div class="blog-para">Diğer markalarda durum şöyle:</div>
             <ul>
                 <li>Çim biçme makinesi: 40V batarya</li>
                 <li>Çit budama: 18V batarya</li>
@@ -700,16 +701,16 @@ const blogsData = {
                 <li>Üfleyici: 20V batarya</li>
             </ul>
 
-            <p>3 makine alıyorsunuz, 3 farklı batarya satın alıyorsunuz. 3 farklı şarj aleti. 3 farklı sistem. Toplam maliyet? 20.000+ TL.</p>
+            <div class="blog-para">3 makine alıyorsunuz, 3 farklı batarya satın alıyorsunuz. 3 farklı şarj aleti. 3 farklı sistem. Toplam maliyet? 20.000+ TL.</div>
 
-            <p>Ama asıl sorun maliyet değil. Pratiklik. Hangi batarya hangi makinede? Şarjlı olan var mı? Hangi şarj aleti nerede?</p>
+            <div class="blog-para">Ama asıl sorun maliyet değil. Pratiklik. Hangi batarya hangi makinede? Şarjlı olan var mı? Hangi şarj aleti nerede?</div>
 
             <blockquote>
                 "Ortalama bir kullanıcının 5 farklı batarya sistemi var. Çoğu zaman hangi bataryanın hangi makineye ait olduğunu karıştırıyor."
             </blockquote>
 
             <h4>Comlink Çözümü: Tek Platform, Tüm Makineler</h4>
-            <p>Comlink'in vizyonu basit ama devrimci: Bir batarya sistemi, dokuz farklı makine.</p>
+            <div class="blog-para">Comlink'in vizyonu basit ama devrimci: Bir batarya sistemi, dokuz farklı makine.</div>
 
             <h5>Comlink Ortak Batarya Ailesi:</h5>
             <ul>
@@ -723,12 +724,12 @@ const blogsData = {
                 <li>CK-600 Çapa Makinesi</li>
             </ul>
 
-            <p><strong>Hepsi aynı batarya ile çalışıyor: 56V Li-ion platform.</strong></p>
+            <div class="blog-para"><strong>Hepsi aynı batarya ile çalışıyor: 56V Li-ion platform.</strong></div>
 
             <h4>Akıllı Güç Yönetimi</h4>
-            <p>Peki nasıl oluyor da bir batarya tüm bu farklı makinelerde çalışabiliyor?</p>
+            <div class="blog-para">Peki nasıl oluyor da bir batarya tüm bu farklı makinelerde çalışabiliyor?</div>
 
-            <p>Cevap: Akıllı Batarya Yönetim Sistemi (BMS - Battery Management System)</p>
+            <div class="blog-para">Cevap: Akıllı Batarya Yönetim Sistemi (BMS - Battery Management System)</div>
 
             <ul>
                 <li><strong>Otomatik Güç Ayarı:</strong> Her makine ihtiyacı kadar güç alıyor</li>
@@ -737,10 +738,10 @@ const blogsData = {
                 <li><strong>Sıcaklık Yönetimi:</strong> Optimal sıcaklıkta çalışma</li>
             </ul>
 
-            <p>Yani üfleyici az güç çekiyor, testere daha fazla. Ama aynı batarya, ikisine de optimize performans veriyor.</p>
+            <div class="blog-para">Yani üfleyici az güç çekiyor, testere daha fazla. Ama aynı batarya, ikisine de optimize performans veriyor.</div>
 
             <h4>Batarya Seçenekleri</h4>
-            <p>Comlink üç farklı kapasitede batarya sunuyor:</p>
+            <div class="blog-para">Comlink üç farklı kapasitede batarya sunuyor:</div>
 
             <div style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
                 <h5>V7-20Ah: Standart Kullanım</h5>
@@ -769,55 +770,33 @@ const blogsData = {
             </div>
 
             <h4>IP66 Sertifikası: Her Koşulda Güvenli</h4>
-            <p>Comlink bataryaları IP66 sertifikalı. Bu ne demek?</p>
+            <div class="blog-para">Comlink bataryaları IP66 sertifikalı. Bu ne demek?</div>
 
             <ul>
                 <li><strong>IP6X - Toz Geçirmez:</strong> Hiçbir toz parçacığı giremiyor</li>
                 <li><strong>IPX6 - Su Geçirmez:</strong> Yüksek basınçlı su jetine dayanıklı</li>
             </ul>
 
-            <p>Yani yağmurda çalışabilirsiniz, ıslak çimde çalışabilirsiniz, tozlu ortamda çalışabilirsiniz. Batarya her koşulda güvende.</p>
+            <div class="blog-para">Yani yağmurda çalışabilirsiniz, ıslak çimde çalışabilirsiniz, tozlu ortamda çalışabilirsiniz. Batarya her koşulda güvende.</div>
 
             <h4>Pratik Avantajlar</h4>
 
             <h5>1. Maliyet Tasarrufu</h5>
-            <p>9 makine almak istiyorsunuz. Diğer markalarda: 9 ayrı batarya = 45.000+ TL. Comlink'te: 2-3 batarya yeterli = 12.000 TL. %70 tasarruf.</p>
+            <div class="blog-para">9 makine almak istiyorsunuz. Diğer markalarda: 9 ayrı batarya = 45.000+ TL. Comlink'te: 2-3 batarya yeterli = 12.000 TL. %70 tasarruf.</div>
 
             <h5>2. Depolama Kolaylığı</h5>
-            <p>9 farklı batarya ve şarj aleti yerine 2-3 batarya ve 1 şarj aleti. Garajınızda veya deponuzda %80 daha az yer kaplıyor.</p>
+            <div class="blog-para">9 farklı batarya ve şarj aleti yerine 2-3 batarya ve 1 şarj aleti. Garajınızda veya deponuzda %80 daha az yer kaplıyor.</div>
 
             <h5>3. Zaman Kazancı</h5>
-            <p>Bir iş bittiğinde bataryayı çıkar, diğer makineye tak. 10 saniye. Başka bir batarya aramaya gerek yok.</p>
+            <div class="blog-para">Bir iş bittiğinde bataryayı çıkar, diğer makineye tak. 10 saniye. Başka bir batarya aramaya gerek yok.</div>
 
             <h5>4. Esneklik</h5>
-            <p>Planladığınız işi bitirdiniz ama batarya hala dolu. Başka bir iş daha yapabilirsiniz. Aynı batarya, farklı makine.</p>
-
-            <h4>Gerçek Kullanım Senaryosu</h4>
-            <p>Ahmet Bey'in tipik bir Cumartesi günü:</p>
-
-            <p><strong>08:00 - Çim Biçme (CK-230D + V7-30Ah)</strong><br>
-            400m² bahçe, 45 dakika. Batarya %60 kaldı.</p>
-
-            <p><strong>09:00 - Çit Budama (CK-320 + Aynı Batarya)</strong><br>
-            Çit kenarları, 25 dakika. Batarya %40 kaldı.</p>
-
-            <p><strong>09:30 - Yaprak Temizleme (CK-120 + Aynı Batarya)</strong><br>
-            Yollar ve bahçe, 20 dakika. Batarya %20 kaldı.</p>
-
-            <p><strong>10:00 - Şarj + Kahve Molası</strong><br>
-            Batarya şarja takıldı, V7-20Ah yedek batarya kullanıma hazır.</p>
-
-            <p><strong>11:00 - Ağaç Budama (CK-412 + V7-20Ah)</strong><br>
-            Yüksek dallar, 30 dakika.</p>
-
-            <p>Toplam: 4 farklı makine, 2 batarya, 3 saat iş. Ara vermeden, verimli, profesyonel.</p>
-
-            <p>Bu bir ekosistem. Bir kere platforma girdiniz mi, her yeni makine eklemeniz çok daha ekonomik ve kolay oluyor.</p>
-
+            <div class="blog-para">Planladığınız işi bitirdiniz ama batarya hala dolu. Başka bir iş daha yapabilirsiniz. Aynı batarya, farklı makine.</div>
+           
             <h4>Tek Batarya Devrimi</h4>
-            <p>Ortak batarya platformu sadece bir özellik değil, bir felsefe. Comlink'in vizyonu: Basitlik, verimlilik, ekonomi.</p>
+            <div class="blog-para">Ortak batarya platformu sadece bir özellik değil, bir felsefe. Comlink'in vizyonu: Basitlik, verimlilik, ekonomi.</div>
 
-            <p><strong>Tek batarya, sonsuz görev.</strong> Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Hep aynı batarya, hep aynı verimlilik. IP66 sertifikalı güvenilir sistem. Comlink ortak platform devrimi ile tanışın.</p>
+            <div class="blog-para"><strong>Tek batarya, sonsuz görev.</strong> Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Hep aynı batarya, hep aynı verimlilik. IP66 sertifikalı güvenilir sistem. Comlink ortak platform devrimi ile tanışın.</div>
         `,
         tags: ['Ortak Batarya', 'Pratiklik', 'Verimlilik', 'IP66', 'Platform'],
         readTime: '7 dk'

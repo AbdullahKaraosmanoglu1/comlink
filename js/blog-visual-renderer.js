@@ -222,7 +222,7 @@
                     <i class="fas ${highlight.icon}"></i>
                     <div class="highlight-box-content">
                         <h5>${highlight.title}</h5>
-                        <p>${highlight.text}</p>
+                        <div class="blog-para">${highlight.text}</div>
                     </div>
                 </div>
             `;
