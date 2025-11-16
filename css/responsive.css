@@ -1861,11 +1861,12 @@
    =============================================== */
 @media (max-width: 991px) {
 
-	/* Video background'un SAĞ TARAFINI göster - Bebek dahil */
+	/* Video background - Fotoğrafın tamamı görünsün */
 	.video-bg {
-		background-position: 95% center !important;
-		/* Biraz sola: bebek + adam + mute */
-		background-size: cover !important;
+		background-position: center center !important;
+		/* Fotoğrafın tamamı kırpılmadan görünsün */
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
 	}
 
 	.video-overlay {
