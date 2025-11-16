@@ -1,0 +1,50 @@
+﻿<!-- header-start -->
+<header>
+    <div id="header-sticky" class="main-header transparent-header">
+        <div class="container-fluid header-container-p">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                                alt="Logo"></a>
+                        <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                                alt="Logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-6 d-none d-md-block">
+                    <div class="menu-area">
+                        <div class="main-menu">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="active"><a href="index.html">Ana Sayfa</a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Ana Sayfa 1</a></li>
+                                            <li class="active"><a href="index-2.html">Ana Sayfa 2</a></li>
+                                            <li><a href="index-3.html">Ana Sayfa 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="urunler.html">Ürünler</a></li>
+                                    <li><a href="oduller-sertifikalar.html">Ödüller & Sertifikalar</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="iletisim.html">İletişim</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-search">
+                            <a href="#" data-toggle="modal" data-target="#search-modal"><i
+                                    class="flaticon-magnifying-glass"></i></a>
+                        </div>
+                        <div class="header-btn">
+                            <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
+                                    src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-start-end -->

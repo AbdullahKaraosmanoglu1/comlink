@@ -4,28 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Comlink – Gizlilik Politikası</title>
-    <meta name="description" content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <title>Comlink – Teslimat Bilgisi</title>
+    <meta name="description" content="Comlink ürünlerinin teslimat süreci ve kargo bilgileri.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.comlink.com.tr/gizlilik-politikasi.html">
+    <link rel="canonical" href="https://www.comlink.com.tr/teslimat-bilgisi.html">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Comlink">
-    <meta property="og:title" content="Comlink Gizlilik Politikası">
-    <meta property="og:description"
-        content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <meta property="og:title" content="Comlink Teslimat Bilgisi">
+    <meta property="og:description" content="Comlink ürünlerinin teslimat süreci ve kargo bilgileri.">
     <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
-    <meta property="og:url" content="https://www.comlink.com.tr/gizlilik-politikasi.html">
+    <meta property="og:url" content="https://www.comlink.com.tr/teslimat-bilgisi.html">
     <meta property="og:locale" content="tr_TR">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Comlink Gizlilik Politikası">
-    <meta name="twitter:description"
-        content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <meta name="twitter:title" content="Comlink Teslimat Bilgisi">
+    <meta name="twitter:description" content="Comlink ürünlerinin teslimat süreci ve kargo bilgileri.">
     <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -138,7 +136,7 @@
                                 <ol class="breadcrumb">
                                     <li class="dots"></li>
                                     <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Gizlilik Politikası</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Teslimat Bilgisi</li>
                                     <li class="dots2"></li>
                                 </ol>
                             </nav>
@@ -155,68 +153,103 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="single-blog-post blog-classic-post">
                             <div class="blog-content blog-details-content">
-                                <p class="mb-30">Son güncellenme: <strong>2025</strong></p>
+                                <p>Comlink ürünlerinin teslimat süreci ve kargo bilgileri hakkında detaylı bilgiler
+                                    aşağıda yer almaktadır.</p>
 
-                                <p>Comlink olarak müşterilerimizin gizliliğine önem veririz. Bu gizlilik politikası,
-                                    kişisel bilgilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında sizi
-                                    bilgilendirmek amacıyla hazırlanmıştır.</p>
-
-                                <h5 class="mt-40 mb-20">1. Toplanan Bilgiler</h5>
-                                <p>Web sitemizi ziyaret ettiğinizde veya ürünlerimizi satın aldığınızda aşağıdaki
-                                    bilgileri toplayabiliriz:</p>
+                                <h5 class="mt-40 mb-20">Teslimat Süreleri</h5>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> İsim, soyisim</li>
-                                    <li><i class="fas fa-check"></i> E-posta adresi</li>
-                                    <li><i class="fas fa-check"></i> Telefon numarası</li>
-                                    <li><i class="fas fa-check"></i> Teslimat adresi</li>
-                                    <li><i class="fas fa-check"></i> İletişim formu mesajları</li>
+                                    <li><i class="fas fa-shipping-fast"></i> <strong>Stokta olan ürünler:</strong>
+                                        Siparişiniz onaylandıktan sonra 1-3 iş günü içinde kargoya verilir</li>
+                                    <li><i class="fas fa-clock"></i> <strong>Kargo teslimat süresi:</strong> Kargoya
+                                        verildikten sonra 1-3 iş günü içinde adresinize teslim edilir</li>
+                                    <li><i class="fas fa-box"></i> <strong>Stokta olmayan ürünler:</strong> Tedarik
+                                        süresi için müşteri temsilcimiz tarafından bilgilendirilirsiniz</li>
+                                    <li><i class="fas fa-calendar-alt"></i> <strong>Resmi tatiller:</strong> Resmi tatil
+                                        günlerinde kargo teslimatı yapılmaz</li>
                                 </ul>
 
-                                <h5 class="mb-20">2. Bilgilerin Kullanımı</h5>
-                                <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
+                                <div class="alert alert-info mb-40">
+                                    <i class="fas fa-info-circle"></i> <strong>Not:</strong> Teslimat süreleri tahmini
+                                    olup, kargo firmasının iş yoğunluğuna ve hava koşullarına göre değişiklik
+                                    gösterebilir.
+                                </div>
+
+                                <h5 class="mb-20">Kargo Ücreti</h5>
+                                <p>Kargo ücreti, ürünün boyutu, ağırlığı ve teslimat adresine göre değişkenlik
+                                    göstermektedir.</p>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> Siparişlerinizi işleme almak ve teslimat yapmak
+                                    <li><i class="fas fa-check"></i> Belirli tutar üzeri alışverişlerde kargo
+                                        ücretsizdir (kampanya dönemlerine göre değişir)</li>
+                                    <li><i class="fas fa-check"></i> Ağır ve hacimli ürünlerde özel kargo ücreti
+                                        uygulanabilir</li>
+                                    <li><i class="fas fa-check"></i> Kargo ücreti sepet sayfasında hesaplanır ve
+                                        gösterilir</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Kargo Firmaları</h5>
+                                <p>Comlink, güvenilir kargo firmaları ile çalışarak ürünlerinizin güvenli bir şekilde
+                                    taşınmasını sağlar. Kullandığımız başlıca kargo firmaları:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-truck"></i> Aras Kargo</li>
+                                    <li><i class="fas fa-truck"></i> Yurtiçi Kargo</li>
+                                    <li><i class="fas fa-truck"></i> MNG Kargo</li>
+                                    <li><i class="fas fa-truck"></i> PTT Kargo</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Kargo Takibi</h5>
+                                <p>Siparişiniz kargoya verildikten sonra kargo takip numarası e-posta ve SMS ile
+                                    tarafınıza iletilir. Bu numara ile kargo firmasının web sitesinden gönderinizin
+                                    durumunu takip edebilirsiniz.</p>
+
+                                <h5 class="mt-40 mb-20">Teslimat Adresi</h5>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Teslimat adresi olarak ev, iş yeri veya herhangi
+                                        bir adres belirtilebilir</li>
+                                    <li><i class="fas fa-check"></i> Adres bilgilerinin tam ve eksiksiz olması önemlidir
                                     </li>
-                                    <li><i class="fas fa-check"></i> Müşteri hizmetleri desteği sağlamak</li>
-                                    <li><i class="fas fa-check"></i> Ürün ve hizmetlerimiz hakkında bilgi vermek</li>
-                                    <li><i class="fas fa-check"></i> Web sitemizi iyileştirmek</li>
-                                    <li><i class="fas fa-check"></i> Pazarlama ve tanıtım faaliyetleri (izniniz
-                                        dahilinde)</li>
+                                    <li><i class="fas fa-check"></i> Telefon numaranızın güncel olmasına dikkat ediniz
+                                        (kargo görevlisi size ulaşabilmeli)</li>
+                                    <li><i class="fas fa-check"></i> Teslimat sırasında adresinizde bulunmanız
+                                        gerekmektedir</li>
                                 </ul>
 
-                                <h5 class="mb-20">3. Bilgilerin Korunması</h5>
-                                <p>Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri
-                                    alırız. Bilgileriniz şifreli bağlantılar üzerinden iletilir ve güvenli sunucularda
-                                    saklanır.</p>
+                                <h5 class="mt-40 mb-20">Teslim Alırken Dikkat Edilmesi Gerekenler</h5>
+                                <ol class="mb-30">
+                                    <li><strong>Kargo paketini kontrol edin:</strong> Pakette ezik, yırtık veya hasar
+                                        olup olmadığını kontrol edin</li>
+                                    <li><strong>Hasarlı paket teslim almayın:</strong> Paket hasarlı ise kargo
+                                        görevlisinden tutanak tutmasını isteyin ve paketi teslim almayın</li>
+                                    <li><strong>Açılış kontrolü:</strong> Kargo görevlisi yanında paketi açarak
+                                        içeriğini kontrol edebilirsiniz</li>
+                                    <li><strong>Fatura ve garanti belgesi:</strong> Paketin içinde fatura ve garanti
+                                        belgesinin olduğundan emin olun</li>
+                                </ol>
 
-                                <h5 class="mt-40 mb-20">4. Çerezler (Cookies)</h5>
-                                <p>Web sitemiz, kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanmaktadır.
-                                    Çerezleri tarayıcınızdan yönetebilir veya devre dışı bırakabilirsiniz.</p>
+                                <h5 class="mt-40 mb-20">Teslimat Yapılamazsa Ne Olur?</h5>
+                                <p>Eğer teslimat adresinizde bulunmadığınız için ürün size ulaştırılamazsa:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Kargo firması size SMS/telefon ile ulaşarak yeni
+                                        bir teslimat tarihi belirler</li>
+                                    <li><i class="fas fa-check"></i> Genellikle 3 deneme yapılır</li>
+                                    <li><i class="fas fa-check"></i> 3 denemede de teslim edilemeyen kargo, şubeden
+                                        alınabilir veya tarafımıza iade edilir</li>
+                                    <li><i class="fas fa-check"></i> Kargo şubesinden teslim alabilmek için kargo takip
+                                        numarası ve kimlik belgesi gereklidir</li>
+                                </ul>
 
-                                <h5 class="mt-40 mb-20">5. Üçüncü Taraf Paylaşımı</h5>
-                                <p>Kişisel bilgilerinizi üçüncü taraflarla paylaşmayız. Sadece yasal zorunluluklar veya
-                                    hizmet sağlayıcılarımız (kargo, ödeme sistemleri) ile gerekli bilgileri paylaşırız.
+                                <h5 class="mt-40 mb-20">Uluslararası Teslimat</h5>
+                                <p>Şu anda yalnızca Türkiye içi teslimat yapmaktayız. Uluslararası gönderimler için
+                                    lütfen müşteri hizmetlerimiz ile iletişime geçiniz.</p>
+
+                                <h5 class="mt-40 mb-20">Soru ve Sorunlar</h5>
+                                <p>Teslimat ile ilgili herhangi bir sorun yaşarsanız veya sorularınız için <a
+                                        href="iletisim.html">iletişim sayfamızdan</a> bizimle iletişime geçebilirsiniz.
                                 </p>
 
-                                <h5 class="mt-40 mb-20">6. Haklarınız</h5>
-                                <p>KVKK (Kişisel Verilerin Korunması Kanunu) kapsamında aşağıdaki haklara sahipsiniz:
-                                </p>
-                                <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> Kişisel verilerinizin işlenip işlenmediğini öğrenme
-                                    </li>
-                                    <li><i class="fas fa-check"></i> İşlenmişse buna ilişkin bilgi talep etme</li>
-                                    <li><i class="fas fa-check"></i> Verilerin düzeltilmesini veya silinmesini isteme
-                                    </li>
-                                    <li><i class="fas fa-check"></i> İşleme faaliyetine itiraz etme</li>
-                                </ul>
-
-                                <h5 class="mt-40 mb-20">7. İletişim</h5>
-                                <p>Gizlilik politikamız hakkında sorularınız veya talepleriniz için bizimle <a
-                                        href="iletisim.html">iletişim sayfamızdan</a> ulaşabilirsiniz.</p>
-
-                                <div class="alert alert-info mt-40">
-                                    <i class="fas fa-info-circle"></i> Bu gizlilik politikası herhangi bir zamanda
-                                    güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır.
+                                <div class="alert alert-success mt-40">
+                                    <i class="fas fa-phone-alt"></i> <strong>Müşteri Hizmetleri:</strong> Teslimat ile
+                                    ilgili tüm sorularınız için müşteri hizmetlerimiz haftanın 7 günü sizlere hizmet
+                                    vermektedir.
                                 </div>
                             </div>
                         </div>
@@ -242,10 +275,10 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>

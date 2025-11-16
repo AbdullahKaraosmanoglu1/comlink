@@ -178,7 +178,7 @@
                         <h1
                             style="color: white; font-size: 48px; font-weight: 800; line-height: 1.2; margin-bottom: 25px;">
                             Uluslararası Ödüller ve <span
-                                style="background: linear-gradient(135deg, #ffd700, #ff6b35); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Sertifikalar</span>
+                                style="background: linear-gradient(135deg, #ffd700, #ff6b35); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Sertifikalar</span>
                         </h1>
                         <p
                             style="color: rgba(255,255,255,0.8); font-size: 18px; line-height: 1.8; margin-bottom: 30px;">
@@ -529,7 +529,7 @@
                         </div>
                         <h2 style="font-size: 42px; font-weight: 800; color: white; margin-bottom: 20px;">
                             Güvenlik ve <span
-                                style="background: linear-gradient(135deg, #ffd700, #ff6b35); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Performans</span>
+                                style="background: linear-gradient(135deg, #ffd700, #ff6b35); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Performans</span>
                         </h2>
                         <p style="font-size: 18px; color: rgba(255,255,255,0.7); max-width: 700px; margin: 0 auto;">
                             Her detayda mükemmellik. Test edilmiş, onaylanmış, güvenilir.
@@ -889,10 +889,10 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>

@@ -4,28 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Comlink – Gizlilik Politikası</title>
-    <meta name="description" content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <title>Comlink – Şartlar ve Koşullar</title>
+    <meta name="description" content="Comlink kullanım şartları ve koşulları hakkında bilgiler.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.comlink.com.tr/gizlilik-politikasi.html">
+    <link rel="canonical" href="https://www.comlink.com.tr/sartlar-kosullar.html">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Comlink">
-    <meta property="og:title" content="Comlink Gizlilik Politikası">
-    <meta property="og:description"
-        content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <meta property="og:title" content="Comlink Şartlar ve Koşullar">
+    <meta property="og:description" content="Comlink kullanım şartları ve koşulları hakkında bilgiler.">
     <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
-    <meta property="og:url" content="https://www.comlink.com.tr/gizlilik-politikasi.html">
+    <meta property="og:url" content="https://www.comlink.com.tr/sartlar-kosullar.html">
     <meta property="og:locale" content="tr_TR">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Comlink Gizlilik Politikası">
-    <meta name="twitter:description"
-        content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <meta name="twitter:title" content="Comlink Şartlar ve Koşullar">
+    <meta name="twitter:description" content="Comlink kullanım şartları ve koşulları hakkında bilgiler.">
     <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -138,10 +136,11 @@
                                 <ol class="breadcrumb">
                                     <li class="dots"></li>
                                     <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Gizlilik Politikası</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Şartlar ve Koşullar</li>
                                     <li class="dots2"></li>
                                 </ol>
                             </nav>
+                            <h1>Şartlar ve Koşullar</h1>
                         </div>
                     </div>
                 </div>
@@ -157,66 +156,78 @@
                             <div class="blog-content blog-details-content">
                                 <p class="mb-30">Son güncellenme: <strong>2025</strong></p>
 
-                                <p>Comlink olarak müşterilerimizin gizliliğine önem veririz. Bu gizlilik politikası,
-                                    kişisel bilgilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında sizi
-                                    bilgilendirmek amacıyla hazırlanmıştır.</p>
+                                <p>Bu web sitesini kullanarak, aşağıdaki şart ve koşulları kabul etmiş sayılırsınız.
+                                    Lütfen bu sayfayı dikkatlice okuyunuz.</p>
 
-                                <h5 class="mt-40 mb-20">1. Toplanan Bilgiler</h5>
-                                <p>Web sitemizi ziyaret ettiğinizde veya ürünlerimizi satın aldığınızda aşağıdaki
-                                    bilgileri toplayabiliriz:</p>
+                                <h5 class="mt-40 mb-20">1. Genel Şartlar</h5>
+                                <p>Bu web sitesini kullanarak, bu web sitesindeki şartlar ve koşulları, gizlilik
+                                    politikasını ve feragatnameyi tamamen kabul ettiğinizi onaylamış olursunuz. Eğer bu
+                                    şartları kabul etmiyorsanız, lütfen bu web sitesini kullanmayınız.</p>
+
+                                <h5 class="mt-40 mb-20">2. Ürün Bilgileri</h5>
+                                <p>Web sitemizdeki tüm ürün bilgileri, teknik özellikler ve fiyatlar bilgilendirme
+                                    amaçlıdır. Comlink, önceden haber vermeksizin ürün özelliklerini, fiyatlarını ve
+                                    stok durumunu değiştirme hakkını saklı tutar.</p>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> İsim, soyisim</li>
-                                    <li><i class="fas fa-check"></i> E-posta adresi</li>
-                                    <li><i class="fas fa-check"></i> Telefon numarası</li>
-                                    <li><i class="fas fa-check"></i> Teslimat adresi</li>
-                                    <li><i class="fas fa-check"></i> İletişim formu mesajları</li>
+                                    <li><i class="fas fa-check"></i> Ürün görselleri temsilidir ve gerçek ürün ile
+                                        farklılık gösterebilir</li>
+                                    <li><i class="fas fa-check"></i> Teknik özellikler üretici tarafından
+                                        değiştirilebilir</li>
+                                    <li><i class="fas fa-check"></i> Fiyatlar ve kampanyalar önceden haber verilmeksizin
+                                        değiştirilebilir</li>
                                 </ul>
 
-                                <h5 class="mb-20">2. Bilgilerin Kullanımı</h5>
-                                <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
+                                <h5 class="mb-20">3. Sipariş ve Teslimat</h5>
+                                <p>Verdiğiniz siparişler, stok durumu ve ödeme onayı sonrasında işleme alınır. Comlink,
+                                    sipariş kabul etmeme veya iptal etme hakkını saklı tutar.</p>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> Siparişlerinizi işleme almak ve teslimat yapmak
-                                    </li>
-                                    <li><i class="fas fa-check"></i> Müşteri hizmetleri desteği sağlamak</li>
-                                    <li><i class="fas fa-check"></i> Ürün ve hizmetlerimiz hakkında bilgi vermek</li>
-                                    <li><i class="fas fa-check"></i> Web sitemizi iyileştirmek</li>
-                                    <li><i class="fas fa-check"></i> Pazarlama ve tanıtım faaliyetleri (izniniz
-                                        dahilinde)</li>
+                                    <li><i class="fas fa-check"></i> Siparişiniz onaylandıktan sonra e-posta ile
+                                        bilgilendirilirsiniz</li>
+                                    <li><i class="fas fa-check"></i> Teslimat süreleri tahmini olup değişkenlik
+                                        gösterebilir</li>
+                                    <li><i class="fas fa-check"></i> Kargo takip bilgisi e-posta ile gönderilir</li>
                                 </ul>
 
-                                <h5 class="mb-20">3. Bilgilerin Korunması</h5>
-                                <p>Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri
-                                    alırız. Bilgileriniz şifreli bağlantılar üzerinden iletilir ve güvenli sunucularda
-                                    saklanır.</p>
-
-                                <h5 class="mt-40 mb-20">4. Çerezler (Cookies)</h5>
-                                <p>Web sitemiz, kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanmaktadır.
-                                    Çerezleri tarayıcınızdan yönetebilir veya devre dışı bırakabilirsiniz.</p>
-
-                                <h5 class="mt-40 mb-20">5. Üçüncü Taraf Paylaşımı</h5>
-                                <p>Kişisel bilgilerinizi üçüncü taraflarla paylaşmayız. Sadece yasal zorunluluklar veya
-                                    hizmet sağlayıcılarımız (kargo, ödeme sistemleri) ile gerekli bilgileri paylaşırız.
-                                </p>
-
-                                <h5 class="mt-40 mb-20">6. Haklarınız</h5>
-                                <p>KVKK (Kişisel Verilerin Korunması Kanunu) kapsamında aşağıdaki haklara sahipsiniz:
-                                </p>
+                                <h5 class="mt-40 mb-20">4. Ödeme</h5>
+                                <p>Web sitemizde güvenli ödeme sistemleri kullanılmaktadır. Kredi kartı bilgileriniz
+                                    şifreli bağlantı üzerinden iletilir ve saklanmaz.</p>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> Kişisel verilerinizin işlenip işlenmediğini öğrenme
-                                    </li>
-                                    <li><i class="fas fa-check"></i> İşlenmişse buna ilişkin bilgi talep etme</li>
-                                    <li><i class="fas fa-check"></i> Verilerin düzeltilmesini veya silinmesini isteme
-                                    </li>
-                                    <li><i class="fas fa-check"></i> İşleme faaliyetine itiraz etme</li>
+                                    <li><i class="fas fa-check"></i> Kredi kartı ile online ödeme</li>
+                                    <li><i class="fas fa-check"></i> Banka havalesi/EFT</li>
+                                    <li><i class="fas fa-check"></i> Kapıda ödeme (seçili bölgelerde)</li>
                                 </ul>
 
-                                <h5 class="mt-40 mb-20">7. İletişim</h5>
-                                <p>Gizlilik politikamız hakkında sorularınız veya talepleriniz için bizimle <a
-                                        href="iletisim.html">iletişim sayfamızdan</a> ulaşabilirsiniz.</p>
+                                <h5 class="mt-40 mb-20">5. Garanti ve Servis</h5>
+                                <p>Tüm Comlink ürünleri üretici garantisi altındadır. Garanti kapsamı ve süreleri ürüne
+                                    göre değişiklik gösterebilir.</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Ürünler 2 yıl üretici garantisi kapsamındadır</li>
+                                    <li><i class="fas fa-check"></i> Garanti belgesi ve fatura mutlaka saklanmalıdır
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Yetkili servis ağımız üzerinden hizmet verilir</li>
+                                    <li><i class="fas fa-check"></i> Kullanım hatalarından kaynaklanan arızalar garanti
+                                        kapsamı dışındadır</li>
+                                </ul>
 
-                                <div class="alert alert-info mt-40">
-                                    <i class="fas fa-info-circle"></i> Bu gizlilik politikası herhangi bir zamanda
-                                    güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır.
+                                <h5 class="mt-40 mb-20">6. Fikri Mülkiyet Hakları</h5>
+                                <p>Bu web sitesindeki tüm içerik (metin, görsel, logo, tasarım vb.) Comlink'in fikri
+                                    mülkiyetidir. İzinsiz kopyalanamaz, çoğaltılamaz veya kullanılamaz.</p>
+
+                                <h5 class="mt-40 mb-20">7. Sorumluluk Reddi</h5>
+                                <p>Comlink, web sitesinin kesintisiz ve hatasız çalışacağını garanti etmez. Teknik
+                                    aksaklıklardan kaynaklanan kesintilerden sorumlu tutulamaz.</p>
+
+                                <h5 class="mt-40 mb-20">8. Uygulanacak Hukuk</h5>
+                                <p>Bu sözleşme Türkiye Cumhuriyeti kanunlarına tabidir. Taraflar arasında çıkabilecek
+                                    uyuşmazlıklarda Türkiye mahkemeleri yetkilidir.</p>
+
+                                <h5 class="mt-40 mb-20">9. İletişim</h5>
+                                <p>Şartlar ve koşullar hakkında sorularınız için <a href="iletisim.html">iletişim
+                                        sayfamızdan</a> bizimle iletişime geçebilirsiniz.</p>
+
+                                <div class="alert alert-warning mt-40">
+                                    <i class="fas fa-exclamation-triangle"></i> Bu şartlar ve koşullar önceden haber
+                                    verilmeksizin güncellenebilir. Güncel versiyonu düzenli olarak kontrol ediniz.
                                 </div>
                             </div>
                         </div>
@@ -242,10 +253,10 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>

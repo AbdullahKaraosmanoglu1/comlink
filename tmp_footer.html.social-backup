@@ -14,10 +14,10 @@
                         </div>
                         <div class="footer-social">
                             <ul>
-                                <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>

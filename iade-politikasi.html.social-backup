@@ -4,28 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Comlink – Gizlilik Politikası</title>
-    <meta name="description" content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <title>Comlink – İade Politikası</title>
+    <meta name="description" content="Comlink ürün iade ve değişim koşulları hakkında bilgiler.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.comlink.com.tr/gizlilik-politikasi.html">
+    <link rel="canonical" href="https://www.comlink.com.tr/iade-politikasi.html">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Comlink">
-    <meta property="og:title" content="Comlink Gizlilik Politikası">
-    <meta property="og:description"
-        content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <meta property="og:title" content="Comlink İade Politikası">
+    <meta property="og:description" content="Comlink ürün iade ve değişim koşulları hakkında bilgiler.">
     <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
-    <meta property="og:url" content="https://www.comlink.com.tr/gizlilik-politikasi.html">
+    <meta property="og:url" content="https://www.comlink.com.tr/iade-politikasi.html">
     <meta property="og:locale" content="tr_TR">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Comlink Gizlilik Politikası">
-    <meta name="twitter:description"
-        content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
+    <meta name="twitter:title" content="Comlink İade Politikası">
+    <meta name="twitter:description" content="Comlink ürün iade ve değişim koşulları hakkında bilgiler.">
     <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -138,7 +136,7 @@
                                 <ol class="breadcrumb">
                                     <li class="dots"></li>
                                     <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Gizlilik Politikası</li>
+                                    <li class="breadcrumb-item active" aria-current="page">İade Politikası</li>
                                     <li class="dots2"></li>
                                 </ol>
                             </nav>
@@ -155,68 +153,134 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="single-blog-post blog-classic-post">
                             <div class="blog-content blog-details-content">
-                                <p class="mb-30">Son güncellenme: <strong>2025</strong></p>
+                                <p>Comlink olarak müşteri memnuniyeti önceliğimizdir. İade ve değişim işlemlerinizi
+                                    kolaylaştırmak için aşağıdaki politikamızı uygulamaktayız.</p>
 
-                                <p>Comlink olarak müşterilerimizin gizliliğine önem veririz. Bu gizlilik politikası,
-                                    kişisel bilgilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında sizi
-                                    bilgilendirmek amacıyla hazırlanmıştır.</p>
+                                <div class="alert alert-warning mb-40 mt-30">
+                                    <i class="fas fa-exclamation-triangle"></i> <strong>Önemli:</strong> İade ve değişim
+                                    işlemleri Tüketicinin Korunması Hakkında Kanun (6502 sayılı) kapsamında
+                                    gerçekleştirilmektedir.
+                                </div>
 
-                                <h5 class="mt-40 mb-20">1. Toplanan Bilgiler</h5>
-                                <p>Web sitemizi ziyaret ettiğinizde veya ürünlerimizi satın aldığınızda aşağıdaki
-                                    bilgileri toplayabiliriz:</p>
+                                <h5 class="mb-20">İade Süresi</h5>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> İsim, soyisim</li>
-                                    <li><i class="fas fa-check"></i> E-posta adresi</li>
-                                    <li><i class="fas fa-check"></i> Telefon numarası</li>
-                                    <li><i class="fas fa-check"></i> Teslimat adresi</li>
-                                    <li><i class="fas fa-check"></i> İletişim formu mesajları</li>
-                                </ul>
-
-                                <h5 class="mb-20">2. Bilgilerin Kullanımı</h5>
-                                <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
-                                <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> Siparişlerinizi işleme almak ve teslimat yapmak
+                                    <li><i class="fas fa-calendar-check"></i> Ürünü teslim aldığınız tarihten itibaren
+                                        <strong>14 gün</strong> içerisinde cayma hakkınızı kullanabilirsiniz
                                     </li>
-                                    <li><i class="fas fa-check"></i> Müşteri hizmetleri desteği sağlamak</li>
-                                    <li><i class="fas fa-check"></i> Ürün ve hizmetlerimiz hakkında bilgi vermek</li>
-                                    <li><i class="fas fa-check"></i> Web sitemizi iyileştirmek</li>
-                                    <li><i class="fas fa-check"></i> Pazarlama ve tanıtım faaliyetleri (izniniz
-                                        dahilinde)</li>
+                                    <li><i class="fas fa-box-open"></i> İade için ürünün kullanılmamış ve orijinal
+                                        ambalajında olması gerekmektedir</li>
+                                    <li><i class="fas fa-receipt"></i> Fatura ve garanti belgesi iade ile birlikte
+                                        gönderilmelidir</li>
                                 </ul>
 
-                                <h5 class="mb-20">3. Bilgilerin Korunması</h5>
-                                <p>Kişisel bilgilerinizin güvenliğini sağlamak için gerekli teknik ve idari önlemleri
-                                    alırız. Bilgileriniz şifreli bağlantılar üzerinden iletilir ve güvenli sunucularda
-                                    saklanır.</p>
+                                <h5 class="mt-40 mb-20">İade Edilebilir Ürünler</h5>
+                                <p>Aşağıdaki koşulları sağlayan ürünler iade edilebilir:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Ürün kullanılmamış olmalıdır</li>
+                                    <li><i class="fas fa-check"></i> Orijinal ambalajı ve etiketleri hasarsız olmalıdır
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Aksesuarları ve tüm parçaları eksiksiz olmalıdır
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Fatura, garanti belgesi ve kullanım kılavuzu
+                                        olmalıdır</li>
+                                    <li><i class="fas fa-check"></i> Ürün satılabilir durumda olmalıdır</li>
+                                </ul>
 
-                                <h5 class="mt-40 mb-20">4. Çerezler (Cookies)</h5>
-                                <p>Web sitemiz, kullanıcı deneyimini iyileştirmek amacıyla çerezler kullanmaktadır.
-                                    Çerezleri tarayıcınızdan yönetebilir veya devre dışı bırakabilirsiniz.</p>
+                                <h5 class="mt-40 mb-20">İade Edilemeyen Ürünler</h5>
+                                <p>Aşağıdaki durumlarda ürün iadesi kabul edilemez:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-times"></i> Kullanılmış veya hasar görmüş ürünler</li>
+                                    <li><i class="fas fa-times"></i> Ambalajı açılmış veya bozulmuş ürünler</li>
+                                    <li><i class="fas fa-times"></i> Eksik parça veya aksesuarları olan ürünler</li>
+                                    <li><i class="fas fa-times"></i> Kişiye özel üretilmiş veya sipariş üzerine
+                                        getirtilmiş ürünler</li>
+                                    <li><i class="fas fa-times"></i> Kampanya ürünleri (kampanya koşullarına bağlı)</li>
+                                </ul>
 
-                                <h5 class="mt-40 mb-20">5. Üçüncü Taraf Paylaşımı</h5>
-                                <p>Kişisel bilgilerinizi üçüncü taraflarla paylaşmayız. Sadece yasal zorunluluklar veya
-                                    hizmet sağlayıcılarımız (kargo, ödeme sistemleri) ile gerekli bilgileri paylaşırız.
+                                <h5 class="mt-40 mb-20">İade Süreci</h5>
+                                <ol class="mb-30">
+                                    <li><strong>İade Talebi:</strong> <a href="iletisim.html">İletişim sayfamızdan</a>
+                                        veya müşteri hizmetlerimizi arayarak iade talebinde bulununuz</li>
+                                    <li><strong>İade Onayı:</strong> Talebiniz değerlendirilip size iade kodu ve kargo
+                                        adresi gönderilir</li>
+                                    <li><strong>Ürünü Paketleme:</strong> Ürünü orijinal ambalajı ile birlikte özenli
+                                        bir şekilde paketleyiniz</li>
+                                    <li><strong>Kargoya Verme:</strong> Ürünü anlaşmalı kargo firmamıza veriniz (kargo
+                                        ücreti tarafımızca karşılanır)</li>
+                                    <li><strong>İnceleme:</strong> Ürün tarafımıza ulaştıktan sonra 3-5 iş günü içinde
+                                        incelenir</li>
+                                    <li><strong>Para İadesi:</strong> İade onaylandıktan sonra 7-10 iş günü içinde ödeme
+                                        iadeniz yapılır</li>
+                                </ol>
+
+                                <h5 class="mt-40 mb-20">Para İadesi</h5>
+                                <p>İade edilen ürünlerin bedeli, ödeme yönteminize göre iade edilir:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-credit-card"></i> <strong>Kredi Kartı:</strong> Ödeme kartınıza
+                                        iade edilir (7-10 iş günü)</li>
+                                    <li><i class="fas fa-university"></i> <strong>Banka Havalesi/EFT:</strong>
+                                        Belirttiğiniz hesaba iade edilir (3-5 iş günü)</li>
+                                    <li><i class="fas fa-money-bill-wave"></i> <strong>Kapıda Ödeme:</strong> Banka
+                                        hesabınıza EFT ile iade edilir</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Ürün Değişimi</h5>
+                                <p>Eğer ürünü iade etmek yerine farklı bir ürün ile değiştirmek isterseniz:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> İade prosedürünü takip ediniz</li>
+                                    <li><i class="fas fa-check"></i> Yeni ürün için ayrı bir sipariş oluşturabilirsiniz
+                                    </li>
+                                    <li><i class="fas fa-check"></i> Fiyat farkı varsa, fark tutarı tarafınızdan
+                                        karşılanır veya size iade edilir</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Hasarlı veya Kusurlu Ürün</h5>
+                                <p>Eğer ürün hasarlı veya kusurlu olarak size ulaştıysa:</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-exclamation-circle"></i> <strong>7 gün</strong> içinde bize
+                                        bildirin</li>
+                                    <li><i class="fas fa-camera"></i> Ürünün fotoğraflarını çekiniz</li>
+                                    <li><i class="fas fa-phone-alt"></i> Müşteri hizmetlerimiz ile iletişime geçiniz
+                                    </li>
+                                    <li><i class="fas fa-sync-alt"></i> Ürün değiştirilir veya ücretsiz tamir edilir
+                                    </li>
+                                    <li><i class="fas fa-truck"></i> Kusurlu ürünün kargo ücreti tarafımızca karşılanır
+                                    </li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Garanti Kapsamı</h5>
+                                <p>Ürünlerde meydana gelen arızalar garanti kapsamında değerlendirilir. Garanti
+                                    kapsamındaki ürünler iade edilemez, yetkili servise gönderilmelidir.</p>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> Garanti süresi: 2 yıl</li>
+                                    <li><i class="fas fa-check"></i> Üretim hatalarından kaynaklanan arızalar ücretsiz
+                                        onarılır</li>
+                                    <li><i class="fas fa-check"></i> Kullanım hatasından kaynaklanan arızalar garanti
+                                        kapsamı dışındadır</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">Kargo Ücreti</h5>
+                                <ul class="mb-30">
+                                    <li><i class="fas fa-check"></i> <strong>Cayma hakkı kullanımı:</strong> İlk iade
+                                        için kargo ücreti müşteriye aittir</li>
+                                    <li><i class="fas fa-check"></i> <strong>Hasarlı/Kusurlu ürün:</strong> Kargo ücreti
+                                        tarafımızca karşılanır</li>
+                                    <li><i class="fas fa-check"></i> <strong>Yanlış ürün gönderimi:</strong> Kargo
+                                        ücreti tarafımızca karşılanır</li>
+                                </ul>
+
+                                <h5 class="mt-40 mb-20">İletişim</h5>
+                                <p>İade ve değişim işlemleri için müşteri hizmetlerimiz ile iletişime geçebilirsiniz:
                                 </p>
-
-                                <h5 class="mt-40 mb-20">6. Haklarınız</h5>
-                                <p>KVKK (Kişisel Verilerin Korunması Kanunu) kapsamında aşağıdaki haklara sahipsiniz:
-                                </p>
                                 <ul class="mb-30">
-                                    <li><i class="fas fa-check"></i> Kişisel verilerinizin işlenip işlenmediğini öğrenme
-                                    </li>
-                                    <li><i class="fas fa-check"></i> İşlenmişse buna ilişkin bilgi talep etme</li>
-                                    <li><i class="fas fa-check"></i> Verilerin düzeltilmesini veya silinmesini isteme
-                                    </li>
-                                    <li><i class="fas fa-check"></i> İşleme faaliyetine itiraz etme</li>
+                                    <li><i class="fas fa-envelope"></i> E-posta: <a
+                                            href="mailto:info@comlink.com.tr.tr">info@comlink.com.tr.tr</a></li>
+                                    <li><i class="fas fa-globe"></i> <a href="iletisim.html">İletişim Formu</a></li>
                                 </ul>
-
-                                <h5 class="mt-40 mb-20">7. İletişim</h5>
-                                <p>Gizlilik politikamız hakkında sorularınız veya talepleriniz için bizimle <a
-                                        href="iletisim.html">iletişim sayfamızdan</a> ulaşabilirsiniz.</p>
 
                                 <div class="alert alert-info mt-40">
-                                    <i class="fas fa-info-circle"></i> Bu gizlilik politikası herhangi bir zamanda
-                                    güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır.
+                                    <i class="fas fa-info-circle"></i> Bu iade politikası Tüketicinin Korunması Hakkında
+                                    Kanun (6502 sayılı) çerçevesinde hazırlanmıştır. Yasal haklarınız saklıdır.
                                 </div>
                             </div>
                         </div>
@@ -242,10 +306,10 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a></li>
-                                    <li><a href="https://www.youtube.com/@ComlinkTR" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -259,20 +323,24 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg" alt="Soluduğunuz Havayı Düşünün"></a>
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg"
+                                                    alt="Soluduğunuz Havayı Düşünün"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>5 Kasım, 2025</span>
-                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a></h5>
+                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin
+                                                    Yeşil Dönüşüm</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg" alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg"
+                                                    alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>4 Kasım, 2025</span>
-                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş: Akıllı Yatırım</a></h5>
+                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş:
+                                                    Akıllı Yatırım</a></h5>
                                         </div>
                                     </li>
                                 </ul>
