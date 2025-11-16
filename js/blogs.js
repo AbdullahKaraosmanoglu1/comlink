@@ -90,24 +90,24 @@ const blogsData = {
             comparison: {
                 title: '5 Yıllık Maliyet Karşılaştırması',
                 benzinli: [
-                    { label: 'Makine Maliyeti', value: '₺8,000', icon: 'fa-shopping-cart' },
-                    { label: 'Benzin (5 yıl)', value: '₺7,500', icon: 'fa-gas-pump' },
-                    { label: 'Yağ Değişimi', value: '₺2,500', icon: 'fa-oil-can' },
-                    { label: 'Filtre & Bujiler', value: '₺2,000', icon: 'fa-filter' },
-                    { label: 'Bakım & Tamir', value: '₺5,000', icon: 'fa-wrench' }
+                    { label: 'Makine Maliyeti', value: '₺50.000,00', icon: 'fa-shopping-cart' },
+                    { label: 'Benzin (5 yıl)', value: '₺50.000,00', icon: 'fa-gas-pump' },
+                    { label: 'Yağ Değişimi', value: '₺10,000', icon: 'fa-oil-can' },
+                    { label: 'Filtre & Bujiler', value: '₺5,000', icon: 'fa-filter' },
+                    { label: 'Bakım & Tamir', value: '₺50.000', icon: 'fa-wrench' }
                 ],
                 akulu: [
-                    { label: 'Makine + Batarya', value: '₺12,000', icon: 'fa-shopping-cart' },
-                    { label: 'Elektrik (5 yıl)', value: '₺750', icon: 'fa-plug' },
+                    { label: 'Makine + Batarya', value: '₺100.000,00 ', icon: 'fa-shopping-cart' },
+                    { label: 'Elektrik (5 yıl)', value: '₺10.000,00', icon: 'fa-plug' },
                     { label: 'Bakım', value: '₺0', icon: 'fa-times-circle' },
                     { label: 'Filtre & Bujiler', value: '₺0', icon: 'fa-times-circle' },
-                    { label: 'Tamir (5 yıl)', value: '₺500', icon: 'fa-tools' }
+                    { label: 'Tamir (5 yıl)', value: '₺0', icon: 'fa-tools' }
                 ],
-                totalBenzinli: '₺25,000',
-                totalAkulu: '₺13,250'
+                totalBenzinli: '₺165,000',
+                totalAkulu: '₺110,000'
             },
             progressBars: [
-                { label: 'Maliyet Tasarrufu', percentage: 47, color: 'green' },
+                { label: 'Maliyet Tasarrufu', percentage: 50, color: 'green' },
                 { label: 'Zaman Tasarrufu', percentage: 85, color: 'blue' },
                 { label: 'Bakım Kolaylığı', percentage: 95, color: 'purple' }
             ],
@@ -127,26 +127,27 @@ const blogsData = {
             <div style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
                 <h5>BENZİNLİ MAKİNE (5 Yıllık Maliyet)</h5>
                 <ul>
-                    <li>Makine maliyeti: 8.000 TL</li>
-                    <li>Benzin (yıllık): 1.500 TL x 5 = 7.500 TL</li>
-                    <li>Yağ değişimi: 500 TL x 5 = 2.500 TL</li>
-                    <li>Filtre ve bujiler: 400 TL x 5 = 2.000 TL</li>
-                    <li>Bakım ve tamir: 1.000 TL x 5 = 5.000 TL</li>
-                    <li><strong>TOPLAM: 25.000 TL</strong></li>
+                    <li>Makine maliyeti: 50.000 TL</li>
+                    <li>Benzin (yıllık): 5.000 TL x 5 = 25.000 TL</li>
+                    <li>Yağ değişimi: 2.000 TL x 5 = 10.000 TL</li>
+                    <li>Filtre ve bujiler: 500 TL x 5 = 2.500 TL</li>
+                    <li>Bakım ve tamir: 15.000 TL x 5 = 75.000 TL</li>
+                    <li><strong>TOPLAM: 162.500 TL</strong></li>
                 </ul>
 
                 <h5 style="margin-top: 30px;">COMLINK AKÜLÜ MAKİNE (5 Yıllık Maliyet)</h5>
                 <ul>
-                    <li>Makine + Batarya maliyeti: 12.000 TL</li>
-                    <li>Elektrik (yıllık): 150 TL x 5 = 750 TL</li>
+                    <li>Makine + Batarya maliyeti: 100.000 TL</li>
+                    <li>Elektrik (yıllık): 1000 TL x 5 = 5.000 TL</li>
                     <li>Bakım: 0 TL (bakımsız sistem)</li>
                     <li>Tamir: 500 TL (5 yılda)</li>
-                    <li><strong>TOPLAM: 13.250 TL</strong></li>
+                    <li><strong>TOPLAM: 105.500 TL</strong></li>
                 </ul>
             </div>
 
             <blockquote>
-                "5 yılda 11.750 TL tasarruf. Yani neredeyse makine kendini ödüyor. 2 yıl sonra bana teşekkür edeceksiniz."
+                "5 yılda 57.000 TL tasarruf. Yani neredeyse makine kendini ödüyor. 2 yıl sonra bana teşekkür edeceksiniz."<br>
+                • Hesaplamalar günün şartlarına göre hesaplanmıştır. Yıllık zam oranları, dolar kuru vs. hesaba katılmamıştır. Bir fikir vermesi açısından karşılaştırılmıştır.
             </blockquote>
 
             <h4>Zaman = Para</h4>
@@ -155,7 +156,7 @@ const blogsData = {
             <ul>
                 <li>Benzin istasyonuna gidip gelme: Ayda 2 saat</li>
                 <li>Motor bakımı, yağ değişimi: Yılda 4 saat</li>
-                <li>Arıza ve tamir: Yılda ortalama 6 saat</li>
+                <li>Arıza ve tamir: Yılda ortalama 12 saat</li>
                 <li>Kış depolama hazırlığı: Yılda 2 saat</li>
                 <li><strong>Yılda toplam: 40+ saat kayıp</strong></li>
             </ul>
@@ -165,12 +166,12 @@ const blogsData = {
             <h4>Ortak Batarya Platformu: Asıl Tasarruf Burada</h4>
             <div class="blog-para">Comlink'in en büyük avantajı: Tek batarya ile 9 farklı makine kullanabiliyorsunuz. Üfleyici, çim biçme, çit budama, zincirli testere... Hepsi aynı batarya.</div>
 
-            <div class="blog-para">Rakip markalarda her makine için ayrı batarya almanız gerekiyor. 3 makine = 3 batarya = 15.000+ TL ek maliyet. Comlink'te? Sadece 1-2 batarya yeterli.</div>
+            <div class="blog-para">Rakip markalarda her makine için ayrı batarya almanız gerekiyor. 3 makine = 3 batarya = 20.000+ TL ek maliyet. Comlink'te? Sadece 1 batarya yeterli. Comlink'teki 30Ah'lik bataryanın en yakın rakibi 5Ah'lik bataryalar. Yani Comlink'te 9 saat çalışabilen batarya varken en yakın rakibi 1 saat çalışabiliyor. İnanılmaz değil mi?</div>
 
             <h4>2 Yıl Sonra...</h4>
             <div class="blog-para">2 yıl sonra bu yazıyı hatırlayacaksınız. Cebinizde kalan parayı, kazandığınız zamanı, stresinizin azaldığını göreceksiniz. Ve diyeceksiniz ki: "Keşke daha önce geçseydim."</div>
 
-            <div class="blog-para"><strong>Akıllı yatırım, akıllı tasarruf.</strong> Comlink akülü bahçe makineleri ile hem paranızı hem zamanınızı kazanın. Bugün yatırım yapın, her gün tasarruf edin.</div>
+            <div class="blog-para"><strong>Akıllı yatırım, akıllı tasarruf.</strong> Comlink akülü bahçe makineleri ile hem paranızı hem zamanınızı kazanın. Bugün yatırım yapın, her gün tasarruf edin. Bu işten daha çok keyif aldığınızı tecrübe edeceksiniz.</div>
         `,
         tags: ['Ekonomi', 'Tasarruf', 'Yatırım', 'Maliyet Analizi', 'ROI'],
         readTime: '6 dk'
