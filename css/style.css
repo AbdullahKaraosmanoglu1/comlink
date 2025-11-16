@@ -4775,7 +4775,6 @@ label {
 	font-weight: 600;
 	line-height: 30px;
 	color: #463756;
-	margin-bottom: 16px;
 	padding-right: 20px;
 	min-height: 60px;
 	display: flex;
@@ -4868,7 +4867,6 @@ label {
 	font-weight: 700;
 	line-height: 30px;
 	color: #4f405e;
-	margin-bottom: 15px;
 	padding-right: 0;
 }
 
@@ -5189,7 +5187,6 @@ blockquote.blockquote-post::after {
 .blog-classic-post .blog-content h4 {
 	color: #3c3444;
 	font-size: 30px;
-	margin-bottom: 25px;
 	font-weight: 700;
 	padding-right: 0;
 	line-height: 1.4;
@@ -5307,6 +5304,14 @@ blockquote.classic-blockquote-post::after {
 
 .blog-classic-post .blog-details-content p {
 	margin-bottom: 10px;
+}
+
+/* DENEME: blog-para class'ı - p yerine div kullanımı */
+.blog-para {
+	margin-bottom: 12px;
+	line-height: 1.8;
+	font-size: 15px;
+	color: #545454;
 }
 
 .blog-details-img {

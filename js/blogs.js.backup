@@ -371,12 +371,12 @@ const blogsData = {
             ]
         },
         content: `
-            <div class="blog-para">Benzinli bahçe makineleri 1950'lerde icat edildi. 70 yıldır aynı prensiple çalışıyor: Yakıt yakma, piston hareketi, mekanik güç. 2025'te hala bu teknolojiyi kullanıyor musunuz?</div>
+            <p>Benzinli bahçe makineleri 1950'lerde icat edildi. 70 yıldır aynı prensiple çalışıyor: Yakıt yakma, piston hareketi, mekanik güç. 2025'te hala bu teknolojiyi kullanıyor musunuz?</p>
 
-            <div class="blog-para">Düşünün: Telefonunuz 70 yıl öncesinin teknolojisi mi? Arabanız? Bilgisayarınız? Hayır. Öyleyse bahçe makineniz neden olsun?</div>
+            <p>Düşünün: Telefonunuz 70 yıl öncesinin teknolojisi mi? Arabanız? Bilgisayarınız? Hayır. Öyleyse bahçe makineniz neden olsun?</p>
 
             <h4>Benzinli Motor: 1950'lerin Mirası</h4>
-            <div class="blog-para">Benzinli bahçe makinelerinin teknolojisi temelde değişmedi:</div>
+            <p>Benzinli bahçe makinelerinin teknolojisi temelde değişmedi:</p>
 
             <ul>
                 <li>Karbüratör sistemi (1950'lerden kalma)</li>
@@ -386,12 +386,12 @@ const blogsData = {
                 <li>Mekanik şanzıman (vites değiştirme, kavrama)</li>
             </ul>
 
-            <div class="blog-para">Bu sistemler eski, verimsiz ve çevreye zararlı. 2025'te bunları kullanmaya devam etmek mantıklı mı?</div>
+            <p>Bu sistemler eski, verimsiz ve çevreye zararlı. 2025'te bunları kullanmaya devam etmek mantıklı mı?</p>
 
             <h4>Comlink Teknolojisi: 2025'in Çözümü</h4>
 
             <h5>1. Fırçasız (Brushless) Motor Teknolojisi</h5>
-            <div class="blog-para">Comlink'in kalbi: Patentli fırçasız motor sistemi. Bu teknoloji nedir?</div>
+            <p>Comlink'in kalbi: Patentli fırçasız motor sistemi. Bu teknoloji nedir?</p>
 
             <ul>
                 <li><strong>Elektronik Komütasyon:</strong> Mekanik parça yok, elektronik kontrol var</li>
@@ -406,7 +406,7 @@ const blogsData = {
             </blockquote>
 
             <h5>2. Akıllı Batarya Yönetim Sistemi (BMS)</h5>
-            <div class="blog-para">Comlink bataryaları sadece enerji deposu değil, akıllı güç merkezleri:</div>
+            <p>Comlink bataryaları sadece enerji deposu değil, akıllı güç merkezleri:</p>
 
             <ul>
                 <li><strong>Sıcaklık Kontrolü:</strong> Aşırı ısınmayı engelleyen sensörler</li>
@@ -417,7 +417,7 @@ const blogsData = {
             </ul>
 
             <h5>3. Taiwan Excellence: Uluslararası Kalite</h5>
-            <div class="blog-para">Comlink makineler, Taiwan Excellence 2017 ve 2019 ödüllerine sahip. Bu ödüller tesadüf değil:</div>
+            <p>Comlink makineler, Taiwan Excellence 2017 ve 2019 ödüllerine sahip. Bu ödüller tesadüf değil:</p>
 
             <ul>
                 <li><strong>Ar-Ge Mükemmelliği:</strong> 5 yıllık araştırma ve geliştirme</li>
@@ -429,19 +429,19 @@ const blogsData = {
             <h4>Dijital Çağın Makineleri</h4>
 
             <h5>Ortak Batarya Platformu</h5>
-            <div class="blog-para">Comlink'in en büyük teknolojik yeniliği: Ortak batarya sistemi. 1 batarya = 9 farklı makine.</div>
+            <p>Comlink'in en büyük teknolojik yeniliği: Ortak batarya sistemi. 1 batarya = 9 farklı makine.</p>
 
-            <div class="blog-para">Bu sistem nasıl çalışıyor? Akıllı BMS sayesinde her makine ihtiyacı olan gücü otomatik alıyor. Üfleyici az güç çekiyor, testere daha fazla. Aynı batarya, her makineye optimize performans veriyor.</div>
+            <p>Bu sistem nasıl çalışıyor? Akıllı BMS sayesinde her makine ihtiyacı olan gücü otomatik alıyor. Üfleyici az güç çekiyor, testere daha fazla. Aynı batarya, her makineye optimize performans veriyor.</p>
 
             <h5>Anında Başlatma</h5>
-            <div class="blog-para">Benzinli makinelerde: Çekme, ısınma, ayarlama, bekleme... 5 dakika hazırlık.</div>
-            <div class="blog-para">Comlink'te: Bataryayı tak, düğmeye bas. 2 saniye. Anında tam güç.</div>
+            <p>Benzinli makinelerde: Çekme, ısınma, ayarlama, bekleme... 5 dakika hazırlık.</p>
+            <p>Comlink'te: Bataryayı tak, düğmeye bas. 2 saniye. Anında tam güç.</p>
 
             <h5>Sessiz Çalışma = İleri Teknoloji</h5>
-            <div class="blog-para">Benzinli makineler 95-105 dB gürültü yapıyor. Bu seviye işitme kaybına neden olabilir. Comlink makineler 75-85 dB. Nasıl? İleri akustik mühendislik ve titreşim izolasyonu.</div>  
+            <p>Benzinli makineler 95-105 dB gürültü yapıyor. Bu seviye işitme kaybına neden olabilir. Comlink makineler 75-85 dB. Nasıl? İleri akustik mühendislik ve titreşim izolasyonu.</p>  
            
             <h4>Teknoloji = Yatırım</h4>
-            <div class="blog-para">İleri teknoloji, başlangıçta daha pahalı görünebilir. Ama uzun vadede:</div>
+            <p>İleri teknoloji, başlangıçta daha pahalı görünebilir. Ama uzun vadede:</p>
 
             <ul>
                 <li>Daha az arıza = daha az maliyet</li>
@@ -450,7 +450,7 @@ const blogsData = {
                 <li>Daha uzun ömür = daha iyi yatırım getirisi</li>
             </ul>
 
-            <div class="blog-para"><strong>2025'te hala 1970'lerin teknolojisiyle mi çalışacaksınız?</strong> Yoksa geleceğin makinelerine geçiş yapacak mısınız? Comlink ile teknolojiye yatırım yapın. Taiwan Excellence ödüllü, patentli fırçasız motor, akıllı batarya sistemi. Gelecek, bugün elinizde.</div>
+            <p><strong>2025'te hala 1970'lerin teknolojisiyle mi çalışacaksınız?</strong> Yoksa geleceğin makinelerine geçiş yapacak mısınız? Comlink ile teknolojiye yatırım yapın. Taiwan Excellence ödüllü, patentli fırçasız motor, akıllı batarya sistemi. Gelecek, bugün elinizde.</p>
         `,
         tags: ['Teknoloji', 'İnovasyon', 'Taiwan Excellence', 'Fırçasız Motor', 'Akıllı Sistem'],
         readTime: '7 dk'
@@ -534,14 +534,14 @@ const blogsData = {
             ]
         },
         content: `
-            <div class="blog-para">Pazar sabahı saat 7. Güneş yeni doğuyor. Kuşlar cıvıldıyor. Komşularınız uyuyor. Ve siz bahçenizde çalışmak istiyorsunuz.</div>
+            <p>Pazar sabahı saat 7. Güneş yeni doğuyor. Kuşlar cıvıldıyor. Komşularınız uyuyor. Ve siz bahçenizde çalışmak istiyorsunuz.</p>
 
-            <div class="blog-para">Benzinli bir makine ile bu mümkün mü? Hayır. Ama Comlink akülü makinelerle? Evet.</div>
+            <p>Benzinli bir makine ile bu mümkün mü? Hayır. Ama Comlink akülü makinelerle? Evet.</p>
 
             <h4>Sessizlik: Unutulan Lüks</h4>
-            <div class="blog-para">Modern dünyada gürültü her yerde. Trafik, inşaat, makineler... Sürekli bir uğultu. Ev sizin huzur alanınız olmalı değil mi? Bahçeniz sizin sessiz köşeniz olmalı değil mi?</div>
+            <p>Modern dünyada gürültü her yerde. Trafik, inşaat, makineler... Sürekli bir uğultu. Ev sizin huzur alanınız olmalı değil mi? Bahçeniz sizin sessiz köşeniz olmalı değil mi?</p>
 
-            <div class="blog-para">Ama benzinli bir çim biçme makinesi açtığınızda ne oluyor? 100 dB gürültü. Bu seviye ne demek?</div>
+            <p>Ama benzinli bir çim biçme makinesi açtığınızda ne oluyor? 100 dB gürültü. Bu seviye ne demek?</p>
 
             <ul>
                 <li>Caddede klakson sesi: 90-95 dB</li>
@@ -549,10 +549,10 @@ const blogsData = {
                 <li>Rock konseri: 110-120 dB</li>
             </ul>
 
-            <div class="blog-para">Yani bahçenizi biçmek, caddenin ortasında klakürlü araba sürücüleri arasında olmak gibi.</div>
+            <p>Yani bahçenizi biçmek, caddenin ortasında klakürlü araba sürücüleri arasında olmak gibi.</p>
 
             <h4>Gürültü Kirliliği: Görünmeyen Tehlike</h4>
-            <div class="blog-para">Gürültü sadece rahatsız etmiyor. Sağlığa da zararlı:</div>
+            <p>Gürültü sadece rahatsız etmiyor. Sağlığa da zararlı:</p>
 
             <ul>
                 <li><strong>İşitme Kaybı:</strong> 85 dB üzeri uzun süre maruz kalma kalıcı hasar verir</li>
@@ -566,7 +566,7 @@ const blogsData = {
             </blockquote>
 
             <h4>Comlink Farkı: Sessiz Güç</h4>
-            <div class="blog-para">Comlink akülü makineler, 75-85 dB seviyesinde çalışıyor. Bu ne kadar sessiz?</div>
+            <p>Comlink akülü makineler, 75-85 dB seviyesinde çalışıyor. Bu ne kadar sessiz?</p>
 
             <ul>
                 <li>Normal konuşma: 60-65 dB</li>
@@ -575,10 +575,10 @@ const blogsData = {
                 <li>Trafik gürültüsü: 85 dB</li>
             </ul>
 
-            <div class="blog-para">Yani Comlink makinenizi çalıştırmak, trafikte yürümekten daha sessiz. Komşunuz 20 metre ötede, sizin çalıştığınızı duyamayabilir.</div>
+            <p>Yani Comlink makinenizi çalıştırmak, trafikte yürümekten daha sessiz. Komşunuz 20 metre ötede, sizin çalıştığınızı duyamayabilir.</p>
 
             <h4>Sabah 7'de Başlayın</h4>
-            <div class="blog-para">Sessiz çalışma sadece konfor değil, pratik avantaj da:</div>
+            <p>Sessiz çalışma sadece konfor değil, pratik avantaj da:</p>
 
             <h5>Profesyoneller İçin:</h5>
             <ul>
@@ -685,14 +685,14 @@ const blogsData = {
             ]
         },
         content: `
-            <div class="blog-para">Hayal edin: Sabah bahçenizi çim biçme makinesiyle biçiyorsunuz. Öğleden sonra aynı bataryayı çit budama makinesine takıyorsunuz. Akşam aynı bataryayı yaprak üfleyicide kullanıyorsunuz. Bir batarya, üç farklı iş, sıfır bekleme.</div>
+            <p>Hayal edin: Sabah bahçenizi çim biçme makinesiyle biçiyorsunuz. Öğleden sonra aynı bataryayı çit budama makinesine takıyorsunuz. Akşam aynı bataryayı yaprak üfleyicide kullanıyorsunuz. Bir batarya, üç farklı iş, sıfır bekleme.</p>
 
-            <div class="blog-para">Bu sadece hayal değil. Comlink ortak batarya platformunun gerçeği bu.</div>
+            <p>Bu sadece hayal değil. Comlink ortak batarya platformunun gerçeği bu.</p>
 
             <h4>Sorun: Her Makine Için Ayrı Batarya</h4>
-            <div class="blog-para">Akülü araç gereçler sektöründeki en büyük sorun: Parçalanmış batarya sistemleri.</div>
+            <p>Akülü araç gereçler sektöründeki en büyük sorun: Parçalanmış batarya sistemleri.</p>
 
-            <div class="blog-para">Diğer markalarda durum şöyle:</div>
+            <p>Diğer markalarda durum şöyle:</p>
             <ul>
                 <li>Çim biçme makinesi: 40V batarya</li>
                 <li>Çit budama: 18V batarya</li>
@@ -700,16 +700,16 @@ const blogsData = {
                 <li>Üfleyici: 20V batarya</li>
             </ul>
 
-            <div class="blog-para">3 makine alıyorsunuz, 3 farklı batarya satın alıyorsunuz. 3 farklı şarj aleti. 3 farklı sistem. Toplam maliyet? 20.000+ TL.</div>
+            <p>3 makine alıyorsunuz, 3 farklı batarya satın alıyorsunuz. 3 farklı şarj aleti. 3 farklı sistem. Toplam maliyet? 20.000+ TL.</p>
 
-            <div class="blog-para">Ama asıl sorun maliyet değil. Pratiklik. Hangi batarya hangi makinede? Şarjlı olan var mı? Hangi şarj aleti nerede?</div>
+            <p>Ama asıl sorun maliyet değil. Pratiklik. Hangi batarya hangi makinede? Şarjlı olan var mı? Hangi şarj aleti nerede?</p>
 
             <blockquote>
                 "Ortalama bir kullanıcının 5 farklı batarya sistemi var. Çoğu zaman hangi bataryanın hangi makineye ait olduğunu karıştırıyor."
             </blockquote>
 
             <h4>Comlink Çözümü: Tek Platform, Tüm Makineler</h4>
-            <div class="blog-para">Comlink'in vizyonu basit ama devrimci: Bir batarya sistemi, dokuz farklı makine.</div>
+            <p>Comlink'in vizyonu basit ama devrimci: Bir batarya sistemi, dokuz farklı makine.</p>
 
             <h5>Comlink Ortak Batarya Ailesi:</h5>
             <ul>
@@ -723,12 +723,12 @@ const blogsData = {
                 <li>CK-600 Çapa Makinesi</li>
             </ul>
 
-            <div class="blog-para"><strong>Hepsi aynı batarya ile çalışıyor: 56V Li-ion platform.</strong></div>
+            <p><strong>Hepsi aynı batarya ile çalışıyor: 56V Li-ion platform.</strong></p>
 
             <h4>Akıllı Güç Yönetimi</h4>
-            <div class="blog-para">Peki nasıl oluyor da bir batarya tüm bu farklı makinelerde çalışabiliyor?</div>
+            <p>Peki nasıl oluyor da bir batarya tüm bu farklı makinelerde çalışabiliyor?</p>
 
-            <div class="blog-para">Cevap: Akıllı Batarya Yönetim Sistemi (BMS - Battery Management System)</div>
+            <p>Cevap: Akıllı Batarya Yönetim Sistemi (BMS - Battery Management System)</p>
 
             <ul>
                 <li><strong>Otomatik Güç Ayarı:</strong> Her makine ihtiyacı kadar güç alıyor</li>
@@ -737,10 +737,10 @@ const blogsData = {
                 <li><strong>Sıcaklık Yönetimi:</strong> Optimal sıcaklıkta çalışma</li>
             </ul>
 
-            <div class="blog-para">Yani üfleyici az güç çekiyor, testere daha fazla. Ama aynı batarya, ikisine de optimize performans veriyor.</div>
+            <p>Yani üfleyici az güç çekiyor, testere daha fazla. Ama aynı batarya, ikisine de optimize performans veriyor.</p>
 
             <h4>Batarya Seçenekleri</h4>
-            <div class="blog-para">Comlink üç farklı kapasitede batarya sunuyor:</div>
+            <p>Comlink üç farklı kapasitede batarya sunuyor:</p>
 
             <div style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px;">
                 <h5>V7-20Ah: Standart Kullanım</h5>
@@ -769,33 +769,55 @@ const blogsData = {
             </div>
 
             <h4>IP66 Sertifikası: Her Koşulda Güvenli</h4>
-            <div class="blog-para">Comlink bataryaları IP66 sertifikalı. Bu ne demek?</div>
+            <p>Comlink bataryaları IP66 sertifikalı. Bu ne demek?</p>
 
             <ul>
                 <li><strong>IP6X - Toz Geçirmez:</strong> Hiçbir toz parçacığı giremiyor</li>
                 <li><strong>IPX6 - Su Geçirmez:</strong> Yüksek basınçlı su jetine dayanıklı</li>
             </ul>
 
-            <div class="blog-para">Yani yağmurda çalışabilirsiniz, ıslak çimde çalışabilirsiniz, tozlu ortamda çalışabilirsiniz. Batarya her koşulda güvende.</div>
+            <p>Yani yağmurda çalışabilirsiniz, ıslak çimde çalışabilirsiniz, tozlu ortamda çalışabilirsiniz. Batarya her koşulda güvende.</p>
 
             <h4>Pratik Avantajlar</h4>
 
             <h5>1. Maliyet Tasarrufu</h5>
-            <div class="blog-para">9 makine almak istiyorsunuz. Diğer markalarda: 9 ayrı batarya = 45.000+ TL. Comlink'te: 2-3 batarya yeterli = 12.000 TL. %70 tasarruf.</div>
+            <p>9 makine almak istiyorsunuz. Diğer markalarda: 9 ayrı batarya = 45.000+ TL. Comlink'te: 2-3 batarya yeterli = 12.000 TL. %70 tasarruf.</p>
 
             <h5>2. Depolama Kolaylığı</h5>
-            <div class="blog-para">9 farklı batarya ve şarj aleti yerine 2-3 batarya ve 1 şarj aleti. Garajınızda veya deponuzda %80 daha az yer kaplıyor.</div>
+            <p>9 farklı batarya ve şarj aleti yerine 2-3 batarya ve 1 şarj aleti. Garajınızda veya deponuzda %80 daha az yer kaplıyor.</p>
 
             <h5>3. Zaman Kazancı</h5>
-            <div class="blog-para">Bir iş bittiğinde bataryayı çıkar, diğer makineye tak. 10 saniye. Başka bir batarya aramaya gerek yok.</div>
+            <p>Bir iş bittiğinde bataryayı çıkar, diğer makineye tak. 10 saniye. Başka bir batarya aramaya gerek yok.</p>
 
             <h5>4. Esneklik</h5>
-            <div class="blog-para">Planladığınız işi bitirdiniz ama batarya hala dolu. Başka bir iş daha yapabilirsiniz. Aynı batarya, farklı makine.</div>
-           
-            <h4>Tek Batarya Devrimi</h4>
-            <div class="blog-para">Ortak batarya platformu sadece bir özellik değil, bir felsefe. Comlink'in vizyonu: Basitlik, verimlilik, ekonomi.</div>
+            <p>Planladığınız işi bitirdiniz ama batarya hala dolu. Başka bir iş daha yapabilirsiniz. Aynı batarya, farklı makine.</p>
 
-            <div class="blog-para"><strong>Tek batarya, sonsuz görev.</strong> Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Hep aynı batarya, hep aynı verimlilik. IP66 sertifikalı güvenilir sistem. Comlink ortak platform devrimi ile tanışın.</div>
+            <h4>Gerçek Kullanım Senaryosu</h4>
+            <p>Ahmet Bey'in tipik bir Cumartesi günü:</p>
+
+            <p><strong>08:00 - Çim Biçme (CK-230D + V7-30Ah)</strong><br>
+            400m² bahçe, 45 dakika. Batarya %60 kaldı.</p>
+
+            <p><strong>09:00 - Çit Budama (CK-320 + Aynı Batarya)</strong><br>
+            Çit kenarları, 25 dakika. Batarya %40 kaldı.</p>
+
+            <p><strong>09:30 - Yaprak Temizleme (CK-120 + Aynı Batarya)</strong><br>
+            Yollar ve bahçe, 20 dakika. Batarya %20 kaldı.</p>
+
+            <p><strong>10:00 - Şarj + Kahve Molası</strong><br>
+            Batarya şarja takıldı, V7-20Ah yedek batarya kullanıma hazır.</p>
+
+            <p><strong>11:00 - Ağaç Budama (CK-412 + V7-20Ah)</strong><br>
+            Yüksek dallar, 30 dakika.</p>
+
+            <p>Toplam: 4 farklı makine, 2 batarya, 3 saat iş. Ara vermeden, verimli, profesyonel.</p>
+
+            <p>Bu bir ekosistem. Bir kere platforma girdiniz mi, her yeni makine eklemeniz çok daha ekonomik ve kolay oluyor.</p>
+
+            <h4>Tek Batarya Devrimi</h4>
+            <p>Ortak batarya platformu sadece bir özellik değil, bir felsefe. Comlink'in vizyonu: Basitlik, verimlilik, ekonomi.</p>
+
+            <p><strong>Tek batarya, sonsuz görev.</strong> Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Hep aynı batarya, hep aynı verimlilik. IP66 sertifikalı güvenilir sistem. Comlink ortak platform devrimi ile tanışın.</p>
         `,
         tags: ['Ortak Batarya', 'Pratiklik', 'Verimlilik', 'IP66', 'Platform'],
         readTime: '7 dk'
