@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CK-120 Profesyonel Yaprak Üfleyici - Comlink</title>
+    <title>Ürün Detayı - Comlink Akülü Bahçe Makineleri</title>
     <meta name="description"
-        content="CK-120 Profesyonel Yaprak Üfleyici: Güçlü fırçasız motor teknolojisi ile sessiz ve etkili çalışma. Comlink akülü bahçe makineleri.">
+        content="Comlink profesyonel akülü bahçe makineleri. Fırçasız motor teknolojisi, ortak batarya platformu, sıfır emisyon. Taiwan Excellence ödüllü ürünler.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Canonical URL -->
@@ -504,20 +504,24 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg" alt="Soluduğunuz Havayı Düşünün"></a>
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg"
+                                                    alt="Soluduğunuz Havayı Düşünün"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>5 Kasım, 2025</span>
-                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin Yeşil Dönüşüm</a></h5>
+                                            <h5><a href="#" data-blog-id="cevre-donusum">Çocuklarınızın Geleceği İçin
+                                                    Yeşil Dönüşüm</a></h5>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg" alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg"
+                                                    alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>4 Kasım, 2025</span>
-                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş: Akıllı Yatırım</a></h5>
+                                            <h5><a href="#" data-blog-id="akilli-yatirim">2 Yılda %300 Geri Dönüş:
+                                                    Akıllı Yatırım</a></h5>
                                         </div>
                                     </li>
                                 </ul>
@@ -777,11 +781,8 @@
                 return;
             }
 
-            // Sayfa başlığını güncelle
-            document.title = product.name + ' - Comlink';
-
-            // Meta description güncelle
-            $('meta[name="description"]').attr('content', product.shortDesc);
+            // NOT: Title ve meta güncelleme products.js'de yapılıyor (updateProductPageMeta fonksiyonu)
+            // Bu satırlar kaldırıldı çünkü duplicate idi ve conflict yapıyordu
 
             // Breadcrumb güncelle
             $('.breadcrumb-item.active').text(product.model);

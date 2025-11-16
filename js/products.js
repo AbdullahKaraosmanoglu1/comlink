@@ -1887,3 +1887,45 @@ function getCategories() {
 function getTotalProductCount() {
     return getAllProducts().length;
 }
+
+// Ürün detay sayfası için dinamik meta tag güncelleme
+function updateProductPageMeta() {
+    // URL parametresinden ürün ID'sini al
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    if (!productId) return;
+
+    // Ürünü bul
+    const product = productsData[productId];
+
+    if (!product) return;
+
+    // Title güncelle
+    document.title = `${product.name} - Comlink`;
+
+    // Meta description güncelle
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute('content', product.shortDesc || product.description);
+    }
+
+    // Canonical URL güncelle
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+        canonical.setAttribute('href', `https://www.comlink.com.tr/urun-detay?id=${productId}`);
+    }
+}
+
+// Sayfa yüklendiğinde çalıştır (urun-detay sayfasında)
+if (window.location.pathname.includes('urun-detay')) {
+    // Tüm kaynaklar yüklendikten sonra çalıştır (en garantili yöntem)
+    window.addEventListener('load', function() {
+        updateProductPageMeta();
+    });
+
+    // DOMContentLoaded'da da çalıştır (daha hızlı için)
+    document.addEventListener('DOMContentLoaded', function() {
+        updateProductPageMeta();
+    });
+}

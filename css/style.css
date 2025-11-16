@@ -243,7 +243,10 @@ label {
 
 /* button style */
 .btn {
+	-webkit-user-select: none;
 	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 	background: #ff4612 none repeat scroll 0 0;
 	border: medium none;
 	border-radius: 0;
