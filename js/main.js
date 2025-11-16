@@ -475,5 +475,126 @@
     wow.init();
   }
 
+  // ===================================================
+  // Product Tooltip - Mouse Following Premium System
+  // ===================================================
+
+  // Icon mapping for usage areas
+  const iconMapping = {
+    'leaf': 'fas fa-leaf',
+    'tree': 'fas fa-tree',
+    'building': 'fas fa-building',
+    'road': 'fas fa-road',
+    'warehouse': 'fas fa-warehouse',
+    'home': 'fas fa-home',
+    'city': 'fas fa-city',
+    'industry': 'fas fa-industry',
+    'mountain': 'fas fa-mountain',
+    'tractor': 'fas fa-tractor',
+    'seedling': 'fas fa-seedling',
+    'spa': 'fas fa-spa',
+    'store': 'fas fa-store'
+  };
+
+  // Tooltip elementi
+  const tooltip = $('#product-tooltip');
+  const tooltipContent = $('.tooltip-content');
+
+  let currentProductId = null;
+  let isTooltipActive = false;
+
+  // Mouse tracking
+  let mouseX = 0;
+  let mouseY = 0;
+
+  $(document).on('mousemove', function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    if (isTooltipActive) {
+      updateTooltipPosition();
+    }
+  });
+
+  function updateTooltipPosition() {
+    tooltip.css({
+      left: mouseX + 'px',
+      top: mouseY + 'px'
+    });
+  }
+
+  // Product hover events
+  $(document).on('mouseenter', '.single-product-item[data-product-id]', function() {
+    const productId = $(this).data('product-id');
+
+    if (currentProductId === productId && isTooltipActive) return;
+
+    currentProductId = productId;
+    showTooltip(productId);
+  });
+
+  $(document).on('mouseleave', '.single-product-item[data-product-id]', function() {
+    hideTooltip();
+  });
+
+  function showTooltip(productId) {
+    // productsData global değişkeninden ürün bilgisini al
+    if (typeof productsData === 'undefined') {
+      console.warn('productsData not found');
+      return;
+    }
+
+    // Product ID'yi küçük harfe çevir (productsData'da key'ler lowercase)
+    const productKey = productId.toLowerCase();
+    const product = productsData[productKey];
+
+    if (!product || !product.usageAreas || product.usageAreas.length === 0) {
+      console.warn('Product not found or no usage areas:', productId);
+      return;
+    }
+
+    // Tooltip içeriğini oluştur
+    let htmlContent = '';
+
+    product.usageAreas.forEach(function(area, index) {
+      const iconClass = iconMapping[area.icon] || 'fas fa-check-circle';
+      const delay = index * 50; // Stagger animation
+
+      htmlContent += `
+        <div class="tooltip-usage-item" style="animation-delay: ${delay}ms;">
+          <div class="tooltip-usage-icon">
+            <i class="${iconClass}"></i>
+          </div>
+          <div class="tooltip-usage-text">${area.text}</div>
+        </div>
+      `;
+    });
+
+    tooltipContent.html(htmlContent);
+
+    // Tooltip'i göster
+    isTooltipActive = true;
+    updateTooltipPosition();
+    tooltip.addClass('active');
+  }
+
+  function hideTooltip() {
+    isTooltipActive = false;
+    currentProductId = null;
+    tooltip.removeClass('active');
+
+    // İçeriği temizle (animasyon bittikten sonra)
+    setTimeout(function() {
+      if (!isTooltipActive) {
+        tooltipContent.html('');
+      }
+    }, 350);
+  }
+
+  // Slider hareket ettiğinde tooltip'i gizle
+  $('.product-slider-active').on('beforeChange', function() {
+    hideTooltip();
+  });
+
 
 })(jQuery);
