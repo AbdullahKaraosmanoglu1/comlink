@@ -493,7 +493,24 @@
     'tractor': 'fas fa-tractor',
     'seedling': 'fas fa-seedling',
     'spa': 'fas fa-spa',
-    'store': 'fas fa-store'
+    'store': 'fas fa-store',
+    'wood': 'fas fa-tree',
+    'forest': 'fas fa-tree',
+    'apple': 'fas fa-apple-alt',
+    'apple-alt': 'fas fa-apple-alt',
+    'futbol': 'fas fa-futbol',
+    'park': 'fas fa-tree',
+    'cut': 'fas fa-cut',
+    'shield': 'fas fa-shield-alt',
+    'battery': 'fas fa-battery-full',
+    'check': 'fas fa-check-circle',
+    'tools': 'fas fa-tools',
+    'plug': 'fas fa-plug',
+    'backpack': 'fas fa-shopping-bag',
+    'camping': 'fas fa-campground',
+    'coins': 'fas fa-coins',
+    'shield-virus': 'fas fa-shield-alt',
+    'garden': 'fas fa-leaf'
   };
 
   // Tooltip elementi

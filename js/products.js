@@ -228,8 +228,8 @@ const productsData = {
         usageAreas: [
             { icon: 'tree', text: 'Ağaç kesimi' },
             { icon: 'cut', text: 'Dal budama' },
-            { icon: 'wood', text: 'Odun hazırlama' },
-            { icon: 'forest', text: 'Orman bakımı' },
+            { icon: 'tree', text: 'Odun hazırlama' },
+            { icon: 'tree', text: 'Orman bakımı' },
             { icon: 'home', text: 'Bahçe bakımı' },
             { icon: 'building', text: 'Belediye kullanımı' }
         ],
@@ -326,7 +326,7 @@ const productsData = {
             { icon: 'tree', text: 'Park bakımı' },
             { icon: 'building', text: 'Küçük yeşil alanlar' },
             { icon: 'industry', text: 'Bahçe bakımı' },
-            { icon: 'garden', text: 'Peyzaj düzenleme' }
+            { icon: 'tree', text: 'Peyzaj düzenleme' }
         ],
         images: {
             main: 'img/products/ck-230d-cim-bicme-makinesi.png',
@@ -418,10 +418,10 @@ const productsData = {
         usageAreas: [
             { icon: 'leaf', text: 'Çit budama' },
             { icon: 'tree', text: 'Çay bahçeleri' },
-            { icon: 'apple', text: 'Meyve ağaçları' },
+            { icon: 'tree', text: 'Meyve ağaçları' },
             { icon: 'home', text: 'Konut bahçeleri' },
             { icon: 'building', text: 'Belediye peyzaj' },
-            { icon: 'park', text: 'Park bakımı' }
+            { icon: 'tree', text: 'Park bakımı' }
         ],
         images: {
             main: 'img/products/ck-320-elde-tasinabilir-cift-tarafli-cit-budama-makinesi.png',
@@ -515,7 +515,7 @@ const productsData = {
         usageAreas: [
             { icon: 'tree', text: 'Ağaç dikimi' },
             { icon: 'industry', text: 'Direk dikimi' },
-            { icon: 'fence', text: 'Çit kurulumu' },
+            { icon: 'tools', text: 'Çit kurulumu' },
             { icon: 'seedling', text: 'Tarım işleri' },
             { icon: 'building', text: 'İnşaat hazırlık' },
             { icon: 'tools', text: 'Peyzaj düzenleme' }
@@ -612,7 +612,7 @@ const productsData = {
             { icon: 'leaf', text: 'Yeşil alan bakımı' },
             { icon: 'tree', text: 'Tarımsal işler' },
             { icon: 'industry', text: 'Profesyonel kullanım' },
-            { icon: 'garden', text: 'Hobi bahçeleri' }
+            { icon: 'tree', text: 'Hobi bahçeleri' }
         ],
         images: {
             main: 'img/products/ck-600-akulu-capa-makinesi.png',
@@ -705,10 +705,10 @@ const productsData = {
         usageAreas: [
             { icon: 'leaf', text: 'Çit budama' },
             { icon: 'tree', text: 'Çay bahçeleri' },
-            { icon: 'apple', text: 'Meyve ağaçları' },
+            { icon: 'tree', text: 'Meyve ağaçları' },
             { icon: 'home', text: 'Konut bahçeleri' },
             { icon: 'building', text: 'Belediye peyzaj' },
-            { icon: 'park', text: 'Park bakımı' }
+            { icon: 'tree', text: 'Park bakımı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/CK-300V2/CK-300 ELDE TAŞINABİLİR TEK KENARLI & SEPETLİ ÇİT VE ÇAY BUDAMA MAKİNESİ.png',
@@ -753,10 +753,10 @@ const productsData = {
         usageAreas: [
             { icon: 'tree', text: 'Yüksek dal budama' },
             { icon: 'apple-alt', text: 'Meyve bahçeleri' },
-            { icon: 'leaf', text: 'Park alanları' },
+            { icon: 'tree', text: 'Park alanları' },
             { icon: 'building', text: 'Belediye bakımı' },
             { icon: 'home', text: 'Konut bahçeleri' },
-            { icon: 'forest', text: 'Orman bakımı' }
+            { icon: 'tree', text: 'Orman bakımı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/CK-412D/CK-412 PROFESYONEL YÜKSEK DAL BUDAMA MAKİNESİ.png',
@@ -800,13 +800,13 @@ const productsData = {
             { icon: 'tree', text: 'Çalı kesimi' },
             { icon: 'leaf', text: 'Dal budama' },
             { icon: 'home', text: 'Bahçe bakımı' },
-            { icon: 'building', text: 'Peyzaj düzenleme' },
-            { icon: 'park', text: 'Park alanları' },
-            { icon: 'forest', text: 'Ağaçlandırma bakımı' }
+            { icon: 'tree', text: 'Peyzaj düzenleme' },
+            { icon: 'tree', text: 'Park alanları' },
+            { icon: 'tree', text: 'Ağaçlandırma bakımı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png',
-            gallery: ['img/products/ÜRÜNLER/CK-460D/Screenshot_7 Topaz Gigapixel 2x Ölçek.jpg', 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png']
+            gallery: ['img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png', 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png']
         },
         tags: ['Testere Kafası', 'Akülü', 'Profesyonel', 'Modüler'],
         whyChoose: 'CK-460D dairesel testere kafası, modüler yapısı sayesinde çim biçme makinesinin üst kısmıyla kullanılabilen çok yönlü bir üründür. 8 cm çapa kadar çalı kesebilme kapasitesi ile profesyonel performans sunar.',
@@ -848,8 +848,8 @@ const productsData = {
             { icon: 'cut', text: 'Çit budama' },
             { icon: 'leaf', text: 'Çim biçme' },
             { icon: 'tools', text: 'Hafif işler' },
-            { icon: 'battery', text: 'Yedek batarya' },
-            { icon: 'home', text: 'Ev bahçeleri' }
+            { icon: 'home', text: 'Ev bahçeleri' },
+            { icon: 'tools', text: 'Yedek batarya' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.jpg',
@@ -942,7 +942,7 @@ const productsData = {
             { icon: 'battery-full', text: 'Maksimum süre' },
             { icon: 'award', text: 'Profesyonel' },
             { icon: 'tools', text: 'Tüm makineler' },
-            { icon: 'shield', text: 'Dayanıklı' }
+            { icon: 'check', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/30.0Ah/30.0Ah.jpg',
@@ -985,10 +985,10 @@ const productsData = {
         usageAreas: [
             { icon: 'leaf', text: 'Orta işler' },
             { icon: 'tools', text: 'Çok yönlü' },
-            { icon: 'battery', text: 'Dengeli kapasite' },
+            { icon: 'check', text: 'Dengeli kapasite' },
             { icon: 'home', text: 'Ev ve profesyonel' },
             { icon: 'award', text: 'Kaliteli' },
-            { icon: 'shield', text: 'Güvenli' }
+            { icon: 'user-shield', text: 'Güvenli' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/V8_15/V8_15.png',
@@ -1033,9 +1033,9 @@ const productsData = {
             { icon: 'plug', text: 'Batarya şarjı' },
             { icon: 'home', text: 'Ev kullanımı' },
             { icon: 'tools', text: 'Atölye' },
-            { icon: 'shield', text: 'Güvenli' },
+            { icon: 'user-shield', text: 'Güvenli' },
             { icon: 'award', text: 'Sertifikalı' },
-            { icon: 'battery', text: 'V6/V7 uyumlu' }
+            { icon: 'plug', text: 'V6/V7 uyumlu' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.png',
@@ -1077,8 +1077,8 @@ const productsData = {
         usageAreas: [
             { icon: 'bolt', text: 'Hızlı şarj' },
             { icon: 'industry', text: 'Profesyonel' },
-            { icon: 'display', text: 'Dijital ekran' },
-            { icon: 'shield', text: 'Güvenli' },
+            { icon: 'tools', text: 'Dijital ekran' },
+            { icon: 'user-shield', text: 'Güvenli' },
             { icon: 'battery-full', text: 'Tüm bataryalar' },
             { icon: 'award', text: 'Sertifikalı' }
         ],
@@ -1124,7 +1124,7 @@ const productsData = {
             { icon: 'industry', text: 'Endüstriyel' },
             { icon: 'tools', text: 'Profesyonel' },
             { icon: 'battery-full', text: 'Yüksek kapasite' },
-            { icon: 'shield', text: 'Güvenli' },
+            { icon: 'user-shield', text: 'Güvenli' },
             { icon: 'award', text: 'Sertifikalı' }
         ],
         images: {
@@ -1167,10 +1167,10 @@ const productsData = {
         usageAreas: [
             { icon: 'plug', text: 'Güç aktarımı' },
             { icon: 'tools', text: 'Tüm makineler' },
-            { icon: 'battery', text: 'Batarya bağlantısı' },
-            { icon: 'shield', text: 'Güvenli' },
+            { icon: 'plug', text: 'Batarya bağlantısı' },
+            { icon: 'user-shield', text: 'Güvenli' },
             { icon: 'award', text: 'Profesyonel' },
-            { icon: 'industry', text: 'Dayanıklı' }
+            { icon: 'check', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.png',
@@ -1212,7 +1212,7 @@ const productsData = {
             { icon: 'bolt', text: 'Yüksek güç' },
             { icon: 'industry', text: 'Ağır işler' },
             { icon: 'battery-full', text: 'Yüksek kapasite' },
-            { icon: 'shield', text: 'Güvenli' },
+            { icon: 'user-shield', text: 'Güvenli' },
             { icon: 'tools', text: 'Profesyonel' },
             { icon: 'award', text: 'Kaliteli' }
         ],
@@ -1254,7 +1254,7 @@ const productsData = {
         },
         usageAreas: [
             { icon: 'arrows-alt', text: 'Hareket özgürlüğü' },
-            { icon: 'battery', text: 'Sırt tipi batarya' },
+            { icon: 'bolt', text: 'Sırt tipi batarya' },
             { icon: 'tools', text: 'Tüm makineler' },
             { icon: 'bolt', text: 'Yüksek güç' },
             { icon: 'industry', text: 'Profesyonel' },
@@ -1303,7 +1303,7 @@ const productsData = {
             { icon: 'camera', text: 'Kamera ekipmanları' },
             { icon: 'lightbulb', text: 'Aydınlatma' },
             { icon: 'tools', text: 'Küçük aletler' },
-            { icon: 'camping', text: 'Kamp kullanımı' }
+            { icon: 'lightbulb', text: 'Kamp kullanımı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.png',
@@ -1348,11 +1348,11 @@ const productsData = {
             { icon: 'industry', text: 'Profesyonel kullanım' },
             { icon: 'lightbulb', text: 'Aydınlatma sistemleri' },
             { icon: 'tv', text: 'Ev elektroniği' },
-            { icon: 'camping', text: 'Outdoor kullanım' }
+            { icon: 'tools', text: 'Outdoor kullanım' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png',
-            gallery: ['img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png']
+            gallery: ['img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png', 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png']
         },
         tags: ['Güç Dönüştürücü', 'Inverter', '600W', 'Profesyonel', 'Saf Sinüs'],
         whyChoose: 'INV-600S güç dönüştürücü, 600W yüksek güç kapasitesi ile elektrikli el aletleri ve güçlü elektronik cihazları çalıştırabilir. Profesyonel kullanım için idealdir.',
@@ -1391,11 +1391,11 @@ const productsData = {
             { icon: 'cog', text: 'CK-230D' },
             { icon: 'sync', text: 'Yedek parça' },
             { icon: 'award', text: 'Orijinal' },
-            { icon: 'shield', text: 'Dayanıklı' }
+            { icon: 'check', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Alüminyum Bobin/11.png',
-            gallery: ['img/products/ÜRÜNLER/Alüminyum Bobin/11.png', 'img/products/ÜRÜNLER/Alüminyum Bobin/111.jpg']
+            gallery: ['img/products/ÜRÜNLER/Alüminyum Bobin/11.png', 'img/products/ÜRÜNLER/Alüminyum Bobin/11.png']
         },
         tags: ['Aksesuar', 'Bobin', 'Alüminyum', 'Yedek Parça', 'Orijinal'],
         whyChoose: 'Alüminyum bobin, CK-210 ve CK-230D ot biçme makineleri için Comlink orijinal yedek parçasıdır. Dayanıklı alüminyum yapısı ile uzun ömürlü kullanım sağlar.',
@@ -1431,13 +1431,13 @@ const productsData = {
             { icon: 'leaf', text: 'Ot biçme' },
             { icon: 'tools', text: 'Tüm makineler' },
             { icon: 'sync', text: 'Yedek parça' },
-            { icon: 'dollar', text: 'Ekonomik' },
+            { icon: 'coins', text: 'Ekonomik' },
             { icon: 'award', text: 'Orijinal' },
             { icon: 'home', text: 'Kolay kullanım' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Standart Bobin/10.png',
-            gallery: ['img/products/ÜRÜNLER/Standart Bobin/1.jpg', 'img/products/ÜRÜNLER/Standart Bobin/10.png']
+            gallery: ['img/products/ÜRÜNLER/Standart Bobin/10.png', 'img/products/ÜRÜNLER/Standart Bobin/10.png']
         },
         tags: ['Aksesuar', 'Bobin', 'Standart', 'Yedek Parça', 'Ekonomik'],
         whyChoose: 'Standart bobin, tüm Comlink ot biçme makineleri için uyumlu evrensel bobindir. Ekonomik fiyatı ile tercih edilen yedek parçadır.',
@@ -1477,11 +1477,11 @@ const productsData = {
             { icon: 'tools', text: 'CK-460D' },
             { icon: 'sync', text: 'Yedek bıçak' },
             { icon: 'award', text: 'Orijinal' },
-            { icon: 'shield', text: 'Dayanıklı' }
+            { icon: 'check', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png',
-            gallery: ['img/products/ÜRÜNLER/Dairesel Testere Bıçağı/1.jpg', 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png']
+            gallery: ['img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png', 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png']
         },
         tags: ['Aksesuar', 'Bıçak', 'Dairesel Testere', 'Yedek Parça', '230mm'],
         whyChoose: 'Dairesel testere bıçağı, CK-460D için Comlink orijinal yedek parçasıdır. 230mm çapında sertleştirilmiş çelik bıçak, keskin ve uzun ömürlü kesim sağlar.',
@@ -1520,7 +1520,7 @@ const productsData = {
             { icon: 'bolt', text: 'Hızlı kesim' },
             { icon: 'tools', text: 'Comlink makineler' },
             { icon: 'award', text: 'Orijinal' },
-            { icon: 'shield', text: 'Dayanıklı' }
+            { icon: 'check', text: 'Dayanıklı' }
         ],
         images: {
             main: 'img/products/ÜRÜNLER/Üç Bıçak/1.jpg',
@@ -1558,7 +1558,7 @@ const productsData = {
             'Tip': 'Güvenlik aksesuarı'
         },
         usageAreas: [
-            { icon: 'shield', text: 'Taş koruması' },
+            { icon: 'check', text: 'Taş koruması' },
             { icon: 'leaf', text: 'Ot biçme' },
             { icon: 'user-shield', text: 'Kullanıcı güvenliği' },
             { icon: 'tools', text: 'Comlink makineler' },
@@ -1601,11 +1601,11 @@ const productsData = {
             'Tip': 'Güvenlik aksesuarı'
         },
         usageAreas: [
-            { icon: 'shield', text: 'Maksimum koruma' },
+            { icon: 'bolt', text: 'Maksimum koruma' },
             { icon: 'industry', text: 'Profesyonel' },
             { icon: 'tree', text: 'Zorlu araziler' },
             { icon: 'tools', text: 'Ağır işler' },
-            { icon: 'award', text: 'Dayanıklı' },
+            { icon: 'check', text: 'Dayanıklı' },
             { icon: 'user-shield', text: 'Güvenlik' }
         ],
         images: {
@@ -1693,7 +1693,7 @@ const productsData = {
             { icon: 'leaf', text: 'Ot biçme' },
             { icon: 'cut', text: 'Budama' },
             { icon: 'tree', text: 'Bahçe işleri' },
-            { icon: 'shield', text: 'Debris koruması' },
+            { icon: 'bolt', text: 'Debris koruması' },
             { icon: 'award', text: 'Profesyonel' }
         ],
         images: {
@@ -1935,13 +1935,13 @@ function updateNextProductButton() {
 // Sayfa yüklendiğinde çalıştır (urun-detay sayfasında)
 if (window.location.pathname.includes('urun-detay')) {
     // Tüm kaynaklar yüklendikten sonra çalıştır (en garantili yöntem)
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         updateProductPageMeta();
         updateNextProductButton();
     });
 
     // DOMContentLoaded'da da çalıştır (daha hızlı için)
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         updateProductPageMeta();
         updateNextProductButton();
     });
