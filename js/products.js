@@ -489,11 +489,11 @@ const productsData = {
     'ck-500': {
         id: 'ck-500',
         model: 'CK-500',
-        name: 'CK-500 Profesyonel Toprak Matkabı',
+        name: 'CK-500 Profesyonel Toprak Burgusu',
         category: 'Toprak Burgu',
         categoryId: 'toprak-burgu',
         shortDesc: '1150W güçlü motor ile profesyonel toprak delme. İki çalışma modu (Standart ve Uzman). 15 cm altı çalışma ölçüsü önerilir.',
-        description: 'CK-500 profesyonel toprak matkabı, 1150W güçlü motor ve iki farklı çalışma modu ile profesyonel performans sunar. Standart mod ve Uzman modu ile farklı toprak koşullarına uygun çalışma imkanı sağlar.',
+        description: 'CK-500 profesyonel toprak burgusu, 1150W güçlü motor ve iki farklı çalışma modu ile profesyonel performans sunar. Standart mod ve Uzman modu ile farklı toprak koşullarına uygun çalışma imkanı sağlar.',
         description2: '65x36x29 cm ölçülerinde ve 4.5 kg ağırlığında güçlü bir makinedir. V7-20Ah batarya ile uzun çalışma süresi sunar. Direk dikimi, ağaç dikimi ve tarımsal işler için idealdir.',
         features: [
             '1150W güçlü motor',
@@ -531,7 +531,7 @@ const productsData = {
             gallery: ['img/products/ÜRÜNLER/CK-500/TOPRAK BURGU.png', 'img/products/ÜRÜNLER/CK-500/CK-500 Toprak Delme Makinesi.png']
         },
         tags: ['Toprak Burgusu', 'Akülü', 'Profesyonel', 'Tarım'],
-        whyChoose: 'CK-500 profesyonel toprak matkabı, iki farklı çalışma modu ile hem standart hem de zorlu toprak koşullarında etkili çalışma imkanı sunar. 1150W güçlü motor ile sert topraklarda bile güvenle kullanılabilir.',
+        whyChoose: 'CK-500 profesyonel toprak burgusu, iki farklı çalışma modu ile hem standart hem de zorlu toprak koşullarında etkili çalışma imkanı sunar. 1150W güçlü motor ile sert topraklarda bile güvenle kullanılabilir.',
         whyChoose2: 'Standart mod günlük işler için, Uzman modu ise zorlu ve sert topraklar için idealdir. IP66 sertifikalı batarya ile her hava koşulunda güvenle çalışabilirsiniz.',
         visualElements: {
             statistics: [
@@ -565,7 +565,7 @@ const productsData = {
                 }
             ],
             comparison: {
-                title: 'Benzinli Matkap vs Comlink CK-500',
+                title: 'Benzinli Burgu vs Comlink CK-500',
                 benzinli: [
                     { label: 'Ağırlık', value: '8-10 kg', icon: 'fa-weight-hanging', note: 'Çok ağır' },
                     { label: 'Ses Seviyesi', value: '110+ dB', icon: 'fa-volume-up', note: 'Çok gürültülü' },
