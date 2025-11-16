@@ -21,16 +21,14 @@ const productsData = {
         ],
         specs: {
             'Model': 'CK-120',
+            'Gövde': '112 x 37 x 13 cm',
+            'Ağırlık': '2.6 kg',
+            'Maksimum Rüzgar Hızı': '14 metre/sn',
             'Motor Tipi': 'Fırçasız (Brushless) Motor',
-            'Hava Hızı': '0-240 km/h (Ayarlanabilir)',
-            'Hava Akış Hacmi': '16 m³/dk',
             'Batarya Voltajı': '56V Li-ion',
             'Uyumlu Bataryalar': 'V6-5Ah / V7-20Ah / V7-30Ah / V8-15Ah',
-            'Çalışma Süresi': '40-90 dakika (bataryaya göre)',
-            'Şarj Süresi': '60-180 dakika',
-            'Ağırlık': '2.8 kg (batarya hariç)',
-            'Gürültü Seviyesi': '≤85 dB',
-            'Koruma Sınıfı': 'IP66 (Batarya)'
+            'Koruma Sınıfı': 'IP66 (Batarya)',
+            'Özellik': 'Piller ve şarj cihazları ayrı satılır'
         },
         usageAreas: [
             { icon: 'leaf', text: 'Bahçe temizliği' },
@@ -121,17 +119,15 @@ const productsData = {
             'Düşük bakım maliyeti'
         ],
         specs: {
-            'Model': 'CK-200/210',
+            'Model': 'CK-200',
+            'Gövde': '153 x 22 x 17 cm',
+            'Gövde Yapısı': 'Tek bölümlü, çıkarılamaz',
+            'Ağırlık': '3.1 kg',
             'Motor Tipi': 'Fırçasız (Brushless) Motor',
-            'Kesim Genişliği': '42 cm',
-            'Kesim Yüksekliği': '25-75 mm (ayarlanabilir)',
             'Batarya Voltajı': '56V Li-ion',
             'Uyumlu Bataryalar': 'V7-20Ah / V7-30Ah / V8-15Ah',
-            'Çalışma Süresi': '45-120 dakika (bataryaya göre)',
-            'Şarj Süresi': '90-180 dakika',
-            'Ağırlık': '8.5 kg (batarya hariç)',
-            'Gürültü Seviyesi': '≤88 dB',
-            'Koruma Sınıfı': 'IP66 (Batarya)'
+            'Su ve Toz Geçirmez Sertifikası': 'IP46',
+            'Özellik': 'Piller ve şarj cihazları ayrı satılır'
         },
         usageAreas: [
             { icon: 'leaf', text: 'Bahçe bakımı' },
@@ -219,17 +215,15 @@ const productsData = {
         ],
         specs: {
             'Model': 'CK-400',
+            'Gövde': '80 x 15 x 24 cm',
+            'Kılavuz Uzunluğu': '30 cm',
+            'Gövde Yapısı': 'Tek bölmeli, çıkarılamaz',
+            'Ağırlık': '2.6 kg',
             'Motor Tipi': 'Fırçasız (Brushless) Motor',
-            'Kılıç Uzunluğu': '35 cm (14")',
-            'Zincir Hızı': '15 m/s',
-            'Zincir Tipi': 'Oregon 91VXL',
             'Batarya Voltajı': '56V Li-ion',
             'Uyumlu Bataryalar': 'V7-20Ah / V7-30Ah / V8-15Ah',
-            'Çalışma Süresi': '30-60 dakika (bataryaya göre)',
-            'Şarj Süresi': '90-180 dakika',
-            'Ağırlık': '4.8 kg (batarya hariç)',
-            'Yağ Tank Kapasitesi': '200 ml',
-            'Koruma Sınıfı': 'IP66 (Batarya)'
+            'Su ve Toz Geçirmez Sertifikası': 'IP46',
+            'Özellik': 'Piller ve şarj cihazları ayrı satılır'
         },
         usageAreas: [
             { icon: 'tree', text: 'Ağaç kesimi' },
@@ -317,14 +311,14 @@ const productsData = {
         ],
         specs: {
             'Model': 'CK-230D',
-            'Vücut Ölçüsü': '167x38x17 cm',
-            'Depolama Boyu': '54x38x16 cm',
-            'Ağırlık': '4 kg (üst bölüm: 2.9 kg)',
-            'Su ve Toz Geçirmez': 'IP46',
-            'Gövde Yapısı': 'Çift bölmeli, çıkarılabilir',
-            'İçerik': 'Motor + Uzatma borusu',
+            'Depolama Boyu': '54 x 36 x 16 cm',
+            'Ağırlık': '2.9 kg',
+            'Motor Tipi': 'Fırçasız (Brushless) Motor',
+            'Batarya Voltajı': '56V Li-ion',
             'Uyumlu Bataryalar': 'V7-20Ah / V7-30Ah / V8-15Ah',
-            'Kullanım Alanı': 'Çim ve ot biçme'
+            'İçerik': 'Motor + Uzatma borusu',
+            'Özellik': 'Çim biçme makinesinin alt kısmıyla kullanılmalıdır',
+            'Not': 'Piller ve şarj cihazları ayrı satılır'
         },
         usageAreas: [
             { icon: 'leaf', text: 'Çim biçme' },
@@ -698,18 +692,15 @@ const productsData = {
         ],
         specs: {
             'Model': 'CK-300V2',
-            'Bıçak Tipi': 'Tek kenarlı',
-            'Bıçak Uzunluğu': '70 cm',
-            'Maksimum Kesim Çapı': '20 mm',
+            'Gövde': '108 x 35 x 20 cm',
             'Ağırlık': '3.9 kg',
-            'Boyutlar': '108cm x 35cm x 20cm',
+            'Bıçak': 'Tek kenarlı 70 cm',
+            'Hız Kontrolü': 'Üç kademeli hız',
+            'Uygulama': 'Çit, çay ağacı budama',
+            'Motor Tipi': 'Fırçasız (Brushless) Motor',
             'Batarya Voltajı': '56V Li-ion',
             'Uyumlu Bataryalar': 'V6-5Ah / V7-20Ah / V7-30Ah / V8-15Ah',
-            'Çalışma Süresi (V6-5Ah)': '60-90 dakika',
-            'Çalışma Süresi (V8-15Ah)': '3-4.5 saat',
-            'Çalışma Süresi (V7-20Ah)': '4-6 saat',
-            'Çalışma Süresi (V7-30Ah)': '6-9 saat',
-            'Kullanım Alanı': 'Çit, çay ağacı, meyve ağacı budama'
+            'Özellik': 'Piller ve şarj cihazları ayrı satılır'
         },
         usageAreas: [
             { icon: 'leaf', text: 'Çit budama' },
@@ -748,17 +739,16 @@ const productsData = {
         ],
         specs: {
             'Model': 'CK-412D',
-            'Motor Ağırlığı': '2.0 kg',
+            'Gövde': '105 x 11 x 8 cm',
+            'Kılavuz Uzunluğu': '30 cm',
+            'Gövde Yapısı': 'Çift bölmeli, çıkarılabilir',
+            'Ağırlık': '2 kg',
             'Motor Tipi': 'Fırçasız (Brushless) Motor',
-            'Tahrik Sistemi': 'Doğrudan tahrik (zincir/mil/redüksiyon yok)',
-            'Standart Uzunluk': '183 cm',
-            'Maksimum Uzunluk': '300 cm (1.2m uzatma ile)',
             'Batarya Voltajı': '56V Li-ion',
-            'Uyumlu Bataryalar': 'V6-5Ah / V7-20Ah / V7-30Ah',
-            'Kesim Kapasitesi (V6-5Ah)': '100 adet (10cm çalı)',
-            'Kesim Kapasitesi (V7-20Ah)': '300 adet (10cm çalı)',
-            'Kesim Kapasitesi (V7-30Ah)': '500 adet (10cm çalı)',
-            'Ödül': 'Taiwan Excellence 2019'
+            'Uyumlu Bataryalar': 'V6-5Ah / V7-20Ah / V7-30Ah / V8-15Ah',
+            'Su ve Toz Geçirmez Sertifikası': 'IP46',
+            'Özellik': 'Piller ve şarj cihazları ayrı satılır',
+            'Not': 'Çim biçme makinesinin üst kısmı ile kullanılması gerekir'
         },
         usageAreas: [
             { icon: 'tree', text: 'Yüksek dal budama' },
@@ -797,15 +787,14 @@ const productsData = {
         ],
         specs: {
             'Model': 'CK-460D',
+            'Gövde': '160 x 28.5 x 8.2 cm',
+            'Ağırlık': '1.8 kg',
             'Motor Tipi': 'Fırçasız (Brushless) Motor',
-            'Tahrik Sistemi': 'Doğrudan tahrik',
-            'Ağırlık': '1.8 kg (bıçak ve koruyucu plaka dahil)',
-            'Boyutlar': '140cm x 28.6cm x 8cm',
-            'Maksimum Kesim Çapı': '8 cm',
-            'Bıçak Çapı': '230 mm',
-            'Bıçak Tipi': 'Sessiz dairesel testere',
-            'Uyumluluk': 'Çim biçme makinesinin üst kısmı ile',
-            'Özellik': 'Küçük, hafif, düşük gürültü, yüksek güç'
+            'Batarya Voltajı': '56V Li-ion',
+            'Uyumlu Bataryalar': 'V6-5Ah / V7-20Ah / V7-30Ah / V8-15Ah',
+            'Özellik': '230 cm sessiz daire testere bıçağı ve koruyucu plaka ile birlikte',
+            'Uyumluluk': 'Çim biçme makinesinin üst bölümü ile kullanılmalıdır',
+            'Not': 'Piller ve şarj cihazları ayrı satılır'
         },
         usageAreas: [
             { icon: 'tree', text: 'Çalı kesimi' },

@@ -454,7 +454,7 @@ label {
 
 .main-menu ul li {
 	display: inline-block;
-	margin-left: 42px;
+	margin-left: 28px;
 	position: relative;
 }
 
@@ -475,16 +475,16 @@ label {
 
 /* ===== YENİ BELİRGİN MENU LİNK STİLİ (TEST) ===== */
 .main-menu ul li a {
-	font-size: 16px;
-	/* 15px -> 16px (Daha büyük) */
-	font-weight: 700;
-	/* 600 -> 700 (Daha kalın) */
+	font-size: 15px;
+	/* Daha kompakt görünüm */
+	font-weight: 600;
+	/* Orta kalınlık */
 	color: #52465e;
 	display: block;
 	padding: 35px 0;
 	line-height: 1;
-	letter-spacing: 0.3px;
-	/* Harfler arası boşluk (daha okunabilir) */
+	letter-spacing: 0.2px;
+	/* Harfler arası boşluk hafif azaltıldı */
 	transition: all 0.3s ease;
 	/* Smooth geçiş */
 	position: relative;
