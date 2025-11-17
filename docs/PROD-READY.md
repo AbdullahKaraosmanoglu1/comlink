@@ -45,7 +45,7 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
   <!-- Şunlar olmamalı: -->
   <a href="#">Link</a>
   <a href="javascript:void(0)">Link</a>
-  <img src="placeholder.jpg" alt="placeholder">
+  <img src="placeholder.avif" alt="placeholder">
   ```
 
 - [ ] **2.4** Meta tagları güncelle
@@ -83,10 +83,10 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 - [ ] **3.3** Görsel yollarını kontrol et
   ```html
   <!-- DOĞRU: -->
-  <img src="img/logo/s_logo.png" alt="Comlink Logo">
+  <img src="img/logo/s_logo.avif" alt="Comlink Logo">
 
   <!-- YANLIŞ: -->
-  <img src="/img/logo/s_logo.png" alt="...">  <!-- Başta / olmamalı -->
+  <img src="/img/logo/s_logo.avif" alt="...">  <!-- Başta / olmamalı -->
   ```
 
 ---
@@ -101,11 +101,11 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 - [ ] **4.3** Alt tag'lerini kontrol et
   ```html
   <!-- Tüm görsellerde alt tag olmalı -->
-  <img src="img/product.jpg" alt="CK-210 Profesyonel Ot Biçme Makinesi">
+  <img src="img/product.avif" alt="CK-210 Profesyonel Ot Biçme Makinesi">
   ```
 
 - [ ] **4.4** Favicon ve icon'ları kontrol et
-  - `img/favicon.png` yüklü mü?
+  - `img/favicon.avif` yüklü mü?
 
 ---
 ### ✅ AŞAMA 7: SEO VE ANALİTİK
@@ -144,7 +144,7 @@ Bu dokümantasyon, **geliştirici** için hazırlanmıştır. Projeyi müşteriy
 - [ ] **8.2** Lazy loading çalışıyor mu?
   ```html
   <!-- Blog görselleri lazy load ile yükleniyor mu? -->
-  <img class="lazy-load" data-src="img/blog/image.jpg" alt="...">
+  <img class="lazy-load" data-src="img/blog/image.avif" alt="...">
   ```
 
 - [ ] **8.3** PageSpeed Insights testi yapıldı mı?
