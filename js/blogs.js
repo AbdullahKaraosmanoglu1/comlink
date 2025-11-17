@@ -10,7 +10,7 @@ const blogsData = {
         date: '5 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Her gün binlerce benzinli makine atmosfere ton ton CO2 salıyor. Comlink akülü makinelerle sıfır emisyon, %100 temiz hava. Bugün bir karar verin, yarınlar için. Dönüşüme hazır mısınız?',
-        image: 'img/blog/new-blog-images/SoluduğunuzHavayıDüşünün.png',
+        image: 'img/blog/new-blog-images/SoluduğunuzHavayıDüşünün.avif',
         visualElements: {
             statistics: [
                 { value: '0%', label: 'SIFIR EMİSYON', icon: 'fa-leaf', color: 'green' },
@@ -80,7 +80,7 @@ const blogsData = {
         date: '4 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Benzine harcadığınız para cebinizde kalacak. Bakıma harcadığınız zaman size kalacak. Rakamlar konuşuyor: 2 yılda %300 geri dönüş. Akıllı yatırım, akıllı tasarruf. Comlink.',
-        image: 'img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.png',
+        image: 'img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.avif',
         visualElements: {
             statistics: [
                 { value: '₺11,750', label: '5 YILLIK TASARRUF', icon: 'fa-piggy-bank', color: 'green' },
@@ -185,7 +185,7 @@ const blogsData = {
         date: '3 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: '400m²\'yi 60 dakikadan 35 dakikaya düşürün. Günde 3 müşteriye değil, 5 müşteriye yetişin. Daha hızlı, daha güçlü, daha karlı işler yapın. Performans farkını yaşayın.',
-        image: 'img/blog/new-blog-images/YarışBenzinliMakinelerleDeğil.png',
+        image: 'img/blog/new-blog-images/YarışBenzinliMakinelerleDeğil.avif',
         visualElements: {
             statistics: [
                 { value: '27 Dk', label: '400M² ZAMAN TASARRUFU', icon: 'fa-stopwatch', color: 'green' },
@@ -319,7 +319,7 @@ const blogsData = {
         date: '2 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Ödüllü Tayvan teknolojisi, patentli fırçasız motor, akıllı kontrol sistemi. Taiwan Excellence 2017 ve 2019 ödüllü. Geleceğin makineleri bugün sizin elinde. Teknolojiye yatırım yapın.',
-        image: 'img/blog/new-blog-images/2024tehala1970lerin teknolojisiilemi.png',
+        image: 'img/blog/new-blog-images/2024tehala1970lerin teknolojisiilemi.avif',
         visualElements: {
             statistics: [
                 { value: '%30', label: 'DAHA VERİMLİ', icon: 'fa-bolt', color: 'purple' },
@@ -465,7 +465,7 @@ const blogsData = {
         date: '1 Kasım 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Makinenizi açın. Yine kuş sesleri... Sessiz güç bu. Komşunuz sizin çalıştığınızı bile duymasın. Huzurlu bahçe, mutlu hayat. Gürültü kirliliğine son verin, doğayla uyum içinde çalışın.',
-        image: 'img/blog/new-blog-images/Sabah7debahçenizeçıkın.png',
+        image: 'img/blog/new-blog-images/Sabah7debahçenizeçıkın.avif',
         visualElements: {
             statistics: [
                 { value: '75-85 dB', label: 'COMLINK SES SEVİYESİ', icon: 'fa-volume-down', color: 'green' },
@@ -611,7 +611,7 @@ const blogsData = {
         date: '31 Ekim 2025',
         author: 'Comlink Ekibi',
         excerpt: 'Bir batarya ile 9 farklı makine kullanın. Sabah çim biçin, öğleden sonra dal budayın, akşam yaprak üfleyin. Aynı batarya, aynı verimlilik. IP66 sertifikalı güvenilir sistem.',
-        image: 'img/blog/new-blog-images/TekBataryaSonsuzGörev-OrtakPlatform.png',
+        image: 'img/blog/new-blog-images/TekBataryaSonsuzGörev-OrtakPlatform.avif',
         visualElements: {
             statistics: [
                 { value: '9', label: 'FARKLI MAKİNE', icon: 'fa-tools', color: 'blue' },

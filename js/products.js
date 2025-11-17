@@ -39,11 +39,11 @@ const productsData = {
             { icon: 'home', text: 'Konut bahçeleri' }
         ],
         images: {
-            main: 'img/products/ck-120-profesyonel-yaprak-ufleyici.png',
+            main: 'img/products/ck-120-profesyonel-yaprak-ufleyici.avif',
             gallery: [
-                'img/products/ÜRÜNLER/CK-120/1.jpg',
-                'img/products/ÜRÜNLER/CK-120/11.jpg',
-                'img/products/ÜRÜNLER/CK-120/CK-120 PROFESYONEL YAPRAK ÜFLEYICI.png'
+                'img/products/ÜRÜNLER/CK-120/1.avif',
+                'img/products/ÜRÜNLER/CK-120/11.avif',
+                'img/products/ÜRÜNLER/CK-120/CK-120 PROFESYONEL YAPRAK ÜFLEYICI.avif'
             ]
         },
         tags: ['Yaprak Üfleyici', 'Akülü', 'Profesyonel', 'Bahçe'],
@@ -138,8 +138,8 @@ const productsData = {
             { icon: 'industry', text: 'Endüstriyel tesisler' }
         ],
         images: {
-            main: 'img/products/ck-210-profesyonel-ot-bicme-makinesi.png',
-            gallery: ['img/products/ÜRÜNLER/CK-210/21.png', 'img/products/ÜRÜNLER/CK-210/22.png', 'img/products/ÜRÜNLER/CK-210/23.png']
+            main: 'img/products/ck-210-profesyonel-ot-bicme-makinesi.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-210/21.avif', 'img/products/ÜRÜNLER/CK-210/22.avif', 'img/products/ÜRÜNLER/CK-210/23.avif']
         },
         tags: ['Ot Biçme', 'Akülü', 'Profesyonel', 'Bahçe'],
         whyChoose: 'CK-200/210 ot biçme makinesi, geniş alanlarda profesyonel performans sunar. Tek kesimli sistemi ile düzgün ve temiz kesim sağlar. Fırçasız motor teknolojisi sayesinde uzun ömürlü ve bakım gerektirmeyen kullanım imkanı sunar.',
@@ -234,8 +234,8 @@ const productsData = {
             { icon: 'building', text: 'Belediye kullanımı' }
         ],
         images: {
-            main: 'img/products/ck-400-el-tipi-zincirli-testere.png',
-            gallery: ['img/products/ÜRÜNLER/CK-400/1.jpg', 'img/products/ÜRÜNLER/CK-400/2.jpg']
+            main: 'img/products/ck-400-el-tipi-zincirli-testere.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-400/1.avif', 'img/products/ÜRÜNLER/CK-400/2.avif']
         },
         tags: ['Zincirli Testere', 'Akülü', 'Profesyonel', 'Ağaç Kesimi'],
         whyChoose: 'CK-400 zincirli testere, profesyonel ağaç kesimi ve budama işleri için idealdir. Otomatik yağlama sistemi sayesinde bakım gerektirmez. Güvenlik özellikleri ile korumalı kullanım sağlar.',
@@ -329,8 +329,8 @@ const productsData = {
             { icon: 'tree', text: 'Peyzaj düzenleme' }
         ],
         images: {
-            main: 'img/products/ck-230d-cim-bicme-makinesi.png',
-            gallery: ['img/products/ÜRÜNLER/CK-230D/IMG_5785-scaled.jpg', 'img/products/ÜRÜNLER/CK-230D/IMG_5789-scaled.jpg']
+            main: 'img/products/ck-230d-cim-bicme-makinesi.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-230D/IMG_5785-scaled.avif', 'img/products/ÜRÜNLER/CK-230D/IMG_5789-scaled.avif']
         },
         tags: ['Çim Biçme', 'Akülü', 'Profesyonel', 'Küçük Tank'],
         whyChoose: 'CK-230D çim biçme makinesi, küçük ve orta boy bahçeler için ideal bir çözümdür. Motor ve uzatma borusu dahil olarak gelen makine, kolay montaj ve kullanım sağlar.',
@@ -424,8 +424,8 @@ const productsData = {
             { icon: 'tree', text: 'Park bakımı' }
         ],
         images: {
-            main: 'img/products/ck-320-elde-tasinabilir-cift-tarafli-cit-budama-makinesi.png',
-            gallery: ['img/products/ÜRÜNLER/CK-320/1.png', 'img/products/ÜRÜNLER/CK-320/ÇİT BUDAMA.png']
+            main: 'img/products/ck-320-elde-tasinabilir-cift-tarafli-cit-budama-makinesi.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-320/1.avif', 'img/products/ÜRÜNLER/CK-320/ÇİT BUDAMA.avif']
         },
         tags: ['Çit Budama', 'Akülü', 'Profesyonel', 'Çift Taraflı'],
         whyChoose: 'CK-320 çift taraflı çit budama makinesi, profesyonel budama işleri için en verimli çözümdür. Çift kenarlı bıçağı sayesinde hem ileriye hem geriye doğru kesim yapabilirsiniz, bu da iş verimliliğini artırır.',
@@ -521,8 +521,8 @@ const productsData = {
             { icon: 'tools', text: 'Peyzaj düzenleme' }
         ],
         images: {
-            main: 'img/products/ck-500-toprak-burgu-makinesi.png',
-            gallery: ['img/products/ÜRÜNLER/CK-500/TOPRAK BURGU.png', 'img/products/ÜRÜNLER/CK-500/CK-500 Toprak Delme Makinesi.png']
+            main: 'img/products/ck-500-toprak-burgu-makinesi.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-500/TOPRAK BURGU.avif', 'img/products/ÜRÜNLER/CK-500/CK-500 Toprak Delme Makinesi.avif']
         },
         tags: ['Toprak Burgusu', 'Akülü', 'Profesyonel', 'Tarım'],
         whyChoose: 'CK-500 profesyonel toprak burgusu, iki farklı çalışma modu ile hem standart hem de zorlu toprak koşullarında etkili çalışma imkanı sunar. 1150W güçlü motor ile sert topraklarda bile güvenle kullanılabilir.',
@@ -615,8 +615,8 @@ const productsData = {
             { icon: 'tree', text: 'Hobi bahçeleri' }
         ],
         images: {
-            main: 'img/products/ck-600-akulu-capa-makinesi.png',
-            gallery: ['img/products/ÜRÜNLER/CK-600 Akülü Çapa Makinesi/1.jpg', 'img/products//ÜRÜNLER/CK-600 Akülü Çapa Makinesi/11.jpg']
+            main: 'img/products/ck-600-akulu-capa-makinesi.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-600 Akülü Çapa Makinesi/1.avif', 'img/products//ÜRÜNLER/CK-600 Akülü Çapa Makinesi/11.avif']
         },
         tags: ['Çapa Makinesi', 'Akülü', 'Profesyonel', 'Tarım'],
         whyChoose: 'CK-600 akülü çapa makinesi, bahçe ve tarla çapalama işlerinde benzinli makinelere çevreci bir alternatiftir. Sessiz çalışması sayesinde yerleşim yerlerinde rahatlıkla kullanılabilir.',
@@ -711,8 +711,8 @@ const productsData = {
             { icon: 'tree', text: 'Park bakımı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/CK-300V2/CK-300 ELDE TAŞINABİLİR TEK KENARLI & SEPETLİ ÇİT VE ÇAY BUDAMA MAKİNESİ.png',
-            gallery: ['img/products/ÜRÜNLER/CK-300V2/1.png', 'img/products/ÜRÜNLER/CK-300V2/CK-300 ELDE TAŞINABİLİR TEK KENARLI & SEPETLİ ÇİT VE ÇAY BUDAMA MAKİNESİ.png']
+            main: 'img/products/ÜRÜNLER/CK-300V2/CK-300 ELDE TAŞINABİLİR TEK KENARLI & SEPETLİ ÇİT VE ÇAY BUDAMA MAKİNESİ.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-300V2/1.avif', 'img/products/ÜRÜNLER/CK-300V2/CK-300 ELDE TAŞINABİLİR TEK KENARLI & SEPETLİ ÇİT VE ÇAY BUDAMA MAKİNESİ.avif']
         },
         tags: ['Çit Budama', 'Akülü', 'Profesyonel', 'Tek Kenarlı'],
         whyChoose: 'CK-300V2 çit budama makinesi, hafif yapısı ve güçlü performansı ile çit, çay ve meyve ağacı budama işlerinde profesyonel sonuçlar verir. 70 cm bıçak uzunluğu ile geniş alanlarda verimli çalışma imkanı sunar.',
@@ -759,8 +759,8 @@ const productsData = {
             { icon: 'tree', text: 'Orman bakımı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/CK-412D/CK-412 PROFESYONEL YÜKSEK DAL BUDAMA MAKİNESİ.png',
-            gallery: ['img/products/ÜRÜNLER/CK-412D/1.jpg', 'img/products/ÜRÜNLER/CK-412D/CK-412D-.jpg', 'img/products/ÜRÜNLER/CK-412D/CK-412D.jpg']
+            main: 'img/products/ÜRÜNLER/CK-412D/CK-412 PROFESYONEL YÜKSEK DAL BUDAMA MAKİNESİ.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-412D/1.avif', 'img/products/ÜRÜNLER/CK-412D/CK-412D-.avif', 'img/products/ÜRÜNLER/CK-412D/CK-412D.avif']
         },
         tags: ['Dal Budama', 'Akülü', 'Profesyonel', 'Taiwan Excellence'],
         whyChoose: 'CK-412D yüksek dal budama makinesi, Taiwan Excellence 2019 ödülü ile kalitesi onaylanmış bir üründür. Sadece 2.0 kg motorlu testere başlığı ile piyasadaki en hafif profesyonel dal budama makinesidir.',
@@ -805,8 +805,8 @@ const productsData = {
             { icon: 'tree', text: 'Ağaçlandırma bakımı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png',
-            gallery: ['img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png', 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.png']
+            main: 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.avif',
+            gallery: ['img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.avif', 'img/products/ÜRÜNLER/CK-460D/Profesyonel yüksek dallı dairesel testere kafası.avif']
         },
         tags: ['Testere Kafası', 'Akülü', 'Profesyonel', 'Modüler'],
         whyChoose: 'CK-460D dairesel testere kafası, modüler yapısı sayesinde çim biçme makinesinin üst kısmıyla kullanılabilen çok yönlü bir üründür. 8 cm çapa kadar çalı kesebilme kapasitesi ile profesyonel performans sunar.',
@@ -852,8 +852,8 @@ const productsData = {
             { icon: 'tools', text: 'Yedek batarya' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.jpg',
-            gallery: ['img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.jpg', 'img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.jpg']
+            main: 'img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.avif',
+            gallery: ['img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.avif', 'img/products/ÜRÜNLER/V6 5.0Ah/V6 5.0Ah.avif']
         },
         tags: ['Batarya', 'Lityum İyon', 'IP66', 'BSMI', 'Şarj Edilebilir'],
         whyChoose: 'V6-5.0Ah batarya, hafif işler için ideal bir seçimdir. Kompakt boyutu ve hafif ağırlığı ile taşıması kolaydır.',
@@ -899,8 +899,8 @@ const productsData = {
             { icon: 'award', text: 'Yüksek performans' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/V7-20.0Ah/V7-20.0Ah.png',
-            gallery: ['img/products/ÜRÜNLER/V7-20.0Ah/V7-20.0Ah.png', 'img/products/ÜRÜNLER/V7-20.0Ah/V7-20.0Ah.png']
+            main: 'img/products/ÜRÜNLER/V7-20.0Ah/V7-20.0Ah.avif',
+            gallery: ['img/products/ÜRÜNLER/V7-20.0Ah/V7-20.0Ah.avif', 'img/products/ÜRÜNLER/V7-20.0Ah/V7-20.0Ah.avif']
         },
         tags: ['Batarya', 'Lityum İyon', 'Profesyonel', 'Yüksek Kapasite', 'IP66'],
         whyChoose: 'V7-20.0Ah batarya, Comlink\'in en çok tercih edilen bataryasıdır. 20.0Ah yüksek kapasitesi ile gün boyu kesintisiz çalışma imkanı sunar.',
@@ -945,8 +945,8 @@ const productsData = {
             { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/30.0Ah/30.0Ah.jpg',
-            gallery: ['img/products/ÜRÜNLER/30.0Ah/30.0Ah.jpg', 'img/products/ÜRÜNLER/30.0Ah/30.0Ah.jpg']
+            main: 'img/products/ÜRÜNLER/30.0Ah/30.0Ah.avif',
+            gallery: ['img/products/ÜRÜNLER/30.0Ah/30.0Ah.avif', 'img/products/ÜRÜNLER/30.0Ah/30.0Ah.avif']
         },
         tags: ['Batarya', 'Lityum İyon', 'Ultra Yüksek Kapasite', 'Profesyonel', 'IP66'],
         whyChoose: 'V7-30.0Ah batarya, Comlink\'in en yüksek kapasiteli bataryasıdır. 30.0Ah ultra yüksek kapasitesi ile tam gün kesintisiz çalışma imkanı sunar.',
@@ -991,8 +991,8 @@ const productsData = {
             { icon: 'user-shield', text: 'Güvenli' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/V8_15/V8_15.png',
-            gallery: ['img/products/ÜRÜNLER/V8_15/V8_15.png', 'img/products/ÜRÜNLER/V8_15/V8_15.png']
+            main: 'img/products/ÜRÜNLER/V8_15/V8_15.avif',
+            gallery: ['img/products/ÜRÜNLER/V8_15/V8_15.avif', 'img/products/ÜRÜNLER/V8_15/V8_15.avif']
         },
         tags: ['Batarya', 'Lityum İyon', 'Orta Kapasite', 'Çok Yönlü', 'IP66'],
         whyChoose: 'V8-15Ah batarya, kapasite ve ağırlık dengesi arayan kullanıcılar için ideal bir seçimdir. 15Ah kapasitesi ile uzun çalışma süresi sunar.',
@@ -1038,8 +1038,8 @@ const productsData = {
             { icon: 'plug', text: 'V6/V7 uyumlu' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.png',
-            gallery: ['img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.png', 'img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.png']
+            main: 'img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.avif',
+            gallery: ['img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.avif', 'img/products/ÜRÜNLER/Lityum Pil Standart Şarj Cihazı/25.avif']
         },
         tags: ['Şarj Cihazı', 'Batarya', 'Standart', 'Güvenli', 'LED Gösterge'],
         whyChoose: 'Standart şarj cihazı, V6 ve V7 bataryalar için güvenli ve etkili şarj sağlar. LED gösterge ile şarj durumunu kolayca takip edebilirsiniz.',
@@ -1083,8 +1083,8 @@ const productsData = {
             { icon: 'award', text: 'Sertifikalı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Lityum Pil Özel Şarj Cihazı/25.png',
-            gallery: ['img/products/ÜRÜNLER/Lityum Pil Özel Şarj Cihazı/25.png', 'img/products/ÜRÜNLER/Lityum Pil Özel Şarj Cihazı/25.png']
+            main: 'img/products/ÜRÜNLER/Lityum Pil Özel Şarj Cihazı/25.avif',
+            gallery: ['img/products/ÜRÜNLER/Lityum Pil Özel Şarj Cihazı/25.avif', 'img/products/ÜRÜNLER/Lityum Pil Özel Şarj Cihazı/25.avif']
         },
         tags: ['Şarj Cihazı', 'Hızlı Şarj', 'Akıllı', 'Dijital', 'Profesyonel'],
         whyChoose: 'Özel şarj cihazı, tüm Comlink bataryaları için akıllı şarj yönetimi sunar. Hızlı şarj modu ile zaman kazandırır.',
@@ -1128,8 +1128,8 @@ const productsData = {
             { icon: 'award', text: 'Sertifikalı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Yüksek Güçlü Lityum Pil Hızlı Şarj Cihazı/26.png',
-            gallery: ['img/products/ÜRÜNLER/Yüksek Güçlü Lityum Pil Hızlı Şarj Cihazı/26.png', 'img/products/ÜRÜNLER/Yüksek Güçlü Lityum Pil Hızlı Şarj Cihazı/26.png']
+            main: 'img/products/ÜRÜNLER/Yüksek Güçlü Lityum Pil Hızlı Şarj Cihazı/26.avif',
+            gallery: ['img/products/ÜRÜNLER/Yüksek Güçlü Lityum Pil Hızlı Şarj Cihazı/26.avif', 'img/products/ÜRÜNLER/Yüksek Güçlü Lityum Pil Hızlı Şarj Cihazı/26.avif']
         },
         tags: ['Şarj Cihazı', 'Ultra Hızlı', 'Yüksek Güçlü', 'Profesyonel', '8A'],
         whyChoose: 'Yüksek güçlü hızlı şarj cihazı, V7-20Ah ve V7-30Ah bataryaları çok kısa sürede şarj eder. Profesyonel kullanıcılar için zaman kazandırır.',
@@ -1173,8 +1173,8 @@ const productsData = {
             { icon: 'check', text: 'Dayanıklı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.png',
-            gallery: ['img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.png', 'img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.png']
+            main: 'img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.avif',
+            gallery: ['img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.avif', 'img/products/ÜRÜNLER/Lityum İyon Güç Kablosu/4.avif']
         },
         tags: ['Güç Kablosu', 'Aksesuar', 'Yedek Parça', 'Comlink Orijinal'],
         whyChoose: 'Lityum iyon güç kablosu, Comlink orijinal parçasıdır. Yüksek kalite bakır iletkenler ile güvenli güç aktarımı sağlar.',
@@ -1217,8 +1217,8 @@ const productsData = {
             { icon: 'award', text: 'Kaliteli' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu/4.png',
-            gallery: ['img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu/4.png', 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu/4.png']
+            main: 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu/4.avif',
+            gallery: ['img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu/4.avif', 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu/4.avif']
         },
         tags: ['Güç Kablosu', 'Yüksek Güçlü', 'Profesyonel', '40A', 'Ağır İş'],
         whyChoose: 'Yüksek güçlü güç kablosu, V7-30Ah gibi yüksek kapasiteli bataryalar için özel olarak tasarlanmıştır. 40A akım kapasitesi ile ağır işlerde güvenle kullanılır.',
@@ -1261,8 +1261,8 @@ const productsData = {
             { icon: 'award', text: 'Kaliteli' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu 600cm/4.png',
-            gallery: ['img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu 600cm/4.png', 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu 600cm/4.png']
+            main: 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu 600cm/4.avif',
+            gallery: ['img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu 600cm/4.avif', 'img/products/ÜRÜNLER/Yüksek Güçlü Pil Özel Güç Kablosu 600cm/4.avif']
         },
         tags: ['Güç Kablosu', 'Ekstra Uzun', '600cm', 'Sırt Tipi', 'Profesyonel'],
         whyChoose: 'Yüksek güçlü güç kablosu 600cm, sırt tipi batarya kullanımı için ideal çözümdür. 6 metre uzunluğu ile maksimum hareket özgürlüğü sağlar.',
@@ -1306,8 +1306,8 @@ const productsData = {
             { icon: 'lightbulb', text: 'Kamp kullanımı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.png',
-            gallery: ['img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.png', 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.png']
+            main: 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.avif',
+            gallery: ['img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.avif', 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-300S/1.avif']
         },
         tags: ['Güç Dönüştürücü', 'Inverter', '300W', 'Saf Sinüs', 'Taşınabilir'],
         whyChoose: 'INV-300S güç dönüştürücü, Comlink bataryalarınızı taşınabilir güç kaynağına dönüştürür. 300W kapasitesi ile çoğu elektronik cihazı çalıştırabilirsiniz.',
@@ -1351,8 +1351,8 @@ const productsData = {
             { icon: 'tools', text: 'Outdoor kullanım' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png',
-            gallery: ['img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png', 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.png']
+            main: 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.avif',
+            gallery: ['img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.avif', 'img/products/ÜRÜNLER/Güç Dönüştürücü INV-600S/2.avif']
         },
         tags: ['Güç Dönüştürücü', 'Inverter', '600W', 'Profesyonel', 'Saf Sinüs'],
         whyChoose: 'INV-600S güç dönüştürücü, 600W yüksek güç kapasitesi ile elektrikli el aletleri ve güçlü elektronik cihazları çalıştırabilir. Profesyonel kullanım için idealdir.',
@@ -1394,8 +1394,8 @@ const productsData = {
             { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Alüminyum Bobin/11.png',
-            gallery: ['img/products/ÜRÜNLER/Alüminyum Bobin/11.png', 'img/products/ÜRÜNLER/Alüminyum Bobin/11.png']
+            main: 'img/products/ÜRÜNLER/Alüminyum Bobin/11.avif',
+            gallery: ['img/products/ÜRÜNLER/Alüminyum Bobin/11.avif', 'img/products/ÜRÜNLER/Alüminyum Bobin/11.avif']
         },
         tags: ['Aksesuar', 'Bobin', 'Alüminyum', 'Yedek Parça', 'Orijinal'],
         whyChoose: 'Alüminyum bobin, CK-210 ve CK-230D ot biçme makineleri için Comlink orijinal yedek parçasıdır. Dayanıklı alüminyum yapısı ile uzun ömürlü kullanım sağlar.',
@@ -1436,8 +1436,8 @@ const productsData = {
             { icon: 'home', text: 'Kolay kullanım' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Standart Bobin/10.png',
-            gallery: ['img/products/ÜRÜNLER/Standart Bobin/10.png', 'img/products/ÜRÜNLER/Standart Bobin/10.png']
+            main: 'img/products/ÜRÜNLER/Standart Bobin/10.avif',
+            gallery: ['img/products/ÜRÜNLER/Standart Bobin/10.avif', 'img/products/ÜRÜNLER/Standart Bobin/10.avif']
         },
         tags: ['Aksesuar', 'Bobin', 'Standart', 'Yedek Parça', 'Ekonomik'],
         whyChoose: 'Standart bobin, tüm Comlink ot biçme makineleri için uyumlu evrensel bobindir. Ekonomik fiyatı ile tercih edilen yedek parçadır.',
@@ -1480,8 +1480,8 @@ const productsData = {
             { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png',
-            gallery: ['img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png', 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.png']
+            main: 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.avif',
+            gallery: ['img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.avif', 'img/products/ÜRÜNLER/Dairesel Testere Bıçağı/16.avif']
         },
         tags: ['Aksesuar', 'Bıçak', 'Dairesel Testere', 'Yedek Parça', '230mm'],
         whyChoose: 'Dairesel testere bıçağı, CK-460D için Comlink orijinal yedek parçasıdır. 230mm çapında sertleştirilmiş çelik bıçak, keskin ve uzun ömürlü kesim sağlar.',
@@ -1523,8 +1523,8 @@ const productsData = {
             { icon: 'user-shield', text: 'Dayanıklı' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Üç Bıçak/1.jpg',
-            gallery: ['img/products/ÜRÜNLER/Üç Bıçak/1.jpg', 'img/products/ÜRÜNLER/Üç Bıçak/1.jpg']
+            main: 'img/products/ÜRÜNLER/Üç Bıçak/1.avif',
+            gallery: ['img/products/ÜRÜNLER/Üç Bıçak/1.avif', 'img/products/ÜRÜNLER/Üç Bıçak/1.avif']
         },
         tags: ['Aksesuar', 'Bıçak', 'Üçlü Sistem', 'Ot Biçme', 'Yedek Parça'],
         whyChoose: 'Üç bıçak sistemi, geniş kesim alanı ile hızlı ve etkili ot biçme sağlar. Üç kesim noktası ile düzgün ve temiz kesim performansı sunar.',
@@ -1566,8 +1566,8 @@ const productsData = {
             { icon: 'home', text: 'Kolay montaj' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Hafif Yabani Ot Bariyeri/20.png',
-            gallery: ['img/products/ÜRÜNLER/Hafif Yabani Ot Bariyeri/20.png', 'img/products/ÜRÜNLER/Hafif Yabani Ot Bariyeri/20.png']
+            main: 'img/products/ÜRÜNLER/Hafif Yabani Ot Bariyeri/20.avif',
+            gallery: ['img/products/ÜRÜNLER/Hafif Yabani Ot Bariyeri/20.avif', 'img/products/ÜRÜNLER/Hafif Yabani Ot Bariyeri/20.avif']
         },
         tags: ['Aksesuar', 'Bariyer', 'Koruma', 'Güvenlik', 'Hafif'],
         whyChoose: 'Hafif yabani ot bariyeri, ot biçme işlemi sırasında taş ve debris\'lere karşı etkili koruma sağlar. Hafif yapısı ile makineye ekstra yük bindirmez.',
@@ -1609,8 +1609,8 @@ const productsData = {
             { icon: 'user-shield', text: 'Güvenlik' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Sarılı Ot Bariyeri/15.png',
-            gallery: ['img/products/ÜRÜNLER/Sarılı Ot Bariyeri/15.png', 'img/products/ÜRÜNLER/Sarılı Ot Bariyeri/15.png']
+            main: 'img/products/ÜRÜNLER/Sarılı Ot Bariyeri/15.avif',
+            gallery: ['img/products/ÜRÜNLER/Sarılı Ot Bariyeri/15.avif', 'img/products/ÜRÜNLER/Sarılı Ot Bariyeri/15.avif']
         },
         tags: ['Aksesuar', 'Bariyer', 'Ağır Hizmet', 'Profesyonel', 'Koruma'],
         whyChoose: 'Sarılı ot bariyeri, ağır hizmet tipi koruma sağlar. Takviyeli yapısı ile zorlu koşullarda maksimum güvenlik sunar.',
@@ -1652,8 +1652,8 @@ const productsData = {
             { icon: 'home', text: 'Kolay kullanım' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Çim Biçme Yardımcı Aracı/11.jpg',
-            gallery: ['img/products/ÜRÜNLER/Çim Biçme Yardımcı Aracı/11.jpg', 'img/products/ÜRÜNLER/Çim Biçme Yardımcı Aracı/11.jpg']
+            main: 'img/products/ÜRÜNLER/Çim Biçme Yardımcı Aracı/11.avif',
+            gallery: ['img/products/ÜRÜNLER/Çim Biçme Yardımcı Aracı/11.avif', 'img/products/ÜRÜNLER/Çim Biçme Yardımcı Aracı/11.avif']
         },
         tags: ['Aksesuar', 'Ergonomik', 'Sırt Desteği', 'Konfor', 'Yardımcı'],
         whyChoose: 'Çim biçme yardımcı aracı, uzun süreli çalışmalarda ergonomik destek sağlar. Sırt tipi destek sistemi ile makinenin ağırlığını dengeler.',
@@ -1697,8 +1697,8 @@ const productsData = {
             { icon: 'award', text: 'Profesyonel' }
         ],
         images: {
-            main: 'img/products/ÜRÜNLER/Koruyucu Önlük/1.jpg',
-            gallery: ['img/products/ÜRÜNLER/Koruyucu Önlük/1.jpg', 'img/products/ÜRÜNLER/Koruyucu Önlük/1.jpg']
+            main: 'img/products/ÜRÜNLER/Koruyucu Önlük/1.avif',
+            gallery: ['img/products/ÜRÜNLER/Koruyucu Önlük/1.avif', 'img/products/ÜRÜNLER/Koruyucu Önlük/1.avif']
         },
         tags: ['Güvenlik', 'Önlük', 'Koruyucu', 'Dayanıklı', 'Profesyonel'],
         whyChoose: 'Koruyucu önlük, bahçe işlerinde vücudu debris, nem ve kire karşı korur. Dayanıklı kumaş yapısı ile uzun ömürlü kullanım sağlar.',
