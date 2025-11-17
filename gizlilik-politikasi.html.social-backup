@@ -17,7 +17,7 @@
     <meta property="og:title" content="Comlink Gizlilik Politikası">
     <meta property="og:description"
         content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
-    <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/logo/b_logo.avif">
     <meta property="og:url" content="https://www.comlink.com.tr/gizlilik-politikasi.html">
     <meta property="og:locale" content="tr_TR">
 
@@ -26,9 +26,9 @@
     <meta name="twitter:title" content="Comlink Gizlilik Politikası">
     <meta name="twitter:description"
         content="Comlink gizlilik politikası ve kişisel verilerin korunması hakkında bilgiler.">
-    <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.png">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/logo/b_logo.avif">
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.avif">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -92,9 +92,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                            <a href="index.html"><img src="img/logo/s_logo.avif" class="mobile-logo logo-sticky-none"
                                     alt="Logo"></a>
-                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                            <a href="index.html"><img src="img/logo/b_logo.avif" class="mobile-logo s-logo-none"
                                     alt="Logo"></a>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                             </div>
                             <div class="header-btn">
                                 <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
-                                        src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
+                                        src="img/icon/calculator-symbols.avif" alt="icon">Katalog İndir</a>
                             </div>
                         </div>
                     </div>
@@ -228,13 +228,13 @@
 
     <!-- footer -->
     <footer>
-        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.avif">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.avif" alt="img"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu çözümler
@@ -259,7 +259,7 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg" alt="Soluduğunuz Havayı Düşünün"></a>
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.avif" alt="Soluduğunuz Havayı Düşünün"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>5 Kasım, 2025</span>
@@ -268,7 +268,7 @@
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg" alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.avif" alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>4 Kasım, 2025</span>
@@ -307,9 +307,9 @@
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
                                     ve sessiz çalışma ile Yüksek performans sunar.</p>
-                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.avif"
                                         alt="img"></a>
-                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.avif"
                                         alt="img"></a>
                             </div>
                         </div>

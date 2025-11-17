@@ -18,7 +18,7 @@
     <meta property="og:title" content="Comlink Ödüller & Sertifikalar – Uluslararası Başarılar">
     <meta property="og:description"
         content="Taiwan Excellence ödülleri, IP66 su geçirmezlik, BSMI sertifikasyonu. Uluslararası standartlarda kalite ve güvenlik.">
-    <meta property="og:image" content="https://www.comlink.com.tr/img/oduller-sertifikalar/14.jpg">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/oduller-sertifikalar/14.avif">
     <meta property="og:url" content="https://www.comlink.com.tr/oduller-sertifikalar.html">
     <meta property="og:locale" content="tr_TR">
 
@@ -27,9 +27,9 @@
     <meta name="twitter:title" content="Comlink Ödüller & Sertifikalar">
     <meta name="twitter:description"
         content="Taiwan Excellence ödülleri, IP66 su geçirmezlik, BSMI sertifikasyonu. Uluslararası standartlarda kalite.">
-    <meta name="twitter:image" content="https://www.comlink.com.tr/img/oduller-sertifikalar/14.jpg">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/oduller-sertifikalar/14.avif">
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.avif">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -93,9 +93,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                            <a href="index.html"><img src="img/logo/s_logo.avif" class="mobile-logo logo-sticky-none"
                                     alt="Logo"></a>
-                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                            <a href="index.html"><img src="img/logo/b_logo.avif" class="mobile-logo s-logo-none"
                                     alt="Logo"></a>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                             </div>
                             <div class="header-btn">
                                 <a href="kataloglar/comlink-catalog.pdf" download class="btn"><img
-                                        src="img/icon/calculator-symbols.png" alt="icon">Katalog İndir</a>
+                                        src="img/icon/calculator-symbols.avif" alt="icon">Katalog İndir</a>
                             </div>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                                     style="position: absolute; top: -15px; right: 30px; background: linear-gradient(135deg, #ffd700, #ff6b35); padding: 10px 25px; border-radius: 30px; font-weight: 700; color: white; font-size: 14px; box-shadow: 0 10px 30px rgba(255,107,53,0.4);">
                                     <i class="fas fa-trophy"></i> Ödüllü
                                 </div>
-                                <img src="img/oduller-sertifikalar/14.jpg" alt="Taiwan Excellence Award"
+                                <img src="img/oduller-sertifikalar/14.avif" alt="Taiwan Excellence Award"
                                     style="width: 100%; border-radius: 15px; box-shadow: 0 15px 40px rgba(0,0,0,0.3);">
                                 <div style="margin-top: 20px; text-align: center;">
                                     <h4 style="color: white; font-size: 20px; font-weight: 700; margin-bottom: 10px;">
@@ -354,10 +354,10 @@
                                     <i class="fas fa-award" style="color: white; font-size: 26px;"></i>
                                 </div>
                             </div>
-                            <a href="img/oduller-sertifikalar/14.jpg" class="certificate-popup">
+                            <a href="img/oduller-sertifikalar/14.avif" class="certificate-popup">
                                 <div
                                     style="aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(135deg, #f8f9fa, #e9ecef); position: relative;">
-                                    <img src="img/oduller-sertifikalar/14.jpg" alt="Taiwan Excellence Award 2017 & 2019"
+                                    <img src="img/oduller-sertifikalar/14.avif" alt="Taiwan Excellence Award 2017 & 2019"
                                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
                                     <div class="hover-overlay"
                                         style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255,107,53,0.95), rgba(210,60,25,0.95)); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
@@ -408,10 +408,10 @@
                                     <i class="fas fa-certificate" style="color: white; font-size: 26px;"></i>
                                 </div>
                             </div>
-                            <a href="img/oduller-sertifikalar/8.jpg" class="certificate-popup">
+                            <a href="img/oduller-sertifikalar/8.avif" class="certificate-popup">
                                 <div
                                     style="aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(135deg, #f8f9fa, #e9ecef); position: relative;">
-                                    <img src="img/oduller-sertifikalar/8.jpg" alt="BSMI Sertifikası"
+                                    <img src="img/oduller-sertifikalar/8.avif" alt="BSMI Sertifikası"
                                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
                                     <div class="hover-overlay"
                                         style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0,212,255,0.95), rgba(0,153,255,0.95)); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
@@ -463,10 +463,10 @@
                                     <i class="fas fa-tint-slash" style="color: white; font-size: 26px;"></i>
                                 </div>
                             </div>
-                            <a href="img/oduller-sertifikalar/9.jpg" class="certificate-popup">
+                            <a href="img/oduller-sertifikalar/9.avif" class="certificate-popup">
                                 <div
                                     style="aspect-ratio: 4/3; overflow: hidden; background: linear-gradient(135deg, #f8f9fa, #e9ecef); position: relative;">
-                                    <img src="img/oduller-sertifikalar/9.jpg" alt="IP66 Su Geçirmezlik Sertifikası"
+                                    <img src="img/oduller-sertifikalar/9.avif" alt="IP66 Su Geçirmezlik Sertifikası"
                                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;">
                                     <div class="hover-overlay"
                                         style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(40,167,69,0.95), rgba(32,201,151,0.95)); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease;">
@@ -874,13 +874,13 @@
 
     <!-- footer -->
     <footer>
-        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.avif">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/s_logo.png" alt="img"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.avif" alt="img"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -906,7 +906,7 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg" alt="Soluduğunuz Havayı Düşünün"></a>
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.avif" alt="Soluduğunuz Havayı Düşünün"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>5 Kasım, 2025</span>
@@ -915,7 +915,7 @@
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg" alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.avif" alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                                         </div>
                                         <div class="f-rc-content">
                                             <span>4 Kasım, 2025</span>
@@ -954,9 +954,9 @@
                             <div class="f-support-content">
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz, bakımsız
                                     ve sessiz çalışma ile Yüksek performans sunar.</p>
-                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.avif"
                                         alt="img"></a>
-                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.avif"
                                         alt="img"></a>
                             </div>
                         </div>

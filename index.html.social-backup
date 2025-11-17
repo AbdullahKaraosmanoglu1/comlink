@@ -18,7 +18,7 @@
     <meta property="og:title" content="Comlink – Profesyonel Akülü Bahçe ve Tarım Makineleri">
     <meta property="og:description"
         content="Sıfır emisyon, sessiz çalışma, yüksek performans. Comlink akülü bahçe makineleri ile çevre dostu, ekonomik ve güçlü çözümler.">
-    <meta property="og:image" content="https://www.comlink.com.tr/img/slider/slider_img01.png">
+    <meta property="og:image" content="https://www.comlink.com.tr/img/slider/slider_img01.avif">
     <meta property="og:url" content="https://www.comlink.com.tr/">
     <meta property="og:locale" content="tr_TR">
 
@@ -27,9 +27,9 @@
     <meta name="twitter:title" content="Comlink – Profesyonel Akülü Bahçe ve Tarım Makineleri">
     <meta name="twitter:description"
         content="Sıfır emisyon, sessiz çalışma, yüksek performans. Comlink akülü bahçe makineleri ile çevre dostu, ekonomik ve güçlü çözümler.">
-    <meta name="twitter:image" content="https://www.comlink.com.tr/img/slider/slider_img01.png">
+    <meta name="twitter:image" content="https://www.comlink.com.tr/img/slider/slider_img01.avif">
 
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.avif">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -248,9 +248,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-6">
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo/s_logo.png" class="mobile-logo logo-sticky-none"
+                            <a href="index.html"><img src="img/logo/s_logo.avif" class="mobile-logo logo-sticky-none"
                                     alt="Logo"></a>
-                            <a href="index.html"><img src="img/logo/b_logo.png" class="mobile-logo s-logo-none"
+                            <a href="index.html"><img src="img/logo/b_logo.avif" class="mobile-logo s-logo-none"
                                     alt="Logo"></a>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                             <div class="header-btn">
                                 <a href="kataloglar/comlink-catalog.pdf" download class="btn"
                                     aria-label="Comlink ürün kataloğunu PDF olarak indir"><img
-                                        src="img/icon/calculator-symbols.png" alt="Katalog ikonu">Katalog İndir</a>
+                                        src="img/icon/calculator-symbols.avif" alt="Katalog ikonu">Katalog İndir</a>
                             </div>
                         </div>
                     </div>
@@ -312,7 +312,7 @@
                     <!-- Product 1 - CK-120 Yaprak Üfleyici -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-120-profesyonel-yaprak-ufleyici.png"
+                            <img src="img/products/ck-120-profesyonel-yaprak-ufleyici.avif"
                                 alt="CK-120 Profesyonel Yaprak Üfleyici">
                         </div>
                         <div class="product-content">
@@ -322,7 +322,7 @@
                     <!-- Product 2 - CK-210 Ot Biçme -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-210-profesyonel-ot-bicme-makinesi.png"
+                            <img src="img/products/ck-210-profesyonel-ot-bicme-makinesi.avif"
                                 alt="CK-210 Profesyonel Ot Biçme Makinesi">
                         </div>
                         <div class="product-content">
@@ -332,7 +332,7 @@
                     <!-- Product 3 - CK-230D Çim Biçme -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-230d-cim-bicme-makinesi.png" alt="CK-230D Çim Biçme Makinesi">
+                            <img src="img/products/ck-230d-cim-bicme-makinesi.avif" alt="CK-230D Çim Biçme Makinesi">
                         </div>
                         <div class="product-content">
                             <h3>CK-230D Çim Biçme Makinesi</h3>
@@ -341,7 +341,7 @@
                     <!-- Product 4 - CK-300 Tek Kenarlı Çit Budama -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-300-elde-tasinabilir-tek-kenarli-sepetli-cit-ve-cay-budama-makinesi.png"
+                            <img src="img/products/ck-300-elde-tasinabilir-tek-kenarli-sepetli-cit-ve-cay-budama-makinesi.avif"
                                 alt="CK-300 Tek Kenarlı Çit Budama">
                         </div>
                         <div class="product-content">
@@ -351,7 +351,7 @@
                     <!-- Product 5 - CK-320 Çift Taraflı Çit Budama -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-320-elde-tasinabilir-cift-tarafli-cit-budama-makinesi.png"
+                            <img src="img/products/ck-320-elde-tasinabilir-cift-tarafli-cit-budama-makinesi.avif"
                                 alt="CK-320 Çift Taraflı Çit Budama">
                         </div>
                         <div class="product-content">
@@ -361,7 +361,7 @@
                     <!-- Product 6 - CK-400 Zincirli Testere -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-400-el-tipi-zincirli-testere.png"
+                            <img src="img/products/ck-400-el-tipi-zincirli-testere.avif"
                                 alt="CK-400 El Tipi Zincirli Testere">
                         </div>
                         <div class="product-content">
@@ -371,7 +371,7 @@
                     <!-- Product 7 - CK-412 Yüksek Dal Budama -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-412-profesyonel-yuksek-dal-budama-makinesi.png"
+                            <img src="img/products/ck-412-profesyonel-yuksek-dal-budama-makinesi.avif"
                                 alt="CK-412 Yüksek Dal Budama">
                         </div>
                         <div class="product-content">
@@ -381,7 +381,7 @@
                     <!-- Product 8 - CK-500 Toprak Burgusu -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-500-toprak-burgu-makinesi.png" alt="CK-500 Toprak Burgu Makinesi">
+                            <img src="img/products/ck-500-toprak-burgu-makinesi.avif" alt="CK-500 Toprak Burgu Makinesi">
                         </div>
                         <div class="product-content">
                             <h3>CK-500 Toprak Burgusu</h3>
@@ -390,7 +390,7 @@
                     <!-- Product 9 - CK-600 Akülü Çapa Makinesi -->
                     <div class="single-product-item">
                         <div class="product-img">
-                            <img src="img/products/ck-600-akulu-capa-makinesi.png" alt="CK-600 Akülü Çapa Makinesi">
+                            <img src="img/products/ck-600-akulu-capa-makinesi.avif" alt="CK-600 Akülü Çapa Makinesi">
                         </div>
                         <div class="product-content">
                             <h3>CK-600 Çapa Makinesi</h3>
@@ -515,7 +515,7 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/cim-bicme.png" alt="Ot biçme makinesi ile çim kenarı kesimi">
+                                <img src="img/images/cim-bicme.avif" alt="Ot biçme makinesi ile çim kenarı kesimi">
                             </div>
                             <div class="control-overlay-content">
                                 <h4><a href="#">Ot Biçme Makinesi</a></h4>
@@ -528,7 +528,7 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/cit-budama.png" alt="Çit budama makinesi ile çit düzeltme">
+                                <img src="img/images/cit-budama.avif" alt="Çit budama makinesi ile çit düzeltme">
                             </div>
                             <div class="control-overlay-content">
                                 <h4><a href="#">Çit Budama</a></h4>
@@ -541,7 +541,7 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/elektirikli-budama.png"
+                                <img src="img/images/elektirikli-budama.avif"
                                     alt="Yüksek dal budama için direkli testere kullanımı">
                             </div>
                             <div class="control-overlay-content">
@@ -555,7 +555,7 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="single-control-wrap fix">
                             <div class="control-thumb">
-                                <img src="img/images/toprak-burgu.png" alt="Toprak burgusu ile delik açma">
+                                <img src="img/images/toprak-burgu.avif" alt="Toprak burgusu ile delik açma">
                             </div>
                             <div class="control-overlay-content">
                                 <h4><a href="#">Toprak Burgusu</a></h4>
@@ -641,7 +641,7 @@
                         <div class="col-lg-3">
                             <div class="video-play">
                                 <a href="https://www.youtube.com/watch?v=v8roB6uYv3g" class="popup-video"><img
-                                        src="img/icon/play_btn.png" alt="img"></a>
+                                        src="img/icon/play_btn.avif" alt="img"></a>
                             </div>
                         </div>
                     </div>
@@ -667,7 +667,7 @@
                         <div class="single-blog-post mb-30">
                             <div class="blog-thumb">
                                 <a href="blog-details.html?id=cevre-donusum"><img
-                                        src="img/blog/new-blog-images/SoluduğunuzHavayıDüşünün.png"
+                                        src="img/blog/new-blog-images/SoluduğunuzHavayıDüşünün.avif"
                                         alt="Soluduğunuz Havayı Düşünün"></a>
                             </div>
                             <div class="blog-content">
@@ -692,7 +692,7 @@
                         <div class="single-blog-post mb-30">
                             <div class="blog-thumb">
                                 <a href="blog-details.html?id=akilli-yatirim"><img
-                                        src="img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.png"
+                                        src="img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.avif"
                                         alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                             </div>
                             <div class="blog-content">
@@ -718,7 +718,7 @@
                         <div class="single-blog-post mb-30">
                             <div class="blog-thumb">
                                 <a href="blog-details.html?id=profesyonel-performans"><img
-                                        src="img/blog/new-blog-images/YarışBenzinliMakinelerleDeğil.png"
+                                        src="img/blog/new-blog-images/YarışBenzinliMakinelerleDeğil.avif"
                                         alt="Yarış Saatlerle"></a>
                             </div>
                             <div class="blog-content">
@@ -757,7 +757,7 @@
                 <div class="row gallery-active">
                     <div class="col-lg-8 col-md-12 grid-item grid-sizer">
                         <div class="single-gallery-img mb-30">
-                            <a href="#"><img src="img/gallery/gallery_thumb01.jpg" alt="img"></a>
+                            <a href="#"><img src="img/gallery/gallery_thumb01.avif" alt="img"></a>
                             <div class="gallery-overlay">
                                 <h5 class="gallery-overlay-title"><a href="#">Kompakt, Hafif ve Güçlü</a></h5>
                                 <span>Modüler Tasarım Sistemi</span>
@@ -766,7 +766,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 grid-item grid-sizer">
                         <div class="single-gallery-img mb-30">
-                            <a href="#"><img src="img/gallery/gallery_thumb02.jpg" alt="img"></a>
+                            <a href="#"><img src="img/gallery/gallery_thumb02.avif" alt="img"></a>
                             <div class="gallery-overlay">
                                 <h5 class="gallery-overlay-title"><a href="#">Tek Güç Sonsuz Görev</a></h5>
                                 <span>Ortak Batarya Platformu</span>
@@ -775,7 +775,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 grid-item grid-sizer">
                         <div class="single-gallery-img mb-30">
-                            <a href="#"><img src="img/gallery/gallery_thumb03.jpg" alt="img"></a>
+                            <a href="#"><img src="img/gallery/gallery_thumb03.avif" alt="img"></a>
                             <div class="gallery-overlay">
                                 <h5 class="gallery-overlay-title"><a href="#">Yaprak Üfleyici CK-120</a></h5>
                                 <span>Hafif ve Sessiz Çalışma</span>
@@ -784,7 +784,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 grid-item grid-sizer">
                         <div class="single-gallery-img mb-30">
-                            <a href="#"><img src="img/gallery/gallery_thumb04.jpg" alt="img"></a>
+                            <a href="#"><img src="img/gallery/gallery_thumb04.avif" alt="img"></a>
                             <div class="gallery-overlay">
                                 <h5 class="gallery-overlay-title"><a href="#">Zincirli Testere CK-400</a></h5>
                                 <span>Güçlü ve Kullanışlı</span>
@@ -831,7 +831,7 @@
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-img">
-                                            <img src="img/images/avatar01.png" alt="img">
+                                            <img src="img/images/avatar01.avif" alt="img">
                                         </div>
                                         <div class="testi-avatar-info">
                                             <h6>Ebru Yaprak</h6>
@@ -862,7 +862,7 @@
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-img">
-                                            <img src="img/images/avatar02.png" alt="img">
+                                            <img src="img/images/avatar02.avif" alt="img">
                                         </div>
                                         <div class="testi-avatar-info">
                                             <h6>Mehmet Özdemir</h6>
@@ -894,7 +894,7 @@
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-img">
-                                            <img src="img/images/avatar03.png" alt="img">
+                                            <img src="img/images/avatar03.avif" alt="img">
                                         </div>
                                         <div class="testi-avatar-info">
                                             <h6>Zeynep Yılmaz</h6>
@@ -925,7 +925,7 @@
                                     </div>
                                     <div class="testimonial-avatar">
                                         <div class="testi-avatar-img">
-                                            <img src="img/images/avatar04.png" alt="img">
+                                            <img src="img/images/avatar04.avif" alt="img">
                                         </div>
                                         <div class="testi-avatar-info">
                                             <h6>Hasan Demir</h6>
@@ -998,13 +998,13 @@
 
     <!-- footer -->
     <footer>
-        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.jpg">
+        <div class="footer-wrap pt-30 pb-10" data-background="img/bg/footer_bg.avif">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget mb-50">
                             <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="img/logo/s_logo.png" alt="Comlink logo"></a>
+                                <a href="index.html"><img src="img/logo/s_logo.avif" alt="Comlink logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Comlink, profesyonel akülü bahçe ve tarım makineleri ile çevre dostu
@@ -1034,7 +1034,7 @@
                                 <ul>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.jpg"
+                                            <a href="#" data-blog-id="cevre-donusum"><img src="img/blog/f_rc_img01.avif"
                                                     alt="Soluduğunuz Havayı Düşünün"></a>
                                         </div>
                                         <div class="f-rc-content">
@@ -1046,7 +1046,7 @@
                                     </li>
                                     <li>
                                         <div class="f-rc-thumb">
-                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.jpg"
+                                            <a href="#" data-blog-id="akilli-yatirim"><img src="img/blog/f_rc_img02.avif"
                                                     alt="2 Yıl Sonra Teşekkür Edeceksiniz"></a>
                                         </div>
                                         <div class="f-rc-content">
@@ -1089,9 +1089,9 @@
                                 <p>Comlink akıllı profesyonel bahçe ve tarım makineleri: dumansız, benzinsiz,
                                     bakımsız
                                     ve sessiz çalışma ile Yüksek performans sunar.</p>
-                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.png"
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn01.avif"
                                         alt="App Store'dan indir"></a>
-                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.png"
+                                <a href="#" class="f-download-btn"><img src="img/images/f_download_btn02.avif"
                                         alt="Google Play'den indir"></a>
                             </div>
                         </div>
