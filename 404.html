@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sayfa Bulunamadı - Comlink</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.avif">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -130,6 +131,7 @@
                 opacity: 1;
                 border-radius: 0;
             }
+
             100% {
                 transform: translateY(-1000px) rotate(720deg);
                 opacity: 0;
@@ -168,6 +170,7 @@
                     0 0 40px rgba(255, 107, 53, 0.3),
                     0 0 60px rgba(255, 107, 53, 0.2);
             }
+
             to {
                 text-shadow:
                     0 0 30px rgba(255, 107, 53, 0.7),
@@ -193,6 +196,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -216,9 +220,12 @@
         }
 
         @keyframes bounce {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-20px);
             }
@@ -320,7 +327,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .loading-text {
@@ -378,6 +387,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Animated Background -->
     <div class="bg-animation">
@@ -432,7 +442,7 @@
          * Bu script önce clean URL routing yapar.
          * Eğer bilinen bir route değilse, modern 404 sayfasını gösterir.
          */
-        (function() {
+        (function () {
             const path = window.location.pathname;
             const hash = window.location.hash;
             const search = window.location.search;
@@ -485,7 +495,7 @@
             }
 
             // Hiçbir pattern eşleşmediyse, 404 sayfasını göster
-            setTimeout(function() {
+            setTimeout(function () {
                 document.getElementById('loadingState').style.display = 'none';
                 document.getElementById('errorPage').style.display = 'block';
             }, 800);
@@ -493,4 +503,5 @@
         })();
     </script>
 </body>
+
 </html>
