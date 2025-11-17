@@ -1,7 +1,0 @@
-Boyutlar: 19cm x 11,8cm x 5,8cm
-Ağırlık: 1,2 kg
-Giriş voltajı: AC100V
-Çıkış voltajı: DC-42V
-Çıkış akımı: DC-8A
-Şarj modu: CC-CV
-Tayvan'da geliştirildi, üretildi ve garantili kaliteye sahip

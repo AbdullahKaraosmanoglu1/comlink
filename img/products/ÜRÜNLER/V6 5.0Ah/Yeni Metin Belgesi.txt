@@ -1,9 +1,0 @@
-Çıkış voltajı: DC-32.4V
-Pil kapasitesi: 5.0Ah
-Anma kapasitesi: 4.45Ah
-Dengeleme Devresi: Akıllı Akü Dengeleme Devresi
-Aşırı şarj koruması, aşırı deşarj koruması, aşırı akım koruması
-Dış boyutlar: 38cm x 17cm x 7cm
-Pil ağırlığı: 1,8 kg
-Pil, su ve toz geçirmezlik konusunda uluslararası IP66 sertifikasyonunu geçti.
-Tayvan'ın Ar-Ge, üretim ve kalite güvencesi garantilidir.
