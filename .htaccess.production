@@ -24,6 +24,13 @@ AddDefaultCharset UTF-8
     AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
+# ==================== MIME TYPES ====================
+
+<IfModule mod_mime.c>
+    # AVIF image format support
+    AddType image/avif .avif
+</IfModule>
+
 # ==================== BROWSER CACHING ====================
 
 <IfModule mod_expires.c>
@@ -36,6 +43,7 @@ AddDefaultCharset UTF-8
     ExpiresByType image/svg+xml "access plus 1 year"
     ExpiresByType image/x-icon "access plus 1 year"
     ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
 
     # CSS ve JavaScript - 1 ay
     ExpiresByType text/css "access plus 1 month"
