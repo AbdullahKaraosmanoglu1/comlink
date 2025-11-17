@@ -3362,8 +3362,8 @@ label {
 .video-bg {
 	background-image: url(../img/bg/video_bg.avif);
 	overflow: hidden;
-	background-position: center;
-	background-size: contain;
+	background-position: 95% center;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 

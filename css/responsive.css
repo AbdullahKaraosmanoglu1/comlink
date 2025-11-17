@@ -1861,11 +1861,11 @@
    =============================================== */
 @media (max-width: 991px) {
 
-	/* Video background - Fotoğrafın tamamı görünsün */
+	/* Video background - Fotoğrafın SAĞ tarafı görünsün (bebek + çalışan adam) */
 	.video-bg {
-		background-position: center center !important;
-		/* Fotoğrafın tamamı kırpılmadan görünsün */
-		background-size: contain !important;
+		background-position: 95% center !important;
+		/* Fotoğraf kırpılarak ekranı doldursun */
+		background-size: cover !important;
 		background-repeat: no-repeat !important;
 	}
 
