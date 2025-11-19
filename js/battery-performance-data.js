@@ -110,7 +110,7 @@ const batteryPerformanceData = {
         productName: 'CK-230D Çim Biçme Makinası',
         performanceType: 'time',
         unit: 'Dakika/Saat',
-        context: 'Çim uzunluğu 10cm ≤',
+        context: 'Çim uzunluğu 10cm altındaysa',
         batteries: [
             {
                 id: 'v6-5ah',

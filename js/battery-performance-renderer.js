@@ -32,14 +32,14 @@ class BatteryPerformanceRenderer {
         const contextHTML = data.context ?
             `<p class="battery-perf-context"><i class="fas fa-info-circle"></i> ${data.context}</p>` : '';
 
+        // Sabit progress bar yüzdeleri: 25%, 50%, 75%, 100%
+        const progressPercentages = [25, 50, 75, 100];
+
         const batteriesHTML = data.batteries.map((battery, index) => {
-            const isRecommended = index === 2; // V7-20.0Ah önerilen
-            const recommendedBadge = isRecommended ?
-                '<span class="battery-perf-recommended-badge"><i class="fas fa-star"></i> Önerilen</span>' : '';
+            const barWidth = progressPercentages[index] || 100;
 
             return `
-                <div class="battery-perf-card ${isRecommended ? 'battery-perf-recommended' : ''}">
-                    ${recommendedBadge}
+                <div class="battery-perf-card">
                     <div class="battery-perf-card-header">
                         <img src="${battery.image}" alt="${battery.name}" class="battery-perf-image" loading="lazy">
                         <h4 class="battery-perf-name">${battery.name}</h4>
@@ -47,7 +47,7 @@ class BatteryPerformanceRenderer {
                     <div class="battery-perf-card-body">
                         <div class="battery-perf-value">${battery.displayValue}</div>
                         <div class="battery-perf-bar-container">
-                            <div class="battery-perf-bar" style="width: ${this.calculateBarWidth(data.batteries, index)}%"></div>
+                            <div class="battery-perf-bar" style="width: ${barWidth}%"></div>
                         </div>
                     </div>
                 </div>
