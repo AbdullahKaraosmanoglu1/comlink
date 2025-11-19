@@ -16,10 +16,37 @@ const blogCatalogState = {
 // LocalStorage Key
 const BLOG_STORAGE_KEY = 'comlink_blog_prefs';
 
+// URL parametresinden kategori yükle
+function loadCategoryFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+
+    if (category) {
+        console.log('URL\'den kategori yüklendi:', category);
+        blogCatalogState.currentCategory = category;
+        blogCatalogState.currentPage = 1;
+    } else {
+        console.log('URL\'de kategori parametresi yok');
+    }
+}
+
 // Sayfa yüklendiğinde çalışacak fonksiyon
 document.addEventListener('DOMContentLoaded', function () {
-    // LocalStorage'dan tercihleri yükle
-    loadBlogUserPreferences();
+    // Önce kategoriyi 'all' olarak ayarla
+    blogCatalogState.currentCategory = 'all';
+    blogCatalogState.currentPage = 1;
+    blogCatalogState.currentSearch = '';
+
+    // Eğer URL'de kategori parametresi varsa onu kullan
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category');
+
+    if (categoryParam) {
+        console.log('URL parametresinden kategori yüklendi:', categoryParam);
+        blogCatalogState.currentCategory = categoryParam;
+    } else {
+        console.log('URL parametresi yok - Tüm yazılar gösteriliyor');
+    }
 
     // Kategori listesini güncelle
     updateBlogCategoryList();
@@ -29,6 +56,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Event listener'ları ekle
     setupBlogEventListeners();
+
+    // Browser geri/ileri butonları için
+    window.addEventListener('popstate', function (e) {
+        // URL'den kategoriyi tekrar oku
+        const urlParams = new URLSearchParams(window.location.search);
+        const categoryParam = urlParams.get('category');
+
+        blogCatalogState.currentCategory = categoryParam || 'all';
+        blogCatalogState.currentPage = 1;
+
+        console.log('Browser geri/ileri - Kategori:', blogCatalogState.currentCategory);
+
+        // Kategori listesini ve blogları güncelle
+        updateBlogCategoryList();
+        loadBlogs();
+    });
 });
 
 // LocalStorage'dan kullanıcı tercihlerini yükle
@@ -63,11 +106,16 @@ function saveBlogUserPreferences() {
 
 // Kategori listesini dinamik olarak oluştur
 function updateBlogCategoryList() {
+    console.log('updateBlogCategoryList çağrıldı - Mevcut kategori:', blogCatalogState.currentCategory);
+
     const categories = getBlogCategories();
     const totalCount = getTotalPostCount();
 
     const categoryList = document.querySelector('.cat-list ul');
-    if (!categoryList) return;
+    if (!categoryList) {
+        console.warn('Kategori listesi DOM\'da bulunamadı!');
+        return;
+    }
 
     // Listeyi temizle
     categoryList.innerHTML = '';
@@ -99,12 +147,18 @@ function loadBlogs() {
         sort: blogCatalogState.currentSort
     };
 
+    console.log('Blog yükleniyor - Mevcut kategori:', blogCatalogState.currentCategory);
+    console.log('Filtreleme seçenekleri:', filters);
+
     // Sayfalanmış blog yazılarını al
     const result = getPostsPaginated(
         blogCatalogState.currentPage,
         blogCatalogState.itemsPerPage,
         filters
     );
+
+    console.log('getPostsPaginated sonucu:', result.posts.length, 'blog');
+    console.log('Blog detayları:', result.posts.map(p => ({ title: p.title, categoryId: p.categoryId })));
 
     // Blog yazılarını render et
     renderBlogs(result.posts);
@@ -120,6 +174,8 @@ function loadBlogs() {
 
 // Blog kartlarını DOM'a ekle
 function renderBlogs(posts) {
+    console.log('renderBlogs çağrıldı -', posts.length, 'blog render edilecek');
+
     const container = document.querySelector('.blog-area .row .col-lg-8 .row');
     if (!container) {
         console.error('Blog container bulunamadı');
@@ -131,6 +187,8 @@ function renderBlogs(posts) {
 
     // Blog bulunamadı mesajı
     if (posts.length === 0) {
+        console.log('Hiç blog bulunamadı, boş mesajı gösteriliyor');
+
         container.innerHTML = `
             <div class="col-12 text-center py-5">
                 <h4>Blog yazısı bulunamadı</h4>
@@ -305,6 +363,12 @@ function setupBlogEventListeners() {
             // Active sınıfını güncelle
             document.querySelectorAll('.cat-list li').forEach(li => li.classList.remove('active'));
             filterLink.parentElement.classList.add('active');
+
+            // URL'i güncelle (sayfayı yenilemeden)
+            const newUrl = filter === 'all'
+                ? window.location.pathname  // Tüm Yazılar için parametresiz
+                : `${window.location.pathname}?category=${filter}`;  // Kategori için parametre ekle
+            window.history.pushState({ category: filter }, '', newUrl);
 
             // Blog yazılarını yeniden yükle
             loadBlogs();

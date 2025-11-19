@@ -335,11 +335,7 @@
                                     </div>
                                     <div class="cat-list">
                                         <ul>
-                                            <li><a href="#">Bahçe Bakımı <span>(14)</span></a></li>
-                                            <li><a href="#">Akülü Makineler <span>(09)</span></a></li>
-                                            <li><a href="#">Ürün İncelemeleri <span>(03)</span></a></li>
-                                            <li><a href="#">Kullanım Kılavuzları <span>(02)</span></a></li>
-                                            <li><a href="#">Genel <span>(07)</span></a></li>
+                                            <!-- Kategoriler dinamik olarak yüklenecek -->
                                         </ul>
                                     </div>
                                 </div>
@@ -552,6 +548,50 @@
 
     <!-- Blog Visual Renderer -->
     <script src="js/blog-visual-renderer.js"></script>
+
+    <!-- Blog Detail Category Loader -->
+    <script>
+        // Kategorileri dinamik olarak yükle (blogs.js'den)
+        function loadBlogDetailCategories() {
+            // getBlogCategories ve getTotalPostCount fonksiyonlarının yüklenmesini bekle
+            if (typeof getBlogCategories === 'undefined' || typeof getTotalPostCount === 'undefined') {
+                console.warn('Blog kategorileri henüz yüklenmedi, bekleniyor...');
+                setTimeout(loadBlogDetailCategories, 100);
+                return;
+            }
+
+            const categories = getBlogCategories();
+            const totalCount = getTotalPostCount();
+            const categoryList = document.querySelector('.cat-list ul');
+
+            if (!categoryList) {
+                console.warn('Kategori listesi bulunamadı');
+                return;
+            }
+
+            // Listeyi temizle
+            categoryList.innerHTML = '';
+
+            // "Tüm Yazılar" kategorisi
+            const allItem = document.createElement('li');
+            allItem.innerHTML = `<a href="blog.html">Tüm Yazılar <span>(${totalCount})</span></a>`;
+            categoryList.appendChild(allItem);
+
+            // Diğer kategoriler (blogs.js'den gelen gerçek kategoriler)
+            categories.forEach(cat => {
+                const li = document.createElement('li');
+                li.innerHTML = `<a href="blog.html?category=${cat.id}">${cat.name} <span>(${cat.count})</span></a>`;
+                categoryList.appendChild(li);
+            });
+
+            console.log('Blog kategorileri yüklendi:', categories);
+        }
+
+        // Sayfa yüklendiğinde kategorileri yükle
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBlogDetailCategories();
+        });
+    </script>
 
     <!-- Blog Detail Loader -->
     <script>

@@ -830,9 +830,17 @@ function getRecentPosts(count = 3) {
 function filterPosts(filters = {}) {
     let posts = getAllPosts();
 
+    console.log('filterPosts çağrıldı - Filters:', filters);
+    console.log('Toplam blog sayısı:', posts.length);
+
     // Kategoriye göre filtrele
     if (filters.category && filters.category !== 'all') {
+        console.log('Kategori filtresi uygulanıyor:', filters.category);
+        const beforeFilter = posts.length;
         posts = posts.filter(post => post.categoryId === filters.category);
+        console.log(`Filtreleme sonrası: ${beforeFilter} -> ${posts.length} blog`);
+    } else {
+        console.log('Kategori filtresi uygulanmıyor (all veya boş)');
     }
 
     // Aramaya göre filtrele
