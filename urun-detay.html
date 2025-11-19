@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="css/custom-cursor.css">
     <!-- Product Visual Elements CSS -->
     <link rel="stylesheet" href="css/blog-visuals.css">
+    <!-- Battery Performance CSS -->
+    <link rel="stylesheet" href="css/battery-performance.css">
 </head>
 
 <body>
@@ -768,6 +770,10 @@
     <script src="js/products.js"></script>
     <!-- Product Visual Renderer -->
     <script src="js/product-visual-renderer.js"></script>
+    <!-- Battery Performance Data -->
+    <script src="js/battery-performance-data.js"></script>
+    <!-- Battery Performance Renderer -->
+    <script src="js/battery-performance-renderer.js"></script>
 
     <!-- Product Detail Loader -->
     <script>
@@ -910,6 +916,9 @@
                 `;
             });
             $('.rc-post ul').html(relatedHTML);
+
+            // Batarya performans karşılaştırmasını ekle
+            batteryPerformanceRenderer.injectBatteryPerformance(productId);
 
             // Magnific Popup'ı başlat - Ana ürün görseli
             $('.product-image-popup').magnificPopup({

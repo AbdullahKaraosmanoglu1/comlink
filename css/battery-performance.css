@@ -1,0 +1,345 @@
+/* ========================================
+   BATARYA PERFORMANS KARŞILAŞTIRMA STİLLERİ
+   ======================================== */
+
+.battery-performance-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 48px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+}
+
+/* Header */
+.battery-perf-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #ff6b35;
+}
+
+.battery-perf-icon {
+    font-size: 32px;
+    color: #ff6b35;
+    animation: battery-pulse 2s ease-in-out infinite;
+}
+
+@keyframes battery-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.battery-perf-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+}
+
+/* Context */
+.battery-perf-context {
+    background: #fff3e0;
+    border-left: 4px solid #ff9800;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    color: #e65100;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.battery-perf-context i {
+    margin-right: 8px;
+}
+
+/* Grid */
+.battery-perf-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+/* Card */
+.battery-perf-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.battery-perf-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #ff6b35;
+}
+
+.battery-perf-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b35, #ff9800);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.battery-perf-card:hover::before {
+    opacity: 1;
+}
+
+/* Recommended Card */
+.battery-perf-recommended {
+    border-color: #ff6b35;
+    box-shadow: 0 4px 16px rgba(255, 107, 53, 0.15);
+}
+
+.battery-perf-recommended::before {
+    opacity: 1;
+}
+
+.battery-perf-recommended-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: linear-gradient(135deg, #ff6b35, #ff9800);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+}
+
+.battery-perf-recommended-badge i {
+    font-size: 10px;
+}
+
+/* Card Header */
+.battery-perf-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.battery-perf-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.battery-perf-card:hover .battery-perf-image {
+    transform: scale(1.1);
+}
+
+.battery-perf-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: center;
+    margin: 0;
+}
+
+/* Card Body */
+.battery-perf-card-body {
+    text-align: center;
+}
+
+.battery-perf-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff6b35;
+    margin-bottom: 12px;
+}
+
+/* Progress Bar */
+.battery-perf-bar-container {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.battery-perf-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b35, #ff9800);
+    border-radius: 4px;
+    transition: width 1s ease-out;
+    position: relative;
+}
+
+.battery-perf-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Footer */
+.battery-perf-footer {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.battery-perf-footer p {
+    margin: 0;
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.battery-perf-footer i {
+    margin-right: 6px;
+    color: #ff6b35;
+}
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .battery-performance-section {
+        padding: 24px;
+        margin: 32px 0;
+    }
+
+    .battery-perf-title {
+        font-size: 24px;
+    }
+
+    .battery-perf-icon {
+        font-size: 28px;
+    }
+
+    .battery-perf-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .battery-perf-card {
+        padding: 16px;
+    }
+
+    .battery-perf-value {
+        font-size: 18px;
+    }
+
+    .battery-perf-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .battery-performance-section {
+        padding: 20px;
+        margin: 24px 0;
+        border-radius: 12px;
+    }
+
+    .battery-perf-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .battery-perf-title {
+        font-size: 20px;
+    }
+
+    .battery-perf-icon {
+        font-size: 24px;
+    }
+
+    .battery-perf-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .battery-perf-card {
+        padding: 16px;
+    }
+
+    .battery-perf-value {
+        font-size: 16px;
+    }
+
+    .battery-perf-name {
+        font-size: 14px;
+    }
+
+    .battery-perf-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .battery-perf-recommended-badge {
+        top: 8px;
+        right: 8px;
+        padding: 3px 10px;
+        font-size: 10px;
+    }
+
+    .battery-perf-context {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .battery-perf-footer p {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .battery-perf-title {
+        font-size: 18px;
+    }
+
+    .battery-perf-value {
+        font-size: 15px;
+    }
+
+    .battery-perf-name {
+        font-size: 13px;
+    }
+}
