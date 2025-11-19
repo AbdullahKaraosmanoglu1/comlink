@@ -83,8 +83,8 @@ const blogsData = {
         image: 'img/blog/new-blog-images/2YılSonraBanaTeşekkürEdeceksiniz.avif',
         visualElements: {
             statistics: [
-                { value: '₺11,750', label: '5 YILLIK TASARRUF', icon: 'fa-piggy-bank', color: 'green' },
-                { value: '%47', label: 'MALİYET AZALMASI', icon: 'fa-arrow-down', color: 'blue' },
+                { value: '₺50.000+', label: '5 YILLIK TASARRUF', icon: 'fa-piggy-bank', color: 'green' },
+                { value: '%50', label: 'MALİYET AZALMASI', icon: 'fa-arrow-down', color: 'blue' },
                 { value: '40+ Saat', label: 'YILLIK ZAMAN TASARRUFU', icon: 'fa-clock', color: 'purple' }
             ],
             comparison: {
@@ -324,7 +324,7 @@ const blogsData = {
             statistics: [
                 { value: '%30', label: 'DAHA VERİMLİ', icon: 'fa-bolt', color: 'purple' },
                 { value: '10,000+', label: 'SAAT ÖMÜR', icon: 'fa-infinity', color: 'blue' },
-                { value: '2', label: 'TAIWAN EXCELLENCE ÖDÜLÜ', icon: 'fa-trophy', color: 'gold' }
+                { value: '3', label: 'TAIWAN EXCELLENCE ÖDÜLÜ', icon: 'fa-trophy', color: 'gold' }
             ],
             comparison: {
                 title: 'Benzinli vs Fırçasız Motor Teknolojisi',
@@ -353,6 +353,7 @@ const blogsData = {
             badges: [
                 { text: 'Taiwan Excellence 2017', icon: 'fa-award', type: 'award' },
                 { text: 'Taiwan Excellence 2019', icon: 'fa-award', type: 'award' },
+                { text: 'Taiwan Excellence 2025', icon: 'fa-award', type: 'award' },
                 { text: 'Patentli Fırçasız Motor', icon: 'fa-certificate', type: 'tech' },
                 { text: 'IP66 Koruma', icon: 'fa-shield-alt', type: 'cert' }
             ],
@@ -418,7 +419,7 @@ const blogsData = {
             </ul>
 
             <h5>3. Taiwan Excellence: Uluslararası Kalite</h5>
-            <div class="blog-para">Comlink makineler, Taiwan Excellence 2017 ve 2019 ödüllerine sahip. Bu ödüller tesadüf değil:</div>
+            <div class="blog-para">Comlink makineler, Taiwan Excellence 2017, 2019 ve 2025 ödüllerine sahip. Bu ödüller tesadüf değil:</div>
 
             <ul>
                 <li><strong>Ar-Ge Mükemmelliği:</strong> 5 yıllık araştırma ve geliştirme</li>

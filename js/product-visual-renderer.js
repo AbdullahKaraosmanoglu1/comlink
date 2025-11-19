@@ -209,7 +209,7 @@
         const visualElements = product.visualElements;
 
         // Ürün detay container'ı bul
-        const detailContainer = $('.product-details-content, .tab-content');
+        const detailContainer = $('.product-details-content, .tab-content, .blog-details-content');
         if (!detailContainer.length) return;
 
         // Ürün açıklamasının hemen altına eklemek için yer bul
